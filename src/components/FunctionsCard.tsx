@@ -1,19 +1,37 @@
+"use client"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { BsWhatsapp } from "react-icons/bs"
 import Image from "next/image"
+import { useRef } from "react"
+import { motion, useInView } from "motion/react"
 
 interface IFunctionsCardProps {
     imagePath: string
     title: string
     subtitle: string
     message: string
+    duration: number
 }
 
-const FunctionsCard = ({ imagePath, title, subtitle, message }: IFunctionsCardProps): React.JSX.Element => {
+const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunctionsCardProps): React.JSX.Element => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
     return (
-        <div className="bg-gray-100 w-full p-6 flex flex-col gap-6 rounded-xl justify-start">
-            <div className="mx-auto bg-black w-full text-center h-[400px]">
+        <div className="bg-gray-100 w-full p-6 flex flex-col gap-6 rounded-xl justify-start overflow-hidden">
+            <motion.div
+                ref={ref}
+                initial={{ x: "110%" }}
+                animate={{ x: isInView ? 0 : "110%" }}
+                transition={{
+                    type: "tween",
+                    duration: duration,
+                    ease: "easeInOut"
+                }}
+                className="mx-auto bg-black w-full text-center h-[400px]">
+
+
                 <Image
                     src={imagePath}
                     alt={title}
@@ -22,9 +40,19 @@ const FunctionsCard = ({ imagePath, title, subtitle, message }: IFunctionsCardPr
                     priority
                     className="inline-block w-auto object-contain h-full"
                 />
-            </div>
-            <h1 className="text-xl lg:text-2xl tracking-wider font-semibold">{title}</h1>
-            <p className="text-xl text-gray-400">{subtitle}</p>
+            </motion.div>
+            <motion.h1
+                ref={ref}
+                initial={{ x: "-100%" }}
+                animate={{ x: isInView ? 0 : "-100%" }}
+                transition={{ type: "spring", stiffness: 60, damping: 25, duration: 2.0 }}
+                className="text-xl lg:text-2xl tracking-wider font-semibold">{title}</motion.h1>
+            <motion.p
+                ref={ref}
+                initial={{ x: "-100%" }}
+                animate={{ x: isInView ? 0 : "-100%" }}
+                transition={{ type: "spring", stiffness: 50, damping: 25, duration: 2.0 }}
+                className="text-xl text-gray-400">{subtitle}</motion.p>
             <Link
                 href={`https://wa.me/555497153068?text=${message}`}
                 target="_blank"
