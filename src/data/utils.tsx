@@ -15,6 +15,7 @@ export interface IFunctionsCard {
     subtitle: string;
     imagePath: string
     message: string
+    duration: number
 }
 
 
@@ -145,25 +146,29 @@ export const functionsCardItens: IFunctionsCard[] = [
         title: "Crie Stickers Mágicos! ✨",
         subtitle: "Envie sua imagem e transforme-a em um adesivo super kawaii! A Senpai faz isso rapidinho para você! 💕📸",
         imagePath: "/images/generateSticker.jpg",
-        message: "Olá Senpai, quero criar um sticker mágico!"
+        message: "Olá Senpai, quero criar um sticker mágico!",
+        duration: 1.0
     },
     {
         title: "Sticker AI no Jutsu! 🎨🤖",
         subtitle: "Com o poder da inteligência artificial, transforme qualquer imagem em um sticker perfeito, digno de um anime! 🚀",
         imagePath: "/images/IA.jpg",
-        message: "Olá Senpai, quero usar o Sticker AI no Jutsu!"
+        message: "Olá Senpai, quero usar o Sticker AI no Jutsu!",
+        duration: 1.5
     },
     {
         title: "Arte Digital com AI! 🖌️💡",
         subtitle: "Deixe a IA criar imagens incríveis para você! Inspire-se e gere artes únicas para compartilhar com seus nakamas! 🌸✨",
         imagePath: "/images/chatIA.jpg",
-        message: "Olá Senpai, quero criar arte digital com AI!"
+        message: "Olá Senpai, quero criar arte digital com AI!",
+        duration: 2.0
     },
     {
         title: "Lembretes Kawaii! 📝💖",
         subtitle: "Precisa lembrar de algo importante? Deixe a Senpai anotar para você com mensagens fofinhas e cheias de amor! 🐰🎀",
         imagePath: "/images/remember.jpg",
-        message: "Olá Senpai, quero criar um lembrete kawaii!"
+        message: "Olá Senpai, quero criar um lembrete kawaii!",
+        duration: 2.5
     }
 ];
 
