@@ -1,19 +1,35 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
 import senpai from "../../public/images/senpai.png"
 import Image from "next/image";
 import SpeechBubble from "@/components/ui/SpeechBubble";
+import { motion, useInView } from "motion/react"
+import React, { useRef } from 'react'
 
-
-import React from 'react'
 
 const Info = (): React.JSX.Element => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+
     return (
-        <section className="grid grid-cols-1 lg:grid-cols-2 py-24 place-items-center">
+        <section className="grid grid-cols-1 lg:grid-cols-2 py-24 place-items-center overflow-hidden">
             <div className="space-y-6">
-                <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center md:text-left">Mais diversão e praticidade no seu WhatsApp</h1>
-                <h2 className="text-lg md:text-xl lg:text-2xl text-center md:text-left">A Senpai está sempre pronta para deixar suas conversas mais interativas! Transforme imagens em stickers, adicione textos estilosos e personalize suas figurinhas de forma rápida, fácil e gratuita.</h2>
+                <motion.h1
+                    ref={ref}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isInView ? 1 : 0 }}
+                    transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
+                    className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center md:text-left">Mais diversão e praticidade no seu WhatsApp</motion.h1>
+                <motion.h2
+                    ref={ref}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isInView ? 1 : 0 }}
+                    transition={{ type: "tween", duration: 2.0, ease: "easeInOut" }}
+
+                    className="text-lg md:text-xl lg:text-2xl text-center md:text-left">A Senpai está sempre pronta para deixar suas conversas mais interativas! Transforme imagens em stickers, adicione textos estilosos e personalize suas figurinhas de forma rápida, fácil e gratuita.</motion.h2>
 
                 <Button
                     asChild
@@ -27,7 +43,12 @@ const Info = (): React.JSX.Element => {
 
                     >
                         <BsWhatsapp className="text-xl" />
-                        Fale com a Senpai
+                        <motion.p
+                            ref={ref}
+                            initial={{ x: "-100%" }}
+                            animate={{ x: isInView ? 0 : "-100%" }}
+                            transition={{ type: "spring", damping: 30, stiffness: 100, }}
+                        >Fale com a Senpai</motion.p>
                     </Link>
                 </Button>
 
