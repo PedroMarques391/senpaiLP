@@ -122,18 +122,21 @@ export const faq: IFaq[] = [
     }
 ];
 
-export const achievements: Omit<IBenefit, 'icon'>[] = [
+export const achievements: (Omit<IBenefit, 'icon'> & { duration: number })[] = [
     {
         title: "99,9%",
         description: "Disponibilidade garantida para você, sempre online quando precisar!",
+        duration: 1.0
     },
     {
         title: "5 anos",
         description: "Construindo histórias e fazendo a diferença na vida das pessoas.",
+        duration: 1.5
     },
     {
         title: "68 milhões",
         description: "Figurinhas criadas com carinho e compartilhadas pelo mundo!",
+        duration: 2.0
     }
 ];
 

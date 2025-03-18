@@ -4,6 +4,10 @@
 
 @plugin "tailwindcss-animate";
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .speechBubble {
   background-color: black;
   padding: 12px 16px;

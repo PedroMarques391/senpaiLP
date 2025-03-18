@@ -13,7 +13,8 @@ interface IFaqProps {
 
 export const Faq = ({ faq }: IFaqProps): React.JSX.Element => {
     return (
-        <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto mb-10">
+        <Accordion
+            type="single" collapsible className="w-full max-w-4xl mx-auto mb-10">
             {faq.map((faqItem, key) => (
                 <AccordionItem value={`item-${key}`} key={key} >
                     <AccordionTrigger className="text-xl md:text-2xl ">{faqItem.question}</AccordionTrigger>

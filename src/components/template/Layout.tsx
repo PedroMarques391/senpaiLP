@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header } from './header/Header'
 import Hero from '../Hero'
+import { Footer } from './Footer'
 
 
 interface ILayoutProps {
@@ -15,6 +16,8 @@ const Layout = ({ children, hero }: ILayoutProps): React.JSX.Element => {
             <section className='container mx-auto p-2'>
                 {children}
             </section>
+            <Footer />
+
         </main>
     )
 }

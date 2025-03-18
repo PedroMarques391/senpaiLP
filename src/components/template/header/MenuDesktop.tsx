@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 const MenuDesktop = (): React.JSX.Element => {
     return (
-        <ul className="hidden md:flex justify-center items-center gap-x-3 flex-1">
-            <NavItem >Inicio</NavItem>
-            <NavItem >Como Usar</NavItem>
-            <NavItem >Planos</NavItem>
-            <NavItem >Sobre Nós</NavItem>
+        <ul className="hidden md:flex justify-center items-center gap-x-3 ">
+            <NavItem href='#home' >Inicio</NavItem>
+            <NavItem href='#howTo' >Como Usar</NavItem>
+            <NavItem href='#plans' >Planos</NavItem>
+            <NavItem href='#about' >Sobre Nós</NavItem>
             <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                 target="_blank"

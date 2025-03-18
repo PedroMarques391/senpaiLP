@@ -1,22 +1,27 @@
-import { Button } from '@/components/ui/button'
+
+import Link from 'next/link'
 import React, { DetailedHTMLProps, LiHTMLAttributes } from 'react'
 
 interface INavItemsProps extends DetailedHTMLProps<LiHTMLAttributes<HTMLLIElement>, HTMLLIElement> {
-    href?: string
+    href: string
 }
 
 
-export const NavItem = ({ children, ...props }: INavItemsProps): React.JSX.Element => {
+export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX.Element => {
+
     return (
         <li
             {...props}
+
             className={`text-center w-32 md:w-auto lg:w-32 relative group px-2 `}>
-            <Button
-                className=" w-full h-full block  bg-transparent hover:bg-transparent text-base lg:text-lg"
+            <Link
+
+                href={href}
+                className=" w-full h-full block py-4  bg-transparent hover:bg-transparent text-base lg:text-lg"
             >
                 {children}
                 <p className={`absolute bottom-0 left-0 group-hover:w-full group-hover:bg-white h-1 bg-white transition-all duration-300 isCurrentPath hover:w-full  w-0`} />
-            </Button >
+            </Link>
         </li>
     )
 
