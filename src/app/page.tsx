@@ -35,6 +35,7 @@ export default function Home() {
             title={functionsCardItem.title}
             subtitle={functionsCardItem.subtitle}
             message={functionsCardItem.message}
+            duration={functionsCardItem.duration}
           />
         ))}
       </section>
