@@ -1,3 +1,4 @@
+"use client"
 import FunctionsCard from "@/components/FunctionsCard";
 import Info from "@/components/Info";
 import Layout from "@/components/template/Layout";
@@ -8,14 +9,24 @@ import { faq, functionsCardItens, services } from "@/data/utils"
 import * as React from "react"
 import CarouselBenefit from "@/components/Carousel";
 import { Faq } from "@/components/Faq";
+import { motion, useInView } from "motion/react"
+import { useRef } from "react";
 
 
 
 
 export default function Home() {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
   return (
     <Layout hero>
-      <h1 className="py-10 text-2xl text-center lg:text-left md:text-3xl">O que a senpai pode fazer por você hoje?</h1>
+      <motion.h1
+        ref={ref}
+        initial={{ x: "-100%" }}
+        animate={{ x: isInView ? 0 : "-100%" }}
+        transition={{ type: "spring", stiffness: 100, damping: 25 }}
+        className="py-10 text-2xl text-center lg:text-left md:text-3xl">O que a senpai pode fazer por você hoje?</motion.h1>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] md:w-full mx-auto">
         {functionsCardItens.map((functionsCardItem, item) => (
           <FunctionsCard
