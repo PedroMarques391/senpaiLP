@@ -16,10 +16,12 @@ interface IFunctionsCardProps {
 
 const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunctionsCardProps): React.JSX.Element => {
     const ref = useRef(null)
-    const isInView = useInView(ref)
+    const isInView = useInView(ref, { amount: "some" })
 
     return (
-        <div className="bg-gray-100 w-full p-6 flex flex-col gap-6 rounded-xl justify-start overflow-hidden">
+        <div
+            id="func"
+            className="bg-gray-100 w-full p-6 flex flex-col gap-6 rounded-xl justify-start overflow-hidden">
             <motion.div
                 ref={ref}
                 initial={{ x: "110%" }}
