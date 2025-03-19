@@ -5,7 +5,7 @@ import { JSX } from "react";
 
 
 export interface IBenefit {
-    title: string;
+    title: string | number
     description: string;
     icon: JSX.Element;
 }
@@ -123,21 +123,24 @@ export const faq: IFaq[] = [
     }
 ];
 
-export const achievements: (Omit<IBenefit, 'icon'> & { duration: number })[] = [
+export const achievements: (Omit<IBenefit, 'icon'> & { duration: number, type: string })[] = [
     {
-        title: "99,9%",
+        title: 99.9,
         description: "Disponibilidade garantida para você, sempre online quando precisar!",
-        duration: 1.0
+        duration: 1.0,
+        type: "%"
     },
     {
-        title: "5 anos",
+        title: 5,
         description: "Construindo histórias e fazendo a diferença na vida das pessoas.",
-        duration: 1.5
+        duration: 1.5,
+        type: "anos"
     },
     {
-        title: "68 milhões",
+        title: 68,
         description: "Figurinhas criadas com carinho e compartilhadas pelo mundo!",
-        duration: 2.0
+        duration: 2.0,
+        type: "milhões"
     }
 ];
 
