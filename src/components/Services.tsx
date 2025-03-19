@@ -1,6 +1,8 @@
-import React from 'react'
+"use client"
+import React, { useRef } from 'react'
 import { Button } from './ui/button'
 import { ArrowRight, CheckCircle } from 'lucide-react'
+import { motion, useInView } from "motion/react"
 
 
 export interface IServicesInterface {
@@ -11,23 +13,55 @@ export interface IServicesInterface {
     textButton: "Teste grátis" | "Assine Agora"
 }
 
-const Services = ({ service, value, description, characteristics, textButton }: IServicesInterface): React.JSX.Element => {
+const Services = ({ service,
+    value,
+    description,
+    characteristics,
+    textButton }: IServicesInterface): React.JSX.Element => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
     return (
         <div className="max-w-[400px] bg-white rounded-2xl shadow-lg p-6 border border-gray-300 flex flex-col h-full">
             <div className=" h-40">
-                <h1 className="text-lg font-bold text-gray-900 uppercase">{service}</h1>
-                <p className="text-4xl font-extrabold text-gray-900 mt-2">
+                <motion.h1
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ type: 'spring', stiffness: 100 }}
+                    className="text-lg font-bold text-gray-900 uppercase"
+                >
+                    {service}
+                </motion.h1>
+                <motion.p
+                    ref={ref}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
+                    transition={{ type: 'spring', stiffness: 100, delay: 0.2 }}
+                    className="text-4xl font-extrabold text-gray-900 mt-2"
+                >
                     R$ {value} <span className="text-lg font-medium">/ mês</span>
-                </p>
-                <p className="text-gray-600 mt-2">{description}</p>
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
+                    transition={{ type: 'spring', stiffness: 100, delay: 0.4 }}
+                    className="text-gray-600 mt-2"
+                >
+                    {description}
+                </motion.p>
             </div>
 
             <ul className="mt-4 space-y-3 text-gray-700 flex-grow">
                 {characteristics.map((item, index) => (
-                    <li key={index} className="flex items-center gap-2">
+                    <motion.li
+                        ref={ref}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: isInView ? 1 : 0 }}
+                        transition={{ type: 'tween', ease: 'easeInOut', duration: index }}
+                        key={index} className="flex items-center gap-2">
                         <CheckCircle className="text-green-500 w-5 h-5" />
                         {item}
-                    </li>
+                    </motion.li>
                 ))}
             </ul>
 
