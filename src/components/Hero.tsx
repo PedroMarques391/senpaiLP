@@ -20,7 +20,7 @@ const Hero = (): React.JSX.Element => {
     return (
         <section>
             <div
-                className="relative bg-[url(../../public/images/1.png)] bg-cover bg-no-repeat text-white bg-center pb-20 px-6 md:px-20 rounded-b-[60px]">
+                className="relative bg-[url('/images/1.png')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20 px-6 md:px-20 rounded-b-[60px]">
                 <Header />
                 <div className="absolute inset-0 bg-black/50 rounded-b-[60px]"></div>
                 <section
