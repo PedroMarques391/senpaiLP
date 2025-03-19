@@ -14,7 +14,7 @@ const MenuDesktop = (): React.JSX.Element => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link que leva para o número do bot."
-                className="p-4 text-white bg-gradient-to-r from-pink-500 to-red-500 rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center"
+                className="p-4 bg-gradient-to-r text-black/80 from-fuchsia-300 via-purple-300 to-slate-50 rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center"
             >
                 Converse com a Senpai
             </Link>
