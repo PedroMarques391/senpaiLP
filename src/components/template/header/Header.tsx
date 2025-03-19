@@ -23,7 +23,7 @@ export const Header = (): React.JSX.Element => {
 
 
     return (
-        <header className={`text-white py-3 flex justify-center items-center z-20 fixed top-0 left-0 transition-colors duration-500 w-full ${scrolled ? "bg-black/80" : "bg-none"
+        <header className={`text-white py-3 flex justify-center items-center fixed top-0 left-0 transition-colors duration-500 w-full z-30 ${scrolled ? "bg-black/80" : "bg-none"
             }`}>
             <nav className="w-full max-w-6xl flex justify-between items-center md:mx-5 lg:mx-0 relative px-5 ">
                 <Logo />

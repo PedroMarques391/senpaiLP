@@ -155,7 +155,7 @@ export const functionsCardItens: IFunctionsCard[] = [
     {
         title: "Sticker AI no Jutsu! 🎨🤖",
         subtitle: "Com o poder da inteligência artificial, transforme qualquer imagem em um sticker perfeito, digno de um anime! 🚀",
-        imagePath: "/images/IA.jpg",
+        imagePath: "/images/IA.webp",
         message: "Olá Senpai, quero usar o Sticker AI no Jutsu!",
         duration: 1.5
     },
@@ -169,7 +169,7 @@ export const functionsCardItens: IFunctionsCard[] = [
     {
         title: "Lembretes Kawaii! 📝💖",
         subtitle: "Precisa lembrar de algo importante? Deixe a Senpai anotar para você com mensagens fofinhas e cheias de amor! 🐰🎀",
-        imagePath: "/images/remember.jpg",
+        imagePath: "/images/remember.webp",
         message: "Olá Senpai, quero criar um lembrete kawaii!",
         duration: 2.5
     }

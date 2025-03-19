@@ -5,7 +5,7 @@ import { BsWhatsapp } from "react-icons/bs"
 import { CardContent, CardHeader, CardTitle } from "./ui/card"
 import { achievements } from "@/data/utils"
 import Image from "next/image"
-import whatsDemo from "../../public/images/whats.png"
+import whatsDemo from "../../public/images/whats.webp"
 import { motion, useInView } from "motion/react";
 import { useRef } from "react"
 import Counter from "./Counter"
@@ -20,7 +20,7 @@ const Hero = (): React.JSX.Element => {
     return (
         <section>
             <div
-                className="relative bg-[url('/images/1.png')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20 px-6 md:px-20 rounded-b-[60px]">
+                className="relative bg-[url('/images/1.webp')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20 px-6 md:px-20 rounded-b-[60px]">
                 <Header />
                 <div className="absolute inset-0 bg-black/50 rounded-b-[60px]"></div>
                 <section

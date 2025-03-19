@@ -1,5 +1,5 @@
 import Image from "next/image"
-import senpai from "../../public/images/senpaiLogo.png"
+import senpai from "../../public/images/senpaiLogo.webp"
 
 const Logo = (): React.JSX.Element => {
     return (
