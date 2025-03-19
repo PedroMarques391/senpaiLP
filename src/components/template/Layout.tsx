@@ -17,7 +17,7 @@ const Layout = ({ children, hero }: ILayoutProps): React.JSX.Element => {
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
             setLoading(false);
-        }, 500);
+        }, 700);
 
         return () => clearTimeout(loadingTimeout);
     }, []);
