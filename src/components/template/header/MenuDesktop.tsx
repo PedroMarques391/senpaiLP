@@ -6,7 +6,7 @@ const MenuDesktop = (): React.JSX.Element => {
     return (
         <ul className="hidden md:flex justify-center items-center gap-x-3 ">
             <NavItem href='#home' >Inicio</NavItem>
-            <NavItem href='#howTo' >Como Usar</NavItem>
+            <NavItem href='#func' >Funcionalidades</NavItem>
             <NavItem href='#plans' >Planos</NavItem>
             <NavItem href='#about' >Sobre Nós</NavItem>
             <Link
