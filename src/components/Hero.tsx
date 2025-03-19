@@ -75,7 +75,7 @@ const Hero = (): React.JSX.Element => {
                             initial={{ y: "-100%" }}
                             animate={{ y: isCardInView ? 0 : "100%" }}
                             transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration }}
-                            className="w-full shadow-lg h-full text-center bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6"
+                            className="w-full shadow-lg h-full text-center bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 overflow-hidden"
                         >
                             <CardHeader>
                                 <CardTitle className="text-2xl lg:text-3xl font-bold tracking-tight drop-shadow-md">
