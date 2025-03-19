@@ -8,6 +8,7 @@ import Image from "next/image"
 import whatsDemo from "../../public/images/whats.png"
 import { motion, useInView } from "motion/react";
 import { useRef } from "react"
+import Counter from "./Counter"
 
 
 
@@ -82,7 +83,11 @@ const Hero = (): React.JSX.Element => {
                                         ref={refCard}
                                         initial={{ y: "-100%" }}
                                         animate={{ y: isCardInView ? 0 : "100%" }}
-                                        transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration - 0.5 }}> {achievement.title}</motion.h1>
+                                        transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration - 0.5 }}
+                                        className="flex items-center justify-center gap-x-2">
+                                        <Counter number={achievement.title as number} />
+                                        <span>{achievement.type}</span>
+                                    </motion.h1>
                                 </CardTitle>
                             </CardHeader>
 
