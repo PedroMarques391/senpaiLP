@@ -7,7 +7,7 @@ interface ILIProps {
 
 const LI = ({ children }: ILIProps): React.JSX.Element => {
     return (
-        <li className='p-2 w-full text-center'>{children}</li>
+        <li className='p-2 w-full text-center flex justify-center items-center'>{children}</li>
     )
 }
 
