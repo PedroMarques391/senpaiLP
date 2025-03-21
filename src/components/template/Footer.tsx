@@ -16,11 +16,11 @@ export const Footer = () => {
                     </div>
                     <div className="flex flex-col items-center sm:items-start">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-4">Links Rápidos</h3>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 w-full">
                             <LI>
                                 <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white transition duration-300"
+                                    className="text-gray-400 hover:text-white transition duration-300 w-full text-center"
                                     aria-label="Home"
                                 >
                                     Home
@@ -29,7 +29,7 @@ export const Footer = () => {
                             <LI>
                                 <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white transition duration-300"
+                                    className="text-gray-400 hover:text-white transition duration-300 w-full text-center"
                                     aria-label="Planos"
                                 >
                                     Planos
@@ -38,7 +38,7 @@ export const Footer = () => {
                             <LI>
                                 <Link
                                     href="#"
-                                    className="text-gray-400 hover:text-white transition duration-300"
+                                    className="text-gray-400 hover:text-white transition duration-300 w-full text-center "
                                     aria-label="Contato"
                                 >
                                     Contato
