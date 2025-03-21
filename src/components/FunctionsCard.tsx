@@ -31,7 +31,7 @@ const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunct
                     duration: duration,
                     ease: "easeInOut"
                 }}
-                className="mx-auto bg-black w-full text-center h-[400px]">
+                className="mx-auto bg-black w-full text-center h-[400px] rounded-lg">
 
 
                 <Image
@@ -40,7 +40,7 @@ const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunct
                     width={400}
                     height={400}
                     priority
-                    className="inline-block w-auto object-contain h-full"
+                    className="inline-block w-full object-contain h-full rounded-xl"
                 />
             </motion.div>
             <motion.h1
