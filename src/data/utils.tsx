@@ -148,7 +148,7 @@ export const functionsCardItens: IFunctionsCard[] = [
     {
         title: "Crie Stickers Mágicos! ✨",
         subtitle: "Envie sua imagem e transforme-a em um adesivo super kawaii! A Senpai faz isso rapidinho para você! 💕📸",
-        imagePath: "/images/generateSticker.jpg",
+        imagePath: "/images/sticker.png",
         message: "Olá Senpai, quero criar um sticker mágico!",
         duration: 1.0
     },

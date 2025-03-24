@@ -31,7 +31,7 @@ const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunct
                     duration: duration,
                     ease: "easeInOut"
                 }}
-                className="mx-auto bg-black w-full text-center h-[400px] rounded-lg">
+                className="mx-auto  w-full text-center  rounded-lg">
 
 
                 <Image

@@ -28,20 +28,20 @@ export const Footer = () => {
                             </LI>
                             <LI>
                                 <Link
-                                    href="#"
+                                    href="#func"
                                     className="text-gray-400 hover:text-white transition duration-300 w-full text-center"
-                                    aria-label="Planos"
+                                    aria-label="Funcionalidades"
                                 >
-                                    Planos
+                                    Services
                                 </Link>
                             </LI>
                             <LI>
                                 <Link
-                                    href="#"
+                                    href="#palns"
                                     className="text-gray-400 hover:text-white transition duration-300 w-full text-center "
-                                    aria-label="Contato"
+                                    aria-label="planos"
                                 >
-                                    Contato
+                                    Planos
                                 </Link>
                             </LI>
                         </ul>

@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <Layout hero>
-      <div className="w-full p-4 overflow-hidden">
+      <div className="w-full p-4 overflow-hidden ">
         <h1 className="py-10 text-2xl text-center lg:text-left md:text-3xl">
           O que a senpai pode fazer por você hoje?</h1>
       </div>

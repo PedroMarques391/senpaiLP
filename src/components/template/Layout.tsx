@@ -26,7 +26,7 @@ const Layout = ({ children, hero }: ILayoutProps): React.JSX.Element => {
             {loading ? <LoadingPage /> : (
                 <main className='w-full h-screen bg-white'>
                     {hero ? <Hero /> : <Header />}
-                    <section className='container mx-auto p-2 overflow-hidden'>
+                    <section className='container mx-auto p-2 overflow-hidden '>
                         {children}
                     </section>
                     <Footer />
