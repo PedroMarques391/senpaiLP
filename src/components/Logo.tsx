@@ -1,5 +1,5 @@
 import Image from "next/image"
-import senpai from "../../public/images/senpaiLogo.webp"
+import senpai from "../../public/images/IconSenpai.png"
 
 const Logo = (): React.JSX.Element => {
     return (
@@ -12,8 +12,9 @@ const Logo = (): React.JSX.Element => {
                 height={60}
                 className="bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 rounded-full"
             />
+            <p className="lg:text-xl font-semibold text-white">Senpai</p>
 
-        </div>
+        </div >
     )
 }
 
