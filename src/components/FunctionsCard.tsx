@@ -48,13 +48,15 @@ const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunct
                 initial={{ x: "-100%" }}
                 animate={{ x: isInView ? 0 : "-100%" }}
                 transition={{ type: "spring", stiffness: 60, damping: 25, duration: 2.0 }}
-                className="text-xl lg:text-2xl tracking-wider font-semibold">{title}</motion.h1>
+                className="text-2xl lg:text-2xl font-bold tracking-tight text-black">
+                {title}
+            </motion.h1>
             <motion.p
                 ref={ref}
                 initial={{ x: "-100%" }}
                 animate={{ x: isInView ? 0 : "-100%" }}
                 transition={{ type: "spring", stiffness: 50, damping: 25, duration: 2.0 }}
-                className="text-xl text-gray-400">{subtitle}</motion.p>
+                className="text-lg text-gray-400 grow">{subtitle}</motion.p>
             <Link
                 href={`https://wa.me/555497153068?text=${message}`}
                 target="_blank"
@@ -62,11 +64,12 @@ const FunctionsCard = ({ imagePath, title, subtitle, message, duration }: IFunct
                 aria-label="Link que leva para o número do bot."
             >
                 <Button
-                    variant="outline"
-                    className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all flex items-center gap-2"
+                    variant={"outline"}
+                    className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white focus:ring-2 focus:ring-green-300 focus:outline-none transition-all flex items-center gap-2 rounded-lg px-4 py-2 "
+                    aria-label="Fale com a Senpai no WhatsApp"
                 >
-                    <BsWhatsapp className="text-xl" />
-                    Fale com a Senpai
+                    <BsWhatsapp className="text-xl" aria-hidden="true" />
+                    <span className="text-lg font-medium">Fale com a Senpai</span>
                 </Button>
             </Link>
         </div>
