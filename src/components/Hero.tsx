@@ -33,7 +33,7 @@ const Hero = (): React.JSX.Element => {
                             animate={{ x: isInView ? 0 : "-100%" }}
                             transition={{ type: "spring", stiffness: 100, damping: 25, duration: 0.8 }}
                             className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
-                            Sua Assistente Virtual para Criar Figurinhas no WhatsApp
+                            Sua Nova Amiga Virtual para Figurinhas no WhatsApp
                         </motion.h1>
                         <motion.h2
                             ref={ref}
@@ -42,11 +42,16 @@ const Hero = (): React.JSX.Element => {
                             transition={{ type: "spring", stiffness: 50, damping: 20, duration: 2 }}
                             className="text-lg md:text-base lg:text-xl">
 
-                            A <span className="font-semibold">Senpai</span> é sua assistente virtual 24h pronta para deixar suas conversas mais divertidas! Com ela, você pode criar figurinhas personalizadas, transformar imagens em stickers, adicionar textos estilizados e muito mais. Tudo isso de forma rápida, fácil e gratuita. Sua bot de figurinhas no WhatsApp! 🎨✨
+                            A <span className="font-semibold">Senpai</span> está sempre disponível para deixar suas conversas mais divertidas e criativas! Com ela, você pode criar figurinhas personalizadas, transformar imagens, GIFs e vídeos em figurinhas animadas e muito mais. Tudo de forma rápida, fácil e gratuita. A sua bot de figurinhas para WhatsApp que torna cada conversa única!
                         </motion.h2>
-                        <Button className="bg-white text-teal-600 font-bold p-6 rounded-full shadow-md hover:bg-gray-100 transition w-fit">
-                            <BsWhatsapp size={20} />  Use Grátis no WhatsApp
-                        </Button>
+                        <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md hover:bg-[#1DA851] transition flex items-center gap-4 w-fit duration-300">
+                            <BsWhatsapp size={30} className="flex-shrink-0" />
+                            <div className="text-left">
+                                <p className="text-sm text-left">Começar no</p>
+                                <p className="text-lg font-semibold">WhatsApp</p>
+                            </div>
+                        </button>
+
                     </div>
                     <motion.div
                         ref={ref}
