@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import { Button } from './ui/button'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import { motion, useInView } from "motion/react"
+import Link from 'next/link'
 
 
 export interface IServicesInterface {
@@ -60,14 +61,16 @@ const Services = ({ service,
                         transition={{ type: 'tween', ease: 'easeInOut', duration: index }}
                         key={index} className="flex items-center gap-2">
                         <CheckCircle className="text-green-500 w-5 h-5" />
-                        {item}
+                        <p className=' flex-1'>{item}</p>
                     </motion.li>
                 ))}
             </ul>
 
-            <Button className="w-full text-lg py-6 rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition-all mt-7">
-                {textButton} <ArrowRight size={34} />
-            </Button>
+            <Link href={`ttps://wa.me/555497153068?text=Estou%20interessado%20no%20${service}`} target='_blank' rel="noreferrer" aria-label='Link de assinatura' >
+                <Button className="w-full text-lg py-6 rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition-all mt-7">
+                    {textButton} <ArrowRight size={34} />
+                </Button>
+            </Link>
         </div>
 
     )
