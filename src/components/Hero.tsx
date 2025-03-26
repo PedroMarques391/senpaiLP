@@ -8,6 +8,7 @@ import whatsDemo from "../../public/images/whats.webp"
 import { motion, useInView } from "motion/react";
 import { useRef } from "react"
 import Counter from "./Counter"
+import Link from "next/link"
 
 
 
@@ -50,7 +51,11 @@ const Hero = (): React.JSX.Element => {
                                 <p className="text-lg font-semibold">WhatsApp</p>
                             </div>
                         </button>
-
+                        <p className="text-white flex gap-2">
+                            Ao clicar no botão, você concorda com os
+                            <Link href="/terms" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline">Termos de Uso</Link> e
+                            <Link href="/privacy" target="_blank" prefetch className="text-[#25D366] font-semibold hover:underline">Política de Privacidade.</Link>
+                        </p>
                     </div>
                     <motion.div
                         ref={ref}
