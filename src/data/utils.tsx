@@ -26,14 +26,12 @@ export interface IFaq {
 
 export const services: IServicesInterface[] = [
     {
-        service: "Plano Gratuito",
+        service: "Plano Grátis",
         value: "0",
         description: "Experimente sem compromisso! Teste a Senpai Bot e descubra como ela pode facilitar sua vida.",
         characteristics: [
-            "Criação de até 5 figurinhas por dia",
-            "Figurinhas estáticas e animadas",
-            "Conversas ilimitadas com a Senpai Bot",
-            "Suporte básico via WhatsApp"
+            "Crie 1 figurinha diariamente",
+            "Pergunte algo e receba os 3 melhores resultados do Google"
         ],
         textButton: "Teste grátis"
     },
@@ -42,23 +40,27 @@ export const services: IServicesInterface[] = [
         value: "4.90",
         description: "Transforme suas ideias em figurinhas sem limites! Criação rápida, fácil e divertida.",
         characteristics: [
-            "Uso ilimitado, sem restrições",
-            "Criação de figurinhas animadas e estáticas",
-            "Suporte dedicado para dúvidas",
-            "Atualizações constantes com novos recursos"
+            "Criação ilimitada de figurinhas",
+            "Converse comigo, sou uma IA pronta para responder",
+            "Newsletter exclusiva",
+            "Atualizações para sempre ter a melhor experiência",
+            "Suporte dedicado para tirar todas as suas dúvidas"
         ],
         textButton: "Assine Agora"
     },
     {
-        service: "Plano Master",
+        service: "Plano Mestre",
         value: "9.90",
-        description: "Experiência completa! A melhor tecnologia para criar figurinhas personalizadas com inteligência artificial.",
+        description: "Experiência completa! A melhor escolha para criar figurinhas personalizadas com inteligência artificial.",
         characteristics: [
-            "Figurinhas ilimitadas (estáticas e animadas)",
-            "Criação com Inteligência Artificial 🤖",
-            "Biblioteca exclusiva de figurinhas",
-            "Renomeie suas figurinhas do seu jeito",
-            "Suporte prioritário e atendimento premium"
+            "Criação ilimitada de figurinhas ",
+            "Crie figurinhas com Inteligência Artificial",
+            "Biblioteca de figurinhas",
+            "Converse comigo, sou uma IA pronta para responder",
+            "Newsletter exclusiva",
+            "Atualizações para sempre ter a melhor experiência",
+            "Novidades exclusivas para assinantes Mestre",
+            "Suporte dedicado para tirar todas as suas dúvidas"
         ],
         textButton: "Assine Agora"
     }
