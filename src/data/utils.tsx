@@ -148,30 +148,44 @@ export const achievements: (Omit<IBenefit, 'icon'> & { duration: number, type: s
 
 export const functionsCardItens: IFunctionsCard[] = [
     {
-        title: "Crie Stickers Mágicos! ✨",
-        subtitle: "Envie sua imagem e transforme-a em um adesivo super kawaii! A Senpai faz isso rapidinho para você! 💕📸",
-        imagePath: "/images/sticker.png",
+        title: "Crie Figurinhas com a Senpai",
+        subtitle: "Transforme imagens, GIFs e vídeos em figurinhas únicas no WhatsApp! Rápido e fácil.",
+        imagePath: "/images/card/cardSticker.png",
         message: "Olá Senpai, quero criar um sticker mágico!",
         duration: 1.0
     },
     {
-        title: "Sticker AI no Jutsu! 🎨🤖",
-        subtitle: "Com o poder da inteligência artificial, transforme qualquer imagem em um sticker perfeito, digno de um anime! 🚀",
-        imagePath: "/images/IA.webp",
-        message: "Olá Senpai, quero usar o Sticker AI no Jutsu!",
+        title: "Crie Figurinhas Mágicas com AI",
+        subtitle: "Deixe sua criatividade brilhar! Com nossa inteligência artificial, você pode criar figurinhas incríveis de forma rápida e divertida.",
+        imagePath: "/images/card/cardGenerateSticker.png",
+        message: "Olá Senpai, quero criar uma figurinha incrível!",
         duration: 1.5
     },
     {
-        title: "Arte Digital com AI! 🖌️💡",
-        subtitle: "Deixe a IA criar imagens incríveis para você! Inspire-se e gere artes únicas para compartilhar com seus nakamas! 🌸✨",
-        imagePath: "/images/chatIA.jpg",
-        message: "Olá Senpai, quero criar arte digital com AI!",
+        title: "Vamos Conversar?",
+        subtitle: "Oi, oi! Sou a Senpai, sua amiga virtual! Vamos bater um papo? Adoro fazer novas amizades e estou sempre aqui para te ajudar ou só para conversar.",
+        imagePath: "/images/card/cardTalkWithMe.png",
+        message: "Olá Senpai, quero conversar com você!",
         duration: 2.0
     },
     {
-        title: "Lembretes Kawaii! 📝💖",
-        subtitle: "Precisa lembrar de algo importante? Deixe a Senpai anotar para você com mensagens fofinhas e cheias de amor! 🐰🎀",
-        imagePath: "/images/remember.webp",
+        title: "Bom Dia com a Senpai",
+        subtitle: "Receba mensagens fofas e animadas todo dia de manhâ para começar o dia com muita energia positiva e carinho.",
+        imagePath: "/images/card/cardGoodMorning.png",
+        message: "Olá Senpai, quero receber um bom dia!",
+        duration: 2.5
+    },
+    {
+        title: "Pesquisa Rápida com a Senpai",
+        subtitle: "Quer saber algo? Deixe a senpai fazer uma pesquisa no google para você! Sempre trazendo os melhores resultados.",
+        imagePath: "/images/card/cardSearch.png",
+        message: "Olá Senpai, quero criar um lembrete kawaii!",
+        duration: 2.5
+    },
+    {
+        title: "Biblíoteca de Figurinhas",
+        subtitle: "Explore uma coleção incrivél de figurinhas prontas para usar.",
+        imagePath: "/images/card/cardStickerLib.png",
         message: "Olá Senpai, quero criar um lembrete kawaii!",
         duration: 2.5
     }
