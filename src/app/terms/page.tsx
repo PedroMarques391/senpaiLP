@@ -1,7 +1,7 @@
 import { termsOfUse } from "@/data/utils";
 import Link from "next/link";
 
-const TermsOfUse = () => {
+const TermsOfUse = (): React.JSX.Element => {
     return (
         <main className="min-h-screen bg-gray-100 text-black px-6 md:px-16 py-12 flex items-center justify-center">
             <div className="max-w-4xl bg-white p-10 rounded-2xl shadow-lg border border-gray-300">
@@ -27,6 +27,15 @@ const TermsOfUse = () => {
                     <Link
                         href="mailto:contato@botdosenpai.com.br" target="_blank" rel="noreferrer" className="text-teal-500 font-semibold hover:text-teal-600 transition-colors" >
                         contato@botdosenpai.com.br
+                    </Link>
+                </div>
+
+                <div className="text-center mt-8">
+                    <Link prefetch
+                        href="/"
+                        aria-label="Botão para voltar à página inicial."
+                        className="inline-block bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-teal-600 transition-all">
+                        Voltar para Home
                     </Link>
                 </div>
             </div>
