@@ -15,7 +15,7 @@ const Info = (): React.JSX.Element => {
 
 
     return (
-        <section className="grid grid-cols-1 lg:grid-cols-2 py-24 place-items-center overflow-hidden">
+        <section className="grid grid-cols-1 lg:grid-cols-2 pt-12 pb-24 place-items-center overflow-hidden">
             <div className="space-y-6">
                 <motion.h1
                     ref={ref}
