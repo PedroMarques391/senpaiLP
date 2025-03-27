@@ -17,8 +17,8 @@ export const Faq = ({ faq }: IFaqProps): React.JSX.Element => {
             type="single" collapsible className="w-full max-w-4xl mx-auto mb-10">
             {faq.map((faqItem, key) => (
                 <AccordionItem value={`item-${key}`} key={key} >
-                    <AccordionTrigger className="text-xl md:text-2xl ">{faqItem.question}</AccordionTrigger>
-                    <AccordionContent className="text-lg md:text-xl ">
+                    <AccordionTrigger className="text-xl ">{faqItem.question}</AccordionTrigger>
+                    <AccordionContent className="text-lg ">
                         {faqItem.answer}
                     </AccordionContent>
                 </AccordionItem>
