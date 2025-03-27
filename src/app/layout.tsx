@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppinsSans = Poppins({
+  variable: "--font-poppis-sans",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "BotSenpai - Seu bot ideal",
@@ -29,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="!scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${poppinsSans.variable} antialiased `}
       >
         {children}
       </body>

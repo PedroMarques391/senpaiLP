@@ -5,6 +5,11 @@
 @plugin "tailwindcss-animate";
 
 
+html {
+  font-family: ---font-poppis-sans;
+}
+
+
 
 .speechBubble {
   background-color: black;
