@@ -18,7 +18,7 @@ const Counter = ({ number, type }: ICounterProps): React.JSX.Element => {
 
     return (
         <div className="flex justify-center items-center gap-2 font-sans">
-            <motion.p >
+            <motion.p>
                 {rounded}
             </motion.p>
             <p>{type}</p>
