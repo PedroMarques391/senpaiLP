@@ -60,11 +60,16 @@ const Hero = (): React.JSX.Element => {
                             </div>
                         </button>
 
-                        <p className="text-white flex gap-2">
-                            Ao clicar no botão, você concorda com os
-                            <Link href="/terms" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline">Termos de Uso</Link> e
-                            <Link href="/privacy" target="_blank" prefetch className="text-[#25D366] font-semibold hover:underline">Política de Privacidade.</Link>
+                        <p className="text-white flex items-center justify-center md:justify-normal text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap ">
+                            Ao clicar no botão, você concorda com os&nbsp;
+                            <Link href="/terms" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
+                                Termos de Uso
+                            </Link> &nbsp;e&nbsp;
+                            <Link href="/privacy" target="_blank" prefetch className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
+                                Política de Privacidade.
+                            </Link>
                         </p>
+
                     </div>
                     <motion.div
                         ref={imageRef}
@@ -83,7 +88,7 @@ const Hero = (): React.JSX.Element => {
 
 
                 </section>
-            </div>
+            </div >
             <div className=" bg-black/10  px-6 md:px-20 rounded-b-[60px] -mt-16">
                 <section className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-2 overflow-hidden " >
                     {achievements.map((achievement, index) => (
@@ -125,7 +130,7 @@ const Hero = (): React.JSX.Element => {
                 </section>
 
             </div>
-        </section>
+        </section >
 
     )
 }
