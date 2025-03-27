@@ -14,25 +14,31 @@ import Link from "next/link"
 
 const Hero = (): React.JSX.Element => {
     const ref = useRef(null)
-    const isInView = useInView(ref);
+    const isInView = useInView(ref)
+
+    const imageRef = useRef(null)
+    const isInImageInView = useInView(imageRef)
+
     const refCard = useRef(null)
     const isCardInView = useInView(refCard)
+
+    console.log("h1 and h2 in view: ", isInView)
     return (
         <section>
             <div
-                className="relative bg-[url('/images/1.webp')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20 px-6 md:px-20 rounded-b-[60px]">
+                className="relative bg-[url('/images/1.webp')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px]">
                 <Header />
                 <div className="absolute inset-0 bg-black/50 rounded-b-[60px]"></div>
                 <section
                     id="home"
-                    className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center mx-auto py-10 pt-32 overflow-hidden">
-                    <div className="flex flex-col gap-6 z-10 px-5 md:px-0 xl:px-5 py-16  lg:col-span-2 overflow-hidden">
+                    className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center mx-auto py-10 md:pt-32 overflow-hidden">
+                    <div className="flex flex-col gap-6 z-10 px-5 md:px-0 xl:px-5 py-16 lg:col-span-2 overflow-hidden w-full">
                         <motion.h1
                             ref={ref}
-                            initial={{ x: "-100%" }}
-                            animate={{ x: isInView ? 0 : "-100%" }}
+                            initial={{ x: "100%" }}
+                            animate={{ x: isInView ? 0 : "100%" }}
                             transition={{ type: "spring", stiffness: 100, damping: 25, duration: 0.8 }}
-                            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+                            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight ">
                             Sua Nova Amiga Virtual para Figurinhas no WhatsApp
                         </motion.h1>
                         <motion.h2
@@ -58,9 +64,9 @@ const Hero = (): React.JSX.Element => {
                         </p>
                     </div>
                     <motion.div
-                        ref={ref}
+                        ref={imageRef}
                         initial={{ x: "100%" }}
-                        animate={{ x: isInView ? 0 : "100%" }}
+                        animate={{ x: isInImageInView ? 0 : "100%" }}
                         transition={{ type: "spring", stiffness: 100, damping: 25, duration: 0.8 }}
                         className="w-full h-full flex justify-center items-center z-10 lg:col-span-1">
                         <Image
