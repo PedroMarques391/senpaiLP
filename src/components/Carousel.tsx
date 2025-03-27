@@ -25,7 +25,7 @@ const CarouselBenefit = () => {
                     {benefit.icon}
                   </div>
                   <CardContent className="flex flex-col items-center justify-center p-6">
-                    <p className="text-md text-gray-700 text-center leading-relaxed">
+                    <p className="text-md text-gray-700 text-center leading-relaxed font-sans">
                       {benefit.description}
                     </p>
                   </CardContent>
@@ -34,7 +34,7 @@ const CarouselBenefit = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-gray-900 text-white  transition-all " />
+        <CarouselPrevious className="bg-gray-900 text-white transition-all " />
         <CarouselNext className="bg-gray-900 text-white  transition-all " />
       </Carousel>
     </section>
