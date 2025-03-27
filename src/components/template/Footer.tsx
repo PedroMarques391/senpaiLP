@@ -15,7 +15,7 @@ export const Footer = () => {
                     </div>
                     <div className="flex flex-col items-center sm:items-start">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Links Rápidos</h1>
-                        <ul className="space-y-3 w-full">
+                        <ul className="space-y-1 w-full">
                             <LI href="#" alt="scrool para o inicio do site.">
                                 Home
                             </LI>
@@ -35,7 +35,7 @@ export const Footer = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center gap-y-2">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 w-full">Siga-nos</h1>
-                        <ul className="w-full mx-auto space-y-3">
+                        <ul className="w-full mx-auto space-y-1">
                             <LI
                                 alt="facebook"
                                 href="https://www.facebook.com"
