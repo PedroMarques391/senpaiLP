@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     title: "BotSenpai - Seu bot ideal",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
     siteName: "BotSenpai",
+    url: "https://botdosenpai.com.br/",
     type: "website",
   },
 };
