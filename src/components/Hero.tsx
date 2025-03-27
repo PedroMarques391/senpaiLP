@@ -49,16 +49,21 @@ const Hero = (): React.JSX.Element => {
 
                             A <span className="font-semibold">Senpai</span> está sempre disponível para deixar suas conversas mais divertidas e criativas! Com ela, você pode criar figurinhas personalizadas, transformar imagens, GIFs e vídeos em figurinhas animadas e muito mais. Tudo de forma rápida, fácil e gratuita. A sua bot de figurinhas para WhatsApp que torna cada conversa única!
                         </motion.h2>
-                        <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95">
+                        <Link
+                            href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95">
+                                <BsWhatsapp aria-label="Icone do WhatsApp" className="flex-shrink-0 w-5 h-5 md:w7 md:h-7" />
 
-                            <BsWhatsapp aria-label="Icone do WhatsApp" className="flex-shrink-0 w-5 h-5 md:w7 md:h-7" />
+                                <div className="text-left">
+                                    <p className="text-xs">Começar no</p>
+                                    <p className="text-base font-semibolda lg:text-[17px]">WhatsApp</p>
+                                </div>
+                            </button>
 
-                            <div className="text-left">
-                                <p className="text-xs">Começar no</p>
-                                <p className="text-base font-semibolda lg:text-[17px]">WhatsApp</p>
-                            </div>
-                        </button>
-
+                        </Link>
                         <p className="text-white flex items-center justify-center md:justify-normal text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap ">
                             Ao clicar no botão, você concorda com os&nbsp;
                             <Link href="/termo-de-uso" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
