@@ -1,4 +1,3 @@
-import Link from "next/link";
 import LI from "@/components/ui/LI"
 import Logo from "../Logo";
 
@@ -17,70 +16,46 @@ export const Footer = () => {
                     <div className="flex flex-col items-center sm:items-start">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-4">Links Rápidos</h3>
                         <ul className="space-y-3 w-full">
-                            <LI>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-white transition duration-300 w-full text-center"
-                                    aria-label="Home"
-                                >
-                                    Home
-                                </Link>
+                            <LI href="#" alt="scrool para o inicio do site.">
+                                Home
                             </LI>
-                            <LI>
-                                <Link
-                                    href="#func"
-                                    className="text-gray-400 hover:text-white transition duration-300 w-full text-center"
-                                    aria-label="Funcionalidades"
-                                >
-                                    Services
-                                </Link>
+                            <LI href="#func" alt="Scroll direto para os cards de serviços.">
+                                Services
                             </LI>
-                            <LI>
-                                <Link
-                                    href="#palns"
-                                    className="text-gray-400 hover:text-white transition duration-300 w-full text-center "
-                                    aria-label="planos"
-                                >
-                                    Planos
-                                </Link>
+                            <LI href="#plans" alt="Scroll que leva para os planos disponveis.">
+                                Planos
+                            </LI>
+                            <LI href="/terms" target="_blank" alt="">
+                                Termos de Uso
+                            </LI>
+                            <LI href="/privacy" alt="Link para a política de privacidade do bot.">
+                                Política de Privacidade
                             </LI>
                         </ul>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-y-2">
                         <h3 className="text-xl sm:text-2xl font-semibold mb-4">Siga-nos</h3>
                         <ul className="w-full mx-auto space-y-3">
-                            <LI>
-                                <Link
-                                    href="https://www.facebook.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-gray-400 hover:text-white transition duration-300"
-                                    aria-label="Facebook"
-                                >
-                                    Facebook
-                                </Link>
+                            <LI
+                                alt="facebook"
+                                href="https://www.facebook.com"
+                            >
+                                facebook
                             </LI>
-                            <LI>
-                                <Link
-                                    href="https://www.instagram.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-gray-400 hover:text-white transition duration-300"
-                                    aria-label="Instagram"
-                                >
-                                    Instagram
-                                </Link>
+                            <LI
+                                href="https://www.instagram.com"
+                                alt="Instragram"
+                            >
+
+                                Instagram
+
                             </LI>
-                            <LI>
-                                <Link
-                                    href="https://www.twitter.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-gray-400 hover:text-white transition duration-300"
-                                    aria-label="Twitter"
-                                >
-                                    Twitter
-                                </Link>
+                            <LI
+                                href="https://www.twitter.com"
+                                alt="Twitter"
+                            >
+
+                                Twitter
                             </LI>
                         </ul>
                     </div>
@@ -89,7 +64,7 @@ export const Footer = () => {
                     <p className="text-sm text-gray-500">© 2025 Todos os direitos reservados</p>
                 </div>
             </div>
-        </footer>
+        </footer >
 
     );
 };
