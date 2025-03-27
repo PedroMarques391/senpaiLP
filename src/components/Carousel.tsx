@@ -30,11 +30,12 @@ const CarouselBenefit = () => {
         opts={{
           loop: true,
           startIndex: currentIndex
+
         }}
 
 
         className="w-full max-w-sm md:max-w-xl lg:max-w-4xl xl:max-w-5xl mx-auto select-none">
-        <CarouselContent className="-ml-1 md:-ml-5 flex gap-2">
+        <CarouselContent className="-ml-1 md:-ml-5 flex gap-2 transition-all duration-500 ease-in-out transform">
           {benefits.map((benefit, index) => (
             <CarouselItem key={index} className="pl-1 md:pl-0 lg:pl-6 md:basis-1/2 lg:basis-1/3">
               <div className="p-3">
