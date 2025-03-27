@@ -23,13 +23,13 @@ const Info = (): React.JSX.Element => {
                     animate={{ opacity: isInView ? 1 : 0 }}
                     transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
                     className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center md:text-left">Mais diversão e praticidade no seu WhatsApp</motion.h1>
-                <motion.h2
+                <motion.p
                     ref={ref}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: isInView ? 1 : 0 }}
                     transition={{ type: "tween", duration: 2.0, ease: "easeInOut" }}
 
-                    className="text-lg md:text-xl lg:text-2xl text-center md:text-left">A Senpai está sempre pronta para deixar suas conversas mais interativas! Transforme imagens em stickers, adicione textos estilosos e personalize suas figurinhas de forma rápida, fácil e gratuita.</motion.h2>
+                    className="text-lg md:text-xl text-center md:text-left">A Senpai está sempre pronta para deixar suas conversas mais interativas! Transforme imagens em stickers, adicione textos estilosos e personalize suas figurinhas de forma rápida, fácil e gratuita.</motion.p>
 
                 <Button
                     asChild
