@@ -19,8 +19,8 @@ const Hero = (): React.JSX.Element => {
     const imageRef = useRef(null)
     const isInImageInView = useInView(imageRef)
 
-    const refCard = useRef(null)
-    const isCardInView = useInView(refCard)
+    const refCard = useRef(null);
+    const isCardInView = useInView(refCard);
 
     return (
         <section>
@@ -88,8 +88,10 @@ const Hero = (): React.JSX.Element => {
 
                 </section>
             </div >
-            <div className=" bg-black/10  px-6 md:px-20 rounded-b-[60px] -mt-16">
-                <section className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-2 overflow-hidden " >
+            <div className=" bg-black/10 px-6 md:px-20 rounded-b-[60px] -mt-16" >
+                <section
+                    ref={refCard}
+                    className="grid grid-cols-1 md:grid-cols-3 w-4/5 md:w-full max-w-7xl  mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-2 overflow-hidden" >
                     {achievements.map((achievement, index) => (
                         <motion.div
                             key={index}
