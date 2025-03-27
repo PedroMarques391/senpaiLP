@@ -14,7 +14,6 @@ const Counter = ({ number, type }: ICounterProps): React.JSX.Element => {
     const rounded = useTransform(() => Math.round(count.get()))
 
     useEffect(() => {
-        console.log(isInView)
         if (isInView) {
             const controls = animate(count, number, { duration: 5 })
             return () => controls.stop()

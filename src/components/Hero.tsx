@@ -22,7 +22,6 @@ const Hero = (): React.JSX.Element => {
     const refCard = useRef(null)
     const isCardInView = useInView(refCard)
 
-    console.log("h1 and h2 in view: ", isInView)
     return (
         <section>
             <div
