@@ -8,13 +8,13 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 mx-auto place-items-center">
                     <div className="flex flex-col justify-center items-center sm:items-start">
                         <Logo />
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4">Sobre Nós</h3>
+                        <h1 className="text-xl sm:text-2xl font-semibold mb-4">Sobre Nós</h1>
                         <p className="text-center sm:text-left text-gray-400 text-sm sm:text-base">
                             Informações sobre nossa empresa e missão. Comprometidos com qualidade e inovação.
                         </p>
                     </div>
                     <div className="flex flex-col items-center sm:items-start">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4">Links Rápidos</h3>
+                        <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Links Rápidos</h1>
                         <ul className="space-y-3 w-full">
                             <LI href="#" alt="scrool para o inicio do site.">
                                 Home
@@ -34,7 +34,7 @@ export const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-y-2">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4">Siga-nos</h3>
+                        <h1 className="text-xl sm:text-2xl font-semibold mb-4 w-full">Siga-nos</h1>
                         <ul className="w-full mx-auto space-y-3">
                             <LI
                                 alt="facebook"
