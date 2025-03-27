@@ -32,7 +32,7 @@ const Hero = (): React.JSX.Element => {
                 <section
                     id="home"
                     className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center mx-auto py-10 md:pt-32 overflow-hidden">
-                    <div className="flex flex-col gap-6 z-10 px-5 md:px-0 xl:px-5 py-16 lg:col-span-2 overflow-hidden w-full">
+                    <div className="flex flex-col gap-6 z-10 px-5 md:px-0 xl:px-5 pt-16 lg:col-span-2 overflow-hidden w-full">
                         <motion.h1
                             ref={ref}
                             initial={{ x: "100%" }}
