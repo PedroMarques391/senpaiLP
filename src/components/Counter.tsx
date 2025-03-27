@@ -4,9 +4,10 @@ import { useEffect } from "react"
 
 interface ICounterProps {
     number: number
+    type: string
 }
 
-const Counter = ({ number }: ICounterProps): React.JSX.Element => {
+const Counter = ({ number, type }: ICounterProps): React.JSX.Element => {
     const count = useMotionValue(0)
     const rounded = useTransform(() => Math.round(count.get()))
 
@@ -16,9 +17,12 @@ const Counter = ({ number }: ICounterProps): React.JSX.Element => {
     }, [])
 
     return (
-        <motion.pre>
-            {rounded}
-        </motion.pre>
+        <div className="flex justify-center items-center gap-2 font-sans">
+            <motion.p >
+                {rounded}
+            </motion.p>
+            <p>{type}</p>
+        </div>
     )
 }
 
