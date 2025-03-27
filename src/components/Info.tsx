@@ -70,9 +70,7 @@ const Info = (): React.JSX.Element => {
                         Ei! Quer saber mais sobre mim?
                     </SpeechBubble>
 
-                    <SpeechBubble side="left" style="bottom-14 -right-20  -sm:right-20 lg:bottom-10 lg:right-0 w-40 sm:w-52 text-xs sm:text-sm lg:text-lg lg:w-60">
-                        Tenho muitas surpresas para você! 🎉
-                    </SpeechBubble>
+
                 </div>
             </div>
         </section >
