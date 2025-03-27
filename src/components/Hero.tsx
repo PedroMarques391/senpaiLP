@@ -76,7 +76,7 @@ const Hero = (): React.JSX.Element => {
                 </section>
             </div>
             <div className=" bg-black/10  px-6 md:px-20 rounded-b-[60px] -mt-16">
-                <section className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-2 overflow-hidden">
+                <section className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-2 overflow-hidden " >
                     {achievements.map((achievement, index) => (
                         <motion.div
                             key={index}
@@ -93,9 +93,8 @@ const Hero = (): React.JSX.Element => {
                                         initial={{ y: "-100%" }}
                                         animate={{ y: isCardInView ? 0 : "100%" }}
                                         transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration - 0.5 }}
-                                        className="flex items-center justify-center gap-x-2">
-                                        <Counter number={achievement.title as number} />
-                                        <span>{achievement.type}</span>
+                                        className="flex items-center justify-center gap-x-2 p-2">
+                                        <Counter number={achievement.title as number} type={achievement.type} />
                                     </motion.h1>
                                 </CardTitle>
                             </CardHeader>
