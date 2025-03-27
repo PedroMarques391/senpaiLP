@@ -50,13 +50,16 @@ const Hero = (): React.JSX.Element => {
 
                             A <span className="font-semibold">Senpai</span> está sempre disponível para deixar suas conversas mais divertidas e criativas! Com ela, você pode criar figurinhas personalizadas, transformar imagens, GIFs e vídeos em figurinhas animadas e muito mais. Tudo de forma rápida, fácil e gratuita. A sua bot de figurinhas para WhatsApp que torna cada conversa única!
                         </motion.h2>
-                        <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md hover:bg-[#1DA851] transition flex items-center gap-4 w-fit duration-300">
-                            <BsWhatsapp size={30} className="flex-shrink-0" />
+                        <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95">
+
+                            <BsWhatsapp aria-label="Icone do WhatsApp" className="flex-shrink-0 w-5 h-5 md:w7 md:h-7" />
+
                             <div className="text-left">
-                                <p className="text-sm text-left">Começar no</p>
-                                <p className="text-lg font-semibold">WhatsApp</p>
+                                <p className="text-xs">Começar no</p>
+                                <p className="text-base font-semibolda lg:text-[17px]">WhatsApp</p>
                             </div>
                         </button>
+
                         <p className="text-white flex gap-2">
                             Ao clicar no botão, você concorda com os
                             <Link href="/terms" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline">Termos de Uso</Link> e
