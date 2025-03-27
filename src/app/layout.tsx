@@ -17,7 +17,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "BotSenpai - Seu bot ideal",
   description: "Bot de figurinha ideal para transformar suas conversas no WhatsApp em um verdadeiro festival de figurinhas!",
-  authors: [{ name: "Pedro Marques Developer" }], // `creator` pode ser substituído por `authors`
+  authors: [{ name: "Pedro Marques Developer" }],
   openGraph: {
     title: "BotSenpai - Seu bot ideal",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
