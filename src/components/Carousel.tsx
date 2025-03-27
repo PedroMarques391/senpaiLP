@@ -1,3 +1,5 @@
+"use client"
+
 import { CardContent, CardTitle } from "@/components/ui/card"
 import {
   Carousel,
@@ -7,12 +9,31 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { benefits } from "@/data/utils"
+import { useEffect, useState } from "react"
 
 const CarouselBenefit = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0)
+  const totalSliders: number = benefits.length
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % totalSliders)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section className="w-full max-w-6xl mx-auto my-10">
       <h1 className="text-center text-4xl md:text-left md:text-5xl font-semibold text-black md:pb-6">Quais são os Beneficios?</h1>
-      <Carousel className="w-full max-w-sm md:max-w-xl lg:max-w-4xl xl:max-w-5xl mx-auto select-none">
+      <Carousel
+        opts={{
+          loop: true,
+          startIndex: currentIndex
+        }}
+
+
+        className="w-full max-w-sm md:max-w-xl lg:max-w-4xl xl:max-w-5xl mx-auto select-none">
         <CarouselContent className="-ml-1 md:-ml-5 flex gap-2">
           {benefits.map((benefit, index) => (
             <CarouselItem key={index} className="pl-1 md:pl-0 lg:pl-6 md:basis-1/2 lg:basis-1/3">
