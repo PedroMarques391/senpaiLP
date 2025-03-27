@@ -61,10 +61,10 @@ const Hero = (): React.JSX.Element => {
 
                         <p className="text-white flex items-center justify-center md:justify-normal text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap ">
                             Ao clicar no botão, você concorda com os&nbsp;
-                            <Link href="/terms" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
+                            <Link href="/termo-de-uso" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
                                 Termos de Uso
                             </Link> &nbsp;e&nbsp;
-                            <Link href="/privacy" target="_blank" prefetch className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
+                            <Link href="/privacidade" target="_blank" prefetch className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
                                 Política de Privacidade.
                             </Link>
                         </p>

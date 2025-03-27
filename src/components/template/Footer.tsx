@@ -25,10 +25,10 @@ export const Footer = () => {
                             <LI href="#plans" alt="Scroll que leva para os planos disponveis.">
                                 Planos
                             </LI>
-                            <LI href="/terms" target="_blank" alt="">
+                            <LI href="/termo-de-uso" target="_blank" alt="">
                                 Termos de Uso
                             </LI>
-                            <LI href="/privacy" alt="Link para a política de privacidade do bot.">
+                            <LI href="/privacidade" alt="Link para a política de privacidade do bot.">
                                 Política de Privacidade
                             </LI>
                         </ul>
