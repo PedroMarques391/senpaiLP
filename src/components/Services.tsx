@@ -19,16 +19,18 @@ const Services = ({ service,
     description,
     characteristics,
     textButton }: IServicesInterface): React.JSX.Element => {
+
     const ref = useRef(null)
     const isInView = useInView(ref)
 
+    const listRef = useRef(null)
+    const isInListView = useInView(listRef)
+
     return (
-        <div className="max-w-[400px] bg-white rounded-2xl shadow-lg p-6 border border-gray-300 flex flex-col h-full">
-            <div className=" h-40">
+        <div className="max-w-[400px] bg-white rounded-2xl shadow-lg p-6 border border-gray-300 flex flex-col h-auto md:h-full">
+            <div className="">
                 <motion.h1
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', stiffness: 100 }}
+
                     className="text-lg font-bold text-gray-900 uppercase"
                 >
                     {service}
@@ -46,7 +48,7 @@ const Services = ({ service,
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
                     transition={{ type: 'spring', stiffness: 100, delay: 0.4 }}
-                    className="text-gray-600 mt-2"
+                    className="text-gray-600  md:text-base py-2"
                 >
                     {description}
                 </motion.p>
@@ -55,13 +57,14 @@ const Services = ({ service,
             <ul className="mt-4 space-y-3 text-gray-700 flex-grow">
                 {characteristics.map((item, index) => (
                     <motion.li
-                        ref={ref}
+                        ref={listRef}
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: isInView ? 1 : 0 }}
+                        animate={{ opacity: isInListView ? 1 : 0 }}
                         transition={{ type: 'tween', ease: 'easeInOut', duration: index }}
-                        key={index} className="flex items-center gap-2">
+                        key={index}
+                        className="flex items-center gap-2">
                         <CheckCircle className="text-green-500 w-5 h-5" />
-                        <p className=' flex-1'>{item}</p>
+                        <p className='flex-1 text-xs md:text-base'>{item}</p>
                     </motion.li>
                 ))}
             </ul>
