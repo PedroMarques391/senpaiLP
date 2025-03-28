@@ -69,7 +69,7 @@ const Services = ({ service,
                 ))}
             </ul>
 
-            <Link href={`ttps://wa.me/555497153068?text=Estou%20interessado%20no%20${service}`}
+            <Link href={`https://wa.me/555497153068?text=Estou%20interessado%20no%20${service}`}
                 target='_blank'
                 rel="noreferrer"
                 aria-label='Link de assinatura' >

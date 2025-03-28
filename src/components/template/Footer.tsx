@@ -28,7 +28,7 @@ export const Footer = () => {
                             <LI href="/termo-de-uso" target="_blank" alt="">
                                 Termos de Uso
                             </LI>
-                            <LI href="/privacidade" alt="Link para a política de privacidade do bot.">
+                            <LI href="/privacidade" target="_blank" alt="Link para a política de privacidade do bot.">
                                 Política de Privacidade
                             </LI>
                         </ul>
@@ -37,16 +37,19 @@ export const Footer = () => {
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 w-full">Siga-nos</h1>
                         <ul className="w-full mx-auto space-y-1">
                             <LI
+                                target="_blank"
                                 alt="Comunidade no whatsapp"
                                 href="https://www.whatsapp.com/channel/0029VatyGWjFcow5imozTp2r">
                                 Comunidade
                             </LI>
                             <LI
+                                target="_blank"
                                 href="https://www.instagram.com/@botdosenpai"
                                 alt="Instagram">
                                 Instagram
                             </LI>
                             <LI
+                                target="_blank"
                                 href="https://www.twitter.com/@botdosenpai"
                                 alt="Twitter">
                                 Twitter
