@@ -1,8 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { NavItem } from "./NavItem";
 import Link from "next/link";
+import { IMenuProps } from "./MenuDesktop";
 
-interface IMobileProps {
+interface IMobileProps extends IMenuProps {
     isOpen: boolean;
     setIsOpen: (value: boolean) => void;
 }
@@ -25,7 +26,7 @@ const variants = {
     exit: { x: 200, opacity: 0, transition: { duration: 0.5 } },
 };
 
-const Mobile = ({ isOpen, setIsOpen }: IMobileProps): React.JSX.Element => {
+const Mobile = ({ isOpen, setIsOpen, isHomePage }: IMobileProps): React.JSX.Element => {
     return (
         <AnimatePresence >
             {isOpen && (
@@ -41,18 +42,20 @@ const Mobile = ({ isOpen, setIsOpen }: IMobileProps): React.JSX.Element => {
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
+
+
                 >
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href="#">Inicio</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#home" : "/#home"}>Inicio</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href="#func">Funcionalidades</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#func" : "/#func"}>Funcionalidades</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href="#plans">Planos</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#plans" : "/#plans"}>Planos</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href="#/about">Sobre Nós</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href="/about">Sobre Nós</NavItem>
                     </motion.div>
                     <div>
                         <Link
