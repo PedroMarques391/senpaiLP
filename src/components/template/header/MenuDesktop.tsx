@@ -8,7 +8,7 @@ const MenuDesktop = (): React.JSX.Element => {
             <NavItem href='#home' >Inicio</NavItem>
             <NavItem href='#func' >Funcionalidades</NavItem>
             <NavItem href='#plans' >Planos</NavItem>
-            <NavItem href='#about' >Sobre Nós</NavItem>
+            <NavItem href='/about' >Sobre Nós</NavItem>
             <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                 target="_blank"
