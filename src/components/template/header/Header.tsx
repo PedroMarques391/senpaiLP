@@ -3,11 +3,15 @@ import Logo from "@/components/Logo"
 import MenuDesktop from "./MenuDesktop"
 import { useEffect, useState } from "react";
 import Mobile from "./Mobile";
+import { usePathname } from "next/navigation";
 
 
-type IHeaderProps = { background: string }
+type IHeaderProps = { background?: string }
 
 export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
+    const path = usePathname()
+    const isHomePage: boolean = path === "/"
+
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -41,9 +45,10 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
                 <Mobile
                     isOpen={isOpen}
                     setIsOpen={setIsOpen}
+                    isHomePage={isHomePage}
 
                 />
-                <MenuDesktop />
+                <MenuDesktop isHomePage={isHomePage} />
             </nav>
         </header>
     )
