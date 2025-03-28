@@ -37,9 +37,9 @@ export const Footer = () => {
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 w-full">Siga-nos</h1>
                         <ul className="w-full mx-auto space-y-1">
                             <LI
-                                alt="facebook"
-                                href="https://www.facebook.com">
-                                WhatsApp
+                                alt="Comunidade no whatsapp"
+                                href="https://www.whatsapp.com/channel/0029VatyGWjFcow5imozTp2r">
+                                Comunidade
                             </LI>
                             <LI
                                 href="https://www.instagram.com/@botdosenpai"
