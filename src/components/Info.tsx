@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
-import senpai from "../../public/images/senpai/faceSenpai.webp"
+import senpai from "../../public/images/senpai/senpai.webp"
 import Image from "next/image";
 import SpeechBubble from "@/components/ui/SpeechBubble";
 import { motion, useInView } from "motion/react"
