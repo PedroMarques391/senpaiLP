@@ -34,6 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="!scroll-smooth">
+      <head>
+        <link rel="preload" href="/images/senpai/hero.webp" as="image" />
+
+      </head>
       <body className={`${lora.variable} ${playFair.variable} antialiased`}>
         {children}
       </body>
