@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { Playfair_Display, Lora } from "next/font/google";
 import "./../globals.css";
+
+const playFair = Playfair_Display({
+  variable: "--font-Playfair_Display",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 
 
 export const metadata: Metadata = {
@@ -17,9 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="!scroll-smooth">
-      <body
-        className={`antialiased `}
-      >
+
+      <body className={`${lora.variable} ${playFair.variable} antialiased`}>
         {children}
       </body>
     </html>
