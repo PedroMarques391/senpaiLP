@@ -17,7 +17,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
     return (
         <div
             id="func"
-            className="bg-white shadow-lg w-full flex flex-col gap-4 rounded-2xl justify-start overflow-hidden">
+            className="bg-white shadow-lg w-full flex flex-col  rounded-2xl justify-start overflow-hidden">
             <motion.div
                 ref={ref}
                 initial={{ x: "110%" }}
@@ -45,7 +45,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                     initial={{ x: "-100%" }}
                     animate={{ x: isInView ? 0 : "-100%" }}
                     transition={{ type: "spring", stiffness: 60, damping: 25, duration: 2.0 }}
-                    className="text-2xl lg:text-2xl font-bold tracking-tight text-black">
+                    className="text-base md:text-xl xl:text-2xl font-bold tracking-tight text-black h-5 md:h-10  flex items-center">
                     {title}
                 </motion.h1>
                 <motion.p
@@ -53,7 +53,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                     initial={{ x: "-100%" }}
                     animate={{ x: isInView ? 0 : "-100%" }}
                     transition={{ type: "spring", stiffness: 50, damping: 25, duration: 2.0 }}
-                    className="text-lg text-gray-400 h-full">
+                    className="text-lg text-gray-400 h-full ">
                     {subtitle}
                 </motion.p>
             </div>
