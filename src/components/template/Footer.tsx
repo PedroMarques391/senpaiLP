@@ -1,7 +1,12 @@
 import LI from "@/components/ui/LI"
 import Logo from "../Logo";
+import { usePathname } from "next/navigation";
 
 export const Footer = () => {
+    const path = usePathname()
+    const isHomePage = path === "/"
+
+
     return (
         <footer className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
@@ -16,13 +21,13 @@ export const Footer = () => {
                     <div className="flex flex-col items-center sm:items-start">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Links Rápidos</h1>
                         <ul className="space-y-1 w-full">
-                            <LI href="#" alt="scrool para o inicio do site.">
+                            <LI href={isHomePage ? "#home" : "/#home"} alt="scrool para o inicio do site.">
                                 Home
                             </LI>
-                            <LI href="#func" alt="Scroll direto para os cards de serviços.">
+                            <LI href={isHomePage ? "#func" : "/#func"} alt="Scroll direto para os cards de serviços.">
                                 Services
                             </LI>
-                            <LI href="#plans" alt="Scroll que leva para os planos disponveis.">
+                            <LI href={isHomePage ? "#plans" : "/#plans"} alt="Scroll que leva para os planos disponveis.">
                                 Planos
                             </LI>
                             <LI href="/termo-de-uso" target="_blank" alt="">
