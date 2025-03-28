@@ -9,9 +9,11 @@ import { LoadingPage } from '../LoadingPage'
 interface ILayoutProps {
     children: React.ReactNode
     hero: boolean
+    backgroundColor?: string
+    backgroundHeader?: string
 }
 
-const Layout = ({ children, hero }: ILayoutProps): React.JSX.Element => {
+const Layout = ({ children, hero, backgroundColor = "bg-white", backgroundHeader = "bg-transparent" }: ILayoutProps): React.JSX.Element => {
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
@@ -24,8 +26,8 @@ const Layout = ({ children, hero }: ILayoutProps): React.JSX.Element => {
     return (
         <>
             {loading ? <LoadingPage /> : (
-                <main className='w-full h-screen bg-white'>
-                    {hero ? <Hero /> : <Header />}
+                <main className={`w-full h-screen ${backgroundColor}`}>
+                    {hero ? <Hero /> : <Header background={backgroundHeader} />}
                     <section className='container mx-auto p-2 overflow-hidden '>
                         {children}
                     </section>
