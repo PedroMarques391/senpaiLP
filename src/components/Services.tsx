@@ -69,8 +69,11 @@ const Services = ({ service,
                 ))}
             </ul>
 
-            <Link href={`ttps://wa.me/555497153068?text=Estou%20interessado%20no%20${service}`} target='_blank' rel="noreferrer" aria-label='Link de assinatura' >
-                <Button className="w-full text-lg py-6 rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition-all mt-7">
+            <Link href={`ttps://wa.me/555497153068?text=Estou%20interessado%20no%20${service}`}
+                target='_blank'
+                rel="noreferrer"
+                aria-label='Link de assinatura' >
+                <Button className="w-full py-6 text-base md:text-lg rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition-all mt-7 font-semibold">
                     {textButton} <ArrowRight size={34} />
                 </Button>
             </Link>
