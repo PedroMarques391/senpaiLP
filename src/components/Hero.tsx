@@ -93,10 +93,10 @@ const Hero = (): React.JSX.Element => {
 
                 </section>
             </div >
-            <div className=" bg-black/10 px-6 md:px-20 rounded-b-[60px] -mt-16" >
+            <div className=" bg-black/10 px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
                 <section
                     ref={refCard}
-                    className="grid grid-cols-1 md:grid-cols-3 w-4/5 md:w-full max-w-7xl  mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-2 overflow-hidden" >
+                    className="grid grid-cols-1 md:grid-cols-3  md:w-full max-w-7xl  mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-4 overflow-hidden" >
                     {achievements.map((achievement, index) => (
                         <motion.div
                             key={index}
@@ -125,7 +125,7 @@ const Hero = (): React.JSX.Element => {
                                     initial={{ y: "-100%" }}
                                     animate={{ y: isCardInView ? 0 : "100%" }}
                                     transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration + 0.5 }}
-                                    className="text-xl sm:text-base md:text-lg lg:text-lg font-medium opacity-70">
+                                    className="text-xl md:text-base lg:text-lg font-medium opacity-70">
                                     {achievement.description}
                                 </motion.p>
                             </CardContent>
