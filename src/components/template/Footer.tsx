@@ -38,23 +38,17 @@ export const Footer = () => {
                         <ul className="w-full mx-auto space-y-1">
                             <LI
                                 alt="facebook"
-                                href="https://www.facebook.com"
-                            >
-                                facebook
+                                href="https://www.facebook.com">
+                                WhatsApp
                             </LI>
                             <LI
-                                href="https://www.instagram.com"
-                                alt="Instragram"
-                            >
-
+                                href="https://www.instagram.com/@botdosenpai"
+                                alt="Instagram">
                                 Instagram
-
                             </LI>
                             <LI
-                                href="https://www.twitter.com"
-                                alt="Twitter"
-                            >
-
+                                href="https://www.twitter.com/@botdosenpai"
+                                alt="Twitter">
                                 Twitter
                             </LI>
                         </ul>
