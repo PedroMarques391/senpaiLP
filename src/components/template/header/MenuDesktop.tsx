@@ -1,13 +1,19 @@
+"use client"
 import React from 'react'
 import { NavItem } from './NavItem'
 import Link from 'next/link'
 
-const MenuDesktop = (): React.JSX.Element => {
+export interface IMenuProps {
+    isHomePage: boolean
+}
+
+const MenuDesktop = ({ isHomePage }: IMenuProps): React.JSX.Element => {
+
     return (
         <ul className="hidden md:flex justify-center items-center gap-x-3 ">
-            <NavItem href='#home' >Inicio</NavItem>
-            <NavItem href='#func' >Funcionalidades</NavItem>
-            <NavItem href='#plans' >Planos</NavItem>
+            <NavItem href={isHomePage ? "#home" : "/#home"} >Inicio</NavItem>
+            <NavItem href={isHomePage ? "#func" : "/#func"} >Funcionalidades</NavItem>
+            <NavItem href={isHomePage ? "#plans" : "/#plans"}>Planos</NavItem>
             <NavItem href='/about' >Sobre Nós</NavItem>
             <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
