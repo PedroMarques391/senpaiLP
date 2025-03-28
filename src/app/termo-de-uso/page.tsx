@@ -9,7 +9,7 @@ const TermsOfUse = (): React.JSX.Element => {
             backgroundColor="bg-gray-100"
             backgroundHeader="bg-black"
         >
-            <main className="  text-black px-6 md:px-16 flex items-center justify-center pt-30">
+            <main className="min-h-screen text-black px-6 md:px-16 flex items-center justify-center pt-30">
                 <div className="max-w-4xl bg-white p-10 rounded-2xl shadow-lg border border-gray-300">
                     <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">
                         Termos de Uso do Bot do Senpai

@@ -26,9 +26,9 @@ const Layout = ({ children, hero, backgroundColor = "bg-white", backgroundHeader
     return (
         <>
             {loading ? <LoadingPage /> : (
-                <main className={`w-full h-screen ${backgroundColor}`}>
+                <main className={`w-full min-h-screen ${backgroundColor}`}>
                     {hero ? <Hero /> : <Header background={backgroundHeader} />}
-                    <section className='container mx-auto p-2 overflow-hidden '>
+                    <section className='container mx-auto py-5 px-3 overflow-hidden '>
                         {children}
                     </section>
                     <Footer />
