@@ -2,7 +2,7 @@
 import FunctionsCard from "@/components/FunctionsCard";
 import Info from "@/components/Info";
 import Layout from "@/components/template/Layout";
-import senpai from "../../public/images/6.webp"
+import senpai from "../../public/images/senpai/senpai.webp"
 import Image from "next/image";
 import Services from "@/components/Services";
 import { faq, functionsCardItens, services } from "@/data/utils"

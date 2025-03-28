@@ -4,7 +4,7 @@ import { BsWhatsapp } from "react-icons/bs"
 import { CardContent, CardHeader, CardTitle } from "./ui/card"
 import { achievements } from "@/data/utils"
 import Image from "next/image"
-import whatsDemo from "../../public/images/whats.webp"
+import whatsDemo from "../../public/images/senpai/phone.webp"
 import { motion, useInView } from "motion/react";
 import { useRef } from "react"
 import Counter from "./Counter"
@@ -25,9 +25,9 @@ const Hero = (): React.JSX.Element => {
     return (
         <section>
             <div
-                className="relative bg-[url('/images/1.webp')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px]">
+                className="relative bg-[url('/images/senpai/hero.webp')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px]">
                 <Header />
-                <div className="absolute inset-0 bg-black/50 rounded-b-[60px]"></div>
+                <div className="absolute inset-0 bg-black/30 rounded-b-[60px]"></div>
                 <section
                     id="home"
                     className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center mx-auto py-10 md:pt-32 overflow-hidden">
