@@ -54,7 +54,7 @@ const Hero = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95">
+                            <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-full md:w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95 justify-center">
                                 <BsWhatsapp aria-label="Icone do WhatsApp" className="flex-shrink-0 w-5 h-5 md:w7 md:h-7" />
 
                                 <div className="text-left">
