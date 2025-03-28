@@ -27,7 +27,6 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
 
             className={`text-center w-32 md:w-auto relative group px-3 `}>
             <Link
-                scroll={true}
                 href={href}
                 className=" w-full h-full block py-4 bg-transparent hover:bg-transparent text-base lg:text-lg text-center"
             >
