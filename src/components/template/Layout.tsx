@@ -12,9 +12,16 @@ interface ILayoutProps {
     hero: boolean
     backgroundColor?: string
     backgroundHeader?: string
+    container?: boolean
 }
 
-const Layout = ({ children, hero, backgroundColor = "bg-white", backgroundHeader = "bg-transparent" }: ILayoutProps): React.JSX.Element => {
+const Layout = ({
+    children,
+    hero,
+    backgroundColor = "bg-white",
+    backgroundHeader = "bg-transparent",
+    container = true
+}: ILayoutProps): React.JSX.Element => {
     const [loading, setLoading] = useState<boolean>(true);
     const [showButton, setShowButton] = useState<boolean>(false);
 
@@ -40,11 +47,10 @@ const Layout = ({ children, hero, backgroundColor = "bg-white", backgroundHeader
             {loading ? <LoadingPage /> : (
                 <main className={`w-full min-h-screen ${backgroundColor} relative`}>
                     {hero ? <Hero /> : <Header background={backgroundHeader} />}
-                    <section className='container mx-auto py-5 px-3 overflow-hidden '>
+                    <section className={`${container && "container"}  mx-auto py-5 px-3 overflow-hidden `}>
                         {children}
                     </section>
                     <Footer />
-
 
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
