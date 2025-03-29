@@ -31,11 +31,11 @@ const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Elem
                     className="object-cover h-full w-36 rounded-full"
                 />
             </div>
-            <div className='flex-1 flex flex-col items-stretch sm:pl-2 md:pl-0 lg:pl-2 gap-y-1 mt-1 sm:mt-0 md:mt-1 lg:mt-0'>
+            <div className='flex-1 flex flex-col items-stretch gap-y-1 mt-1 sm:mt-0 md:mt-1 lg:mt-0 h-full'>
                 <h1 className='font-bold text-xl w-full text-left py-2'>{name}</h1>
-                <h2 className='text-lg tracking-wider font-mono w-full text-left'>{jobTitle}</h2>
-                <p className='text-justify hyphens-none break-words  py-2'>{bio}</p>
-                <ul className="flex gap-x-4 mt-2 py-2  w-full">
+                <h2 className='text-lg tracking-wider font-mono w-full text-left '>{jobTitle}</h2>
+                <p className='text-justify hyphens-none break-words py-2 flex-1'>{bio}</p>
+                <ul className="flex gap-x-4 mt-2 py-2 w-full bg-">
                     {links.map((link, index) => (
                         <li key={index}>
                             <Link
