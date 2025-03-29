@@ -1,20 +1,45 @@
+"use client"
+
 import Layout from '@/components/template/Layout'
 import senpaiAbout from "../../../public/images/about/senpaiWithFriend.jpg"
 import senpaiAbout2 from "../../../public/images/about/why.jpeg"
 import senpaiAbout3 from "../../../public/images/about/senpaiInSpace.jpg"
 import AlternatingSection from '@/components/AlternatingSection'
+import wallpaper from '../../../public/images/about/wallpaper.png'
+
 import Team from '@/components/Team'
 import { teamMembers } from '@/data/utils'
+import Image from 'next/image'
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 
 const AboutPage = () => {
     return (
         <Layout
             hero={false}
             backgroundColor='bg-gray-100'
-            backgroundHeader='bg-black'
+            backgroundHeader='bg-none'
             container={false}
         >
             <main className='w-full min-h-screen'>
+                <section className='w-full h-[700px] relative'>
+                    <Image
+                        src={wallpaper}
+                        alt='Wallpaper'
+                        fill
+                        className='w-full object-cover '
+                    />
+                    <h1
+                        className='absolute top-[50%] left-[50%] transition-transform -translate-x-[50%] -translate-y-[50%] text-white text-3xl font-bold bg-black/45 bg-opacity-50 px-6 py-3 rounded-lg shadow-lg'>
+                        QUEM SOMOS NÓS?
+                    </h1>
+
+                    <button
+                        onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
+                        className='absolute bottom-10 left-[50%] transform -translate-x-[50%] text-white text-3xl font-bold  px-6 py-3 rounded-lg animate-bounce'>
+                        <MdKeyboardDoubleArrowDown size={60} />
+                    </button>
+
+                </section>
                 <section>
                     <AlternatingSection
                         imageGridAlign='left'
