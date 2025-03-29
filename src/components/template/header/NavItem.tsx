@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import React, { DetailedHTMLProps, LiHTMLAttributes, useEffect } from 'react'
+import React, { DetailedHTMLProps, LiHTMLAttributes } from 'react'
 
 interface INavItemsProps extends DetailedHTMLProps<LiHTMLAttributes<HTMLLIElement>, HTMLLIElement> {
     href: string
@@ -9,24 +9,26 @@ interface INavItemsProps extends DetailedHTMLProps<LiHTMLAttributes<HTMLLIElemen
 
 export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX.Element => {
 
-    useEffect(() => {
-        const hash = window.location.hash
-        if (hash) {
-            const el = document.querySelector(hash)
+    const goToHash = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        const isHash = href.startsWith('#')
+        if (isHash) {
+            e.preventDefault()
+            const el = document.querySelector(href)
             if (el) {
                 setTimeout(() => {
                     el.scrollIntoView({ behavior: 'smooth' })
                 }, 100)
             }
+            history.pushState(null, '', href)
         }
-    }, [])
-
+    }
     return (
         <li
             {...props}
 
             className={`text-center w-32 md:w-auto relative group px-3 `}>
             <Link
+                onClick={goToHash}
                 href={href}
                 className=" w-full h-full block py-4 bg-transparent hover:bg-transparent text-base lg:text-lg text-center"
             >
