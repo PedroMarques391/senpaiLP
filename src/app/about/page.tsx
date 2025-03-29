@@ -1,5 +1,5 @@
 import Layout from '@/components/template/Layout'
-import senpaiAbout from "../../../public/images/senpai/IconSenpai.png"
+import senpaiAbout from "../../../public/images/gpt.png"
 import senpaiAbout2 from "../../../public/images/why.jpeg"
 import senpaiAbout3 from "../../../public/images/face.jpeg"
 import AlternatingSection from '@/components/AlternatingSection'
@@ -47,7 +47,7 @@ const AboutPage = () => {
                         <p className="text-lg text-gray-600 mb-6">
                             Um time dedicado a transformar interações em experiências incríveis.
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-7xl mx-auto ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-7xl mx-auto md:px-5">
                             {teamMembers.map((teamMember, index) => (
                                 <Team
                                     key={index}
