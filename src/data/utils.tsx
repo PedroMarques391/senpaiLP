@@ -1,6 +1,13 @@
 import { IServicesInterface } from "@/components/Services";
 import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import CEOImage from "../../public/images/icon1.jpeg"
+import CoCEOImage from "../../public/images/icon2.jpeg"
+import Dev1Image from "../../public/images/icon3.jpeg"
+import Dev2Image from "../../public/images/icon4.jpeg"
+import { ITeamProps } from "@/components/Team";
+
 
 
 
@@ -28,6 +35,54 @@ interface ITermsOfUse {
     title: string;
     text: string;
 }
+
+
+export const teamMembers: ITeamProps[] = [
+    {
+        image: CEOImage,
+        name: "Ana Costa",
+        jobTitle: "CEO",
+        bio: "Visionária por natureza e estrategista de coração. Lidera com empatia e pensa no futuro como ninguém.",
+        links: [
+            { url: "https://github.com/anacosta", color: "#333", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/anacosta", color: "#0077B5", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/ana.costa", color: "#E1306C", icon: <FaInstagram size={32} /> },
+        ],
+    },
+    {
+        image: CoCEOImage,
+        name: "Rafael Mendes",
+        jobTitle: "Co-CEO",
+        bio: "Equilibra inovação e gestão como ninguém. É o elo entre o time técnico e a visão de produto.",
+        links: [
+            { url: "https://github.com/rafamendes", color: "#333", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/rafamendes", color: "#0077B5", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/rafa.mendes", color: "#E1306C", icon: <FaInstagram size={32} /> },
+        ],
+    },
+    {
+        image: Dev1Image,
+        name: "Pedro Marques",
+        jobTitle: "Front-end Dev",
+        bio: "Transforma ideias em interfaces impecáveis. Detalhista, criativo e movido a código limpo.",
+        links: [
+            { url: "https://github.com/PedroMarques391", color: "#333", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/pedromarques", color: "#0077B5", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/pedro.codes", color: "#E1306C", icon: <FaInstagram size={32} /> },
+        ],
+    },
+    {
+        image: Dev2Image,
+        name: "Lívia Rocha",
+        jobTitle: "Mobile Dev",
+        bio: "Especialista em Flutter e apaixonada por UX. Deixa cada app fluido como um bom café quente.",
+        links: [
+            { url: "https://github.com/liviarocha", color: "#333", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/liviarocha", color: "#0077B5", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/livia.dev", color: "#E1306C", icon: <FaInstagram size={32} /> },
+        ],
+    },
+]
 
 export const services: IServicesInterface[] = [
     {
