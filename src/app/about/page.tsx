@@ -1,9 +1,9 @@
 "use client"
 
 import Layout from '@/components/template/Layout'
-import senpaiAbout from "../../../public/images/about/senpaiWithFriend.jpg"
+import senpaiAbout from "../../../public/images/about/senpaiWithFriend.webp"
 import senpaiAbout2 from "../../../public/images/about/why.jpeg"
-import senpaiAbout3 from "../../../public/images/about/senpaiInSpace.jpg"
+import senpaiAbout3 from "../../../public/images/about/senpaiInSpace.webp"
 import AlternatingSection from '@/components/AlternatingSection'
 import wallpaper from '../../../public/images/about/wallpaper.png'
 
