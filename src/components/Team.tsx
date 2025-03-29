@@ -1,6 +1,8 @@
+"use client"
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import { useRef } from 'react'
+import { motion, useInView } from "motion/react"
 
 type TLinksTypes = {
     url: string
@@ -18,8 +20,19 @@ export interface ITeamProps {
 }
 
 const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Element => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
     return (
-        <section
+        <motion.section
+            ref={ref}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0 }}
+            transition={{
+                duration: 1,
+                scale: { type: "spring", visualDuration: 1, bounce: 0.2 },
+            }
+            }
             className='bg-white rounded-3xl px-6 py-5 sm:py-10 md:py-5 lg:py-10 flex w-4/5 md:w-full flex-col sm:flex-row md:flex-col lg:flex-row  justify-self-center justify-center md:items-center'>
             <div className="w-full sm:w-36 h-36 overflow-hidden mr-4 place-items-center">
                 <Image
@@ -50,7 +63,7 @@ const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Elem
 
                 </ul>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
