@@ -47,7 +47,7 @@ const Layout = ({
             {loading ? <LoadingPage /> : (
                 <main className={`w-full min-h-screen ${backgroundColor} relative`}>
                     {hero ? <Hero /> : <Header background={backgroundHeader} />}
-                    <section className={`${container && "container"}  mx-auto py-5 overflow-hidden `}>
+                    <section className={`${container && "container"}  mx-auto  overflow-hidden `}>
                         {children}
                     </section>
                     <Footer />
