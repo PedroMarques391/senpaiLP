@@ -19,15 +19,16 @@ export interface ITeamProps {
 
 const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Element => {
     return (
-        <section className='bg-white rounded-2xl px-6 py-10 flex'>
-            <div className="w-36 h-36 rounded-full overflow-hidden mr-4 bg-black">
+        <section
+            className='bg-white rounded-3xl px-6 py-5 md:py-10 flex w-4/5 md:w-full flex-col sm:flex-row md:flex-col lg:flex-row md:bg-amber-600 lg:bg-red-500 justify-self-center justify-center md:items-center'>
+            <div className="w-full h-36  overflow-hidden mr-4 place-items-center ">
                 <Image
                     src={image}
                     alt="Foto"
                     width={96}
                     height={96}
                     priority
-                    className="object-cover w-full h-full"
+                    className="object-cover h-full w-36 rounded-full"
                 />
             </div>
             <div className='flex-1 flex flex-col items-start pl-2 gap-y-2'>
