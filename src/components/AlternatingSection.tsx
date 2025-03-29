@@ -18,7 +18,7 @@ const AlternatingSection = ({ image, title, children, imageGridAlign }: IAlterna
                     height={700}
                     width={700}
                     priority
-                    className='object-cover xl:object-contain w-full h-full'
+                    className='object-cover xl:object-cover w-full h-full'
                 />
             </div>
             <div className={`w-full flex flex-col md:flex-row justify-start items-center p-7 h-full ${imageGridAlign === "left" ? "order-2" : "order-1"}`}>
