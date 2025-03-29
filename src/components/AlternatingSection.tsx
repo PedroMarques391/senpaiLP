@@ -15,18 +15,18 @@ const AlternatingSection = ({ image, title, children, imageGridAlign }: IAlterna
                 <Image
                     alt='Foto da senpai na página about.'
                     src={image}
-                    height={800}
-                    width={800}
+                    height={700}
+                    width={700}
                     priority
                     className='bg-contain bg-no-repeat max-w-full h-auto'
                 />
             </div>
-            <div className={`w-full flex flex-col md:flex-row justify-center items-center p-4 h-full ${imageGridAlign === "left" ? "order-2" : "order-1"}`}>
-                <div className='w-full lg:max-w-4/5 text-center md:text-left'>
-                    <h1 className='text-3xl lg:text-4xl font-bold text-gray-800 mb-4 w-full text-center'>
+            <div className={`w-full flex flex-col md:flex-row justify-start items-center p-7 h-full ${imageGridAlign === "left" ? "order-2" : "order-1"}`}>
+                <div className='w-full lg:max-w-4/5 '>
+                    <h1 className='text-xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-4 w-full text-left '>
                         {title}
                     </h1>
-                    <p className='text-base lg:text-lg text-gray-600 leading-relaxed text-justify break-words hyphens-auto'>
+                    <p className='text-base lg:text-base xl:text-lg text-gray-600 leading-relaxed text-justify break-words hyphens-auto'>
                         {children}
                     </p>
                 </div>
