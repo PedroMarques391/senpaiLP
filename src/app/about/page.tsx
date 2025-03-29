@@ -1,5 +1,9 @@
 import Layout from '@/components/template/Layout'
 import senpaiAbout from "../../../public/images/senpai/IconSenpai.png"
+import senpaiAbout2 from "../../../public/images/senpai/senpaiWithoutBg.png"
+import senpaiAbout3 from "../../../public/images/senpai/faceSenpai.webp"
+
+
 import AlternatingSection from '@/components/AlternatingSection'
 
 const AboutPage = () => {
@@ -23,14 +27,14 @@ const AboutPage = () => {
                 </AlternatingSection>
                 <AlternatingSection
                     imageGridAlign='right'
-                    image={senpaiAbout}
+                    image={senpaiAbout2}
                     title='Por que fazemos o que fazemos?'
                 >
                     Porque acreditamos que todo mundo merece ser ouvido com atenção, clareza e carinho — direto no WhatsApp, onde a conversa é só entre nós.
                 </AlternatingSection>
                 <AlternatingSection
                     imageGridAlign='left'
-                    image={senpaiAbout}
+                    image={senpaiAbout3}
                     title='Nossa abordagem'
                 >
                     Somos pessoas que acreditam no poder de uma boa conversa. Cada detalhe da senpai foi pensado com base em interações reais: o que ajuda, o que confunde, o que aproxima. Desenvolvemos uma IA que entende, respeita e responde com clareza — porque acreditamos que conversar bem é transformar experiências. No fim das contas, nosso foco é simples: criar diálogos mais humanos, no lugar onde eles realmente acontecem — no seu WhatsApp.
