@@ -47,7 +47,7 @@ const AboutPage = () => {
                         <p className="text-lg text-gray-600 mb-6">
                             Um time dedicado a transformar interações em experiências incríveis.
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-7xl mx-auto md:px-5">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-7xl mx-auto md:px-5 overflow-hidden">
                             {teamMembers.map((teamMember, index) => (
                                 <Team
                                     key={index}
