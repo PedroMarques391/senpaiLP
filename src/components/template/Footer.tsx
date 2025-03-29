@@ -30,7 +30,7 @@ export const Footer = () => {
                             <LI href={isHomePage ? "#plans" : "/#plans"} alt="Scroll que leva para os planos disponveis.">
                                 Planos
                             </LI>
-                            <LI href="/termo-de-uso" target="_blank" alt="">
+                            <LI href="/termo-de-uso" target="_blank" alt="link para os termos de uso do bot">
                                 Termos de Uso
                             </LI>
                             <LI href="/privacidade" target="_blank" alt="Link para a política de privacidade do bot.">
