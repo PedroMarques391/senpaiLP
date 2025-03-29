@@ -1,7 +1,7 @@
 import Layout from '@/components/template/Layout'
-import senpaiAbout from "../../../public/images/gpt.png"
-import senpaiAbout2 from "../../../public/images/why.jpeg"
-import senpaiAbout3 from "../../../public/images/face.jpeg"
+import senpaiAbout from "../../../public/images/about/senpaiWithFriend.jpg"
+import senpaiAbout2 from "../../../public/images/about/why.jpeg"
+import senpaiAbout3 from "../../../public/images/about/senpaiInSpace.jpg"
 import AlternatingSection from '@/components/AlternatingSection'
 import Team from '@/components/Team'
 import { teamMembers } from '@/data/utils'
