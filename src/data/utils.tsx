@@ -62,7 +62,7 @@ export const teamMembers: ITeamProps[] = [
     },
     {
         image: Dev1Image,
-        name: "Naara Lima",
+        name: "Deborá Lima",
         jobTitle: "Front-end Dev",
         bio: "Transforma ideias em interfaces impecáveis. Detalhista, criativo e movido a código limpo.",
         links: [
