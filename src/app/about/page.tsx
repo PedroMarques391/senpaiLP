@@ -1,5 +1,6 @@
 import Layout from '@/components/template/Layout'
-import React from 'react'
+import senpaiAbout from "../../../public/images/senpai/IconSenpai.png"
+import AlternatingSection from '@/components/AlternatingSection'
 
 const AboutPage = () => {
     return (
@@ -7,11 +8,41 @@ const AboutPage = () => {
             hero={false}
             backgroundColor='bg-gray-100'
             backgroundHeader='bg-black'
+            container={false}
         >
-            <div className="flex justify-center items-center h-screen">
-                Site em produção
-            </div>
-        </Layout>
+            <main className='w-full min-h-screen'>
+                <AlternatingSection
+                    imageGridAlign='left'
+                    image={senpaiAbout}
+                    title='No que acreditamos?'
+                >
+                    Acreditamos no poder da conversa. Acreditamos que a tecnologia deve ser humana, acessível e presente — exatamente onde as pessoas estão.
+                    Por isso, unimos inteligência artificial, automação e atendimento personalizado em um só lugar: no WhatsApp, o canal mais direto e natural do dia a dia.
+                    Nossa missão é transformar interações em experiências inteligentes, rápidas e eficientes.
+                    Porque quando tecnologia fala a mesma língua das pessoas, tudo flui melhor.
+                </AlternatingSection>
+                <AlternatingSection
+                    imageGridAlign='right'
+                    image={senpaiAbout}
+                    title='No que acreditamos?'
+                >
+                    Acreditamos no poder da conversa. Acreditamos que a tecnologia deve ser humana, acessível e presente — exatamente onde as pessoas estão.
+                    Por isso, unimos inteligência artificial, automação e atendimento personalizado em um só lugar: no WhatsApp, o canal mais direto e natural do dia a dia.
+                    Nossa missão é transformar interações em experiências inteligentes, rápidas e eficientes.
+                    Porque quando tecnologia fala a mesma língua das pessoas, tudo flui melhor.
+                </AlternatingSection>
+                <AlternatingSection
+                    imageGridAlign='left'
+                    image={senpaiAbout}
+                    title='No que acreditamos?'
+                >
+                    Acreditamos no poder da conversa. Acreditamos que a tecnologia deve ser humana, acessível e presente — exatamente onde as pessoas estão.
+                    Por isso, unimos inteligência artificial, automação e atendimento personalizado em um só lugar: no WhatsApp, o canal mais direto e natural do dia a dia.
+                    Nossa missão é transformar interações em experiências inteligentes, rápidas e eficientes.
+                    Porque quando tecnologia fala a mesma língua das pessoas, tudo flui melhor.
+                </AlternatingSection>
+            </main >
+        </Layout >
     )
 }
 
