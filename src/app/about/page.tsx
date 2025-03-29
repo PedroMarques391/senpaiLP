@@ -1,7 +1,7 @@
 import Layout from '@/components/template/Layout'
 import senpaiAbout from "../../../public/images/senpai/IconSenpai.png"
-import senpaiAbout2 from "../../../public/images/senpai/senpaiWithoutBg.png"
-import senpaiAbout3 from "../../../public/images/senpai/faceSenpai.webp"
+import senpaiAbout2 from "../../../public/images/why.jpeg"
+import senpaiAbout3 from "../../../public/images/face.jpeg"
 
 
 import AlternatingSection from '@/components/AlternatingSection'
