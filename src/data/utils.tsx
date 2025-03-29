@@ -44,9 +44,9 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "CEO",
         bio: "Visionária por natureza e estrategista de coração. Lidera com empatia e pensa no futuro como ninguém.",
         links: [
-            { url: "https://github.com/anacosta", color: "#333", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/anacosta", color: "#0077B5", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/ana.costa", color: "#E1306C", icon: <FaInstagram size={32} /> },
+            { url: "https://github.com/anacosta", color: "text-gray-600", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/anacosta", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/ana.costa", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
     {
@@ -55,9 +55,9 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "Co-CEO",
         bio: "Equilibra inovação e gestão como ninguém. É o elo entre o time técnico e a visão de produto.",
         links: [
-            { url: "https://github.com/rafamendes", color: "#333", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/rafamendes", color: "#0077B5", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/rafa.mendes", color: "#E1306C", icon: <FaInstagram size={32} /> },
+            { url: "https://github.com/rafamendes", color: "text-gray-600", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/rafamendes", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/rafa.mendes", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
     {
@@ -66,9 +66,9 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "Front-end Dev",
         bio: "Transforma ideias em interfaces impecáveis. Detalhista, criativo e movido a código limpo.",
         links: [
-            { url: "https://github.com/PedroMarques391", color: "#333", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/pedromarques", color: "#0077B5", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/pedro.codes", color: "#E1306C", icon: <FaInstagram size={32} /> },
+            { url: "https://github.com/PedroMarques391", color: "text-gray-600", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/pedromarques", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/pedro.codes", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
     {
@@ -77,12 +77,15 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "Mobile Dev",
         bio: "Especialista em Flutter e apaixonada por UX. Deixa cada app fluido como um bom café quente.",
         links: [
-            { url: "https://github.com/liviarocha", color: "#333", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/liviarocha", color: "#0077B5", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/livia.dev", color: "#E1306C", icon: <FaInstagram size={32} /> },
+            { url: "https://github.com/liviarocha", color: "text-gray-600", icon: <FaGithub size={32} /> },
+            { url: "https://linkedin.com/in/liviarocha", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/livia.dev", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
 ]
+
+
+
 
 export const services: IServicesInterface[] = [
     {
