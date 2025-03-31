@@ -2,9 +2,9 @@ import { IServicesInterface } from "@/components/Services";
 import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import CEOImage from "../../public/images/about/icon1.icon4.webp"
-import CoCEOImage from "../../public/images/about/icon2.icon4.webp"
-import Dev1Image from "../../public/images/about/icon3.icon4.webp"
+import CEOImage from "../../public/images/about/icon1.webp"
+import CoCEOImage from "../../public/images/about/icon2.webp"
+import Dev1Image from "../../public/images/about/icon3.webp"
 import Dev2Image from "../../public/images/about/icon4.webp"
 import { ITeamProps } from "@/components/Team";
 
