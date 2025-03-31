@@ -49,13 +49,13 @@ export const Footer = () => {
                             </LI>
                             <LI
                                 target="_blank"
-                                href="https://www.instagram.com/@botdosenpai"
+                                href="https://www.instagram.com/botdosenpai"
                                 alt="Instagram">
                                 Instagram
                             </LI>
                             <LI
                                 target="_blank"
-                                href="https://www.twitter.com/@botdosenpai"
+                                href="https://www.twitter.com/botdosenpai"
                                 alt="Twitter">
                                 Twitter
                             </LI>
