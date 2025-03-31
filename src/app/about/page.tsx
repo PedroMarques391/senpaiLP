@@ -2,10 +2,10 @@
 
 import Layout from '@/components/template/Layout'
 import senpaiAbout from "../../../public/images/about/senpaiWithFriend.webp"
-import senpaiAbout2 from "../../../public/images/about/why.jpeg"
+import senpaiAbout2 from "../../../public/images/about/why.webp"
 import senpaiAbout3 from "../../../public/images/about/senpaiInSpace.webp"
 import AlternatingSection from '@/components/AlternatingSection'
-import wallpaper from '../../../public/images/about/wallpaper.png'
+import wallpaper from '../../../public/images/about/wallpaper.webp'
 
 import Team from '@/components/Team'
 import { teamMembers } from '@/data/utils'
