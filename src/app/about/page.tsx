@@ -26,6 +26,7 @@ const AboutPage = () => {
                         src={wallpaper}
                         alt='Wallpaper'
                         fill
+                        placeholder='blur'
                         className='w-full object-cover '
                     />
                     <h1
