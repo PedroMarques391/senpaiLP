@@ -2,7 +2,7 @@ import { IServicesInterface } from "@/components/Services";
 import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import CEOImage from "../../public/images/about/icon1.webp"
+import CEOImage from "../../public/images/about/marcelo.jpeg"
 import CoCEOImage from "../../public/images/about/icon2.webp"
 import Dev1Image from "../../public/images/about/icon3.webp"
 import Dev2Image from "../../public/images/about/icon4.webp"
@@ -40,9 +40,9 @@ interface ITermsOfUse {
 export const teamMembers: ITeamProps[] = [
     {
         image: CEOImage,
-        name: "Ana Costa",
+        name: "Marcelo P.",
         jobTitle: "CEO",
-        bio: "Visionária por natureza e estrategista de coração. Lidera com empatia e pensa no futuro como ninguém.",
+        bio: "Ao longo da minha jornada, sempre busquei liderar com paixão, visão e comprometimento com a Senpai.",
         links: [
             { url: "https://github.com/anacosta", color: "text-gray-600", icon: <FaGithub size={32} /> },
             { url: "https://linkedin.com/in/anacosta", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
@@ -62,13 +62,13 @@ export const teamMembers: ITeamProps[] = [
     },
     {
         image: Dev1Image,
-        name: "Deborá Lima",
-        jobTitle: "Front-end Dev",
-        bio: "Transforma ideias em interfaces impecáveis. Detalhista, criativo e movido a código limpo.",
+        name: "Pedro Marques",
+        jobTitle: "Desenvolvedor",
+        bio: "Responsável por transformar ideias em soluções práticas e escaláveis, sempre com foco em eficiência e qualidade.",
         links: [
             { url: "https://github.com/PedroMarques391", color: "text-gray-600", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/pedromarques", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/pedro.codes", color: "text-pink-600", icon: <FaInstagram size={32} /> },
+            { url: "https://linkedin.com/in/pedromarques391", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/pedromarques.py", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
     {

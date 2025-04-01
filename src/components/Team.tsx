@@ -38,8 +38,8 @@ const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Elem
                 <Image
                     src={image}
                     alt="Foto"
-                    width={96}
-                    height={96}
+                    width={1000}
+                    height={1000}
                     priority
                     className="object-cover h-full w-36 rounded-full"
                 />
