@@ -96,7 +96,8 @@ export const services: IServicesInterface[] = [
             "Crie 1 figurinha diariamente",
             "Pergunte algo e receba os 3 melhores resultados do Google"
         ],
-        textButton: "Teste grátis"
+        textButton: "Teste grátis",
+        message: ".menu"
     },
     {
         service: "Plano Pro",
@@ -109,7 +110,8 @@ export const services: IServicesInterface[] = [
             "Atualizações para sempre ter a melhor experiência",
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
-        textButton: "Assine Agora"
+        textButton: "Assine Agora",
+        message: ".getPremium"
     },
     {
         service: "Plano Mestre",
@@ -125,7 +127,8 @@ export const services: IServicesInterface[] = [
             "Novidades exclusivas para assinantes Mestre",
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
-        textButton: "Assine Agora"
+        textButton: "Assine Agora",
+        message: "getPremium"
     }
 ];
 

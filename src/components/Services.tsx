@@ -11,14 +11,16 @@ export interface IServicesInterface {
     value: string
     description: string
     characteristics: string[]
-    textButton: "Teste grátis" | "Assine Agora"
+    textButton: "Teste grátis" | "Assine Agora",
+    message: string
+
 }
 
 const Services = ({ service,
     value,
     description,
     characteristics,
-    textButton }: IServicesInterface): React.JSX.Element => {
+    textButton, message }: IServicesInterface): React.JSX.Element => {
 
     const ref = useRef(null)
     const isInView = useInView(ref)
@@ -69,7 +71,7 @@ const Services = ({ service,
                 ))}
             </ul>
 
-            <Link href={`https://wa.me/555497153068?text=Estou%20interessado%20no%20${service}`}
+            <Link href={`https://wa.me/555497153068?text=${message}`}
                 target='_blank'
                 rel="noreferrer"
                 aria-label='Link de assinatura' >
