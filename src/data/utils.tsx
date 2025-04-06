@@ -128,7 +128,7 @@ export const services: IServicesInterface[] = [
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
         textButton: "Assine Agora",
-        message: "getPremium"
+        message: ".getPremium"
     }
 ];
 
