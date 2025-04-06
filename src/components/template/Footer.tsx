@@ -32,7 +32,7 @@ export const Footer = () => {
                                 href={isHomePage ? "#plans" : "/#plans"} alt="Scroll que leva para os planos disponveis.">
                                 Planos
                             </LI>
-                            <LI href="/about" target="_blank" alt="link para os termos de uso do bot">
+                            <LI href="/about" target="_self" alt="link para os termos de uso do bot">
                                 Sobre Nós
                             </LI>
                             <LI href="/termo-de-uso" target="_blank" alt="link para os termos de uso do bot">
