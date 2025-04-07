@@ -93,7 +93,7 @@ const Hero = (): React.JSX.Element => {
 
                 </section>
             </div >
-            <div className=" bg-black/10 px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
+            <div className=" bg-gray-100 px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
                 <section
                     ref={refCard}
                     className="grid grid-cols-1 md:grid-cols-3  md:w-full max-w-7xl  mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-4 overflow-hidden" >
