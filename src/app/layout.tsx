@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
 
@@ -17,7 +18,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "BotSenpai - Seu bot ideal",
   description: "Bot de figurinha ideal para transformar suas conversas no WhatsApp em um verdadeiro festival de figurinhas!",
-  authors: [{ name: "Pedro Marques Developer" }],
+  authors: [{ name: "Pedro Marques" }],
   openGraph: {
     title: "BotSenpai - Seu bot ideal",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
@@ -40,6 +41,7 @@ export default function RootLayout({
       </head>
       <body className={`${lora.variable} ${playFair.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
