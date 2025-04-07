@@ -29,14 +29,10 @@ const AboutPage = () => {
                         placeholder='blur'
                         className='w-full object-cover '
                     />
-                    <h1
-                        className='absolute top-[50%] left-[50%] transition-transform -translate-x-[50%] -translate-y-[50%] text-white text-3xl font-bold bg-black/45 bg-opacity-50 px-6 py-3 rounded-lg shadow-lg'>
-                        QUEM SOMOS NÓS?
-                    </h1>
 
                     <button
                         onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
-                        className='absolute bottom-10 left-[50%] transform -translate-x-[50%] text-white text-3xl font-bold  px-6 py-3 rounded-lg animate-bounce'>
+                        className='absolute bottom-10 left-[50%] transform -translate-x-[50%] text-white text-3xl font-bold  px-6 py-3 rounded-lg animate-bounce cursor-pointer'>
                         <MdKeyboardDoubleArrowDown size={60} />
                     </button>
 
@@ -68,7 +64,7 @@ const AboutPage = () => {
                     </AlternatingSection>
                 </section>
                 <section>
-                    <div className=" text-center py-10 bg-gray-300">
+                    <div className=" text-center py-10 bg-gray-200">
                         <h1 className="text-3xl font-bold mb-6">Conheça nosso time</h1>
                         <p className="text-lg text-gray-600 mb-6">
                             Um time dedicado a transformar interações em experiências incríveis.
