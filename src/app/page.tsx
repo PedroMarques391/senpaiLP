@@ -2,12 +2,11 @@
 import FunctionsCard from "@/components/FunctionsCard";
 import Info from "@/components/Info";
 import Layout from "@/components/template/Layout";
-import senpai from "../../public/images/senpai/faceSenpai.webp"
-import Image from "next/image";
 import Services from "@/components/Services";
 import { faq, functionsCardItens, services } from "@/data/utils"
 import CarouselBenefit from "@/components/Carousel";
 import { Faq } from "@/components/Faq";
+import Title from "@/components/ui/Title";
 
 
 
@@ -15,9 +14,9 @@ export default function Home() {
 
   return (
     <Layout hero>
-      <div className="w-full p-4 overflow-hidden ">
-        <h1 className="py-10 text-2xl text-center lg:text-left md:text-3xl">
-          O que a senpai pode fazer por você hoje?</h1>
+      <div className="w-full  overflow-hidden ">
+        <Title>
+          O que a senpai pode fazer por você hoje?</Title>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] md:w-full mx-auto">
         {functionsCardItens.map((functionsCardItem, item) => (
@@ -32,16 +31,7 @@ export default function Home() {
       </section>
       <Info />
       <section>
-        <div className="flex flex-col justify-center items-center">
-          <Image
-            src={senpai}
-            alt="senpai image"
-            priority
-            width={150}
-            height={150}
-          />
-          <h1 className="text-center text-4xl md:text-left md:text-5xl font-semibold text-black md:pb-6">Conheça nossos planos</h1>
-        </div>
+        <Title>Conheça nossos planos</Title>
         <div
           id="plans"
           className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-5 mx-auto">
@@ -58,9 +48,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <Title>Quais são os Beneficios?</Title>
       <CarouselBenefit />
       <section className="container">
-        <h1 className="text-center text-4xl md:text-5xl font-semibold text-black md:pb-6 pb-8">F.A.Q</h1>
+        <Title>F.A.Q</Title>
         <Faq faq={faq} />
       </section>
 
