@@ -1,7 +1,7 @@
 import { IServicesInterface } from "@/components/Services";
 import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import CEOImage from "../../public/images/about/marcelo.png"
 import CTOImage from "../../public/images/about/rodrigo.png"
 import Dev1Image from "../../public/images/about/pedro.png"
@@ -44,9 +44,7 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "CEO",
         bio: "Ao longo da minha jornada, sempre busquei liderar com paixão, visão e comprometimento com a Senpai.",
         links: [
-            { url: "https://github.com/anacosta", color: "text-gray-600", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/anacosta", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/ana.costa", color: "text-pink-600", icon: <FaInstagram size={32} /> },
+            { url: "https://instagram.com/senpai.gif", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
     {
@@ -55,9 +53,8 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "CTO",
         bio: "Desenvolvedor fullstack, ex advogado e pai de meninas.",
         links: [
-            { url: "https://github.com/rafamendes", color: "text-gray-600", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/rafamendes", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/rafa.mendes", color: "text-pink-600", icon: <FaInstagram size={32} /> },
+            { url: "https://linkedin.com/in/rodrigosakae", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/devsakae", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
     {
@@ -66,7 +63,6 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "Desenvolvedor",
         bio: "Responsável por transformar ideias em soluções práticas e escaláveis, sempre com foco em eficiência e qualidade.",
         links: [
-            { url: "https://github.com/PedroMarques391", color: "text-gray-600", icon: <FaGithub size={32} /> },
             { url: "https://linkedin.com/in/pedromarques391", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
             { url: "https://instagram.com/pedromarques.py", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
@@ -77,9 +73,8 @@ export const teamMembers: ITeamProps[] = [
         jobTitle: "Desenvolvedor",
         bio: "Programador JavaScript com foco em machine learning, automação com IA e conhecimentos em cyber security.",
         links: [
-            { url: "https://github.com/liviarocha", color: "text-gray-600", icon: <FaGithub size={32} /> },
-            { url: "https://linkedin.com/in/liviarocha", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
-            { url: "https://instagram.com/livia.dev", color: "text-pink-600", icon: <FaInstagram size={32} /> },
+            { url: "https://linkedin.com/in/kaiky-gomes", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
+            { url: "https://instagram.com/kaikygr", color: "text-pink-600", icon: <FaInstagram size={32} /> },
         ],
     },
 ]
