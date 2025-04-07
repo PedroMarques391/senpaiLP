@@ -25,7 +25,6 @@ const CarouselBenefit = () => {
 
   return (
     <section className="w-full max-w-6xl mx-auto my-10">
-      <h1 className="text-center text-4xl md:text-left md:text-5xl font-semibold text-black md:pb-6">Quais são os Beneficios?</h1>
       <Carousel
         opts={{
           loop: true,
