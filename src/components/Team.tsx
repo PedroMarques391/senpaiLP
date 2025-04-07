@@ -33,7 +33,7 @@ const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Elem
                 scale: { type: "spring", visualDuration: 1, bounce: 0.2 },
             }
             }
-            className='bg-white rounded-3xl px-6 py-5 sm:py-10 md:py-5 lg:py-10 flex w-4/5 md:w-full flex-col sm:flex-row md:flex-col lg:flex-row  justify-self-center justify-center md:items-center'>
+            className='bg-white rounded-3xl px-6 py-5 sm:py-10 md:py-5  flex w-4/5 md:w-full flex-col sm:flex-row md:flex-col lg:flex-row  justify-self-center justify-center md:items-center'>
             <div className="w-full sm:w-36 h-36 overflow-hidden mr-4 place-items-center">
                 <Image
                     src={image}
