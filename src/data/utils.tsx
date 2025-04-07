@@ -3,9 +3,9 @@ import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import CEOImage from "../../public/images/about/marcelo.jpeg"
-import CoCEOImage from "../../public/images/about/icon2.webp"
+import CoCEOImage from "../../public/images/about/rodrigo.png"
 import Dev1Image from "../../public/images/about/icon3.webp"
-import Dev2Image from "../../public/images/about/icon4.webp"
+import Dev2Image from "../../public/images/about/kaiky.jpeg"
 import { ITeamProps } from "@/components/Team";
 
 
@@ -40,7 +40,7 @@ interface ITermsOfUse {
 export const teamMembers: ITeamProps[] = [
     {
         image: CEOImage,
-        name: "Marcelo P.",
+        name: "Marcelo Pinho",
         jobTitle: "CEO",
         bio: "Ao longo da minha jornada, sempre busquei liderar com paixão, visão e comprometimento com a Senpai.",
         links: [
@@ -51,9 +51,9 @@ export const teamMembers: ITeamProps[] = [
     },
     {
         image: CoCEOImage,
-        name: "Rafael Mendes",
-        jobTitle: "Co-CEO",
-        bio: "Equilibra inovação e gestão como ninguém. É o elo entre o time técnico e a visão de produto.",
+        name: "Rodrigo Sakae",
+        jobTitle: "CTO",
+        bio: "Desenvolvedor fullstack, ex advogado e pai de meninas.",
         links: [
             { url: "https://github.com/rafamendes", color: "text-gray-600", icon: <FaGithub size={32} /> },
             { url: "https://linkedin.com/in/rafamendes", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
@@ -73,9 +73,9 @@ export const teamMembers: ITeamProps[] = [
     },
     {
         image: Dev2Image,
-        name: "Lívia Rocha",
-        jobTitle: "Mobile Dev",
-        bio: "Especialista em Flutter e apaixonada por UX. Deixa cada app fluido como um bom café quente.",
+        name: "Kaiky Brito",
+        jobTitle: "Desenvolvedor",
+        bio: "Programador JavaScript com foco em machine learning, automação com IA e conhecimentos em cyber security.",
         links: [
             { url: "https://github.com/liviarocha", color: "text-gray-600", icon: <FaGithub size={32} /> },
             { url: "https://linkedin.com/in/liviarocha", color: "text-blue-400", icon: <FaLinkedin size={32} /> },
