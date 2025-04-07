@@ -2,10 +2,10 @@ import { IServicesInterface } from "@/components/Services";
 import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import CEOImage from "../../public/images/about/marcelo.jpeg"
-import CoCEOImage from "../../public/images/about/rodrigo.png"
-import Dev1Image from "../../public/images/about/icon3.webp"
-import Dev2Image from "../../public/images/about/kaiky.jpeg"
+import CEOImage from "../../public/images/about/marcelo.png"
+import CTOImage from "../../public/images/about/rodrigo.png"
+import Dev1Image from "../../public/images/about/pedro.png"
+import Dev2Image from "../../public/images/about/kaiky.png"
 import { ITeamProps } from "@/components/Team";
 
 
@@ -50,7 +50,7 @@ export const teamMembers: ITeamProps[] = [
         ],
     },
     {
-        image: CoCEOImage,
+        image: CTOImage,
         name: "Rodrigo Sakae",
         jobTitle: "CTO",
         bio: "Desenvolvedor fullstack, ex advogado e pai de meninas.",
