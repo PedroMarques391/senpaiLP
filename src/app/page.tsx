@@ -51,7 +51,7 @@ export default function Home() {
       <Title>Quais são os Beneficios?</Title>
       <CarouselBenefit />
       <section className="container">
-        <Title>F.A.Q</Title>
+        <Title center>F.A.Q</Title>
         <Faq faq={faq} />
       </section>
 
