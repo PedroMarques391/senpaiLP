@@ -4,7 +4,7 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 type IconKey = "shield" | "lock" | "thumbs" | "users" | "refresh" | "instagram" | "github" | "linkedin"
 
-export function renderIcon(icon: IconKey) {
+export function renderIcon(icon: IconKey): React.JSX.Element {
     const iconMap: Record<IconKey, JSX.Element> = {
         shield: <ShieldCheck className="w-6 h-6 text-green-500" />,
         lock: <Lock className="w-6 h-6 text-blue-500" />,
