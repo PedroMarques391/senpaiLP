@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://botdosenpai.com.br/images/senpai/wallpaper.png",
+        url: "/images/senpai/wallpaper.png",
         width: 1200,
         height: 630,
         alt: "BotSenpai - A bot de figurinha mais fofa da internet!",
