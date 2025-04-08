@@ -17,7 +17,7 @@ const lora = Lora({
 
 
 export const metadata: Metadata = {
-    title: "BotSenpai - Sobre Nós",
+    title: "BotDoSenpai - Sobre Nós",
     description: "Política de Privacidade do bot Senpai.",
     keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai", "Quem somos", "sobre nós", "about us", "about"],
 

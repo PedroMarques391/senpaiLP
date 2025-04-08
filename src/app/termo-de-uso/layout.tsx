@@ -17,7 +17,7 @@ const lora = Lora({
 
 
 export const metadata: Metadata = {
-  title: "BotSenpai - Termos de Uso",
+  title: "BotDoSenpai - Termos de Uso",
   description: "Termos de uso do bot Senpai.",
   keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai"],
 
