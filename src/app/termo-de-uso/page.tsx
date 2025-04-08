@@ -1,5 +1,5 @@
 import Layout from "@/src/components/layout/Layout";
-import { termsOfUse } from "@/src/data/utils";
+import { termsOfUse } from "@/src/data";
 import Link from "next/link";
 
 const TermsOfUse = (): React.JSX.Element => {

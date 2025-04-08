@@ -8,9 +8,9 @@ import AlternatingSection from '@/src/components/sections/AlternatingSection'
 import wallpaper from '@/public/images/about/wallpaper.webp'
 
 import Team from '@/src/components/sections/Team'
-import { teamMembers } from '@/src/data/utils'
 import Image from 'next/image'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
+import { team } from '@/src/data'
 
 const AboutPage = () => {
     return (
@@ -69,7 +69,7 @@ const AboutPage = () => {
                             Um time dedicado a transformar interações em experiências incríveis.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto md:px-5 overflow-hidden">
-                            {teamMembers.map((teamMember, index) => (
+                            {team.map((teamMember, index) => (
                                 <Team
                                     key={index}
                                     image={teamMember.image}

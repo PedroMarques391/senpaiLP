@@ -4,23 +4,16 @@ import { Button } from '@/src/components/ui/button'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import { motion, useInView } from "motion/react"
 import Link from 'next/link'
+import { IServices } from '@/src/types'
 
 
-export interface IServicesInterface {
-    service: string
-    value: string
-    description: string
-    characteristics: string[]
-    textButton: "Teste grátis" | "Assine Agora",
-    message: string
 
-}
 
 const Services = ({ service,
     value,
     description,
     characteristics,
-    textButton, message }: IServicesInterface): React.JSX.Element => {
+    textButton, message }: IServices): React.JSX.Element => {
 
     const ref = useRef(null)
     const isInView = useInView(ref)

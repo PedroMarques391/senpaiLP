@@ -3,7 +3,7 @@ import FunctionsCard from "@/src/components/sections/FunctionsCard";
 import Info from "@/src/components/sections/Info";
 import Layout from "@/src/components/layout/Layout";
 import Services from "@/src/components/sections/Services";
-import { faq, functionsCardItens, services } from "@/src/data/utils"
+import { faq, functionsCardItens, services } from "@/src/data"
 import CarouselBenefit from "@/src/components/sections/Carousel";
 import { Faq } from "@/src/components/sections/Faq";
 import Title from "@/src/components/shared/Title";

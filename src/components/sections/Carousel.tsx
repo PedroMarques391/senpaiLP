@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/src/components/ui/carousel"
-import { benefits } from "@/src/data/utils"
+import { benefits } from "@/src/data"
 import { useEffect, useState } from "react"
 
 const CarouselBenefit = () => {

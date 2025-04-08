@@ -1,6 +1,6 @@
 "use client"
 import { BsWhatsapp } from "react-icons/bs"
-import { achievements } from "@/src/data/utils"
+import { achievements } from "@/src/data"
 import Image from "next/image"
 import whatsDemo from "@/public/images/senpai/phone.webp"
 import { motion, useInView } from "motion/react";
