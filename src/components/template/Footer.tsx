@@ -60,9 +60,9 @@ export const Footer = () => {
                             </LI>
                             <LI
                                 target="_blank"
-                                href="https://www.twitter.com/botdosenpai"
-                                alt="Twitter">
-                                Twitter
+                                href="https://x.com/botdosenpai"
+                                alt="X - Antigo Twitter">
+                                X
                             </LI>
                         </ul>
                     </div>
