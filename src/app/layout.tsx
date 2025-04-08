@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: "BotSenpai - Seu bot ideal",
   description: "Bot de figurinha ideal para transformar suas conversas no WhatsApp em um verdadeiro festival de figurinhas!",
   authors: [{ name: "Pedro Marques" }],
+  keywords: ["bot de figurinha", "WhatsApp", "figurinhas divertidas", "BotSenpai", "conversas animadas", "figurinhas", "senpai", "dosenpai"],
   openGraph: {
     title: "BotSenpai - Seu bot ideal",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
@@ -42,8 +43,6 @@ export const metadata: Metadata = {
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
     site: "@BotDoSenpai",
   },
-
-
 };
 
 export default function RootLayout({
