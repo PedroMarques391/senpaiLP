@@ -1,8 +1,8 @@
 "use client"
-import Logo from "@/components/shared/Logo"
-import MenuDesktop from "./MenuDesktop"
+import Logo from "@/src/components/shared/Logo"
+import MenuDesktop from "@/src/components/menu/MenuDesktop"
 import { useEffect, useState } from "react";
-import Mobile from "./Mobile";
+import Mobile from "@/src/components/menu/Mobile";
 import { usePathname } from "next/navigation";
 
 

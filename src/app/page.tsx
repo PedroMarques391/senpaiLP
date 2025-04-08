@@ -1,12 +1,12 @@
 "use client"
-import FunctionsCard from "@/components/sections/FunctionsCard";
-import Info from "@/components/sections/Info";
-import Layout from "@/components/layout/Layout";
-import Services from "@/components/sections/Services";
-import { faq, functionsCardItens, services } from "@/data/utils"
-import CarouselBenefit from "@/components/sections/Carousel";
-import { Faq } from "@/components/sections/Faq";
-import Title from "@/components/shared/Title";
+import FunctionsCard from "@/src/components/sections/FunctionsCard";
+import Info from "@/src/components/sections/Info";
+import Layout from "@/src/components/layout/Layout";
+import Services from "@/src/components/sections/Services";
+import { faq, functionsCardItens, services } from "@/src/data/utils"
+import CarouselBenefit from "@/src/components/sections/Carousel";
+import { Faq } from "@/src/components/sections/Faq";
+import Title from "@/src/components/shared/Title";
 
 
 

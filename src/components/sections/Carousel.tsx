@@ -1,14 +1,14 @@
 "use client"
 
-import { CardContent, CardTitle } from "@/components/ui/card"
+import { CardContent, CardTitle } from "@/src/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import { benefits } from "@/data/utils"
+} from "@/src/components/ui/carousel"
+import { benefits } from "@/src/data/utils"
 import { useEffect, useState } from "react"
 
 const CarouselBenefit = () => {

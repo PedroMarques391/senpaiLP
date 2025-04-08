@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef } from 'react'
-import { Button } from './ui/button'
+import { Button } from '@/src/components/ui/button'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import { motion, useInView } from "motion/react"
 import Link from 'next/link'

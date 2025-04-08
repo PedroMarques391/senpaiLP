@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
-import { PreloadResources } from "@/components/PreloadResources";
+import { PreloadResources } from "@/src/components/shared/PreloadResources";
 
 const playFair = Playfair_Display({
   variable: "--font-Playfair_Display",

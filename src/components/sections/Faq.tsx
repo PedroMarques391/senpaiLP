@@ -1,10 +1,10 @@
-import { IFaq } from '@/data/utils'
+import { IFaq } from '@/src/data/utils'
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/src/components/ui/accordion"
 import React from 'react'
 
 interface IFaqProps {

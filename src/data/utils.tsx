@@ -1,4 +1,4 @@
-import { IServicesInterface } from "@/components/sections/Services";
+import { IServicesInterface } from "@/src/components/sections/Services";
 import { ShieldCheck, Lock, ThumbsUp, Users, RefreshCw } from "lucide-react";
 import { JSX } from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -6,7 +6,7 @@ import CEOImage from "../../public/images/about/marcelo.webp"
 import CTOImage from "../../public/images/about/rodrigo.webp"
 import Dev1Image from "../../public/images/about/pedro.webp"
 import Dev2Image from "../../public/images/about/kaiky.webp"
-import { ITeamProps } from "@/components/sections/Team";
+import { ITeamProps } from "@/src/components/sections/Team";
 
 
 

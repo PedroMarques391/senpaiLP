@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Hero from './Hero'
 import { Footer } from './Footer'
-import { LoadingPage } from '../shared/LoadingPage'
+import { LoadingPage } from '@/src/components/shared/LoadingPage'
 import { ArrowUp } from 'lucide-react'
 import { Header } from './Header'
 
