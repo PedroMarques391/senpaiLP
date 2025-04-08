@@ -41,26 +41,25 @@ const AboutPage = () => {
                     <AlternatingSection
                         imageGridAlign='left'
                         image={senpaiAbout}
-                        title='No que acreditamos?'
+                        title='Reconhecimento'
                     >
-                        Acreditamos no poder da conversa. Acreditamos que a tecnologia deve ser humana, acessível e presente — exatamente onde as pessoas estão.
-                        Por isso, unimos inteligência artificial, automação e atendimento personalizado em um só lugar: no WhatsApp, o canal mais direto e natural do dia a dia.
-                        Nossa missão é transformar interações em experiências inteligentes, rápidas e eficientes.
-                        Porque quando tecnologia fala a mesma língua das pessoas, tudo flui melhor.
+                        Desde 2020, o Bot do Senpai vem conquistando seu espaço nas redes sociais e na mente dos usuários. Nosso número foi compartilhado organicamente milhares de vezes, com destaque em postagens virais no Twitter que ultrapassaram milhões de visualizações, inclusive por usuários de diferentes países.
                     </AlternatingSection>
                     <AlternatingSection
                         imageGridAlign='right'
                         image={senpaiAbout2}
-                        title='Por que fazemos o que fazemos?'
+                        title='Como fazemos?'
                     >
-                        Porque acreditamos que todo mundo merece ser ouvido com atenção, clareza e carinho — direto no WhatsApp, onde a conversa é só entre nós.
+                        Transformamos mensagens em momentos únicos. Combinamos inteligência artificial e linguagem natural para garantir que cada pessoa se sinta ouvida, compreendida e acolhida — tudo isso direto no WhatsApp.
                     </AlternatingSection>
                     <AlternatingSection
                         imageGridAlign='left'
                         image={senpaiAbout3}
-                        title='Nossa abordagem'
+                        title='O que nos torna diferentes?'
                     >
-                        Somos pessoas que acreditam no poder de uma boa conversa. Cada detalhe da senpai foi pensado com base em interações reais: o que ajuda, o que confunde, o que aproxima. Desenvolvemos uma IA que entende, respeita e responde com clareza — porque acreditamos que conversar bem é transformar experiências. No fim das contas, nosso foco é simples: criar diálogos mais humanos, no lugar onde eles realmente acontecem — no seu WhatsApp.
+                        Cada detalhe da Senpai foi criado a partir de interações reais — observamos o que aproxima, o que confunde, o que realmente faz a diferença.
+                        Desenvolvemos uma IA que escuta, compreende e responde com empatia e clareza, porque acreditamos que conversar bem é transformar experiências.
+                        No fim das contas, nosso propósito é simples: tornar os diálogos mais humanos, exatamente onde eles acontecem de forma natural — no seu WhatsApp.
                     </AlternatingSection>
                 </section>
                 <section>
