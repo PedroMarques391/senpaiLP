@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
+import { PreloadResources } from "@/components/PreloadResources";
 
 const playFair = Playfair_Display({
   variable: "--font-Playfair_Display",
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="!scroll-smooth">
       <body className={`${lora.variable} ${playFair.variable} antialiased`}>
+        <PreloadResources />
         {children}
         <Analytics />
       </body>
