@@ -1,25 +1,14 @@
 "use client"
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import { motion, useInView } from "motion/react"
+import { renderIcon } from '../shared/IconRenderer'
+import { ITeamMember } from '@/src/types'
 
-type TLinksTypes = {
-    url: string
-    color: string
-    icon: React.ReactNode
-}
 
-export interface ITeamProps {
-    image: StaticImageData
-    name: string
-    jobTitle: string
-    bio: string
-    links: TLinksTypes[]
 
-}
-
-const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Element => {
+const Team = ({ image, name, jobTitle, bio, links }: ITeamMember): React.JSX.Element => {
     const ref = useRef(null)
     const isInView = useInView(ref)
 
@@ -56,7 +45,7 @@ const Team = ({ image, name, jobTitle, bio, links }: ITeamProps): React.JSX.Elem
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`${link.color} hover:underline`}>
-                                {link.icon}
+                                {renderIcon(link.icon)}
                             </Link>
                         </li>
                     ))}
