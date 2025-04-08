@@ -239,7 +239,7 @@ export const functionsCardItens: IFunctionsCard[] = [
     {
         title: "Pesquisa Rápida com a Senpai",
         subtitle: "Quer saber algo? Deixe a senpai fazer uma pesquisa no google para você! Sempre trazendo os melhores resultados.",
-        imagePath: "/images/card/cardSearch.webp",
+        imagePath: "/images/card/card.png",
         message: "Olá Senpai, quero criar um lembrete kawaii!",
         duration: 2.5
     },
