@@ -1,5 +1,5 @@
 "use client"
-import { Header } from "./template/header/Header"
+import { Header } from "./template/menu/Header"
 import { BsWhatsapp } from "react-icons/bs"
 import { CardContent, CardHeader, CardTitle } from "./ui/card"
 import { achievements } from "@/data/utils"
