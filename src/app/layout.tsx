@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     siteName: "BotSenpai",
     url: "https://botdosenpai.com.br/",
     type: "website",
+    images: [
+      {
+        url: "/images/about/wallpaper.webp",
+        width: 1200,
+        height: 630,
+        alt: "BotSenpai - O bot de figurinha mais fofo da internet!",
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
