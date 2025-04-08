@@ -11,9 +11,9 @@ export function renderIcon(icon: IconKey): React.JSX.Element {
         thumbs: <ThumbsUp className="w-6 h-6 text-yellow-500" />,
         users: <Users className="w-6 h-6 text-red-500" />,
         refresh: <RefreshCw className="w-6 h-6 text-purple-500" />,
-        github: <BsGithub className="text-gray-800" />,
-        instagram: <BsInstagram className="text-pink-500" />,
-        linkedin: <BsLinkedin className="text-blue-700" />
+        github: <BsGithub className="text-gray-800 h-6 w-6" />,
+        instagram: <BsInstagram className="text-pink-500 h-6 w-6" />,
+        linkedin: <BsLinkedin className="text-blue-700 h-6 w-6" />
     }
     return iconMap[icon]
 }
