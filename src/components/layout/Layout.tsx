@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { Header } from './menu/Header'
-import Hero from '../Hero'
+import Hero from './Hero'
 import { Footer } from './Footer'
-import { LoadingPage } from '../LoadingPage'
+import { LoadingPage } from '../shared/LoadingPage'
 import { ArrowUp } from 'lucide-react'
+import { Header } from './Header'
 
 
 interface ILayoutProps {

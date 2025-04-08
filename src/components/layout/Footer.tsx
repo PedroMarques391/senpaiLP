@@ -1,5 +1,5 @@
 import LI from "@/components/ui/LI"
-import Logo from "../Logo";
+import Logo from "../shared/Logo";
 import { usePathname } from "next/navigation";
 
 export const Footer = () => {

@@ -21,7 +21,7 @@ const CarouselBenefit = () => {
       setCurrentIndex((prev) => (prev + 1) % totalSliders)
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [totalSliders])
 
   return (
     <section className="w-full max-w-6xl mx-auto my-10">

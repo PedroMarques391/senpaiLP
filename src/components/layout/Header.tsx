@@ -1,5 +1,5 @@
 "use client"
-import Logo from "@/components/Logo"
+import Logo from "@/components/shared/Logo"
 import MenuDesktop from "./MenuDesktop"
 import { useEffect, useState } from "react";
 import Mobile from "./Mobile";

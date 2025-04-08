@@ -1,14 +1,14 @@
 "use client"
-import { Header } from "./template/menu/Header"
 import { BsWhatsapp } from "react-icons/bs"
-import { CardContent, CardHeader, CardTitle } from "./ui/card"
+import { CardContent, CardHeader, CardTitle } from "../ui/card"
 import { achievements } from "@/data/utils"
 import Image from "next/image"
 import whatsDemo from "../../public/images/senpai/phone.webp"
 import { motion, useInView } from "motion/react";
 import { useRef } from "react"
-import Counter from "./Counter"
+import Counter from "../sections/Counter"
 import Link from "next/link"
+import { Header } from "./Header"
 
 
 

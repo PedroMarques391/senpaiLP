@@ -1,13 +1,13 @@
 "use client"
 
-import Layout from '@/components/template/Layout'
+import Layout from '@/components/layout/Layout'
 import senpaiAbout from "../../../public/images/about/senpaiInRoom.webp"
 import senpaiAbout2 from "../../../public/images/about/senpaiWithFriend.webp"
 import senpaiAbout3 from "../../../public/images/about/senpai.webp"
-import AlternatingSection from '@/components/AlternatingSection'
+import AlternatingSection from '@/components/sections/AlternatingSection'
 import wallpaper from '../../../public/images/about/wallpaper.webp'
 
-import Team from '@/components/Team'
+import Team from '@/components/sections/Team'
 import { teamMembers } from '@/data/utils'
 import Image from 'next/image'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'

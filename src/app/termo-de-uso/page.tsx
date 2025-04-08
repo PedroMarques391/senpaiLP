@@ -1,4 +1,4 @@
-import Layout from "@/components/template/Layout";
+import Layout from "@/components/layout/Layout";
 import { termsOfUse } from "@/data/utils";
 import Link from "next/link";
 
