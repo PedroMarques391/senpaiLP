@@ -1,5 +1,5 @@
-import Layout from "@/components/layout/Layout";
-import { privacyPolicy } from "@/data/utils";
+import Layout from "@/src/components/layout/Layout";
+import { privacyPolicy } from "@/src/data/utils";
 
 import Link from "next/link";
 
