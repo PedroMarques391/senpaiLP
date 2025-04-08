@@ -27,13 +27,15 @@ export const metadata: Metadata = {
     siteName: "BotSenpai",
     url: "https://botdosenpai.com.br/",
     type: "website",
-    images: {
-      url: "/wallpaper.png"
-    }
-
-
-
-
+    locale: "pt_BR",
+    images: [
+      {
+        url: "https://botdosenpai.com.br/wallpaper.png",
+        width: 800,
+        height: 600,
+        alt: "BotSenpai - O bot de figurinha mais fofo da internet!",
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
@@ -43,6 +45,7 @@ export const metadata: Metadata = {
     site: "@BotDoSenpai",
   },
 };
+
 
 export default function RootLayout({
   children,
