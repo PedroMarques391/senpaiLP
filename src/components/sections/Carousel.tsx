@@ -10,6 +10,7 @@ import {
 } from "@/src/components/ui/carousel"
 import { benefits } from "@/src/data"
 import { useEffect, useState } from "react"
+import { renderIcon } from "../shared/IconRenderer"
 
 const CarouselBenefit = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0)
@@ -43,7 +44,7 @@ const CarouselBenefit = () => {
                     {benefit.title}
                   </CardTitle>
                   <div className="flex justify-center items-center p-4">
-                    {benefit.icon}
+                    {renderIcon(benefit.icon)}
                   </div>
                   <CardContent className="flex flex-col items-center justify-center p-6">
                     <p className="text-md text-gray-700 text-center leading-relaxed font-sans">
