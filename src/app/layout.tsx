@@ -26,6 +26,15 @@ export const metadata: Metadata = {
     url: "https://botdosenpai.com.br/",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bot de Figurinha",
+    creator: "@BotDoSenpai",
+    description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
+    site: "@BotDoSenpai",
+  },
+
+
 };
 
 export default function RootLayout({
@@ -35,10 +44,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="!scroll-smooth">
-      <head>
-        <link rel="preload" href="/images/senpai/hero.webp" as="image" />
-
-      </head>
       <body className={`${lora.variable} ${playFair.variable} antialiased`}>
         {children}
         <Analytics />
