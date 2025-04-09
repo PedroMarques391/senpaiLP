@@ -3,8 +3,12 @@ import React, { useEffect, useState } from 'react'
 import Hero from './Hero'
 import { Footer } from './Footer'
 import { LoadingPage } from '@/src/components/shared/LoadingPage'
-import { ArrowUp } from 'lucide-react'
+import { MessageCircleMoreIcon } from 'lucide-react'
 import { Header } from './Header'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
+
+import FormDialog from '../ui/form-diolog'
+
 
 
 interface ILayoutProps {
@@ -53,14 +57,27 @@ const Layout = ({
                             {children}
                         </section>
                         <Footer />
-
-                        <button
-                            aria-label='scroll to top'
-                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                            className={`bg-white text-gray-800 bottom-10 right-5 lg:right-12 fixed h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-opacity duration-500 transform hover:scale-110 z-30 ${showButton ? "opacity-100" : "opacity-0"}`} >
-                            <ArrowUp className="h-6 w-6 md:h-8 md:w-8 " />
-                        </button>
-
+                        <Dialog >
+                            <DialogTrigger asChild>
+                                <button
+                                    aria-label='scroll to top'
+                                    className={`bg-white text-gray-800 bottom-10 right-5 lg:right-12 fixed h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-opacity duration-500 transform hover:scale-110 z-30 ${showButton ? "opacity-100" : "opacity-0"}`} >
+                                    <MessageCircleMoreIcon className="h-6 w-6 md:h-8 md:w-8 " />
+                                </button>
+                            </DialogTrigger>
+                            <DialogContent
+                                className="sm:max-w-[425px]">
+                                <DialogHeader>
+                                    <DialogTitle>
+                                        Suporte ao Cliente
+                                    </DialogTitle>
+                                    <DialogDescription>
+                                        Online todos os dias, 24h por dia, sempre que precisar
+                                    </DialogDescription>
+                                </DialogHeader>
+                                <FormDialog />
+                            </DialogContent>
+                        </Dialog>
                     </main>
                 )}
         </>
@@ -68,3 +85,7 @@ const Layout = ({
 }
 
 export default Layout
+
+
+
+
