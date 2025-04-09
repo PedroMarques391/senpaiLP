@@ -6,7 +6,7 @@ import Services from "@/src/components/sections/Services";
 import { faq, functionsCardItens, services } from "@/src/data"
 import CarouselBenefit from "@/src/components/sections/Carousel";
 import { Faq } from "@/src/components/sections/Faq";
-import Title from "@/src/components/shared/Title";
+import Title from "@/src/components/ui/Title";
 
 
 
