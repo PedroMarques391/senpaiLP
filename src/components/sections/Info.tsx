@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
 import senpai from "@/public/images/senpai/senpai.webp"
 import Image from "next/image";
-import SpeechBubble from "@/src/components/ui/SpeechBubble";
+import SpeechBubble from "@/src/components/ui/speech-bubble";
 import { motion, useInView } from "motion/react"
 import React, { useRef } from 'react'
 

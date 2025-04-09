@@ -1,4 +1,4 @@
-import LI from "@/src/components/ui/LI"
+import LI from "@/src/components/ui/li"
 import Logo from "@/src/components/shared/Logo";
 import { usePathname } from "next/navigation";
 
