@@ -18,6 +18,7 @@ const userSchema = z.object({
     phone: z.string().min(1, "O telefone é obrigatório.").refine((value) => /^[\d\(\)\-\s]{14,15}$/.test(value), {
         message: "Numero de telefone invalido"
     }),
+    subject: z.string().min(5, "O assunto precisa ter mais de 5 caracteres."),
     message: z.string().min(1, "A mensagem é obrigatória."),
 })
 
@@ -77,7 +78,14 @@ const FormDialog = (): React.JSX.Element => {
             </div>
 
             <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="message" className="text-right">Assunto</Label>
+                <Label htmlFor="assunto" className="text-right">Assunto</Label>
+                <Input
+                    className="col-span-3" {...register("message")} />
+                {errors.subject && <p className="text-red-500 col-span-4 text-sm">{errors.subject.message}</p>}
+            </div>
+
+            <div className="grid grid-cols-4 items-center gap-4">
+                <Label htmlFor="message" className="text-right">Mensagem</Label>
                 <Textarea
                     className="col-span-3 resize-none" {...register("message")} />
                 {errors.message && <p className="text-red-500 col-span-4 text-sm">{errors.message.message}</p>}
