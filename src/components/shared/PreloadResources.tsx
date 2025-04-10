@@ -8,10 +8,7 @@ export function PreloadResources() {
         type: 'image/webp',
     })
 
-    ReactDOM.preload('/images/about/wallpaper.webp', {
-        as: 'image',
-        type: 'image/webp',
-    })
+
 
     return null
 }
