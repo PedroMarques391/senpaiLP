@@ -28,8 +28,18 @@ const FormDialog = (): React.JSX.Element => {
         resolver: zodResolver(userSchema),
     })
 
-    function userSubmit(data: FormData) {
-        console.log(data)
+    async function userSubmit(data: FormData) {
+        await fetch("/api/emails/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+            .then(() => console.log("foi"))
+            .catch(() => console.log("deu o carai"))
+
+
         reset()
     }
 
@@ -49,7 +59,7 @@ const FormDialog = (): React.JSX.Element => {
 
             <div className="grid grid-cols-4 items-center gap-4">
                 <Label htmlFor="email" className="text-right">E-mail</Label>
-                <Input className="col-span-3" {...register("email")} />
+                <Input type='email' className="col-span-3" {...register("email")} />
                 {errors.email && <p className="text-red-500 col-span-4 text-sm">{errors.email.message}</p>}
             </div>
 
