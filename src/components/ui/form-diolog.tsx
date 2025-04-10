@@ -78,7 +78,7 @@ const FormDialog = (): React.JSX.Element => {
             </div>
 
             <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="assunto" className="text-right">Assunto</Label>
+                <Label htmlFor="subject" className="text-right">Assunto</Label>
                 <Input
                     className="col-span-3" {...register("subject")} />
                 {errors.subject && <p className="text-red-500 col-span-4 text-sm">{errors.subject.message}</p>}
