@@ -25,14 +25,11 @@ export async function sendEmail(data: IEmail) {
   const { name, email, phone, message } = data;
   const formattedPhone = insertMaskInPhone(phone);
 
-  console.log("estamos em sendMail", data)
-  try {
-
-    return await transporter.sendMail({
-      from: `"Suporte" <${email}>`,
-      to: process.env.ADDRESSEE,
-      subject: "Eii temos novas mensagens",
-      html: `
+  return await transporter.sendMail({
+    from: `"Suporte" <${email}>`,
+    to: process.env.ADDRESSEE,
+    subject: "Eii temos novas mensagens",
+    html: `
                 <div style="font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif; background-color: #fff0f5; color: #4b0082; padding: 24px; border-radius: 16px; border: 2px dashed #ffb6c1; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 12px rgba(255, 192, 203, 0.4);">
   <h2 style="color: #ff69b4; text-align: center; margin-bottom: 20px;">
     💌 Nova Mensagem de: <span style="color: #4b0082;">${name}</span>F
@@ -52,9 +49,5 @@ export async function sendEmail(data: IEmail) {
 </div>
 
             `,
-    });
-  } catch (error) {
-    console.log("error ao enviar", error)
-  }
-
+  });
 }
