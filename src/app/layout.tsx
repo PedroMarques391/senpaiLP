@@ -20,7 +20,7 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: {
-    default: 'BotDoSenpai - Sua bot ideal',
+    default: 'BotDoSenpai - Seu bot ideal',
     template: '%s | BotDoSenpai - Sua bot ideal',
   },
   description: 'Crie figurinhas únicas no WhatsApp com a Bot do Senpai — rápido, gratuito e cheio de fofura.',
