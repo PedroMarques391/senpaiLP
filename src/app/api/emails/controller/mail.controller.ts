@@ -18,17 +18,18 @@ interface IEmail {
   name: string;
   email: string,
   phone: string;
+  subject: string;
   message: string;
 }
 
 export async function sendEmail(data: IEmail) {
-  const { name, email, phone, message } = data;
+  const { name, email, phone, subject, message } = data;
   const formattedPhone = insertMaskInPhone(phone);
 
   return await transporter.sendMail({
     from: `"Suporte" <${email}>`,
     to: process.env.ADDRESSEE,
-    subject: "Eii temos novas mensagens",
+    subject: subject,
     html: `
                 <div style="font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif; background-color: #fff0f5; color: #4b0082; padding: 24px; border-radius: 16px; border: 2px dashed #ffb6c1; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 12px rgba(255, 192, 203, 0.4);">
   <h2 style="color: #ff69b4; text-align: center; margin-bottom: 20px;">
