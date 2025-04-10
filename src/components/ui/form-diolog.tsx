@@ -19,7 +19,7 @@ const userSchema = z.object({
         message: "Numero de telefone invalido"
     }),
     subject: z.string().min(5, "O assunto precisa ter mais de 5 caracteres."),
-    message: z.string().min(1, "A mensagem é obrigatória."),
+    message: z.string().min(1, "A mensagem é obrigatória.").max(250, "A mensagem deve ter no máximo 250 caracteres."),
 })
 
 type FormData = z.infer<typeof userSchema>
@@ -80,7 +80,7 @@ const FormDialog = (): React.JSX.Element => {
             <div className="grid grid-cols-4 items-center gap-4">
                 <Label htmlFor="assunto" className="text-right">Assunto</Label>
                 <Input
-                    className="col-span-3" {...register("message")} />
+                    className="col-span-3" {...register("subject")} />
                 {errors.subject && <p className="text-red-500 col-span-4 text-sm">{errors.subject.message}</p>}
             </div>
 
