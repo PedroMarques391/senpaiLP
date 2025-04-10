@@ -17,7 +17,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "BotSenpai - Seu bot ideal",
+  title: "BotDoSenpai - Seu bot ideal",
   description: "Bot de figurinha ideal para transformar suas conversas no WhatsApp em um verdadeiro festival de figurinhas!",
   authors: [{ name: "Pedro Marques" }],
   keywords: ["bot de figurinha", "WhatsApp", "figurinhas divertidas", "BotSenpai", "conversas animadas", "figurinhas", "senpai", "dosenpai"],
