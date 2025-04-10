@@ -17,14 +17,22 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "BotDoSenpai - Seu bot ideal",
-  description: "Bot de figurinha ideal para transformar suas conversas no WhatsApp em um verdadeiro festival de figurinhas!",
+  title: {
+    default: 'BotDoSenpai - Sua bot ideal',
+    template: '%s | BotDoSenpai - Sua bot ideal',
+  },
+  description: 'Crie figurinhas únicas no WhatsApp com a Bot do Senpai — rápido, gratuito e cheio de fofura.',
+  metadataBase: new URL('https://botdosenpai.com.br'),
+  alternates: {
+    canonical: '/',
+  },
   authors: [{ name: "Pedro Marques" }],
+  applicationName: "BotDoSenpai",
   keywords: ["bot de figurinha", "WhatsApp", "figurinhas divertidas", "BotSenpai", "conversas animadas", "figurinhas", "senpai", "dosenpai"],
   openGraph: {
     title: "BotDoSenpai - Seu bot ideal",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
-    siteName: "BotDoSenpai",
+    siteName: "Bot Senpai",
     url: "https://botdosenpai.com.br/",
     type: "website",
     locale: "pt_BR",
@@ -33,7 +41,7 @@ export const metadata: Metadata = {
         url: "https://botdosenpai.com.br/wallpaper.png",
         width: 800,
         height: 600,
-        alt: "BotSenpai - O bot de figurinha mais fofo da internet!",
+        alt: "BotDoSenpai - O bot de figurinha mais fofo da internet!",
       }
     ]
   },
@@ -43,8 +51,31 @@ export const metadata: Metadata = {
     creator: "@BotDoSenpai",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
     site: "@BotDoSenpai",
+    images: ["/wallpaper.png"]
   },
-};
+  other: {
+    'script:ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Bot Senpai",
+      "url": "https://botdosenpai.com.br",
+      "applicationCategory": "Messaging",
+      "operatingSystem": "All",
+      "description":
+        "Crie figurinhas únicas no WhatsApp com A Bot do Senpai — rápido, gratuito e cheio de fofura!",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "BRL",
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "BotDoSenpai",
+        "url": "https://botdosenpai.com.br",
+      }
+    })
+  }
+}
 
 
 export default function RootLayout({
