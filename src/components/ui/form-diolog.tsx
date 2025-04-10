@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Textarea } from './textarea'
 import { Input } from './input'
 import { Label } from './label'
@@ -24,11 +24,13 @@ const userSchema = z.object({
 type FormData = z.infer<typeof userSchema>
 
 const FormDialog = (): React.JSX.Element => {
+    const [loading, setLoaging] = useState<boolean>(false);
     const { register, handleSubmit, formState: { errors }, setValue, clearErrors, reset } = useForm({
         resolver: zodResolver(userSchema),
     })
 
     async function userSubmit(data: FormData) {
+        setLoaging(true)
         await fetch("/api/emails/", {
             method: "POST",
             headers: {
@@ -38,6 +40,7 @@ const FormDialog = (): React.JSX.Element => {
         })
             .then(() => console.log("foi"))
             .catch(() => console.log("deu o carai"))
+            .finally(() => setLoaging((prev) => !prev))
 
 
         reset()
@@ -75,12 +78,29 @@ const FormDialog = (): React.JSX.Element => {
 
             <div className="grid grid-cols-4 items-center gap-4">
                 <Label htmlFor="message" className="text-right">Assunto</Label>
-                <Textarea className="col-span-3" {...register("message")} />
+                <Textarea
+                    className="col-span-3 resize-none" {...register("message")} />
                 {errors.message && <p className="text-red-500 col-span-4 text-sm">{errors.message.message}</p>}
             </div>
 
             <DialogFooter>
-                <Button type="submit">Enviar</Button>
+
+                <Button
+                    type="submit"
+                    disabled={loading}
+                    className={`w-full flex items-center justify-center gap-2 transition-all duration-300 ${loading ? 'bg-gray-400 text-black cursor-not-allowed' : 'bg-black hover:bg-black/80 text-white'
+                        } rounded-2xl py-3 text-base font-semibold `}
+                >
+                    {loading ? (
+                        <>
+                            <span
+                                className="inline-block h-4 w-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                            <span>Enviando...</span>
+                        </>
+                    ) : (
+                        <span>Enviar 💌</span>
+                    )}
+                </Button>
             </DialogFooter>
         </form>
     )
