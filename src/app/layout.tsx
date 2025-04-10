@@ -3,6 +3,8 @@ import { Analytics } from "@vercel/analytics/react"
 import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
 import { PreloadResources } from "@/src/components/shared/PreloadResources";
+import Script from "next/script";
+import { jsonLd } from "../utils";
 
 const playFair = Playfair_Display({
   variable: "--font-Playfair_Display",
@@ -53,28 +55,6 @@ export const metadata: Metadata = {
     site: "@BotDoSenpai",
     images: ["/wallpaper.png"]
   },
-  other: {
-    'script:ld+json': JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Bot Senpai",
-      "url": "https://botdosenpai.com.br",
-      "applicationCategory": "Messaging",
-      "operatingSystem": "All",
-      "description":
-        "Crie figurinhas únicas no WhatsApp com A Bot do Senpai — rápido, gratuito e cheio de fofura!",
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "BRL",
-      },
-      "creator": {
-        "@type": "Organization",
-        "name": "BotDoSenpai",
-        "url": "https://botdosenpai.com.br",
-      }
-    })
-  }
 }
 
 
@@ -86,6 +66,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="!scroll-smooth">
       <body className={`${lora.variable} ${playFair.variable} antialiased`}>
+        <Script
+          id="main-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
         <PreloadResources />
         {children}
         <Analytics />
