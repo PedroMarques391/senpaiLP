@@ -32,7 +32,7 @@ export async function sendEmail(data: IEmail) {
     html: `
                 <div style="font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif; background-color: #fff0f5; color: #4b0082; padding: 24px; border-radius: 16px; border: 2px dashed #ffb6c1; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 12px rgba(255, 192, 203, 0.4);">
   <h2 style="color: #ff69b4; text-align: center; margin-bottom: 20px;">
-    💌 Nova Mensagem de: <span style="color: #4b0082;">${name}</span>F
+    💌 Nova Mensagem de: <span style="color: #4b0082;">${name}</span>
   </h2>
 
   <p style="font-size: 16px; color: #555;"><strong>📧 E-mail:</strong> ${email}</p>
