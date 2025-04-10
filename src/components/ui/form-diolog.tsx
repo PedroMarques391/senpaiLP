@@ -45,8 +45,6 @@ const FormDialog = (): React.JSX.Element => {
             .then(() => setEmailSend((prev) => !prev))
             .catch(() => console.log("deu o carai"))
             .finally(() => setLoaging((prev) => !prev))
-
-
         reset()
     }
 
