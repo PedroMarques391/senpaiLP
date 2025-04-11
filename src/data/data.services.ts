@@ -25,7 +25,7 @@ const services: IServices[] = [
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
         textButton: "Assine Agora",
-        message: ".getPremium"
+        message: ".menu"
     },
     {
         service: "Plano Mestre",
@@ -42,7 +42,7 @@ const services: IServices[] = [
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
         textButton: "Assine Agora",
-        message: ".getPremium"
+        message: ".menu"
     }
 ];
 
