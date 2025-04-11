@@ -5,10 +5,11 @@ import { Label } from './label'
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { DialogFooter, DialogClose } from './dialog'
 import { Button } from './button'
 import { insertMaskInPhone } from '@/src/utils'
-import { CircleCheckBig } from 'lucide-react'
+import ModalMessage from '../sections/ModalMessage'
+import { IModalMessage } from '@/src/types'
+import { DialogFooter } from './dialog'
 
 
 
@@ -28,6 +29,7 @@ type FormData = z.infer<typeof userSchema>
 const FormDialog = (): React.JSX.Element => {
     const [loading, setLoaging] = useState<boolean>(false);
     const [emailSend, setEmailSend] = useState<boolean>(false);
+    const [modalMessageItens, setModalMessageItens] = useState({} as IModalMessage)
 
     const { register, handleSubmit, formState: { errors }, setValue, clearErrors, reset } = useForm({
         resolver: zodResolver(userSchema),
@@ -35,15 +37,35 @@ const FormDialog = (): React.JSX.Element => {
 
     async function userSubmit(data: FormData) {
         setLoaging(true)
-        await fetch("/api/emails/", {
+        await fetch("/api/opa/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
+
         })
-            .then(() => setEmailSend((prev) => !prev))
-            .catch(() => console.log("deu o carai"))
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error("Erro na requisição")
+                }
+                setEmailSend((prev) => !prev)
+                setModalMessageItens({
+                    statusIcon: "check",
+                    text: "Obrigado por entrar em contato. Sua mensagem chegou direitinho e logo logo responderemos com todo carinho! 💌",
+                    textButton: "Nova Mensagem",
+                    setEmailSend: setEmailSend
+                })
+            })
+            .catch(() => {
+                setEmailSend((prev) => !prev)
+                setModalMessageItens({
+                    statusIcon: "x",
+                    text: "Ops! Algo deu errado ao enviar sua mensagem. Por favor, tente novamente",
+                    textButton: "Tentar Novamente",
+                    setEmailSend: setEmailSend
+                })
+            })
             .finally(() => setLoaging((prev) => !prev))
         reset()
     }
@@ -57,20 +79,12 @@ const FormDialog = (): React.JSX.Element => {
     return (
         <>
             {emailSend ? (
-                <div className="flex flex-col items-center justify-center h-full text-center">
-                    <CircleCheckBig size={160} color='#00ff33' />
-                    <p className="text-sm text-zinc-500 max-w-xs py-2">
-                        Obrigado por entrar em contato. Sua mensagem chegou direitinho e logo logo responderemos com todo carinho! 💌
-                    </p>
-                    <div className="w-full mt-4 flex justify-end items-center gap-2">
-                        <Button onClick={() => setEmailSend((prev) => !prev)} variant="default">
-                            Nova mensagem
-                        </Button>
-                        <DialogClose asChild>
-                            <Button variant="destructive">Sair</Button>
-                        </DialogClose>
-                    </div>
-                </div>
+                <ModalMessage
+                    statusIcon={modalMessageItens.statusIcon}
+                    text={modalMessageItens.text}
+                    textButton={modalMessageItens.textButton}
+                    setEmailSend={modalMessageItens.setEmailSend}
+                />
 
             ) : (
                 <form onSubmit={handleSubmit(userSubmit)} className="space-y-3">
