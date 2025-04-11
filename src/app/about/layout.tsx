@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Lora } from "next/font/google";
 import "./../globals.css";
+import Script from "next/script";
+import { jsonLdAbout } from "@/src/utils";
 
 const playFair = Playfair_Display({
     variable: "--font-Playfair_Display",
@@ -18,7 +20,7 @@ const lora = Lora({
 
 export const metadata: Metadata = {
     title: "BotDoSenpai - Sobre Nós",
-    description: "Política de Privacidade do bot Senpai.",
+    description: "Conheça o time por trás do Bot do Senpai e a missão de espalhar fofura no WhatsApp com figurinhas personalizadas",
     keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai", "Quem somos", "sobre nós", "about us", "about"],
 
 
@@ -34,6 +36,13 @@ export default function AboutLayout({
             <body
                 className={`${lora.variable} ${playFair.variable} antialiased`}
             >
+                <Script
+                    id="about-schema"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(jsonLdAbout),
+                    }}
+                />
                 {children}
             </body>
         </html>
