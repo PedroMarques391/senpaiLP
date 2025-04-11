@@ -1,8 +1,11 @@
 import { insertMaskInPhone } from "./phoneMask"
-import { jsonLd } from "./schema.org"
+import { jsonLd, jsonLdAbout, jsonLdPrivacy, jsonLdTerms } from "./schema.org"
 
 
 export {
     insertMaskInPhone,
-    jsonLd
+    jsonLd,
+    jsonLdAbout,
+    jsonLdPrivacy,
+    jsonLdTerms
 }
