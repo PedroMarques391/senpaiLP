@@ -37,7 +37,7 @@ const FormDialog = (): React.JSX.Element => {
 
     async function userSubmit(data: FormData) {
         setLoaging(true)
-        await fetch("/api/opa/", {
+        await fetch("/api/emails/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
