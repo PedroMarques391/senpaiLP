@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Hero from './Hero'
 import { Footer } from './Footer'
 import { LoadingPage } from '@/src/components/shared/LoadingPage'
-import { MessageCircleMoreIcon } from 'lucide-react'
+import { Headset } from 'lucide-react'
 import { Header } from './Header'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 
@@ -57,12 +57,13 @@ const Layout = ({
                             {children}
                         </section>
                         <Footer />
-                        <Dialog >
+                        <Dialog onOpenChange={(isOpen) => setShowButton(!isOpen)} >
                             <DialogTrigger asChild>
                                 <button
                                     aria-label='scroll to top'
-                                    className={`bg-white text-gray-800 bottom-10 right-5 lg:right-12 fixed h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-opacity duration-500 transform hover:scale-110 z-30 ${showButton ? "opacity-100" : "opacity-0"}`} >
-                                    <MessageCircleMoreIcon className="h-6 w-6 md:h-8 md:w-8 " />
+                                    className={`bg-white text-gray-800 flex flex-col bottom-10 right-5 lg:right-12 fixed h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-2xl items-center justify-center shadow-lg hover:shadow-xl transition-opacity duration-500 transform hover:scale-110 z-30 ${showButton ? "opacity-100" : "opacity-0"}`} >
+                                    <Headset className="h-6 w-6 md:h-8 md:w-8 mb-1" />
+                                    <span className="text-xs md:text-sm">Support</span>
                                 </button>
                             </DialogTrigger>
                             <DialogContent

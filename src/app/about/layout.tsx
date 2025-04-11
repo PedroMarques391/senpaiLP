@@ -22,8 +22,6 @@ export const metadata: Metadata = {
     title: "BotDoSenpai - Sobre Nós",
     description: "Conheça o time por trás do Bot do Senpai e a missão de espalhar fofura no WhatsApp com figurinhas personalizadas",
     keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai", "Quem somos", "sobre nós", "about us", "about"],
-
-
 };
 
 export default function AboutLayout({
