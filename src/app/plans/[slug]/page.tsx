@@ -4,7 +4,9 @@ import { notFound } from 'next/navigation';
 import React from 'react'
 
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{
+    slug: string;
+}[]> {
     return services.map((service) => ({
         slug: service.url
     }))
@@ -15,7 +17,7 @@ export default async function Page({
 }: {
     params: Promise<{ slug: string }>
 
-}) {
+}): Promise<React.JSX.Element> {
     const { slug } = await params;
 
     const service = services.find(service => service.url === slug) ?? notFound();
