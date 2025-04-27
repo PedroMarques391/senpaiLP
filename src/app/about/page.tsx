@@ -15,7 +15,6 @@ import { team } from '@/src/data'
 const AboutPage = () => {
     return (
         <Layout
-            hero={false}
             backgroundColor='bg-gray-100'
             backgroundHeader='bg-none'
             container={false}

@@ -8,7 +8,6 @@ import Link from "next/link";
 const Privacy = (): React.JSX.Element => {
     return (
         <Layout
-            hero={false}
             backgroundColor="bg-gray-100"
             backgroundHeader="bg-black"
         >

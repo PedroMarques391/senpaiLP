@@ -10,7 +10,7 @@ import FormDialog from '@/src/components/ui/form-diolog'
 
 interface ILayoutProps {
     children: React.ReactNode
-    hero: boolean
+    hero?: boolean
     backgroundColor?: string
     backgroundHeader?: string
     container?: boolean
@@ -19,7 +19,7 @@ interface ILayoutProps {
 
 const Layout = ({
     children,
-    hero,
+    hero = false,
     backgroundColor = "bg-white",
     backgroundHeader = "bg-transparent",
     container = true,

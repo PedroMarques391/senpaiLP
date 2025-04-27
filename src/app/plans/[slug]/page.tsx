@@ -24,7 +24,6 @@ export default async function Page({
 
     return (
         <Layout
-            hero={false}
             backgroundColor='bg-gray-100'
             backgroundHeader='bg-black'
             load={false}
