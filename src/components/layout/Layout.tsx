@@ -14,6 +14,7 @@ interface ILayoutProps {
     backgroundColor?: string
     backgroundHeader?: string
     container?: boolean
+    load?: boolean
 }
 
 const Layout = ({
@@ -21,9 +22,10 @@ const Layout = ({
     hero,
     backgroundColor = "bg-white",
     backgroundHeader = "bg-transparent",
-    container = true
+    container = true,
+    load = true
 }: ILayoutProps): React.JSX.Element => {
-    const [loading, setLoading] = useState<boolean>(true);
+    const [loading, setLoading] = useState<boolean>(load);
     const [showButton, setShowButton] = useState<boolean>(false);
 
     useEffect(() => {
