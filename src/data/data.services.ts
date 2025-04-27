@@ -4,6 +4,7 @@ import { IServices } from "../types";
 const services: IServices[] = [
     {
         service: "Plano Grátis",
+        url: "gratis",
         value: "0",
         description: "Experimente sem compromisso! Teste a Senpai Bot e descubra como ela pode facilitar sua vida.",
         characteristics: [
@@ -15,6 +16,7 @@ const services: IServices[] = [
     },
     {
         service: "Plano Pro",
+        url: "pro",
         value: "4.90",
         description: "Transforme suas ideias em figurinhas sem limites! Criação rápida, fácil e divertida.",
         characteristics: [
@@ -29,6 +31,7 @@ const services: IServices[] = [
     },
     {
         service: "Plano Mestre",
+        url: "mestre",
         value: "9.90",
         description: "Experiência completa! A melhor escolha para criar figurinhas personalizadas com inteligência artificial.",
         characteristics: [
