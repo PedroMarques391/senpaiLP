@@ -13,7 +13,7 @@ const Services = ({ service,
     value,
     description,
     characteristics,
-    textButton, message }: IServices): React.JSX.Element => {
+    textButton, url }: IServices): React.JSX.Element => {
 
     const ref = useRef(null)
     const isInView = useInView(ref)
@@ -64,8 +64,7 @@ const Services = ({ service,
                 ))}
             </ul>
 
-            <Link href={`https://wa.me/555497153068?text=${message}`}
-                target='_blank'
+            <Link href={`plans/${url}`}
                 rel="noreferrer"
                 aria-label='Link de assinatura' >
                 <Button className="w-full py-6 text-base md:text-lg rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition-all mt-7 font-semibold">
