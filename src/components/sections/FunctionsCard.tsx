@@ -36,7 +36,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                     width={400}
                     height={400}
                     priority
-                    className="inline-block w-full object-contain h-full rounded-ss-xl"
+                    className="inline-block w-[400px] h-[400px] object-contain rounded-ss-xl bg-[#0a0a0a]"
                 />
             </motion.div>
             <div className="p-4 h-auto md:h-52 lg:h-60 xl:h-52 space-y-4 ">
@@ -53,7 +53,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                     initial={{ x: "-100%" }}
                     animate={{ x: isInView ? 0 : "-100%" }}
                     transition={{ type: "spring", stiffness: 50, damping: 25, duration: 2.0 }}
-                    className="text-lg text-gray-400 h-full ">
+                    className="text-lg text-gray-600 h-full ">
                     {subtitle}
                 </motion.p>
             </div>

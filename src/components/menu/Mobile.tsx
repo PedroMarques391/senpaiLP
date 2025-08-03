@@ -52,7 +52,7 @@ const Mobile = ({ isOpen, setIsOpen, isHomePage }: IMobileProps): React.JSX.Elem
                         <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#func" : "/#func"}>Funcionalidades</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#plans" : "/#plans"}>Planos</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#plans" : "/#plans"}>Assinaturas</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
                         <NavItem onClick={() => setIsOpen(false)} href="/about">Sobre Nós</NavItem>

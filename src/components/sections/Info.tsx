@@ -67,7 +67,7 @@ const Info = (): React.JSX.Element => {
                         quality={80}
                     />
                     <SpeechBubble side="right" style="-top-10 -left-10 sm:top-0 sm:-left-32 lg:top-8 lg:-left-24 w-40 sm:w-52 text-xs sm:text-sm lg:text-lg lg:w-60">
-                        Ei! Quer saber mais sobre mim?
+                        Ei! Quer saber mais sobre mim? 💙
                     </SpeechBubble>
 
 

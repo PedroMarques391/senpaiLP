@@ -13,7 +13,7 @@ const MenuDesktop = ({ isHomePage }: IMenuProps): React.JSX.Element => {
         <ul className="hidden md:flex justify-center items-center gap-x-3 ">
             <NavItem href={isHomePage ? "#home" : "/#home"} >Inicio</NavItem>
             <NavItem href={isHomePage ? "#func" : "/#func"} >Funcionalidades</NavItem>
-            <NavItem href={isHomePage ? "#plans" : "/#plans"}>Planos</NavItem>
+            <NavItem href={isHomePage ? "#plans" : "/#plans"}>Assinaturas</NavItem>
             <NavItem href='/about' >Sobre Nós</NavItem>
             <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
