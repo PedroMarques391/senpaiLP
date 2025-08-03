@@ -3,10 +3,10 @@ import { IServices } from "../types";
 
 const services: IServices[] = [
     {
-        service: "Plano Grátis",
+        service: "Grátis",
         url: "gratis",
         value: "0",
-        description: "Experimente sem compromisso! Teste a Senpai Bot e descubra como ela pode facilitar sua vida.",
+        description: "Experimente sem compromisso! Teste a Bot Senpai e descubra como ela pode facilitar sua vida.",
         characteristics: [
             "Crie 1 figurinha diariamente",
             "Pergunte algo e receba os 3 melhores resultados do Google"
@@ -15,14 +15,13 @@ const services: IServices[] = [
         message: ".menu"
     },
     {
-        service: "Plano Pro",
+        service: "Pro",
         url: "pro",
         value: "4.90",
         description: "Transforme suas ideias em figurinhas sem limites! Criação rápida, fácil e divertida.",
         characteristics: [
             "Criação ilimitada de figurinhas",
             "Converse comigo, sou uma IA pronta para responder",
-            "Newsletter exclusiva",
             "Atualizações para sempre ter a melhor experiência",
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
@@ -30,19 +29,22 @@ const services: IServices[] = [
         message: ".menu"
     },
     {
-        service: "Plano Mestre",
+        service: "Mestre",
         url: "mestre",
         value: "9.90",
-        description: "Experiência completa! A melhor escolha para criar figurinhas personalizadas com inteligência artificial.",
+        description: "Ideal para donos de grupos grandes que querem mais controle, segurança e diversão no grupo.",
         characteristics: [
-            "Criação ilimitada de figurinhas ",
-            "Crie figurinhas com Inteligência Artificial",
-            "Biblioteca de figurinhas",
-            "Converse comigo, sou uma IA pronta para responder",
-            "Newsletter exclusiva",
-            "Atualizações para sempre ter a melhor experiência",
-            "Novidades exclusivas para assinantes Mestre",
-            "Suporte dedicado para tirar todas as suas dúvidas"
+            "Moderação avançada",
+            "Antilink automático",
+            "Horário programado",
+            "Mensagens de boas-vindas",
+            "Mini jogos e comandos dinâmicos",
+            "Baixe vídeos do Instagram e Twitter",
+            "Editor de figurinhas",
+            "Figurinhas com fundo transparente",
+            "Transforme frases em figurinhas",
+            "Converta figurinhas em imagens",
+            "Atualizações semanais"
         ],
         textButton: "Assine Agora",
         message: ".menu"
