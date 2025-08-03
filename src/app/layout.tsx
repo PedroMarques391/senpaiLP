@@ -1,29 +1,26 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
-import { Playfair_Display, Lora } from "next/font/google";
+import { Cabin_Condensed, Montserrat } from "next/font/google";
 import "./globals.css";
 import { PreloadResources } from "@/src/components/shared/PreloadResources";
 import Script from "next/script";
 import { jsonLd } from "../utils";
 
-const playFair = Playfair_Display({
+const montserrat = Montserrat({
   variable: "--font-Playfair_Display",
   subsets: ["latin"],
   weight: "400",
 });
 
-const lora = Lora({
+const cabin_Condensed = Cabin_Condensed({
   variable: "--font-lora",
   subsets: ["latin"],
   weight: "400",
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: 'BotDoSenpai - Seu bot ideal',
-    template: '%s | BotDoSenpai - Sua bot ideal',
-  },
-  description: 'Crie figurinhas únicas no WhatsApp com a Bot do Senpai — rápido, gratuito e cheio de fofura.',
+  title: 'BotDoSenpai - Crie Fugurinhas',
+  description: 'Crie figurinhas únicas no WhatsApp com a Bot do Senpai, rápido, gratuito e cheio de fofura.',
   metadataBase: new URL('https://botdosenpai.com.br'),
   alternates: {
     canonical: '/',
@@ -65,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="!scroll-smooth">
-      <body className={`${lora.variable} ${playFair.variable} antialiased`}>
+      <body className={`${montserrat.variable} ${cabin_Condensed.variable} antialiased`}>
         <Script
           id="main-schema"
           type="application/ld+json"
