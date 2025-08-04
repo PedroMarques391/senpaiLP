@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react'
 import Hero from './Hero'
 import { Footer } from './Footer'
 import { LoadingPage } from '@/src/components/shared/LoadingPage'
@@ -7,6 +7,10 @@ import { Headset } from 'lucide-react'
 import { Header } from './Header'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 import FormDialog from '@/src/components/ui/form-diolog'
+import { FormField } from '../ui/form-field'
+import { FormProvider } from 'react-hook-form'
+import { insertMaskInPhone } from '@/src/utils'
+import { useEmailForm } from '@/src/hooks/useEmailForm'
 
 interface ILayoutProps {
     children: React.ReactNode
@@ -27,6 +31,17 @@ const Layout = ({
 }: ILayoutProps): React.JSX.Element => {
     const [loading, setLoading] = useState<boolean>(load);
     const [showButton, setShowButton] = useState<boolean>(false);
+
+    const methods = useEmailForm()
+
+    const { setValue, clearErrors, register, formState: { errors } } = methods
+
+
+    function handleMask(e: ChangeEvent<HTMLInputElement>): void {
+        const formattedPhone: string = insertMaskInPhone(e.target.value)
+        setValue("phone", formattedPhone)
+        clearErrors("phone")
+    }
 
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
@@ -75,7 +90,48 @@ const Layout = ({
                                         Online todos os dias, 24h por dia, sempre que precisar
                                     </DialogDescription>
                                 </DialogHeader>
-                                <FormDialog />
+                                <FormProvider {...methods} >
+                                    <FormDialog >
+                                        <FormField
+                                            label="Nome"
+                                            name="name"
+                                            register={register}
+                                            error={errors.name?.message}
+                                        />
+
+                                        <FormField
+                                            label="E-mail"
+                                            name="email"
+                                            type="email"
+                                            register={register}
+                                            error={errors.email?.message}
+                                        />
+
+                                        <FormField
+                                            label="Telefone"
+                                            name="phone"
+                                            register={register}
+                                            error={errors.phone?.message}
+                                            onChange={handleMask}
+                                            maxLength={15}
+                                        />
+
+                                        <FormField
+                                            label="Assunto"
+                                            name="subject"
+                                            register={register}
+                                            error={errors.subject?.message}
+                                        />
+
+                                        <FormField
+                                            label="Mensagem"
+                                            name="message"
+                                            type="textarea"
+                                            register={register}
+                                            error={errors.message?.message}
+                                        />
+                                    </FormDialog>
+                                </FormProvider>
                             </DialogContent>
                         </Dialog>
                     </main>

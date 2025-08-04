@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from '@/src/components/ui/button'
 import senpai from '../../../public/images/senpai/IconSenpai.png'
-import { useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import {
     Dialog,
     DialogContent,
@@ -13,10 +13,27 @@ import {
     DialogHeader,
     DialogTitle,
 } from '@/src/components/ui/dialog'
+import { FormField } from '@/src/components/ui/form-field'
+import { FormProvider } from 'react-hook-form'
+import { insertMaskInPhone } from '@/src/utils'
+import { useEmailForm } from '@/src/hooks/useEmailForm'
 import FormDialog from '@/src/components/ui/form-diolog'
 
 const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false)
+
+    const methods = useEmailForm()
+
+    const { setValue, clearErrors, register, formState: { errors } } = methods
+
+
+    function handleMask(e: ChangeEvent<HTMLInputElement>): void {
+        const formattedPhone: string = insertMaskInPhone(e.target.value)
+        setValue("phone", formattedPhone)
+        clearErrors("phone")
+    }
+
+
 
     return (
         <Layout backgroundColor="bg-white" backgroundHeader="bg-black" container={false}>
@@ -74,12 +91,39 @@ const ThanksPage = () => {
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                            <DialogTitle>Finalizando</DialogTitle>
+                            <DialogTitle>Quase lá!</DialogTitle>
                             <DialogDescription>
-                                Preencha o formulário com seus dados para finalizar a ativacao
+                                Complete o formulário abaixo com seus dados para ativar seu acesso e aproveitar todos os benefícios.
                             </DialogDescription>
                         </DialogHeader>
-                        <FormDialog />
+                        <FormProvider {...methods}>
+                            <FormDialog>
+                                <FormField
+                                    label="Nome"
+                                    name="name"
+                                    register={register}
+                                    error={errors.name?.message}
+                                />
+
+                                <FormField
+                                    label="E-mail"
+                                    name="email"
+                                    type="email"
+                                    register={register}
+                                    error={errors.email?.message}
+                                />
+
+                                <FormField
+                                    label="Telefone"
+                                    name="phone"
+                                    register={register}
+                                    error={errors.phone?.message}
+                                    onChange={handleMask}
+                                    maxLength={15}
+                                />
+
+                            </FormDialog>
+                        </FormProvider>
                     </DialogContent>
                 </Dialog>
             </main>
