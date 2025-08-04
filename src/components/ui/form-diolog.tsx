@@ -78,7 +78,6 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
             ) : (
                 <form onSubmit={handleSubmit(userSubmit)} className="space-y-3">
                     {children}
-
                     <DialogFooter>
                         <Button
                             type="submit"

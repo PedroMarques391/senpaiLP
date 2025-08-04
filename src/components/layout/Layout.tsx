@@ -1,5 +1,5 @@
 "use client"
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from './Hero'
 import { Footer } from './Footer'
 import { LoadingPage } from '@/src/components/shared/LoadingPage'
@@ -9,7 +9,6 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import FormDialog from '@/src/components/ui/form-diolog'
 import { FormField } from '../ui/form-field'
 import { FormProvider } from 'react-hook-form'
-import { insertMaskInPhone } from '@/src/utils'
 import { useEmailForm } from '@/src/hooks/useEmailForm'
 
 interface ILayoutProps {
@@ -34,14 +33,8 @@ const Layout = ({
 
     const methods = useEmailForm()
 
-    const { setValue, clearErrors, register, formState: { errors } } = methods
+    const { register, formState: { errors }, handleMask } = methods
 
-
-    function handleMask(e: ChangeEvent<HTMLInputElement>): void {
-        const formattedPhone: string = insertMaskInPhone(e.target.value)
-        setValue("phone", formattedPhone)
-        clearErrors("phone")
-    }
 
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {

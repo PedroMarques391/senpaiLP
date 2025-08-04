@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from '@/src/components/ui/button'
 import senpai from '../../../public/images/senpai/IconSenpai.png'
-import { ChangeEvent, useState } from 'react'
+import { useState } from 'react'
 import {
     Dialog,
     DialogContent,
@@ -15,24 +15,14 @@ import {
 } from '@/src/components/ui/dialog'
 import { FormField } from '@/src/components/ui/form-field'
 import { FormProvider } from 'react-hook-form'
-import { insertMaskInPhone } from '@/src/utils'
 import { useEmailForm } from '@/src/hooks/useEmailForm'
 import FormDialog from '@/src/components/ui/form-diolog'
 
 const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false)
-
     const methods = useEmailForm()
 
-    const { setValue, clearErrors, register, formState: { errors } } = methods
-
-
-    function handleMask(e: ChangeEvent<HTMLInputElement>): void {
-        const formattedPhone: string = insertMaskInPhone(e.target.value)
-        setValue("phone", formattedPhone)
-        clearErrors("phone")
-    }
-
+    const { register, formState: { errors }, handleMask } = methods
 
 
     return (
