@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sendEmail } from './controller/mail.controller';
+import { sendEmail } from '../controller/mail.controller';
 
 export async function POST(req: NextRequest) {
     try {
