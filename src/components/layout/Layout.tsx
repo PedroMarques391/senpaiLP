@@ -33,9 +33,6 @@ const Layout = ({
 
     const methods = useEmailForm()
 
-    const { register, formState: { errors }, handleMask } = methods
-
-
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
             setLoading(false);
@@ -88,40 +85,29 @@ const Layout = ({
                                         <FormField
                                             label="Nome"
                                             name="name"
-                                            register={register}
-                                            error={errors.name?.message}
                                         />
 
                                         <FormField
                                             label="E-mail"
                                             name="email"
                                             type="email"
-                                            register={register}
-                                            error={errors.email?.message}
                                         />
 
                                         <FormField
                                             label="Telefone"
                                             name="phone"
-                                            register={register}
-                                            error={errors.phone?.message}
-                                            onChange={handleMask}
                                             maxLength={15}
                                         />
 
                                         <FormField
                                             label="Assunto"
                                             name="subject"
-                                            register={register}
-                                            error={errors.subject?.message}
                                         />
 
                                         <FormField
                                             label="Mensagem"
                                             name="message"
                                             type="textarea"
-                                            register={register}
-                                            error={errors.message?.message}
                                         />
                                     </FormDialog>
                                 </FormProvider>

@@ -22,9 +22,6 @@ const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false)
     const methods = useEmailForm()
 
-    const { register, formState: { errors }, handleMask } = methods
-
-
     return (
         <Layout backgroundColor="bg-white" backgroundHeader="bg-black" container={false}>
             <main className="w-full min-h-screen flex items-center justify-center">
@@ -91,24 +88,17 @@ const ThanksPage = () => {
                                 <FormField
                                     label="Nome"
                                     name="name"
-                                    register={register}
-                                    error={errors.name?.message}
                                 />
 
                                 <FormField
                                     label="E-mail"
                                     name="email"
                                     type="email"
-                                    register={register}
-                                    error={errors.email?.message}
                                 />
 
                                 <FormField
                                     label="Telefone"
                                     name="phone"
-                                    register={register}
-                                    error={errors.phone?.message}
-                                    onChange={handleMask}
                                     maxLength={15}
                                 />
 
