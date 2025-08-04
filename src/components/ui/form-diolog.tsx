@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
-import { Textarea } from './textarea'
-import { Input } from './input'
-import { Label } from './label'
-import { useForm } from "react-hook-form"
+import React, { ReactNode, useState } from 'react'
+import { useFormContext } from "react-hook-form"
 import { z } from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
 import { Button } from './button'
-import { insertMaskInPhone } from '@/src/utils'
+
 import ModalMessage from '../sections/ModalMessage'
 import { IModalMessage } from '@/src/types'
 import { DialogFooter } from './dialog'
@@ -14,7 +10,7 @@ import { DialogFooter } from './dialog'
 
 
 
-const userSchema = z.object({
+export const userSchema = z.object({
     name: z.string().min(4, "O nome é obrigatório."),
     email: z.string().email("Digíte um email válido."),
     phone: z.string().min(1, "O telefone é obrigatório.").refine((value) => /^[\d\(\)\-\s]{14,15}$/.test(value), {
@@ -24,16 +20,14 @@ const userSchema = z.object({
     message: z.string().min(1, "A mensagem é obrigatória.").max(250, "A mensagem deve ter no máximo 250 caracteres."),
 })
 
-type FormData = z.infer<typeof userSchema>
+export type FormData = z.infer<typeof userSchema>
 
-const FormDialog = (): React.JSX.Element => {
+const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element => {
     const [loading, setLoaging] = useState<boolean>(false);
     const [emailSend, setEmailSend] = useState<boolean>(false);
     const [modalMessageItens, setModalMessageItens] = useState({} as IModalMessage)
 
-    const { register, handleSubmit, formState: { errors }, setValue, clearErrors, reset } = useForm({
-        resolver: zodResolver(userSchema),
-    })
+    const { handleSubmit, reset } = useFormContext<FormData>()
 
     async function userSubmit(data: FormData) {
         setLoaging(true)
@@ -70,11 +64,6 @@ const FormDialog = (): React.JSX.Element => {
         reset()
     }
 
-    function handleMask(e: React.ChangeEvent<HTMLInputElement>): void {
-        const formattedPhone: string = insertMaskInPhone(e.target.value)
-        setValue("phone", formattedPhone)
-        clearErrors("phone")
-    }
 
     return (
         <>
@@ -88,41 +77,7 @@ const FormDialog = (): React.JSX.Element => {
 
             ) : (
                 <form onSubmit={handleSubmit(userSubmit)} className="space-y-3">
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="name" className="text-right">Nome</Label >
-                        <Input className="col-span-3" {...register("name")} />
-                        {errors.name && <p className="text-red-500 col-span-4 text-sm">{errors.name.message}</p>}
-                    </div >
-
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="email" className="text-right">E-mail</Label>
-                        <Input type='email' className="col-span-3" {...register("email")} />
-                        {errors.email && <p className="text-red-500 col-span-4 text-sm">{errors.email.message}</p>}
-                    </div>
-
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="phone" className="text-right">Telefone</Label>
-                        <Input type="text"
-                            className="col-span-3"
-                            {...register("phone")}
-                            maxLength={15}
-                            onChange={handleMask} />
-                        {errors.phone && <p className="text-red-500 col-span-4 text-sm">{errors.phone.message}</p>}
-                    </div>
-
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="subject" className="text-right">Assunto</Label>
-                        <Input
-                            className="col-span-3" {...register("subject")} />
-                        {errors.subject && <p className="text-red-500 col-span-4 text-sm">{errors.subject.message}</p>}
-                    </div>
-
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="message" className="text-right">Mensagem</Label>
-                        <Textarea
-                            className="col-span-3 resize-none" {...register("message")} />
-                        {errors.message && <p className="text-red-500 col-span-4 text-sm">{errors.message.message}</p>}
-                    </div>
+                    {children}
 
                     <DialogFooter>
                         <Button
