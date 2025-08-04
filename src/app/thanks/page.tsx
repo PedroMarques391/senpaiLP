@@ -71,13 +71,12 @@ const ThanksPage = () => {
                     </motion.article>
                 </section>
 
-                {/* Modal controlado */}
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                            <DialogTitle>Suporte ao Cliente</DialogTitle>
+                            <DialogTitle>Finalizando</DialogTitle>
                             <DialogDescription>
-                                Online todos os dias, 24h por dia, sempre que precisar
+                                Preencha o formulário com seus dados para finalizar a ativacao
                             </DialogDescription>
                         </DialogHeader>
                         <FormDialog />

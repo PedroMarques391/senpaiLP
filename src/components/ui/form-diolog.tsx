@@ -125,7 +125,6 @@ const FormDialog = (): React.JSX.Element => {
                     </div>
 
                     <DialogFooter>
-
                         <Button
                             type="submit"
                             disabled={loading}
@@ -139,7 +138,7 @@ const FormDialog = (): React.JSX.Element => {
                                     <span>Enviando...</span>
                                 </>
                             ) : (
-                                <span>Enviar 💌</span>
+                                <span>Enviar</span>
                             )}
                         </Button>
                     </DialogFooter>
