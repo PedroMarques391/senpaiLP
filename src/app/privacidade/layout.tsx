@@ -1,21 +1,7 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lora } from "next/font/google";
 import "./../globals.css";
 import Script from "next/script";
 import { jsonLdPrivacy } from "@/src/utils";
-
-const playFair = Playfair_Display({
-  variable: "--font-Playfair_Display",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const lora = Lora({
-  variable: "--font-lora",
-  subsets: ["latin"],
-  weight: "400",
-});
-
 
 
 export const metadata: Metadata = {
@@ -34,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="!scroll-smooth">
       <body
-        className={`${lora.variable} ${playFair.variable} antialiased`}
       >
         <Script
           id="privacy-schema"

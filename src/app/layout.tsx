@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
-import { Cabin_Condensed, Montserrat } from "next/font/google";
+import { Cabin, Montserrat } from "next/font/google";
 import "./globals.css";
 import { PreloadResources } from "@/src/components/shared/PreloadResources";
 import Script from "next/script";
 import { jsonLd } from "../utils";
 
 const montserrat = Montserrat({
-  variable: "--font-Playfair_Display",
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: "400",
 });
 
-const cabin_Condensed = Cabin_Condensed({
-  variable: "--font-lora",
+const cabin_Condensed = Cabin({
+  variable: "--font-cabin_Condensed",
   subsets: ["latin"],
   weight: "400",
 });
