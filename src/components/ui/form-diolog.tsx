@@ -1,26 +1,9 @@
 import React, { ReactNode, useState } from 'react'
 import { useFormContext } from "react-hook-form"
-import { z } from "zod"
 import { Button } from './button'
-
 import ModalMessage from '../sections/ModalMessage'
 import { IModalMessage } from '@/src/types'
 import { DialogFooter } from './dialog'
-
-
-
-
-export const userSchema = z.object({
-    name: z.string().min(4, "O nome é obrigatório."),
-    email: z.string().email("Digíte um email válido."),
-    phone: z.string().min(1, "O telefone é obrigatório.").refine((value) => /^[\d\(\)\-\s]{14,15}$/.test(value), {
-        message: "Numero de telefone invalido"
-    }),
-    subject: z.string().min(5, "O assunto precisa ter mais de 5 caracteres."),
-    message: z.string().min(1, "A mensagem é obrigatória.").max(250, "A mensagem deve ter no máximo 250 caracteres."),
-})
-
-export type FormData = z.infer<typeof userSchema>
 
 const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element => {
     const [loading, setLoaging] = useState<boolean>(false);
