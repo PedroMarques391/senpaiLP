@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./../globals.css";
 import Script from "next/script";
-import { jsonLdAbout } from "@/src/utils";
+import { jsonLdThanks } from "@/src/utils/schema.org";
 
 
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai", "thanks", "obrigada", "agradecimento"],
 };
 
-export default function AboutLayout({
+export default function ThanksLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
@@ -19,13 +19,12 @@ export default function AboutLayout({
     return (
         <html lang="pt-br" className="!scroll-smooth">
             <body
-
             >
                 <Script
                     id="about-schema"
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(jsonLdAbout),
+                        __html: JSON.stringify(jsonLdThanks),
                     }}
                 />
                 {children}

@@ -53,11 +53,21 @@ const jsonLdTerms: WithContext<WebPage> = {
 };
 
 
+const jsonLdThanks: WithContext<WebPage> = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "BotDoSenpai - Termos de Uso",
+    url: "https://botdosenpai.com.br/thanks",
+    description: "Agradecimento da Senpai por adquirir uma das assinaturas.",
+};
+
+
 
 
 export {
     jsonLd,
     jsonLdAbout,
     jsonLdPrivacy,
-    jsonLdTerms
+    jsonLdTerms,
+    jsonLdThanks
 }
