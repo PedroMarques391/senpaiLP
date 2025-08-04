@@ -5,15 +5,22 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from '@/src/components/ui/button'
 import senpai from '../../../public/images/senpai/IconSenpai.png'
+import { useState } from 'react'
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+} from '@/src/components/ui/dialog'
+import FormDialog from '@/src/components/ui/form-diolog'
 
 const ThanksPage = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
-        <Layout
-            backgroundColor='bg-white'
-            backgroundHeader='bg-black'
-            container={false}
-        >
-            <main className='w-full min-h-screen flex items-center justify-center'>
+        <Layout backgroundColor="bg-white" backgroundHeader="bg-black" container={false}>
+            <main className="w-full min-h-screen flex items-center justify-center">
                 <section className="grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full max-w-6xl mx-auto p-8 gap-12">
 
                     <motion.article
@@ -52,20 +59,30 @@ const ThanksPage = () => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1.2, delay: 0.7 }}
                         >
-                            Só passando para dizer um ENORME OBRIGADA por
-                            assinar nosso plano! Você agora faz parte da nossa
-                            família, e isso nos deixa mega felizes! Esperamos que você
-                            aproveite cada benefício e, qualquer coisa, estamos aqui
-                            de braços abertos para te ajudar.
+                            Só passando para dizer um ENORME OBRIGADA por assinar nosso plano! Você agora faz parte da nossa família, e isso nos deixa mega felizes! Esperamos que você aproveite cada benefício e, qualquer coisa, estamos aqui de braços abertos para te ajudar.
                         </motion.p>
 
                         <Button
+                            onClick={() => setIsOpen(true)}
                             className="bg-black text-white font-semibold p-6 rounded-full shadow-md transition-all duration-300 w-full"
                         >
                             Finalizar
                         </Button>
                     </motion.article>
                 </section>
+
+                {/* Modal controlado */}
+                <Dialog open={isOpen} onOpenChange={setIsOpen}>
+                    <DialogContent className="sm:max-w-[425px]">
+                        <DialogHeader>
+                            <DialogTitle>Suporte ao Cliente</DialogTitle>
+                            <DialogDescription>
+                                Online todos os dias, 24h por dia, sempre que precisar
+                            </DialogDescription>
+                        </DialogHeader>
+                        <FormDialog />
+                    </DialogContent>
+                </Dialog>
             </main>
         </Layout>
     )
