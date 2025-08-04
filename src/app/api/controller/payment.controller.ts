@@ -1,6 +1,6 @@
 import { Payment, MercadoPagoConfig } from "mercadopago";
 
-export async function payment(body) {
+export async function payment(body: any) {
     const client = new MercadoPagoConfig({
         accessToken: "TEST-7959136915828039-042914-aa09647919c45698ea1c53f033a0c502-161823178",
     });
