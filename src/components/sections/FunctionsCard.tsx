@@ -16,7 +16,6 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
 
     return (
         <div
-            id="func"
             className="bg-white shadow-lg w-full flex flex-col  rounded-2xl justify-start overflow-hidden">
             <motion.div
                 ref={ref}

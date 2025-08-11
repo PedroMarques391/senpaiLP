@@ -1,4 +1,3 @@
-"use client"
 import FunctionsCard from "@/src/components/sections/FunctionsCard";
 import Info from "@/src/components/sections/Info";
 import Layout from "@/src/components/layout/Layout";
@@ -14,8 +13,8 @@ export default function Home() {
 
   return (
     <Layout hero>
-      <div className="w-full  overflow-hidden ">
-        <Title>
+      <div className="w-full  overflow-hidden " id="func">
+        <Title >
           O que a senpai pode fazer por você hoje?</Title>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] md:w-full mx-auto">
@@ -30,10 +29,9 @@ export default function Home() {
         ))}
       </section>
       <Info />
-      <section>
-        <Title>Conheça nossos planos</Title>
+      <section id="plans">
+        <Title >Conheça nossos planos</Title>
         <div
-          id="plans"
           className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-5 mx-auto">
           {services.map((service, index) => (
             <Services
