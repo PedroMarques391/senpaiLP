@@ -12,12 +12,7 @@ import React from 'react';
 //     }));gi
 // }
 
-export default function Page({
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    params,
-}: {
-    params: { slug: string };
-}): React.JSX.Element {
+export default function Page(): React.JSX.Element {
     // TODO
     // develop dynamic routes for payment
     // const { slug } = params; // Exemplo de como acessar o slug
