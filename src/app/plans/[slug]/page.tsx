@@ -1,17 +1,15 @@
-
 "use client";
 
 import Layout from '@/src/components/layout/Layout';
 // import { services } from '@/src/data';
-import { useRouter } from 'next/navigation'; // TEMP: Importado para o botão de navegação temporário.
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
-// // A função generateStaticParams continua funcionando normalmente.
 // export async function generateStaticParams(): Promise<{ slug: string }[]> {
 //     'server'
 //     return services.map((service) => ({
 //         slug: service.url
-//     }));
+//     }));gi
 // }
 
 export default function Page({
