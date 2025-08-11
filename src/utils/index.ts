@@ -1,4 +1,5 @@
 import { insertMaskInPhone } from "./phoneMask"
+import { scrollSmooth } from "./scrollSmoth"
 import { jsonLd, jsonLdAbout, jsonLdPrivacy, jsonLdTerms } from "./schema.org"
 
 
@@ -7,5 +8,6 @@ export {
     jsonLd,
     jsonLdAbout,
     jsonLdPrivacy,
-    jsonLdTerms
+    jsonLdTerms,
+    scrollSmooth
 }
