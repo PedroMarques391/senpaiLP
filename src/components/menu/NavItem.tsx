@@ -15,10 +15,9 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
             e.preventDefault()
             const el = document.querySelector(href)
             if (el) {
-                setTimeout(() => {
-                    const top = el.getBoundingClientRect().top + window.scrollY - 50
-                    window.scrollTo({ top, behavior: 'smooth' })
-                }, 100)
+                const top = el.getBoundingClientRect().top + window.scrollY - 50
+                window.scrollTo({ top, behavior: 'smooth' })
+
             }
             history.pushState(null, '', href)
         }
