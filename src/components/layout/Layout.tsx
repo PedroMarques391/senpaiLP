@@ -28,18 +28,11 @@ const Layout = ({
     container = true,
     load = true
 }: ILayoutProps): React.JSX.Element => {
-    const [loading, setLoading] = useState<boolean>(load);
+    const [loading, setLoading] = useState<boolean>(false);
     const [showButton, setShowButton] = useState<boolean>(false);
 
     const methods = useEmailForm()
 
-    useEffect(() => {
-        const loadingTimeout = setTimeout(() => {
-            setLoading(false);
-        }, 500);
-
-        return () => clearTimeout(loadingTimeout);
-    }, []);
 
     useEffect(() => {
         const handleScroll = (): void => {

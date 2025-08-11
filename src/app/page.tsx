@@ -1,3 +1,5 @@
+'use client'
+
 import FunctionsCard from "@/src/components/sections/FunctionsCard";
 import Info from "@/src/components/sections/Info";
 import Layout from "@/src/components/layout/Layout";
@@ -6,10 +8,18 @@ import { faq, functionsCardItens, services } from "@/src/data"
 import CarouselBenefit from "@/src/components/sections/Carousel";
 import { Faq } from "@/src/components/sections/Faq";
 import Title from "@/src/components/ui/title";
+import { useEffect } from "react";
+import { scrollSmooth } from "@/src/utils";
 
 
 
 export default function Home() {
+
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    scrollSmooth(hash)
+  }, []);
 
   return (
     <Layout hero>
