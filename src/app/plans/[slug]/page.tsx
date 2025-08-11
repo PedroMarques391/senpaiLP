@@ -1,26 +1,31 @@
 
+"use client";
+
 import Layout from '@/src/components/layout/Layout';
-import { services } from '@/src/data'
-import { notFound } from 'next/navigation';
-import React from 'react'
+// import { services } from '@/src/data';
+import { useRouter } from 'next/navigation'; // TEMP: Importado para o botão de navegação temporário.
+import React from 'react';
 
-import PaymentButton from '@/src/components/shared/PaymentButton';
+// // A função generateStaticParams continua funcionando normalmente.
+// export async function generateStaticParams(): Promise<{ slug: string }[]> {
+//     'server'
+//     return services.map((service) => ({
+//         slug: service.url
+//     }));
+// }
 
-
-
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-    return services.map((service) => ({
-        slug: service.url
-    }))
-}
-
-export default async function Page({
+export default function Page({
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     params,
-}: { params: Promise<{ slug: string }> }): Promise<React.JSX.Element> {
-    const { slug } = await params;
+}: {
+    params: { slug: string };
+}): React.JSX.Element {
+    // TODO
+    // develop dynamic routes for payment
+    // const { slug } = params; // Exemplo de como acessar o slug
+    // const service = services.find(service => service.url === slug);
 
-    const service = services.find(service => service.url === slug) ?? notFound();
-
+    const router = useRouter();
 
     return (
         <Layout
@@ -28,27 +33,24 @@ export default async function Page({
             backgroundHeader='bg-black'
             load={false}
         >
+
             <main className='w-full min-h-screen mt-22'>
-                <section className="w-full max-w-3xl mx-auto flex flex-col items-center text- py-10">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                        {service.service}
-                    </h1>
-                    <p className="text-2xl md:text-3xl font-semibold text-green-600 mb-6 font-sans">
-                        R$ {service.value} / mês
+                <div className="flex flex-col items-center justify-center h-[60vh]">
+                    <p className="text-3xl font-semibold text-gray-800 mb-4 animate-pulse">
+                        Construindo 🚧
                     </p>
-                    <p className="text-base md:text-lg text-gray-600 mb-8">
-                        {service.description}
-                    </p>
-                    <p>form</p>
-
-                    <PaymentButton
-                        title={service.service}
-                        price={service.value}
-                        text={service.textButton}
-                    />
-                </section>
-
+                    <span className="text-lg text-gray-500">
+                        Esta página está em desenvolvimento. Volte em breve!
+                    </span>
+                    <button
+                        className="mt-8 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
+                        onClick={() => router.push('/')}
+                    >
+                        Voltar para Home
+                    </button>
+                </div>
             </main>
+
         </Layout>
     );
 }
