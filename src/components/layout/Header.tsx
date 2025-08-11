@@ -10,10 +10,16 @@ type IHeaderProps = { background?: string }
 
 export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
     const path = usePathname()
-    const isHomePage: boolean = path === "/"
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState(false);
+
+    function handleHref(href: string): string {
+        const isHomePage: boolean = path === "/"
+
+        return isHomePage ? `#${href}` : `/#${href}`
+
+    }
 
     function handleMenu() {
         setIsOpen((prev) => !prev);
@@ -45,10 +51,13 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
                 <Mobile
                     isOpen={isOpen}
                     setIsOpen={setIsOpen}
-                    isHomePage={isHomePage}
+                    handleHref={handleHref}
+
 
                 />
-                <MenuDesktop isHomePage={isHomePage} />
+                <MenuDesktop
+                    handleHref={handleHref}
+                />
             </nav>
         </header>
     )

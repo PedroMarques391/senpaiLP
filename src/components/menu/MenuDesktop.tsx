@@ -4,16 +4,16 @@ import { NavItem } from './NavItem'
 import Link from 'next/link'
 
 export interface IMenuProps {
-    isHomePage: boolean
+    handleHref: (href: string) => string
 }
 
-const MenuDesktop = ({ isHomePage }: IMenuProps): React.JSX.Element => {
+const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
 
     return (
         <ul className="hidden md:flex justify-center items-center gap-x-3 ">
-            <NavItem href={isHomePage ? "#home" : "/#home"} >Inicio</NavItem>
-            <NavItem href={isHomePage ? "#func" : "/#func"} >Funcionalidades</NavItem>
-            <NavItem href={isHomePage ? "#plans" : "/#plans"}>Assinaturas</NavItem>
+            <NavItem href={handleHref('home')} >Inicio</NavItem>
+            <NavItem href={handleHref('func')} >Funcionalidades</NavItem>
+            <NavItem href={handleHref('plans')}>Assinaturas</NavItem>
             <NavItem href='/about' >Sobre Nós</NavItem>
             <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"

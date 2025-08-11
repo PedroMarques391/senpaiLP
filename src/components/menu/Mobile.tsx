@@ -6,6 +6,7 @@ import { IMenuProps } from "./MenuDesktop";
 interface IMobileProps extends IMenuProps {
     isOpen: boolean;
     setIsOpen: (value: boolean) => void;
+    handleHref: (href: string) => string
 }
 
 const containerVariants = {
@@ -26,7 +27,7 @@ const variants = {
     exit: { x: 200, opacity: 0, transition: { duration: 0.5 } },
 };
 
-const Mobile = ({ isOpen, setIsOpen, isHomePage }: IMobileProps): React.JSX.Element => {
+const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Element => {
     return (
         <AnimatePresence >
             {isOpen && (
@@ -46,13 +47,13 @@ const Mobile = ({ isOpen, setIsOpen, isHomePage }: IMobileProps): React.JSX.Elem
 
                 >
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#home" : "/#home"}>Inicio</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('home')}>Inicio</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#func" : "/#func"}>Funcionalidades</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('func')}>Funcionalidades</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={isHomePage ? "#plans" : "/#plans"}>Assinaturas</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('plans')}>Assinaturas</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
                         <NavItem onClick={() => setIsOpen(false)} href="/about">Sobre Nós</NavItem>
