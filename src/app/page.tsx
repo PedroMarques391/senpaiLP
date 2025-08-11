@@ -16,9 +16,12 @@ import { scrollSmooth } from "@/src/utils";
 export default function Home() {
 
   useEffect(() => {
-    const hash = window.location.hash;
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
 
-    scrollSmooth(hash)
+      scrollSmooth(hash)
+    }
+
   }, []);
 
   return (
