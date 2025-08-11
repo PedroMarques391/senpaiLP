@@ -13,14 +13,13 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
         const isHash = href.startsWith('#')
         if (isHash) {
             e.preventDefault()
-            setTimeout(() => {
-                const el = document.querySelector(href)
-                const headerHeight = document.querySelector('header')?.offsetHeight || 0
-                const top = el!.getBoundingClientRect().top + window.scrollY - (headerHeight + 30)
-
-                window.scrollTo({ top, behavior: 'smooth' })
-
-            })
+            const el = document.querySelector(href)
+            if (el) {
+                setTimeout(() => {
+                    const top = el.getBoundingClientRect().top + window.scrollY - 50
+                    window.scrollTo({ top, behavior: 'smooth' })
+                }, 100)
+            }
             history.pushState(null, '', href)
         }
     }
