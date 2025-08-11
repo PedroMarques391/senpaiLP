@@ -1,5 +1,5 @@
 "use client"
-import { scrollSmooth } from '@/src/utils'
+import { scrollSmooth } from '@/src/utils/scrollSmooth'
 import Link from 'next/link'
 import React, { DetailedHTMLProps, LiHTMLAttributes } from 'react'
 
@@ -11,9 +11,13 @@ interface INavItemsProps extends DetailedHTMLProps<LiHTMLAttributes<HTMLLIElemen
 export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX.Element => {
 
     const goToHash = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        scrollSmooth(href)
-        e.preventDefault()
-        history.pushState(null, '', href)
+        const isHash = href.startsWith('#')
+        if (isHash) {
+            scrollSmooth(href)
+            e.preventDefault()
+
+            history.pushState(null, '', href)
+        }
 
     }
 
