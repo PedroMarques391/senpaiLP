@@ -41,14 +41,15 @@ const Hero = (): React.JSX.Element => {
                             initial={{ x: "-100%" }}
                             animate={{ x: isInView ? 0 : "-100%" }}
                             transition={{ type: "spring", stiffness: 50, damping: 20, duration: 2 }}
-                            className="text-lg md:text-base lg:text-xl w-[80%]">
+                            className="text-lg md:text-base lg:text-xl ">
 
                             A <span className="font-semibold">Senpai</span> está sempre disponível para deixar suas conversas mais divertidas e criativas! Com ela, você pode criar figurinhas personalizadas, transformar imagens, GIFs e vídeos em figurinhas animadas e muito mais. Tudo de forma rápida, fácil e gratuita. A sua bot de figurinhas para WhatsApp que torna cada conversa única!
                         </motion.h2>
-                        <div className="flex gap-10">
+                        <div className="flex flex-col md:flex-row gap-10">
                             <Link
                                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                                 target="_blank"
+                                prefetch
                                 rel="noopener noreferrer"
                             >
                                 <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-full md:w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95 justify-center">
