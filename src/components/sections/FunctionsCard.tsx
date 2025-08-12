@@ -28,15 +28,18 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                 }}
                 className="mx-auto  w-full text-center  rounded-lg">
 
+                <div className="relative w-[400px] h-[400px]">
+                    <Image
+                        src={imagePath}
+                        alt={title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+                        priority
+                        className="object-contain rounded-ss-xl bg-[#0a0a0a]"
+                    />
+                </div>
 
-                <Image
-                    src={imagePath}
-                    alt={title}
-                    width={400}
-                    height={400}
-                    priority
-                    className="inline-block w-[400px] h-[400px] object-contain rounded-ss-xl bg-[#0a0a0a]"
-                />
+
             </motion.div>
             <div className="p-4 h-auto md:h-52 lg:h-60 xl:h-52 space-y-4 ">
                 <motion.h1
