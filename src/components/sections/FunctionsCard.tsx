@@ -34,7 +34,6 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                         alt={title}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
-                        priority
                         className="object-contain rounded-ss-xl bg-[#0a0a0a]"
                     />
                 </div>
