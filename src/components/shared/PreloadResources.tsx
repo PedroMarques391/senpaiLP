@@ -1,12 +1,14 @@
-import ReactDOM from 'react-dom'
+import Head from 'next/head'
 
 export function PreloadResources() {
-    ReactDOM.preload('/images/senpai/hero.webp', {
-        as: 'image',
-        type: 'image/webp',
-    })
-
-
-
-    return null
+    return (
+        <Head>
+            <link
+                rel="preload"
+                as="image"
+                href="/images/senpai/hero.webp"
+                type="image/webp"
+            />
+        </Head>
+    )
 }

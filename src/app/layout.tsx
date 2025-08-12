@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Cabin, Montserrat } from "next/font/google";
 import "./globals.css";
-import { PreloadResources } from "@/src/components/shared/PreloadResources";
 import Script from "next/script";
 import { jsonLd } from "../utils";
+import { PreloadResources } from "../components/shared/PreloadResources";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -62,6 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="!scroll-smooth">
+      <PreloadResources />
       <body className={`${montserrat.variable} ${cabin_Condensed.variable} antialiased`}>
         <Script
           id="main-schema"
@@ -70,7 +71,6 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
-        <PreloadResources />
         {children}
         <Analytics />
       </body>
