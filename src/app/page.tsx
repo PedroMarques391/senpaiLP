@@ -38,7 +38,7 @@ export default function Home() {
         <Title >
           O que a senpai pode fazer por você hoje?</Title>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] md:w-full mx-auto">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] sm:w-[60%] md:w-full mx-auto">
         {functionsCardItens.map((functionsCardItem, item) => (
           <FunctionsCard
             key={item}
