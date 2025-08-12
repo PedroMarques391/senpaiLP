@@ -7,6 +7,7 @@ import Counter from "../sections/Counter"
 import Link from "next/link"
 import { Header } from "./Header"
 import { CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
+import Image from "next/image";
 
 
 
@@ -21,7 +22,14 @@ const Hero = (): React.JSX.Element => {
     return (
         <section>
             <div
-                className="relative bg-[url('/images/senpai/hero.webp')] bg-cover text-white bg-no-repeat bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px]">
+                className="relative text-white bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px] overflow-hidden">
+                <Image
+                    src="/images/senpai/hero.webp"
+                    alt="Hero"
+                    fill
+                    priority
+                    className="object-cover object-center"
+                />
                 <Header />
                 <div className="absolute inset-0 bg-black/50 rounded-b-[60px]"></div>
                 <section
