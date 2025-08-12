@@ -15,18 +15,15 @@ export default function AboutLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="pt-br" className="!scroll-smooth">
-            <body
-            >
-                <Script
-                    id="about-schema"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(jsonLdAbout),
-                    }}
-                />
-                {children}
-            </body>
-        </html>
+        <>
+            <Script
+                id="about-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jsonLdAbout),
+                }}
+            />
+            {children}
+        </>
     );
 }
