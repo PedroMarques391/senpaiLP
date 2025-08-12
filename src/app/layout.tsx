@@ -4,7 +4,6 @@ import { Cabin, Montserrat } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { jsonLd } from "../utils";
-import { PreloadResources } from "../components/shared/PreloadResources";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -62,7 +61,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="!scroll-smooth">
-      <PreloadResources />
       <body className={`${montserrat.variable} ${cabin_Condensed.variable} antialiased`}>
         <Script
           id="main-schema"
