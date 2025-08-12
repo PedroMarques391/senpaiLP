@@ -17,12 +17,20 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const hash = window.location.hash;
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual';
+      }
+      window.scrollTo({ top: 0, behavior: "instant" });
 
-      scrollSmooth(hash)
+      setTimeout(() => {
+        const hash = window.location.hash;
+        if (hash) {
+          scrollSmooth(hash);
+        }
+      }, 300);
     }
-
   }, []);
+
 
   return (
     <Layout hero>

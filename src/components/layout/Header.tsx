@@ -12,7 +12,7 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
     const path = usePathname()
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const [scrolled, setScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState<boolean | null>(null);
 
     function handleHref(href: string): string {
         const isHomePage: boolean = path === "/"
