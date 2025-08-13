@@ -4,7 +4,7 @@ import Layout from '@/src/components/layout/Layout'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Button } from '@/src/components/ui/button'
-import senpai from '../../../public/images/senpai/IconSenpai.png'
+import senpai from '../../../public/images/thanks/thanks.png'
 import { useState } from 'react'
 import {
     Dialog,
