@@ -18,8 +18,8 @@ const cabin_Condensed = Cabin({
 });
 
 export const metadata: Metadata = {
-  title: 'BotDoSenpai - Crie Fugurinhas',
-  description: 'Crie figurinhas únicas no WhatsApp com a Bot do Senpai, rápido, gratuito e cheio de fofura.',
+  title: 'BotDoSenpai - Crie Figurinhas',
+  description: 'A Senpai é o bot de figurinhas para WhatsApp mais querida do Brasil! Transforme imagens, GIFs e vídeos em figurinhas animadas em segundos. Tudo 100% gratuito, sem precisar baixar nada, e com recursos exclusivos para deixar suas conversas mais divertidas, criativas e personalizadas.',
   metadataBase: new URL('https://botdosenpai.com.br'),
   alternates: {
     canonical: '/',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BotDoSenpai - Seu bot ideal",
     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
-    siteName: "Bot Senpai",
+    siteName: "BotDoSenpai",
     url: "https://botdosenpai.com.br/",
     type: "website",
     locale: "pt_BR",
