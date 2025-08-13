@@ -3,13 +3,13 @@ import { AboutPage, SoftwareApplication, WebPage, WithContext } from "schema-dts
 const jsonLd: WithContext<SoftwareApplication> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    headline: "Crie figurinhas únicas no WhatsApp com A Bot do Senpai",
-    name: "Bot Senpai",
+    headline: "Crie figurinhas únicas no WhatsApp com a Bot do Senpai",
+    name: "BotDoSenpai",
     url: "https://botdosenpai.com.br",
     applicationCategory: "Messaging",
     operatingSystem: "All",
     description:
-        "Crie figurinhas únicas no WhatsApp com A Bot do Senpai — rápido, gratuito e cheio de fofura!",
+        "A Senpai é o bot de figurinhas para WhatsApp mais querida do Brasil! Transforme imagens, GIFs e vídeos em figurinhas animadas em segundos. Tudo 100% gratuito, sem precisar baixar nada, e com recursos exclusivos para deixar suas conversas mais divertidas, criativas e personalizadas.",
     creator: {
         "@type": "Organization",
         "name": "BotDoSenpai",
@@ -56,12 +56,10 @@ const jsonLdTerms: WithContext<WebPage> = {
 const jsonLdThanks: WithContext<WebPage> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "BotDoSenpai - Termos de Uso",
+    name: "BotDoSenpai - Agradecimentos",
     url: "https://botdosenpai.com.br/thanks",
     description: "Agradecimento da Senpai por adquirir uma das assinaturas.",
 };
-
-
 
 
 export {
