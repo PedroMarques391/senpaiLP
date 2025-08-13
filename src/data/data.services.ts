@@ -6,7 +6,7 @@ const services: IServices[] = [
         service: "Grátis",
         url: "gratis",
         value: "0",
-        description: "Experimente sem compromisso! Teste a Bot Senpai e descubra como ela pode facilitar sua vida.",
+        description: "Experimente sem compromisso! Teste a BotDoSenpai e descubra como ela pode facilitar sua vida.",
         characteristics: [
             "Crie 1 figurinha diariamente",
             "Pergunte algo e receba os 3 melhores resultados do Google"
