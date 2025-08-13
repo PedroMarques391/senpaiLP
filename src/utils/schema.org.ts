@@ -57,7 +57,7 @@ const jsonLdThanks: WithContext<WebPage> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "BotDoSenpai - Agradecimentos",
-    url: "https://botdosenpai.com.br/thanks",
+    url: "https://botdosenpai.com.br/thank-you",
     description: "Agradecimento da Senpai por adquirir uma das assinaturas.",
 };
 
