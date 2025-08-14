@@ -1,19 +1,33 @@
-import { Payment, MercadoPagoConfig } from "mercadopago";
+import AbacatePay from "abacatepay-nodejs-sdk";
+import { CreateCustomerData, CreatePixQrCodeData, CreatePixQrCodeResponse } from "abacatepay-nodejs-sdk/dist/types";
 
-export async function payment(body: any) {
-    const client = new MercadoPagoConfig({
-        accessToken: "TEST-7959136915828039-042914-aa09647919c45698ea1c53f033a0c502-161823178",
-    });
+const abacate = AbacatePay(process.env.ABACATE_PAY_API_KEY!);
 
-    const payments = new Payment(client);
-
-    try {
-        const response = await payments.create({ body });
-        // console.log("Payment criada com sucesso:", response);
-
-        return response;
-    } catch (error) {
-        console.error("Erro ao criar Payment:", error);
-        throw error;
+async function createPayment(customer: CreateCustomerData): Promise<CreatePixQrCodeResponse> {
+    const data: CreatePixQrCodeData = {
+        amount: 1000,
+        description: 'plano pro',
+        expiresIn: 3000,
+        ...customer
     }
+
+    const response = await abacate.pixQrCode.create(data)
+    return response
+}
+
+async function checkStatus(paymentId: string): Promise<CreatePixQrCodeResponse> {
+    const response = await abacate.pixQrCode.check({ id: paymentId })
+    return response
+}
+
+async function simulatePayment(paymentId: string): Promise<CreatePixQrCodeResponse> {
+    const response = await abacate.pixQrCode.simulatePayment({ id: paymentId })
+    return response
+}
+
+
+export {
+    createPayment,
+    checkStatus,
+    simulatePayment
 }
