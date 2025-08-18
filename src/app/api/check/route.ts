@@ -5,9 +5,6 @@ import { checkStatus } from "../controller/payment.controller";
 export async function POST(req: NextRequest) {
     try {
         const body = await req.json();
-
-        console.log(body)
-
         const res = await checkStatus(body.id);
 
         return NextResponse.json({ data: res }, { status: 200 });

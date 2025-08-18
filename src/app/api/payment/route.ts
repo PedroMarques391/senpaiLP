@@ -1,4 +1,3 @@
-// app/api/payment/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { createPayment } from "../controller/payment.controller";
 
@@ -8,7 +7,7 @@ export async function POST(req: NextRequest) {
         const body = await req.json();
 
         const res = await createPayment(body);
-        return NextResponse.json({ data: res }, { status: 200 });
+        return NextResponse.json(res, { status: 200 });
 
 
 
