@@ -3,11 +3,18 @@ import { CreateCustomerData, CreatePixQrCodeData, CreatePixQrCodeResponse } from
 
 const abacate = AbacatePay(process.env.ABACATE_PAY_API_KEY!);
 
-async function createPayment(customer: CreateCustomerData): Promise<CreatePixQrCodeResponse> {
+interface ICreatePayment {
+    amount: number,
+    description: string,
+    expiresIn?: number,
+    customer?: CreateCustomerData
+}
+
+async function createPayment({ amount, description, expiresIn = 3000, customer }: ICreatePayment): Promise<CreatePixQrCodeResponse> {
     const data: CreatePixQrCodeData = {
-        amount: 1000,
-        description: 'plano pro',
-        expiresIn: 3000,
+        amount,
+        description,
+        expiresIn,
         ...customer
     }
 
