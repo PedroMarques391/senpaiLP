@@ -53,7 +53,7 @@ const Layout = ({
                 <DialogTrigger asChild>
                     <button
                         aria-label='call support'
-                        className={`bg-gradient-to-b from-[#7acfdd] via-[#97d5df] to-slate-50 p-2 flex flex-col bottom-10 right-5 lg:right-12 fixed  md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-2xl items-center justify-center shadow-lg cursor-pointer hover:shadow-xl transition-opacity duration-500 z-30 ${showButton ? "opacity-100" : "opacity-0"}`} >
+                        className={`bg-gradient-to-b from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] p-2 flex flex-col bottom-10 right-5 lg:right-12 fixed  md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-2xl items-center justify-center shadow-lg cursor-pointer hover:shadow-xl transition-opacity duration-500 z-30 ${showButton ? "opacity-100" : "opacity-0"}`} >
                         <Headset className="h-6 w-6 md:h-8 md:w-8 mb-1" />
                         <span className="text-xs md:text-sm">Suporte</span>
                     </button>

@@ -5,9 +5,9 @@
 @plugin "tailwindcss-animate";
 
 @theme {
-  --color-senpai-header: #0a0a0a;
+  --color-senpai-header: #181340;
   --color-senpai-footer: #0a0a0a;
-  --color-senpai-background: white;
+  --color-senpai-background: #FECFDA;
 }
 
 

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
-import { Cabin, Montserrat } from "next/font/google";
+import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { jsonLd } from "../utils";
 
-const montserrat = Montserrat({
+const montserrat = Poppins({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: "400",
 });
 
-const cabin_Condensed = Cabin({
+const cabin_Condensed = Roboto({
   variable: "--font-cabin_Condensed",
   subsets: ["latin"],
   weight: "400",

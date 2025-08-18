@@ -22,11 +22,11 @@ const Services = ({ service,
     const isInListView = useInView(listRef)
 
     return (
-        <div className="max-w-[400px] bg-white rounded-2xl shadow-lg p-6 border border-gray-300 flex flex-col h-auto md:h-full">
+        <div className="max-w-[400px] bg-[#FF9DBB] rounded-2xl shadow-lg p-6 border border-[#fff] flex flex-col h-auto md:h-full">
             <div className="">
                 <motion.h1
 
-                    className="text-lg font-bold text-gray-900 uppercase"
+                    className="text-lg font-bold text-[#fff] uppercase"
                 >
                     {service}
                 </motion.h1>
@@ -35,7 +35,7 @@ const Services = ({ service,
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
                     transition={{ type: 'spring', stiffness: 100, delay: 0.2 }}
-                    className="text-4xl font-extrabold text-gray-900 mt-2"
+                    className="text-4xl font-extrabold text-[#181340] mt-2"
                 >
                     R$ {value} <span className="text-lg font-medium">/ mês</span>
                 </motion.p>
@@ -43,13 +43,13 @@ const Services = ({ service,
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
                     transition={{ type: 'spring', stiffness: 100, delay: 0.4 }}
-                    className="text-gray-600  md:text-base py-2"
+                    className="text-white  md:text-base py-2"
                 >
                     {description}
                 </motion.p>
             </div>
 
-            <ul className="mt-4 space-y-3 text-gray-700 flex-grow">
+            <ul className="mt-4 space-y-3 text-white flex-grow">
                 {characteristics.map((item, index) => (
                     <motion.li
                         ref={listRef}
@@ -58,7 +58,7 @@ const Services = ({ service,
                         transition={{ type: 'tween', ease: 'easeInOut', duration: index }}
                         key={index}
                         className="flex items-center gap-2">
-                        <CheckCircle className="text-green-500 w-5 h-5" />
+                        <CheckCircle className="text-white w-5 h-5" />
                         <p className='flex-1 text-xs md:text-base'>{item}</p>
                     </motion.li>
                 ))}
@@ -67,7 +67,7 @@ const Services = ({ service,
             <Link href={`plans/${url}`}
                 rel="noreferrer"
                 aria-label='Link de assinatura' >
-                <Button className="w-full py-6 text-base md:text-lg rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition-all mt-7 font-semibold">
+                <Button className="w-full py-6 text-base md:text-lg rounded-xl bg-gradient-to-r bg-white  transition-all mt-7 font-semibold border text-[#FF738D]">
                     {textButton} <ArrowRight size={34} />
                 </Button>
             </Link>

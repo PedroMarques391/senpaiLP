@@ -49,7 +49,7 @@ const Hero = (): React.JSX.Element => {
                             initial={{ x: "-100%" }}
                             animate={{ x: isInView ? 0 : "-100%" }}
                             transition={{ type: "spring", stiffness: 50, damping: 20, duration: 2 }}
-                            className="text-lg md:text-base lg:text-xl ">
+                            className="text-lg md:text-base lg:text-xl font-bold">
 
                             A <span className="font-semibold">Senpai</span> está sempre disponível para deixar suas conversas mais divertidas e criativas! Com ela, você pode criar figurinhas personalizadas, transformar imagens, GIFs e vídeos em figurinhas animadas e muito mais. Tudo de forma rápida, fácil e gratuita. A sua bot de figurinhas para WhatsApp que torna cada conversa única!
                         </motion.h2>
@@ -84,7 +84,7 @@ const Hero = (): React.JSX.Element => {
 
                 </section>
             </div >
-            <div className=" bg-gray-100 px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
+            <div className=" bg-[#FF9DBB] px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
                 <section
                     ref={refCard}
                     className="grid grid-cols-1 md:grid-cols-3  md:w-full max-w-7xl  mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-4 overflow-hidden" >
