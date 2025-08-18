@@ -6,7 +6,7 @@ const TermsOfUse = (): React.JSX.Element => {
     return (
         <Layout
             backgroundColor="bg-gray-100"
-            backgroundHeader="bg-black"
+            backgroundHeader="bg-senpai-header"
         >
             <main className="min-h-screen text-black px-6 md:px-16 flex items-center justify-center pt-30">
                 <div className="max-w-4xl bg-white p-10 rounded-2xl shadow-lg border border-gray-300">

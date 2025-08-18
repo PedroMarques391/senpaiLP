@@ -23,7 +23,7 @@ export default function Page(): React.JSX.Element {
     return (
         <Layout
             backgroundColor='bg-gray-100'
-            backgroundHeader='bg-black'
+            backgroundHeader='bg-senpai-header'
             load={false}
         >
 

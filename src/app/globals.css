@@ -4,6 +4,12 @@
 
 @plugin "tailwindcss-animate";
 
+@theme {
+  --color-senpai-header: #0a0a0a;
+  --color-senpai-footer: #0a0a0a;
+  --color-senpai-background: white;
+}
+
 
 body {
   font-family: var(--font-montserrat), sans-serif;

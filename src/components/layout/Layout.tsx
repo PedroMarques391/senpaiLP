@@ -22,7 +22,7 @@ interface ILayoutProps {
 const Layout = ({
     children,
     hero = false,
-    backgroundColor = "bg-white",
+    backgroundColor = "bg-senpai-background",
     backgroundHeader = "bg-transparent",
     container = true,
 }: ILayoutProps): React.JSX.Element => {
@@ -43,7 +43,7 @@ const Layout = ({
     return (
 
 
-        <main className={`w-full min-h-screen ${backgroundColor} relative`}>
+        <main className={`w-full min-h-screen ${backgroundColor} relative `}>
             {hero ? <Hero /> : <Header background={backgroundHeader} />}
             <section className={`${container && "container"}  mx-auto  overflow-hidden `}>
                 {children}
