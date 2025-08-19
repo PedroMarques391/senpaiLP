@@ -22,7 +22,7 @@ const Info = (): React.JSX.Element => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: isInView ? 1 : 0 }}
                     transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
-                    className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center md:text-left">Mais diversão e praticidade no seu WhatsApp</motion.h1>
+                    className="text-2xl text-content-secondary md:text-3xl lg:text-5xl font-semibold text-center md:text-left">Mais diversão e praticidade no seu WhatsApp</motion.h1>
                 <motion.p
                     ref={ref}
                     initial={{ opacity: 0 }}
@@ -33,7 +33,8 @@ const Info = (): React.JSX.Element => {
 
                 <Button
                     asChild
-                    className=" text-content-inverse bg-content-primary hover:bg-content-secondary transition-all flex items-center gap-2 p-5 lg:p-6 text-base md:text-lg  w-full md:w-fit rounded-full"
+                    className=" text-content-inverse bg-content-secondary hover:bg-content-primary/59 transition-all
+                    duration-500 flex items-center gap-2 p-5 lg:p-6 text-base md:text-lg  w-full md:w-fit rounded-full"
                 >
                     <Link
                         href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"

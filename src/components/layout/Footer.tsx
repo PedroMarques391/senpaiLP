@@ -15,7 +15,7 @@ export const Footer = () => {
                         <Logo />
                     </div>
                     <div className="flex flex-col items-center sm:items-start md:col-span-2">
-                        <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Links Rápidos</h1>
+                        <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Acessos Rápidos</h1>
                         <ul className="grid grid-cols-2 w-full ">
                             <LI
                                 prefetch={isHomePage ? false : true}

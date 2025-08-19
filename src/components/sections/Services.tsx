@@ -78,8 +78,8 @@ const Services = ({
             >
                 <Button
                     className="w-full py-6 text-base md:text-lg rounded-xl 
-                               bg-secondary-theme text-shadow-surface-card-alt
-                               hover:bg-secondary transition-all mt-7 font-semibold"
+                               bg-content-primary text-shadow-surface-card-alt
+                               hover:bg-content-primary/60 mt-7 font-semibold transition-all duration-700"
                 >
                     {textButton} <ArrowRight size={24} />
                 </Button>
