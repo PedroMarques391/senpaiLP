@@ -15,7 +15,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
 
     return (
         <div
-            className="bg-[#FF9DBB] shadow-lg w-full flex flex-col  rounded-2xl justify-start overflow-hidden">
+            className="bg-surface-card shadow-lg w-full flex flex-col  rounded-2xl justify-start overflow-hidden">
             <motion.div
                 ref={ref}
                 initial={{ x: "110%" }}
@@ -39,13 +39,13 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
 
 
             </motion.div>
-            <div className="p-4 h-auto md:h-52 lg:h-60 xl:h-52 space-y-4 ">
+            <div className="p-4  space-y-4 ">
                 <motion.h1
                     ref={ref}
                     initial={{ x: "-100%" }}
                     animate={{ x: "0%" }}
                     transition={{ type: "spring", stiffness: 60, damping: 25, duration: 2.0 }}
-                    className="text-base md:text-xl xl:text-2xl font-bold tracking-tight text-[#181340] h-5 md:h-10  flex items-center">
+                    className="text-base md:text-xl  font-bold tracking-tight text-[#181340] h-5 md:h-10 ">
                     {title}
                 </motion.h1>
                 <motion.p

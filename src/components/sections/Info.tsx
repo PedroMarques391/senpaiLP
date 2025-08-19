@@ -33,7 +33,7 @@ const Info = (): React.JSX.Element => {
 
                 <Button
                     asChild
-                    className=" text-white bg-[#181340] hover:bg-[#34288e] hover:text-white transition-all flex items-center gap-2 p-5 lg:p-6 text-base md:text-lg lg:text-xl w-full md:w-fit rounded-full"
+                    className=" text-content-inverse bg-content-primary hover:bg-content-secondary transition-all flex items-center gap-2 p-5 lg:p-6 text-base md:text-lg  w-full md:w-fit rounded-full"
                 >
                     <Link
                         href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"

@@ -65,7 +65,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Link que leva para o número do bot."
-                            className="p-4 bg-gradient-to-r text-black/80 from-[#7acfdd] via-[#97d5df] to-slate-50 rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
+                            className="p-4 bg-gradient-to-r text-content-primary/80 from-[#7acfdd] via-[#97d5df] to-slate-50 rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
                         >
                             Converse com a Senpai
                         </Link>

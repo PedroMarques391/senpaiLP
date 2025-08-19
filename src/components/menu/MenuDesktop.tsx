@@ -20,7 +20,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link que leva para o número do bot."
-                className="p-2 bg-gradient-to-r text-black/80 from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 text-whitw hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center text-sm inline-flex w-fit backg"
+                className="p-2 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 text-whitw hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center text-sm inline-flex w-fit backg"
             >
                 <p className='text-xs lg:text-base'>Converse com a Senpai</p>
             </Link>

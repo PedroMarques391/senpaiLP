@@ -22,7 +22,7 @@ const Hero = (): React.JSX.Element => {
     return (
         <section>
             <div
-                className="relative text-white bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px] overflow-hidden">
+                className="relative text-content-inverse bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 bg-center pb-20  md:px-20 rounded-b-[60px] overflow-hidden">
                 <Image
                     src="/images/senpai/hero.webp"
                     alt="Hero"
@@ -60,7 +60,7 @@ const Hero = (): React.JSX.Element => {
                                 prefetch
                                 rel="noopener noreferrer"
                             >
-                                <button className="bg-[#25D366] text-white font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-full md:w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95 justify-center">
+                                <button className="bg-[#25D366] text-content-inverse font-bold py-2 px-3 rounded-lg shadow-md transition flex items-center gap-4 w-full md:w-fit duration-300 sm:py-1 sm:px-2 sm:gap-2 md:py-2 md:px-3 md:gap-4 hover:bg-[#1DA851] hover:scale-105 hover:shadow-lg active:scale-95 justify-center">
                                     <BsWhatsapp aria-label="Icone do WhatsApp" className="flex-shrink-0 w-5 h-5 md:w7 md:h-7" />
 
                                     <div className="text-left">
@@ -70,7 +70,7 @@ const Hero = (): React.JSX.Element => {
                                 </button>
 
                             </Link>
-                            <p className="text-white font-bold flex items-center justify-center md:justify-normal text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap ">
+                            <p className="text-content-inverse font-bold flex items-center justify-center md:justify-normal text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap ">
                                 Ao clicar no botão, você concorda com os&nbsp;
                                 <Link href="/termo-de-uso" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
                                     Termos de Uso

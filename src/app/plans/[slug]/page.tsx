@@ -36,7 +36,7 @@ export default function Page(): React.JSX.Element {
                         Esta página está em desenvolvimento. Volte em breve!
                     </span>
                     <button
-                        className="mt-8 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
+                        className="mt-8 px-6 py-2 bg-black text-content-inverse rounded hover:bg-gray-800 transition"
                         onClick={() => router.push('/')}
                     >
                         Voltar para Home

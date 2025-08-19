@@ -13,7 +13,7 @@ const Logo = (): React.JSX.Element => {
                 height={60}
                 className="bg-gradient-to-r from-fuchsia-300 via-purple-300 to-slate-50 rounded-full"
             />
-            <p className="lg:text-xl font-semibold text-white md:-mt-1 lg:mt-0">Senpai</p>
+            <p className="lg:text-xl font-semibold text-content-inverse md:-mt-1 lg:mt-0">Senpai</p>
         </Link>
     )
 }

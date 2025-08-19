@@ -22,7 +22,7 @@ interface ILayoutProps {
 const Layout = ({
     children,
     hero = false,
-    backgroundColor = "bg-senpai-background",
+    backgroundColor = "bg-surface",
     backgroundHeader = "bg-transparent",
     container = true,
 }: ILayoutProps): React.JSX.Element => {

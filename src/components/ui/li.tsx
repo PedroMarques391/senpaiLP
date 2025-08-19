@@ -18,7 +18,7 @@ const LI = ({ children, alt, href, target = "_self", prefetch = true }: ILIProps
                 target={target}
                 prefetch={prefetch}
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition duration-300 w-full text-base md:text-xs lg:text-base"
+                className="text-gray-400 hover:text-content-inverse transition duration-300 w-full text-base md:text-xs lg:text-base"
                 aria-label={alt}
             >
                 {children}

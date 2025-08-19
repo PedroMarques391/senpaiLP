@@ -56,8 +56,8 @@ const CarouselBenefit = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-gray-900 text-white transition-all " />
-        <CarouselNext className="bg-gray-900 text-white  transition-all " />
+        <CarouselPrevious className="bg-gray-900 text-content-inverse transition-all " />
+        <CarouselNext className="bg-gray-900 text-content-inverse  transition-all " />
       </Carousel>
     </section>
   )

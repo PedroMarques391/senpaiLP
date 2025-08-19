@@ -31,7 +31,7 @@ const AboutPage = () => {
 
                     <button
                         onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
-                        className='absolute bottom-10 left-[50%] transform -translate-x-[50%] text-white text-3xl font-bold  px-6 py-3 rounded-lg animate-bounce cursor-pointer'>
+                        className='absolute bottom-10 left-[50%] transform -translate-x-[50%] text-content-inverse text-3xl font-bold  px-6 py-3 rounded-lg animate-bounce cursor-pointer'>
                         <MdKeyboardDoubleArrowDown size={60} />
                     </button>
 

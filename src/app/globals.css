@@ -4,11 +4,30 @@
 
 @plugin "tailwindcss-animate";
 
+
 @theme {
-  --color-senpai-header: #181340;
-  --color-senpai-footer: #0a0a0a;
-  --color-senpai-background: #FECFDA;
+  --color-surface: #fecfda;
+  /* fundo principal rosa claro */
+  --color-surface-card: #ffe4ec;
+  /* cards */
+  --color-surface-card-alt: #f9d9e7;
+  /* variação para destaque (ex: plano do meio) */
+
+  --color-primary-theme: #ec4899;
+  /* rosa vibrante para botões e CTA */
+  --color-secondary-theme: #9B5DE5;
+  /* roxo médio, hover e detalhes */
+  --color-accent: -theme #f59e0b;
+  /* laranja doce para chamar atenção */
+  --color-neutral-theme: #1e1e1e;
+  /* ícones e bordas */
+
+  --color-content-primary: #9B5DE5;
+  --color-content-secondary: #4b3c61;
+  --color-content-muted: #9ca3af;
+  --color-content-inverse: #ffffff;
 }
+
 
 
 body {
@@ -22,7 +41,7 @@ h3 {
 }
 
 .speechBubble {
-  background-color: black;
+  background-color: var(--color-secondary-theme);
   padding: 12px 16px;
   border-radius: 10px;
   border-bottom-right-radius: 0;

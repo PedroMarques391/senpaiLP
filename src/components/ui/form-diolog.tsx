@@ -65,7 +65,7 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
                         <Button
                             type="submit"
                             disabled={loading}
-                            className={`w-full flex items-center justify-center gap-2 transition-all duration-300 ${loading ? 'bg-gray-400 text-black cursor-not-allowed' : 'bg-black hover:bg-black/80 text-white'
+                            className={`w-full flex items-center justify-center gap-2 transition-all duration-300 ${loading ? 'bg-gray-400 text-content-primary cursor-not-allowed' : 'bg-black hover:bg-black/80 text-content-inverse'
                                 } rounded-2xl py-3 text-base font-semibold `}
                         >
                             {loading ? (
