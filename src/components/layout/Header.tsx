@@ -39,9 +39,9 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
     return (
         <header className={`text-content-inverse py-3 flex justify-center font-sans items-center fixed top-0 left-0 transition-colors duration-500 w-full z-30 ${scrolled ? "bg-secondary-theme/90" : background
             }`}>
-            <nav className="w-full max-w-6xl flex justify-between items-center md:mx-5 lg:mx-0 relative px-5 ">
+            <nav className="w-full max-w-6xl flex justify-between items-center md:mx-2 lg:mx-0 relative gap-2">
                 <Logo />
-                <button aria-label="Abrir/fechar Menu" onClick={handleMenu} className="md:hidden w-8 h-8  z-20">
+                <button aria-label="Abrir/fechar Menu" onClick={handleMenu} className="md:hidden w-8 h-8 z-20">
                     <div className={`bg-white h-1 mb-1.5 transition-transform block 
                         ${isOpen ? "rotate-45 translate-y-2.5" : "rotate-0"}`} />
                     <div className={`bg-white h-1 mb-1.5 transition-transform block 
