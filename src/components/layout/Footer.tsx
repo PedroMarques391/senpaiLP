@@ -68,7 +68,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-8 text-center">
-                    <p className="text-sm text-gray-500">© 2025 Todos os direitos reservados</p>
+                    <p className="text-sm text-content-inverse">© 2025 Todos os direitos reservados</p>
                 </div>
             </div>
         </footer >
