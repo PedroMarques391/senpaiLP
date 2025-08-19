@@ -84,7 +84,7 @@ const Hero = (): React.JSX.Element => {
 
                 </section>
             </div >
-            <div className=" bg-[#FF9DBB] px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
+            <div className=" bg-surface-card px-6 md:px-10 lg:md:px-20 rounded-b-[60px] -mt-16" >
                 <section
                     ref={refCard}
                     className="grid grid-cols-1 md:grid-cols-3  md:w-full max-w-7xl  mx-auto place-items-center content-center text-center pt-24 pb-14 gap-5 md:gap-4 overflow-hidden" >
@@ -95,7 +95,7 @@ const Hero = (): React.JSX.Element => {
                             initial={{ y: "-100%" }}
                             animate={{ y: isCardInView ? 0 : "100%" }}
                             transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration }}
-                            className="w-full shadow-lg h-full text-center bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 overflow-hidden"
+                            className="w-full h-full text-center bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 overflow-hidden"
                         >
                             <CardHeader>
                                 <CardTitle className="text-2xl lg:text-3xl font-bold tracking-tight drop-shadow-md">
