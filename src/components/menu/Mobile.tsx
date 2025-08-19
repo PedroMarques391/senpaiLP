@@ -34,7 +34,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                 <motion.ul
                     className={`
                         border-l-2 border-gray-dark rounded-ss-3xl
-                        md:hidden w-4/5 sm:w-2/3 md:w-1/5 bg-black h-screen z-10
+                        md:hidden w-4/5 sm:w-2/3 md:w-1/5 bg-secondary-theme h-screen z-10
                         fixed top-0 right-0
                         flex flex-col justify-center items-center
                         ease-in-out transform
@@ -65,7 +65,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Link que leva para o número do bot."
-                            className="p-4 bg-gradient-to-r text-content-primary/80 from-[#7acfdd] via-[#97d5df] to-slate-50 rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
+                            className="p-4 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
                         >
                             Converse com a Senpai
                         </Link>
