@@ -33,20 +33,22 @@ const CarouselBenefit = () => {
 
         }}
 
-
         className="w-full max-w-sm md:max-w-xl lg:max-w-4xl xl:max-w-5xl mx-auto select-none">
-        <CarouselContent className="-ml-1 md:-ml-5 flex gap-2 transition-all duration-500 ease-in-out transform">
+        <CarouselContent className="-ml-4 transition-all duration-500 ease-in-out transform ">
           {benefits.map((benefit, index) => (
-            <CarouselItem key={index} className="pl-1 md:pl-0 lg:pl-6 md:basis-1/2 lg:basis-1/3">
-              <div className="p-3">
-                <div className="rounded-2xl shadow-xl border border-gray-200 bg-white">
-                  <CardTitle className="text-lg font-bold text-gray-900 p-4 text-center">
+            <CarouselItem
+              key={index}
+              className="pl-1 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3 "
+            >
+              <div className="p-1">
+                <div className="flex flex-col h-full rounded-2xl bg-surface-card overflow-hidden">
+                  <CardTitle className="text-lg font-bold text-secondary-theme p-5 text-center">
                     {benefit.title}
                   </CardTitle>
                   <div className="flex justify-center items-center p-4">
                     {renderIcon(benefit.icon)}
                   </div>
-                  <CardContent className="flex flex-col items-center justify-center p-6">
+                  <CardContent className="flex flex-col flex-grow justify-center p-6 pt-2">
                     <p className="text-md text-gray-700 text-center leading-relaxed font-sans">
                       {benefit.description}
                     </p>
@@ -56,8 +58,8 @@ const CarouselBenefit = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-gray-900 text-content-inverse transition-all " />
-        <CarouselNext className="bg-gray-900 text-content-inverse  transition-all " />
+        <CarouselPrevious className="bg-secondary-theme text-content-inverse hover:bg-surface-card border-none transition-all " />
+        <CarouselNext className="bg-secondary-theme text-content-inverse hover:bg-surface-card border-none  transition-all " />
       </Carousel>
     </section>
   )
