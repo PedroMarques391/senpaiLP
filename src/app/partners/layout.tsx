@@ -6,7 +6,7 @@ import { jsonLdThanks } from "@/src/utils/schema.org";
 
 
 export const metadata: Metadata = {
-    title: "BotDoSenpai - Parcerias",
+    title: "Seja um Parceiro!",
     description: "Junte-se ao BotDoSenpai como parceiro e ajude a levar figurinhas personalizadas para mais pessoas no WhatsApp. Descubra benefícios exclusivos para parceiros e faça parte dessa comunidade!",
     keywords: ["parceria", "parceiros", "figurinhas", "bot de figurinhas", "whatsapp",
         "senpai bot", "botdosenpai", "benefícios parceiros", "comunidade"

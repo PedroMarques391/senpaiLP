@@ -15,7 +15,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
             <NavItem href={handleHref('func')} >Funcionalidades</NavItem>
             <NavItem href={handleHref('plans')}>Assinaturas</NavItem>
             <NavItem href='/about' >Sobre Nós</NavItem>
-            <NavItem href='/Seja um parceiro' >Seja um Parceiro</NavItem>
+            <NavItem href='/partners' >Seja um Parceiro</NavItem>
             <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                 target="_blank"
