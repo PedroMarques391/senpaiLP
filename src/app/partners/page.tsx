@@ -1,6 +1,7 @@
 'use client'
 import Layout from '@/src/components/layout/Layout';
 import { ReasonsCard } from '@/src/components/sections/ReasonsCard';
+import { StepsSection } from '@/src/components/sections/StepsSection';
 import { FormField } from '@/src/components/ui/form-field';
 import { Label } from '@/src/components/ui/label';
 import { reasonsCard } from '@/src/data';
@@ -70,10 +71,10 @@ const PartnersPage = () => {
 
                 <section id="benefits" className="py-20 bg-surface-card px-4">
                     <div className="max-w-6xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Por que ser nosso Parceiro?</h2>
-                        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Por que ser nosso Parceiro?</h1>
+                        <h2 className="text-gray-600 mb-12 max-w-2xl mx-auto">
                             Oferecemos um ecossistema completo para você prosperar e agregar mais valor aos seus clientes.
-                        </p>
+                        </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {reasonsCard.map((card, index) => (
                                 <ReasonsCard
@@ -87,31 +88,7 @@ const PartnersPage = () => {
                     </div>
                 </section>
 
-                <section className="py-20 px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">O Processo é Simples</h2>
-                        <div className="relative">
-                            <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-secondary-theme -translate-y-1/2"></div>
-                            <div className="relative flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-                                <div className="flex flex-col items-center text-center w-full md:w-1/3 px-4">
-                                    <div className="bg-primary-theme text-white rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold mb-4 z-10">1</div>
-                                    <h3 className="text-xl font-semibold mb-2">Cadastro</h3>
-                                    <p className="text-gray-600">Preencha o formulário de interesse abaixo. É rápido e fácil.</p>
-                                </div>
-                                <div className="flex flex-col items-center text-center w-full md:w-1/3 px-4">
-                                    <div className="bg-primary-theme text-white rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold mb-4 z-10">2</div>
-                                    <h3 className="text-xl font-semibold mb-2">Análise</h3>
-                                    <p className="text-gray-600">Nossa equipe entrará em contato para entender suas necessidades.</p>
-                                </div>
-                                <div className="flex flex-col items-center text-center w-full md:w-1/3 px-4">
-                                    <div className="bg-primary-theme text-white rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold mb-4 z-10">3</div>
-                                    <h3 className="text-xl font-semibold mb-2">Parceria</h3>
-                                    <p className="text-gray-600">Após a aprovação, você recebe o acesso e inicia a parceria!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <StepsSection />
 
                 <section id="partner-form" className="py-20 bg-surface-card px-4">
                     <div className="max-w-2xl mx-auto">
