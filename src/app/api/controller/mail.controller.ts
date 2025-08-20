@@ -38,9 +38,9 @@ export async function sendEmail(data: ISendEmail) {
   }
 
   return await transporter.sendMail({
-    from: `"Senpai" <${process.env.USER_EMAIL}>`,
+    from: type === 'partnership' ? `${name} <${email}>` : `"Senpai" <${process.env.USER_EMAIL}>`,
     to: process.env.ADDRESSEE,
-    subject: subject || (type === 'partnership' ? 'Nova solicitação de parceria' : 'Nova mensagem de Usuário'),
+    subject: type === 'partnership' ? 'Nova solicitação de parceria' : subject,
     html: htmlTemplate,
   });
 }
