@@ -7,6 +7,7 @@ import { IAchievement } from "./achievements"
 import { IServices } from "./services"
 import { IReasonsCard } from "./reasonsCard"
 import { IModalMessage } from "./modalMessage"
+import { IStepsInterface } from "./steps"
 
 
 
@@ -22,6 +23,7 @@ export type {
     IAchievement,
     IServices,
     IModalMessage,
-    IReasonsCard
+    IReasonsCard,
+    IStepsInterface
 
 }

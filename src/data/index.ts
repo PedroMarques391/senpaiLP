@@ -6,6 +6,7 @@ import { services } from "./data.services"
 import { team } from "./data.team"
 import { privacyPolicy, termsOfUse } from "./data.termsAndPrivacy"
 import { reasonsCard } from "./data.reasons"
+import { steps } from './data.steps'
 
 
 export {
@@ -17,7 +18,8 @@ export {
     services,
     team,
     termsOfUse,
-    reasonsCard
+    reasonsCard,
+    steps
 }
 
 
