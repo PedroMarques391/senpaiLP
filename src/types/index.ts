@@ -5,6 +5,7 @@ import { ITermsAndPrivacy } from "./termsAndPrivacy"
 import { ITeamMember } from "./team"
 import { IAchievement } from "./achievements"
 import { IServices } from "./services"
+import { IReasonsCard } from "./reasonsCard"
 import { IModalMessage } from "./modalMessage"
 
 
@@ -20,6 +21,7 @@ export type {
     ITeamMember,
     IAchievement,
     IServices,
-    IModalMessage
+    IModalMessage,
+    IReasonsCard
 
 }

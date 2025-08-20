@@ -4,7 +4,7 @@ const functionsCardItens: IFunctionsCard[] = [
     {
         title: "🖼️ Crie Figurinhas com a Senpai",
         subtitle: "Transforme imagens, GIFs e vídeos em figurinhas únicas no WhatsApp! Rápido e fácil.",
-        imagePath: "/images/card/cardSticker.jpg",
+        imagePath: "/image.png",
         message: "Olá Senpai, quero criar um sticker mágico!",
         duration: 1.0
     },

@@ -5,6 +5,7 @@ import { functionsCardItens } from "./data.functionsCardsItens"
 import { services } from "./data.services"
 import { team } from "./data.team"
 import { privacyPolicy, termsOfUse } from "./data.termsAndPrivacy"
+import { reasonsCard } from "./data.reasons"
 
 
 export {
@@ -15,7 +16,8 @@ export {
     privacyPolicy,
     services,
     team,
-    termsOfUse
+    termsOfUse,
+    reasonsCard
 }
 
 
