@@ -22,7 +22,7 @@ const Services = ({
     const isInListView = useInView(listRef)
 
     return (
-        <div className="max-w-[400px] bg-surface-card rounded-2xl shadow-lg p-6 flex flex-col h-auto md:h-full">
+        <div className="max-w-[400px] bg-surface-card rounded-2xl p-6 flex flex-col h-auto md:h-full">
 
             <div>
                 <motion.h1

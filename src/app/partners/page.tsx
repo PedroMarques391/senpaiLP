@@ -60,10 +60,13 @@ const PartnersPage = () => {
                 if (!res.ok) {
                     throw new Error("Erro na requisição")
                 }
+                //TODO
+                //add success modal
                 console.log('deu certo');
-
             })
             .catch(() => {
+                //TODO
+                //add error modal
                 console.log('deu errado');
 
             })

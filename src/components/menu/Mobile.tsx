@@ -58,6 +58,9 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                     <motion.div variants={variants}>
                         <NavItem onClick={() => setIsOpen(false)} href="/about">Sobre Nós</NavItem>
                     </motion.div>
+                    <motion.div variants={variants}>
+                        <NavItem onClick={() => setIsOpen(false)} href='/partners' >Seja um Parceiro</NavItem>
+                    </motion.div>
                     <div>
                         <Link
                             onClick={() => setIsOpen(false)}

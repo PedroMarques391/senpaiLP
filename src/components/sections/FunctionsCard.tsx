@@ -15,7 +15,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
 
     return (
         <div
-            className="bg-surface-card shadow-lg w-full flex flex-col  rounded-2xl justify-start overflow-hidden">
+            className="bg-surface-card  w-full flex flex-col  rounded-2xl justify-start overflow-hidden">
             <motion.div
                 ref={ref}
                 initial={{ x: "110%" }}
