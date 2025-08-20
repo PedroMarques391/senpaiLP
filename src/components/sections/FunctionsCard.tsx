@@ -7,7 +7,6 @@ interface IFunctionsCardProps {
     imagePath: string
     title: string
     subtitle: string
-    message: string
 }
 
 const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): React.JSX.Element => {
