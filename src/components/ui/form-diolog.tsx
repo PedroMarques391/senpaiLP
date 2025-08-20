@@ -14,7 +14,7 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
 
     async function userSubmit(data: FormData) {
         setLoaging(true)
-        await fetch("/api/emails/", {
+        await fetch("/api/emails/support", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
