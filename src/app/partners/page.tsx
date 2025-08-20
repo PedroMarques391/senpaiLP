@@ -26,10 +26,10 @@ const partnersSchema = z.object({
     segment: z.string()
         .min(2, 'Precisamos saber o segmento da sua empresa.'),
     proposal: z.enum(
-        ["brand", "service", "sponsor", "other",],
+        ["Divulgação de marca", "Troca de Serviços", "Patrocínio", "Outro",],
         { errorMap: () => ({ message: "Selecione o tipo de proposta da sua empresa." }) }
     ),
-    public: z.string()
+    publicInfo: z.string()
         .min(2, 'Precisamos saber o seu público-alvo.'),
     budgeting: z.string()
         .min(2, 'O orçamento ou contrapartida é obrigatório.'),
@@ -130,16 +130,16 @@ const PartnersPage = () => {
                                         <option value="" disabled>
                                             Selecione uma opção
                                         </option>
-                                        <option value="brand">Divulgação de marca</option>
-                                        <option value="service">Troca de Serviços</option>
-                                        <option value="sponsor">Patrocínio</option>
-                                        <option value="Other">Outro</option>
+                                        <option value="Divulgação de marca">Divulgação de marca</option>
+                                        <option value="Troca de Serviços">Troca de Serviços</option>
+                                        <option value="Patrocínio">Patrocínio</option>
+                                        <option value="Outro">Outro</option>
                                     </select>
                                     {errors.proposal && (
                                         <p className="text-red-500 text-sm">{errors.proposal.message}</p>
                                     )}
                                 </div>
-                                <FormField label='Qual público você deseja atingir?' name='public' direction='col' />
+                                <FormField label='Qual público você deseja atingir?' name='publicInfo' direction='col' />
                                 <FormField label='Qual tipo de orçamento ou contrapartida você pensa em oferecer?' name='budgeting' direction='col' />
                                 <FormField label='Conte mais sobre sua ideia' name='more' type='textarea' direction='col' />
 
