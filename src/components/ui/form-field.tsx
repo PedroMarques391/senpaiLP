@@ -11,6 +11,7 @@ interface FormFieldProps {
     className?: string
     type?: 'text' | 'email' | 'textarea'
     maxLength?: number
+    direction?: 'row' | 'col'
 }
 
 export const FormField = ({
@@ -18,12 +19,12 @@ export const FormField = ({
     name,
     className = '',
     type = 'text',
-    maxLength
+    maxLength,
+    direction = 'row'
 }: FormFieldProps) => {
     const { register, formState: { errors }, setValue, clearErrors } = useFormContext()
     const error = errors[name]?.message as string
     const InputComponent = type === 'textarea' ? Textarea : Input
-
 
     function handleMask(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void {
         const formattedPhone = insertMaskInPhone(e.target.value)
@@ -32,13 +33,28 @@ export const FormField = ({
     }
 
     return (
-        <div className="grid grid-cols-4 items-center gap-2">
-            <Label htmlFor={name} className="text-right">{label}</Label>
+        <div
+            className={
+                direction === 'row'
+                    ? "grid grid-cols-4 items-center gap-2"
+                    : "flex flex-col gap-1"
+            }
+        >
+            <Label
+                htmlFor={name}
+                className={direction === 'row' ? "text-right" : "text-left"}
+            >
+                {label}
+            </Label>
             <InputComponent
                 id={name}
                 type={type !== 'textarea' ? type : undefined}
                 maxLength={maxLength}
-                className={`col-span-3 ${className}`}
+                className={
+                    direction === 'row'
+                        ? `col-span-3 ${className}`
+                        : `${className}`
+                }
                 {...register(name)}
                 onChange={(e) => {
                     if (name === "phone") {
@@ -49,7 +65,17 @@ export const FormField = ({
                     }
                 }}
             />
-            {error && <p className="text-red-500 col-span-4 text-sm">{error}</p>}
+            {error && (
+                <p
+                    className={
+                        direction === 'row'
+                            ? "text-red-500 col-span-4 text-sm"
+                            : "text-red-500 text-sm"
+                    }
+                >
+                    {error}
+                </p>
+            )}
         </div>
     )
 }
