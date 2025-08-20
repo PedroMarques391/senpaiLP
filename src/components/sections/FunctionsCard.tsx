@@ -25,19 +25,17 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                     duration: 3.0,
                     ease: "easeInOut"
                 }}
-                className="mx-auto  w-full text-center  rounded-lg">
-
-                <div className="relative w-[400px] h-[400px]">
-                    <Image
-                        src={imagePath}
-                        alt={title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
-                        className="object-contain rounded-ss-xl bg-[#0a0a0a]"
-                    />
-                </div>
-
-
+                className="mx-auto w-full flex justify-center items-center rounded-t-2xl overflow-hidden"
+            >
+                <Image
+                    src={imagePath}
+                    alt={title}
+                    width={400}
+                    height={400}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+                    className="object-cover w-full h-full"
+                    priority
+                />
             </motion.div>
             <div className="p-4  space-y-4 ">
                 <motion.h1
