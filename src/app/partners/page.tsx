@@ -75,7 +75,7 @@ const PartnersPage = () => {
     }
 
     return (
-        <Layout backgroundHeader="bg-secondary-theme">
+        <Layout backgroundHeader="bg-secondary-theme" container={false}>
             <main>
                 <section className="bg-secondary-theme text-white text-center py-20 px-4 mt-20">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">
@@ -86,7 +86,7 @@ const PartnersPage = () => {
                     </p>
                     <Link
                         href="#partner-form"
-                        className="bg-white text-secondary-theme font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-transform transform hover:scale-105"
+                        className="bg-content-inverse text-secondary-theme font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-all duration-300"
                     >
                         Quero ser um Parceiro
                         <ArrowRight className="inline-block ml-2" size={20} />
