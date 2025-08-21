@@ -1,14 +1,7 @@
 import AbacatePay from "abacatepay-nodejs-sdk";
 import { CreateCustomerData, CreatePixQrCodeData, CreatePixQrCodeResponse } from "abacatepay-nodejs-sdk/dist/types";
 
-<<<<<<< HEAD
 const abacate = AbacatePay(process.env.ABACATE_PAY_API_KEY!);
-=======
-export async function payment(body: any) {
-    const client = new MercadoPagoConfig({
-        accessToken: "",
-    });
->>>>>>> main
 
 interface ICreatePayment {
     amount: number,
