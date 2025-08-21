@@ -129,6 +129,7 @@ const PartnersPage = () => {
                                         {...register("proposal")}
                                         className="border rounded-lg p-2 w-full"
                                         name='proposal'
+                                        defaultValue={''}
                                     >
                                         <option value="" disabled>
                                             Selecione uma opção
