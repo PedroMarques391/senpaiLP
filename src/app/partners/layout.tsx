@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./../globals.css";
 import Script from "next/script";
-import { jsonLdThanks } from "@/src/utils/schema.org";
+import { jsonLdPartners } from "@/src/utils";
 
 
 
@@ -24,7 +24,7 @@ export default function PartnersLayout({
                 id="partners-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(jsonLdThanks),
+                    __html: JSON.stringify(jsonLdPartners),
                 }}
             />
             {children}

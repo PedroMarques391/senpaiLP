@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./../globals.css";
 import Script from "next/script";
-import { jsonLdThanks } from "@/src/utils/schema.org";
+import { jsonLdThanks } from "@/src/utils";
 
 
 

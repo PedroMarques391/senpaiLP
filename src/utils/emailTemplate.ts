@@ -1,8 +1,8 @@
 import { insertMaskInPhone } from "./phoneMask";
 
 function supportTemplate({ name, email, phone, message }: any) {
-    const formattedPhone = insertMaskInPhone(phone);
-    return `
+  const formattedPhone = insertMaskInPhone(phone);
+  return `
     <div style="
       font-family: 'Segoe UI', Arial, sans-serif;
       background: linear-gradient(135deg, #fff0f5 0%, #e0c3fc 100%);
@@ -40,10 +40,9 @@ function supportTemplate({ name, email, phone, message }: any) {
   `;
 }
 
-// Template para parceria
 function partnershipTemplate({ name, email, phone, segment, proposal, publicInfo, budgeting, more }: any) {
-    const formattedPhone = insertMaskInPhone(phone);
-    return `
+  const formattedPhone = insertMaskInPhone(phone);
+  return `
     <div style="
       font-family: 'Segoe UI', Arial, sans-serif;
       background: linear-gradient(135deg, #f0faff 0%, #dbe9ff 100%);
@@ -87,6 +86,6 @@ function partnershipTemplate({ name, email, phone, segment, proposal, publicInfo
 }
 
 export {
-    partnershipTemplate,
-    supportTemplate
+  partnershipTemplate,
+  supportTemplate
 }
