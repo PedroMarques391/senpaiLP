@@ -5,6 +5,24 @@
 @plugin "tailwindcss-animate";
 
 
+@theme {
+  --color-surface: #fecfda;
+  --color-surface-card: #ffe4ec;
+  --color-surface-card-alt: #f9d9e7;
+
+  --color-primary-theme: #ec4899;
+  --color-secondary-theme: #181e35;
+  --color-accent: -theme #f59e0b;
+  --color-neutral-theme: #1e1e1e;
+
+  --color-content-primary: #9B5DE5;
+  --color-content-secondary: #4b3c61;
+  --color-content-muted: #9ca3af;
+  --color-content-inverse: #ffffff;
+}
+
+
+
 body {
   font-family: var(--font-montserrat), sans-serif;
 }
@@ -16,7 +34,7 @@ h3 {
 }
 
 .speechBubble {
-  background-color: black;
+  background-color: var(--color-secondary-theme);
   padding: 12px 16px;
   border-radius: 10px;
   border-bottom-right-radius: 0;

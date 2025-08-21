@@ -45,7 +45,6 @@ export default function Home() {
             imagePath={functionsCardItem.imagePath}
             title={functionsCardItem.title}
             subtitle={functionsCardItem.subtitle}
-            message={functionsCardItem.message}
           />
         ))}
       </section>

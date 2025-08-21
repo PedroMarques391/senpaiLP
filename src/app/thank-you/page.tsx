@@ -46,15 +46,15 @@ const ThanksPage = () => {
     const methods = useEmailForm(emailSchema);
 
     return (
-        <Layout backgroundHeader="bg-black">
+        <Layout backgroundHeader="bg-secondary-theme">
             <main className="min-h-screen flex items-center justify-center p-8 ">
                 <motion.section
-                    className="w-full max-w-6xl mx-auto rounded-3xl overflow-hidden  bg-white"
+                    className="w-full max-w-6xl mx-auto rounded-3xl overflow-hidden "
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                 >
-                    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 p-8 md:p-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 p-8 md:p-16 ">
                         <motion.article
                             className="flex justify-center md:justify-end"
                             variants={itemVariants}
@@ -70,7 +70,7 @@ const ThanksPage = () => {
                         </motion.article>
 
                         <motion.article
-                            className="text-center md:text-left text-gray-900 dark:text-white"
+                            className="text-center md:text-left text-gray-900 "
                             variants={containerVariants}
                         >
                             <motion.h1
@@ -81,7 +81,7 @@ const ThanksPage = () => {
                             </motion.h1>
 
                             <motion.p
-                                className="text-base md:text-xl text-gray-600 mb-6 leading-relaxed"
+                                className="text-base md:text-xl text-content-secondary mb-6 leading-relaxed"
                                 variants={itemVariants}
                             >
                                 Agora você faz parte da nossa comunidade especial! Muito obrigada por confiar na gente. Aproveite cada recurso da sua assinatura. Qualquer dúvida, estamos sempre por aqui.
@@ -91,7 +91,7 @@ const ThanksPage = () => {
                                 <motion.div variants={buttonVariants}>
                                     <Button
                                         onClick={() => setIsOpen(true)}
-                                        className="bg-black text-white font-semibold p-4 rounded-xl shadow-md transition-all w-full sm:w-auto"
+                                        className="bg-content-secondary text-content-inverse font-semibold p-4 rounded-xl shadow-md transition-all w-full sm:w-auto"
                                     >
                                         Finalizar
                                     </Button>
@@ -100,7 +100,7 @@ const ThanksPage = () => {
                                     <Button
                                         asChild
                                         variant="outline"
-                                        className="bg-transparent border border-black  text-black dark:text-white font-semibold p-4 rounded-xl shadow-md transition-all w-full sm:w-auto hover:bg-gray-100"
+                                        className="bg-transparent border border-content-secondary text-content-primary font-semibold p-4 rounded-xl  transition-all w-full sm:w-auto hover:bg-content-primary hover:text-content-inverse"
                                     >
                                         <Link href="/">Voltar ao Início</Link>
                                     </Button>

@@ -8,14 +8,14 @@ export const Footer = () => {
 
 
     return (
-        <footer className="bg-black text-white py-16">
+        <footer className="bg-secondary-theme text-content-inverse py-16">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mx-auto place-items-center">
                     <div className="flex flex-col justify-center items-center sm:items-start md:col-span-1">
                         <Logo />
                     </div>
                     <div className="flex flex-col items-center sm:items-start md:col-span-2">
-                        <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Links Rápidos</h1>
+                        <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Acessos Rápidos</h1>
                         <ul className="grid grid-cols-2 w-full ">
                             <LI
                                 prefetch={isHomePage ? false : true}
@@ -68,7 +68,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-8 text-center">
-                    <p className="text-sm text-gray-500">© 2025 Todos os direitos reservados</p>
+                    <p className="text-sm text-content-inverse">© 2025 Todos os direitos reservados</p>
                 </div>
             </div>
         </footer >

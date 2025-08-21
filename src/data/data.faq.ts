@@ -2,32 +2,39 @@ import { IFaq } from "../types";
 
 const faq: IFaq[] = [
     {
-        question: "O bot é seguro e legalizado?",
-        answer: "Sim! Nosso bot utiliza a API oficial do WhatsApp (Meta API), garantindo total conformidade com as diretrizes da plataforma. Você pode usá-lo com segurança e tranquilidade."
+        id: 1,
+        question: 'O bot é seguro e legalizado?',
+        answer: 'Sim! Nosso bot é oficial do WhatsApp, feito com a Meta WhatsApp Business API, 100% seguro e confiável, seguindo todas as regras da plataforma.'
     },
     {
-        question: "O bot suporta figurinhas animadas?",
-        answer: "Sim! Nosso bot aceita GIFs e vídeos curtos para criar figurinhas animadas automaticamente, sem complicações."
+        id: 2,
+        question: 'O bot suporta figurinhas animadas?',
+        answer: 'Sim! Você pode enviar vídeos curtos ou GIFs e o bot transforma automaticamente em figurinhas animadas compatíveis com o WhatsApp.'
     },
     {
-        question: "Quem está por trás do Bot de Figurinhas?",
-        answer: "Nosso time é composto por desenvolvedores, designers e entusiastas de tecnologia apaixonados por inovação. Trabalhamos para oferecer a melhor experiência possível aos usuários."
+        id: 3,
+        question: 'Como posso criar minhas figurinhas?',
+        answer: 'Basta enviar uma imagem, foto, vídeo ou GIF para o bot, e ela fará a conversão para figurinha em poucos segundos. Não precisa de aplicativos extras!'
     },
     {
-        question: "O que o futuro reserva para o bot de figurinhas?",
-        answer: "Estamos constantemente aprimorando o bot! Em breve, teremos mais opções de personalização, integração com novas plataformas e uma experiência de uso ainda mais fluida."
+        id: 4,
+        question: 'Preciso baixar algum aplicativo?',
+        answer: 'Não! Tudo é feito diretamente no WhatsApp. Basta adicionar a Senpai e começar a criar figurinhas.'
     },
     {
-        question: "Como posso criar minhas figurinhas?",
-        answer: "É super simples! Basta enviar uma imagem, GIF ou vídeo curto para o bot, e ele transformará automaticamente no formato de figurinha para você usar no WhatsApp."
+        id: 5,
+        question: 'Quem está por trás do Bot de Figurinhas?',
+        answer: 'O Bot de Figurinha é desenvolvido pela equipe da Senpai, especializada em soluções digitais e automação para WhatsApp.'
     },
     {
-        question: "O bot tem custo?",
-        answer: "Atualmente, oferecemos um plano gratuito com funcionalidades básicas. Para recursos avançados e uso ilimitado, temos planos pagos acessíveis para todos os perfis de usuários."
+        id: 6,
+        question: 'O que o futuro reserva para o Bot de Figurinhas?',
+        answer: 'Novas funções estão sendo planejadas, como figurinhas com efeitos especiais, integração com pacotes personalizados e muito mais!'
     },
     {
-        question: "Preciso baixar algum aplicativo?",
-        answer: "Não! Nosso bot funciona diretamente no WhatsApp, sem a necessidade de baixar aplicativos adicionais. Basta iniciar uma conversa e começar a criar suas figurinhas!"
+        id: 7,
+        question: 'O bot tem custo?',
+        answer: 'Atualmente o bot pode ter versões gratuitas e versões VIP, dependendo da sua necessidade. Consulte nossas assinaturas para saber mais.'
     }
 ];
 

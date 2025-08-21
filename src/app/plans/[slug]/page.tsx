@@ -20,6 +20,7 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
     }
 
     return (
+<<<<<<< HEAD
         <Layout backgroundColor="bg-slate-50" backgroundHeader="bg-black" load={false}>
             <main className="w-full min-h-screen flex items-center justify-center p-4 antialiased">
                 <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full border border-slate-200/80 overflow-hidden">
@@ -81,6 +82,28 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
                             <p className="text-xs text-slate-400">Pagamento 100% seguro.</p>
                         </div>
                     </div>
+=======
+        <Layout
+            backgroundColor='bg-gray-100'
+            backgroundHeader='bg-senpai-header'
+            load={false}
+        >
+
+            <main className='w-full min-h-screen mt-22'>
+                <div className="flex flex-col items-center justify-center h-[60vh]">
+                    <p className="text-3xl font-semibold text-gray-800 mb-4 animate-pulse">
+                        Construindo 🚧
+                    </p>
+                    <span className="text-lg text-gray-500">
+                        Esta página está em desenvolvimento. Volte em breve!
+                    </span>
+                    <button
+                        className="mt-8 px-6 py-2 bg-black text-content-inverse rounded hover:bg-gray-800 transition"
+                        onClick={() => router.push('/')}
+                    >
+                        Voltar para Home
+                    </button>
+>>>>>>> main
                 </div>
             </main>
         </Layout>

@@ -84,7 +84,7 @@ export default function PaymentButton({
     return (
         <button
             onClick={handleClick}
-            className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white text-lg font-bold rounded-full transition"
+            className="px-8 py-4 bg-green-500 hover:bg-green-600 text-content-inverse text-lg font-bold rounded-full transition"
         >
             {text}
         </button>

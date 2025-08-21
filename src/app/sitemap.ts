@@ -25,7 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: "2025-04-08T05:50:59+01:00",
             changeFrequency: 'monthly',
             priority: 1,
-        }, {
+        },
+        {
+            url: 'https://botdosenpai.com.br/partners',
+            lastModified: "2025-08-21T05:50:59+01:00",
+            changeFrequency: 'monthly',
+            priority: 1,
+        },
+        {
             url: 'https://botdosenpai.com.br/thanks',
             lastModified: "2025-08-03T05:50:59+01:00",
             changeFrequency: 'monthly',
