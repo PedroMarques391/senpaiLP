@@ -6,5 +6,6 @@ export interface IServices {
     characteristics: string[]
     textButton: "Teste grátis" | "Assine Agora",
     message: string
+    bestOption: boolean,
 
 }

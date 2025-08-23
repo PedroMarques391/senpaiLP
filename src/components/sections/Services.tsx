@@ -12,7 +12,8 @@ const Services = ({
     description,
     characteristics,
     textButton,
-    url
+    url,
+    bestOption
 }: IServices): React.JSX.Element => {
 
     const ref = useRef(null)
@@ -22,7 +23,13 @@ const Services = ({
     const isInListView = useInView(listRef)
 
     return (
-        <div className="max-w-[400px] bg-surface-card rounded-2xl p-6 flex flex-col h-auto md:h-full">
+        <div className={`${bestOption && 'scale-105'} relative max-w-[400px] bg-surface-card rounded-2xl p-6 flex flex-col h-auto md:h-full`}>
+
+            {bestOption && (
+                <span className="absolute top-3 right-4 bg-content-primary text-white text-xs p-2 rounded-full font-semibold tracking-wide z-10">
+                    Melhor escolha
+                </span>
+            )}
 
             <div>
                 <motion.h1

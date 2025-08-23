@@ -11,7 +11,9 @@ const services: IServices[] = [
             "Crie 4 figurinha diariamente",
         ],
         textButton: "Teste grátis",
-        message: ".menu"
+        message: ".menu",
+        bestOption: false,
+
     },
     {
         service: "Pro",
@@ -25,7 +27,9 @@ const services: IServices[] = [
             "Suporte dedicado para tirar todas as suas dúvidas"
         ],
         textButton: "Assine Agora",
-        message: ".menu"
+        message: ".menu",
+        bestOption: false,
+
     },
     {
         service: "Mestre",
@@ -46,7 +50,8 @@ const services: IServices[] = [
             "Atualizações semanais"
         ],
         textButton: "Assine Agora",
-        message: ".menu"
+        message: ".menu",
+        bestOption: true,
     }
 ];
 
