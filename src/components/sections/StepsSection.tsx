@@ -19,14 +19,6 @@ export function StepsSection() {
                 </motion.h1>
 
                 <div className="relative">
-                    <motion.div
-                        initial={{ width: "0%" }}
-                        animate={isInView ? { width: '100%' } : {}}
-                        transition={{ duration: 1.5, ease: "easeOut" }}
-
-
-                        className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-secondary-theme -translate-y-1/2"></motion.div>
-
                     <div className="relative flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
                         {steps.map((step, index) => (
                             <motion.div
