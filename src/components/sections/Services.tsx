@@ -23,10 +23,10 @@ const Services = ({
     const isInListView = useInView(listRef)
 
     return (
-        <div className={`${bestOption && 'scale-105'} relative max-w-[400px] bg-surface-card rounded-2xl p-6 flex flex-col h-auto md:h-full`}>
+        <div className={`${bestOption && 'scale-105'} relative max-w-[400px] bg-surface-card rounded-2xl p-6 flex flex-col h-auto md:h-full group `}>
 
             {bestOption && (
-                <span className="absolute top-3 right-4 bg-content-primary text-white text-xs p-2 rounded-full font-semibold tracking-wide z-10">
+                <span className="absolute top-3 right-4 bg-content-primary text-white text-xs p-2 rounded-full font-semibold tracking-wide z-10 ">
                     Melhor escolha
                 </span>
             )}
@@ -36,12 +36,13 @@ const Services = ({
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -10 }}
                     transition={{ duration: 0.4 }}
-                    className="text-sm font-bold tracking-wide text-content-secondary uppercase"
+                    className="text-sm font-bold tracking-wide uppercase bg-gradient-to-r from-secondary-theme via-secondary-theme/80 to-secondary-theme/60  bg-clip-text text-transparent duration-500 transition-colors   group-hover:from-purple-500 group-hover:via-pink-400 group-hover:to-purple-700"
                 >
                     {service}
                 </motion.h1>
 
-                <motion.p
+
+                <motion.h2
                     ref={ref}
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
@@ -50,13 +51,13 @@ const Services = ({
                 >
                     R$ {value}
                     <span className="text-lg font-medium text-content-secondary">/ mês</span>
-                </motion.p>
+                </motion.h2>
 
                 <motion.p
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
                     transition={{ type: 'spring', stiffness: 100, delay: 0.4 }}
-                    className="text-content-secondary md:text-base py-3"
+                    className="secondary md:text-base py-3 bg-gradient-to-r from-secondary-theme via-secondary-theme/80 to-secondary-theme/60  bg-clip-text text-transparent transition-colors duration-700   group-hover:from-purple-500 group-hover:via-pink-400 group-hover:to-purple-700"
                 >
                     {description}
                 </motion.p>
@@ -72,8 +73,8 @@ const Services = ({
                         key={index}
                         className="flex items-center gap-2"
                     >
-                        <CheckCircle className="text-primary w-5 h-5" />
-                        <p className="flex-1 text-xs md:text-sm">{item}</p>
+                        <CheckCircle className="text-primary w-5 h-5 group-hover:text-purple-700 duration-500 transition-colors" />
+                        <p className="flex-1 text-xs md:text-sm bg-gradient-to-l from-secondary-theme via-secondary-theme/80 to-secondary-theme/60  bg-clip-text text-transparent transition-colors duration-700   group-hover:from-purple-500 group-hover:via-pink-400 group-hover:to-purple-700">{item}</p>
                     </motion.li>
                 ))}
             </ul>
@@ -86,7 +87,7 @@ const Services = ({
                 <Button
                     className="w-full py-6 text-base md:text-lg rounded-xl 
                                bg-content-primary text-shadow-surface-card-alt
-                               hover:bg-content-primary/60 mt-7 font-semibold transition-all duration-700"
+                               hover:bg-content-primary/60 mt-7 font-semibold transition-all duration-700 cursor-pointer"
                 >
                     {textButton} <ArrowRight size={24} />
                 </Button>
