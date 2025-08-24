@@ -35,18 +35,18 @@ const Hero = (): React.JSX.Element => {
                 <section
                     id="home"
                     className="container relative grid grid-cols-1 lg:grid-cols-2  mx-auto  overflow-hidden">
-                    <div className="flex flex-col gap-6 px-5 md:px-0 xl:px-5 pt-32 overflow-hidden w-full justify-center  items-center lg:items-start lg:gap-9">
+                    <div className="flex flex-col gap-6 px-5 md:px-0 xl:px-5 pt-32 overflow-hidden w-full justify-center  items-center lg:gap-9">
                         <motion.h1
                             ref={ref}
                             initial={{ x: "100%" }}
                             animate={{ x: isInView ? 0 : "100%" }}
                             transition={{ type: "spring", stiffness: 100, damping: 25, duration: 0.8 }}
-                            className="text-3xl md:text-5xl md:w-[80%] font-bold leading-tight text-center lg:text-left"
+                            className="text-4xl md:text-5xl md:w-[80%] font-bold leading-tight text-center lg:text-left"
                         >
                             Sua Nova Amiga Virtual para Figurinhas no WhatsApp
                         </motion.h1>
 
-                        <div className="flex flex-col gap-10 md:gap-5 w-full mb-3">
+                        <div className="flex flex-col gap-10 md:gap-5 w-full md:w-[80%] mb-3 ">
                             <Link
                                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                                 target="_blank"
@@ -63,7 +63,7 @@ const Hero = (): React.JSX.Element => {
                                 </button>
                             </Link>
 
-                            <p className="text-content-inverse font-bold flex text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap  w-fit mx-auto lg:mx-0">
+                            <p className="text-content-inverse font-bold flex text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap   mx-auto lg:mx-0 text-center b">
                                 Ao clicar no botão, você concorda com os&nbsp;
                                 <Link href="/termo-de-uso" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
                                     Termos de Uso
@@ -75,16 +75,22 @@ const Hero = (): React.JSX.Element => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-end ">
-                        <Image
-                            src="/images/phone.png"
-                            alt="Mockup de celular"
-                            width={600}
-                            height={1200}
-                            className="w-full max-w-[500px] md:max-w-[550px] lg:max-w-[600px] h-auto -mt-20 lg:mt-0 "
-                            priority
-                        />
+                    <div className="flex justify-center items-center">
+                        <div className="relative w-[340px] h-[650px] rounded-[40px] border-[10px] border-black overflow-hidden bg-surface-card  -mb-30 mt-10 lg:mt-30">
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover"
+                            >
+                                <source src="/videos/senpaiTalk.mp4" type="video/mp4" />
+                                Seu navegador não suporta vídeo.
+                            </video>
+                            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl"></div>
+                        </div>
                     </div>
+
 
                 </section>
             </div >
