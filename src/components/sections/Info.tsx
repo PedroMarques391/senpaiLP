@@ -29,7 +29,7 @@ const Info = (): React.JSX.Element => {
                     animate={{ opacity: isInView ? 1 : 0 }}
                     transition={{ type: "tween", duration: 2.0, ease: "easeInOut" }}
 
-                    className="text-lg md:text-xl text-justify shrink-0 hyphens-auto break-words md:text-left ">A Senpai está sempre pronta para deixar suas conversas mais interativas! Transforme imagens em stickers, adicione textos estilosos e personalize suas figurinhas de forma rápida, fácil e gratuita.</motion.p>
+                    className="text-lg md:text-xl text-justify shrink-0 hyphens-auto break-words md:text-left ">A Senpai está sempre pronta para deixar suas conversas mais divertidas! Envie suas imagens e transforme-as em figurinhas de forma rápida, fácil e gratuita.</motion.p>
 
                 <Button
                     asChild
