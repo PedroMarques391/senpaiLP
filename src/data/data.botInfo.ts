@@ -10,7 +10,7 @@ const achievements: IAchievement[] = [
     },
     {
         title: 5,
-        description: "Construindo histórias e fazendo a diferença na vida das pessoas.",
+        description: "Ajudando pessoas a se expressarem de forma única.",
         duration: 1.5,
         type: "anos"
     },
