@@ -76,13 +76,14 @@ const Hero = (): React.JSX.Element => {
                     </div>
 
                     <div className="flex justify-center items-center">
-                        <div className="relative w-[340px] h-[650px] rounded-[40px] border-[10px] border-black overflow-hidden bg-surface-card  -mb-30 mt-10 lg:mt-30">
+                        <div className="relative rounded-[40px] border-[10px] border-black overflow-hidden bg-surface-card-alt -mb-30 mt-10 lg:mt-30">
                             <video
                                 autoPlay
                                 loop
                                 muted
+                                height={650}
+                                width={350}
                                 playsInline
-                                className="w-full h-full object-cover"
                             >
                                 <source src="/videos/senpaiTalk.mp4" type="video/mp4" />
                                 Seu navegador não suporta vídeo.
