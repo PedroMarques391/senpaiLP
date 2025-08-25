@@ -75,19 +75,27 @@ const Hero = (): React.JSX.Element => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <div className="relative rounded-[40px] border-[10px] border-black overflow-hidden bg-surface-card-alt -mb-30 mt-10 lg:mt-30">
-                            <video
-                                autoPlay
-                                loop
-                                muted
-                                height={650}
-                                width={350}
-                                playsInline
-                            >
-                                <source src="/videos/senpaiTalk.mp4" type="video/mp4" />
-                                Seu navegador não suporta vídeo.
-                            </video>
+                    <div className="flex justify-center items-center bg-re">
+                        <div className="relative mx-auto border-gray-800 border-[10px] rounded-[2.5rem] -mb-30 mt-10 lg:mt-30 z-10">
+                            <div className="absolute h-[32px] w-[3px] bg-gray-800 -left-[12px] top-[72px] rounded-l-lg"></div>
+                            <div className="absolute h-[46px] w-[3px] bg-gray-800 -left-[12px] top-[124px] rounded-l-lg"></div>
+                            <div className="absolute h-[46px] w-[3px] bg-gray-800 -left-[12px] top-[178px] rounded-l-lg"></div>
+                            <div className="absolute h-[64px] w-[3px] bg-gray-800 -right-[12px] top-[142px] rounded-r-lg"></div>
+                            <div className="rounded-[2rem] overflow-hidden bg-surface-card-alt">
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    height={650}
+                                    width={350}
+                                    playsInline
+                                    className="z-0"
+                                >
+                                    <source src="/videos/senpaiTalk.mp4" type="video/mp4" />
+                                    Seu navegador não suporta vídeo.
+                                </video>
+                            </div>
+
                             <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl"></div>
                         </div>
                     </div>
