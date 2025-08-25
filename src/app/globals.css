@@ -47,7 +47,7 @@ h3 {
   position: absolute;
   background-color: inherit;
   right: 0;
-  top: 100%;
+  top: 99%;
   width: 30px;
   height: 20px;
   clip-path: polygon(0 0, 100% 0, 100% 100%);
