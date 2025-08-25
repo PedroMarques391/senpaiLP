@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import { useRef } from "react"
-import { motion } from "motion/react"
+import { motion, useInView } from "motion/react"
 
 interface IFunctionsCardProps {
     imagePath: string
@@ -11,6 +11,7 @@ interface IFunctionsCardProps {
 
 const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): React.JSX.Element => {
     const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
 
     return (
         <div
@@ -18,10 +19,10 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
             <motion.div
                 ref={ref}
                 initial={{ x: "110%" }}
-                animate={{ x: "0%" }}
+                animate={{ x: isInView ? "0%" : "110%" }}
                 transition={{
                     type: "tween",
-                    duration: 3.0,
+                    duration: 1.5,
                     ease: "easeInOut"
                 }}
                 className="mx-auto w-full flex justify-center items-center rounded-t-2xl overflow-hidden"
@@ -40,18 +41,17 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
                 <motion.h1
                     ref={ref}
                     initial={{ x: "-100%" }}
-                    animate={{ x: "0%" }}
-                    transition={{ type: "spring", stiffness: 60, damping: 25, duration: 2.0 }}
-                    className="text-base md:text-xl  font-bold tracking-tight text-[#181340] h-5 md:h-10 ">
+                    animate={{ x: isInView ? "0%" : "-100%" }}
+                    transition={{ type: "spring", stiffness: 60, damping: 25, duration: 1.5 }}
+                    className="text-base md:text-xl  font-bold tracking-tight text-secondary-theme h-5 md:h-10 ">
                     {title}
                 </motion.h1>
                 <motion.p
                     ref={ref}
                     initial={{ x: "-100%" }}
-                    animate={{ x: "0%" }}
-
+                    animate={{ x: isInView ? "0%" : "-100%" }}
                     transition={{ type: "spring", stiffness: 50, damping: 25, duration: 2.0 }}
-                    className="text-lg text-[#181340] h-full ">
+                    className="text-lg text-secondary-theme h-full ">
                     {subtitle}
                 </motion.p>
             </div>
