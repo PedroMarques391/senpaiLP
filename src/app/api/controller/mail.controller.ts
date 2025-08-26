@@ -1,3 +1,4 @@
+import { IProposalRequestData } from "@/src/types";
 import { partnershipTemplate, supportTemplate } from "@/src/utils";
 import nodemailer from "nodemailer";
 
@@ -10,37 +11,24 @@ const transporter = nodemailer.createTransport({
     pass: process.env.USER_PASS,
   }
 });
-interface ISendEmail {
-  type: 'support' | 'partnership';
-  name: string;
-  email: string;
-  phone: string;
-  message?: string;
-  segment?: string;
-  proposal?: string;
-  publicInfo?: string;
-  budgeting?: string;
-  more?: string;
-  subject?: string;
-}
 
-export async function sendEmail(data: ISendEmail) {
-  const { type, name, email, phone, message, segment, proposal, publicInfo, budgeting, more, subject } = data;
+
+export async function sendEmail(data: IProposalRequestData) {
 
   let htmlTemplate = '';
 
-  if (type === 'partnership') {
-    htmlTemplate = partnershipTemplate({ name, email, phone, segment, proposal, publicInfo, budgeting, more });
+  if (data.type === 'partnership') {
+    htmlTemplate = partnershipTemplate(data);
   }
 
-  if (type === 'support') {
-    htmlTemplate = supportTemplate({ name, email, phone, message });
+  if (data.type === 'support') {
+    htmlTemplate = supportTemplate(data);
   }
 
   return await transporter.sendMail({
-    from: type === 'partnership' ? `${name} <${email}>` : `"Senpai" <${process.env.USER_EMAIL}>`,
+    from: data.type === 'partnership' ? `${data.name} <${data.email}>` : `"Senpai" <${process.env.USER_EMAIL}>`,
     to: process.env.ADDRESSEE,
-    subject: type === 'partnership' ? 'Nova solicitação de parceria' : subject,
+    subject: data.type === 'partnership' ? 'Nova solicitação de parceria' : data.subject,
     html: htmlTemplate,
   });
 }

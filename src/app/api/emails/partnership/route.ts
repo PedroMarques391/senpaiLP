@@ -3,21 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
 
-    const { name, email, phone, segment, proposal, publicInfo, budgeting, more, subject } = await req.json();
+    const data = await req.json();
 
     try {
-        await sendEmail({
-            type: "partnership",
-            name,
-            email,
-            phone,
-            segment,
-            proposal,
-            publicInfo,
-            budgeting,
-            more,
-            subject
-        });
+        await sendEmail(data);
 
         return NextResponse.json({ status: 200 });
     } catch (error) {

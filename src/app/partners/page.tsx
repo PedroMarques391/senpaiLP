@@ -53,7 +53,7 @@ const PartnersPage = () => {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({ ...data, type: 'partnership' },)
 
         })
             .then((res) => {

@@ -19,7 +19,7 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({ ...data, type: 'support' })
 
         })
             .then((res) => {

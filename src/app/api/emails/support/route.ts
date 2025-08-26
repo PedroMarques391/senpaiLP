@@ -3,17 +3,12 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
 
-    const { name, email, phone, message, subject } = await req.json();;
+    const data = await req.json();
+
+    console.log(data)
 
     try {
-        await sendEmail({
-            type: "support",
-            name,
-            email,
-            phone,
-            message,
-            subject,
-        });
+        await sendEmail(data);
 
         return NextResponse.json({ status: 200 });
     } catch (error) {
