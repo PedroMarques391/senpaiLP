@@ -8,6 +8,7 @@ import { IServices } from "./services"
 import { IReasonsCard } from "./reasonsCard"
 import { IModalMessage } from "./modalMessage"
 import { IStepsInterface } from "./steps"
+import { IProposalRequestData, IContactResquestData } from "./requestData"
 
 
 
@@ -24,6 +25,8 @@ export type {
     IServices,
     IModalMessage,
     IReasonsCard,
-    IStepsInterface
+    IStepsInterface,
+    IContactResquestData,
+    IProposalRequestData
 
 }
