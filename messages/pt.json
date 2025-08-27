@@ -1,0 +1,28 @@
+{
+    "hero": {
+        "title": "Sua Nova Amiga Virtual para Figurinhas no WhatsApp",
+        "cta": "Começar no WhatsApp",
+        "disclaimer": "Ao clicar no botão, você concorda com os <terms>Termos de Uso</terms> e <privacy>Política de Privacidade</privacy>",
+        "terms": "Termos de Uso",
+        "privacy": "Política de Privacidade",
+        "videoSupport": "Seu navegador não suporta vídeo",
+        "achievements": {
+            "uptime": "Disponibilidade garantida para você, sempre online quando precisar!",
+            "years": "Ajudando pessoas a se expressarem de forma única.",
+            "stickers": "Figurinhas criadas com carinho e compartilhadas pelo mundo!"
+        },
+        "type": {
+            "percentage": "%",
+            "years": "anos",
+            "amount": "Milhões"
+        }
+    },
+    "header": {
+        "home": "Início",
+        "features": "Funcionalidades",
+        "subscriptions": "Assinaturas",
+        "aboutUs": "Sobre Nós",
+        "beAPartner": "Seja um Parceiro",
+        "chatWithSenpai": "Converse com a Senpai"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "hero": {
+        "title": "Your New Virtual Friend for WhatsApp Stickers",
+        "cta": "Start on WhatsApp",
+        "disclaimer": "By clicking the button, you agree to the <terms>Terms of Use</terms> and <privacy>Privacy Policy</privacy>",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "videoSupport": "Your browser does not support video",
+        "achievements": {
+            "uptime": "Guaranteed availability for you, always online when needed!",
+            "years": "Helping people express themselves in a unique way.",
+            "stickers": "Stickers created with care and shared worldwide!"
+        },
+        "type": {
+            "percentage": "%",
+            "years": "years",
+            "amount": "Millions"
+        }
+    },
+    "header": {
+        "home": "Home",
+        "features": "Features",
+        "subscriptions": "Subscriptions",
+        "aboutUs": "About Us",
+        "beAPartner": "Be a Partner",
+        "chatWithSenpai": "Chat with Senpai"
+    }
+}
