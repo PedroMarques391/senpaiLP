@@ -12,8 +12,8 @@ const Services = ({
     description,
     characteristics,
     textButton,
-    url,
-    bestOption
+    bestOption,
+    paymentLink,
 }: IServices): React.JSX.Element => {
 
     const ref = useRef(null)
@@ -80,9 +80,10 @@ const Services = ({
                 </ul>
 
                 <Link
-                    href={`plans/${url}`}
+                    href={paymentLink}
                     rel="noreferrer"
                     aria-label="Link de assinatura"
+                    target='_blank'
                 >
                     <Button
                         className="w-full py-6 text-base md:text-lg rounded-xl 

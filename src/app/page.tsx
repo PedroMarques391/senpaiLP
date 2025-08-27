@@ -62,8 +62,8 @@ export default function Home() {
               description={service.description}
               characteristics={service.characteristics}
               textButton={service.textButton}
-              message={service.message}
               bestOption={service?.bestOption}
+              paymentLink={service.paymentLink}
             />
           ))}
         </div>
