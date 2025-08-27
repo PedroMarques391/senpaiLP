@@ -15,9 +15,10 @@ import { FormProvider } from 'react-hook-form';
 import { emailSchema, useEmailForm } from '@/src/hooks/useEmailForm';
 import FormDialog from '@/src/components/ui/form-diolog';
 import { Button } from '@/src/components/ui/button';
-import senpai from '../../../public/images/thanks/thanks.png';
+import senpai from '../../../../public/images/thanks/thanks.png';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -44,6 +45,7 @@ const buttonVariants = {
 const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const methods = useEmailForm(emailSchema);
+    const t = useTranslations('thanks')
 
     return (
         <Layout backgroundHeader="bg-secondary-theme">
@@ -77,14 +79,14 @@ const ThanksPage = () => {
                                 className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight"
                                 variants={itemVariants}
                             >
-                                Oooown, que felicidade! 🥹🖤
+                                {t('welcomeMessage')}
                             </motion.h1>
 
                             <motion.p
                                 className="text-base md:text-xl text-content-secondary mb-6 leading-relaxed"
                                 variants={itemVariants}
                             >
-                                Agora você faz parte da nossa comunidade especial! Muito obrigada por confiar na gente. Aproveite cada recurso da sua assinatura. Qualquer dúvida, estamos sempre por aqui.
+                                {t('welcomeSubtitle')}
                             </motion.p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -93,7 +95,7 @@ const ThanksPage = () => {
                                         onClick={() => setIsOpen(true)}
                                         className="bg-content-secondary text-content-inverse font-semibold p-4 rounded-xl shadow-md transition-all w-full sm:w-auto"
                                     >
-                                        Finalizar
+                                        {t('finish')}
                                     </Button>
                                 </motion.div>
                                 <motion.div variants={buttonVariants}>
@@ -102,7 +104,7 @@ const ThanksPage = () => {
                                         variant="outline"
                                         className="bg-transparent border border-content-secondary text-content-primary font-semibold p-4 rounded-xl  transition-all w-full sm:w-auto hover:bg-content-primary hover:text-content-inverse"
                                     >
-                                        <Link href="/">Voltar ao Início</Link>
+                                        <Link href="/">{t('backToHome')}</Link>
                                     </Button>
                                 </motion.div>
                             </div>
@@ -113,9 +115,9 @@ const ThanksPage = () => {
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                            <DialogTitle>Quase lá!</DialogTitle>
+                            <DialogTitle>{t('almostThere')}</DialogTitle>
                             <DialogDescription>
-                                Complete o formulário abaixo com seus dados para ativar seu acesso e aproveitar todos os benefícios.
+                                {t('formInstructions')}
                             </DialogDescription>
                         </DialogHeader>
                         <FormProvider {...methods}>

@@ -29,5 +29,13 @@
         "question": "What can Senpai do for you today?",
         "plans": "Check out our plans",
         "benefits": "What are the benefits?"
+    },
+    "thanks": {
+        "welcomeMessage": "Awww, how happy! 🥹🖤",
+        "welcomeSubtitle": "Now you are part of our special community! Thank you so much for trusting us. Enjoy every feature of your subscription. If you have any questions, we’re always here.",
+        "finish": "Finish",
+        "backToHome": "Back to Home",
+        "almostThere": "Almost there!",
+        "formInstructions": "Fill out the form below with your information to activate your access and enjoy all the benefits."
     }
 }

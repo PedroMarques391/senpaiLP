@@ -63,7 +63,7 @@ const Layout = ({
                 {children}
             </section>
             <Footer />
-            <div className="fixed top-5 right-4 z-20">
+            <div className="fixed top-5 right-4 z-50">
                 <select
                     defaultValue={locale}
                     onChange={(e) => handleSelectLocale(e.target.value as (typeof routing.locales)[number])}
