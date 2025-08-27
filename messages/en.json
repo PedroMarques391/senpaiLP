@@ -24,5 +24,10 @@
         "aboutUs": "About Us",
         "beAPartner": "Be a Partner",
         "chatWithSenpai": "Chat with Senpai"
+    },
+    "home": {
+        "question": "What can Senpai do for you today?",
+        "plans": "Check out our plans",
+        "benefits": "What are the benefits?"
     }
 }

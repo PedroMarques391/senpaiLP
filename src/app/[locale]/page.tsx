@@ -10,10 +10,13 @@ import { Faq } from "@/src/components/sections/Faq";
 import Title from "@/src/components/ui/title";
 import { useEffect } from "react";
 import { scrollSmooth } from "@/src/utils";
+import { useTranslations } from "next-intl";
 
 
 
 export default function Home() {
+
+  const t = useTranslations('home')
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -36,7 +39,8 @@ export default function Home() {
     <Layout hero>
       <div className="w-full  overflow-hidden " id="func">
         <Title >
-          O que a senpai pode fazer por você hoje?</Title>
+          {t('question')}
+        </Title>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] sm:w-[60%] md:w-full mx-auto">
         {functionsCardItens.map((functionsCardItem, item) => (
@@ -50,7 +54,9 @@ export default function Home() {
       </section>
       <Info />
       <section id="plans">
-        <Title >Conheça nossos planos</Title>
+        <Title >
+          {t('plans')}
+        </Title>
         <div
           className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-7 mx-auto">
           {services.map((service, index) => (
@@ -68,7 +74,9 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <Title>Quais são os Beneficios?</Title>
+      <Title>
+        {t('benefits')}
+      </Title>
       <CarouselBenefit />
       <section className="container">
         <Title center>F.A.Q</Title>
