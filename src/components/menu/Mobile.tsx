@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NavItem } from "./NavItem";
 import Link from "next/link";
 import { IMenuProps } from "./MenuDesktop";
+import { useTranslations } from "next-intl";
 
 interface IMobileProps extends IMenuProps {
     isOpen: boolean;
@@ -28,6 +29,8 @@ const variants = {
 };
 
 const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Element => {
+    const t = useTranslations("header");
+
     return (
         <AnimatePresence >
             {isOpen && (
@@ -47,19 +50,19 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
 
                 >
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('home')}>Inicio</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('home')}>{t('home')}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('func')}>Funcionalidades</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('func')}>{t('features')}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('plans')}>Assinaturas</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('plans')}>{t('subscriptions')}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href="/about">Sobre Nós</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href="/about">{t('aboutUs')}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href='/partners' >Seja um Parceiro</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href='/partners' >{t('beAPartner')}</NavItem>
                     </motion.div>
                     <div>
                         <Link
@@ -70,7 +73,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                             aria-label="Link que leva para o número do bot."
                             className="p-4 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
                         >
-                            Converse com a Senpai
+                            {t('chatWithSenpai')}
                         </Link>
                     </div>
                 </motion.ul>
