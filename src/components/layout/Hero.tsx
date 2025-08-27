@@ -8,16 +8,17 @@ import Link from "next/link"
 import { Header } from "./Header"
 import { CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 
 
 const Hero = (): React.JSX.Element => {
     const ref = useRef(null)
     const isInView = useInView(ref)
-
-
     const refCard = useRef(null);
     const isCardInView = useInView(refCard);
+
+    const t = useTranslations("hero");
 
     return (
         <section>
@@ -43,7 +44,7 @@ const Hero = (): React.JSX.Element => {
                             transition={{ type: "spring", stiffness: 100, damping: 25, duration: 0.8 }}
                             className="text-4xl md:text-5xl md:w-[80%] font-bold leading-tight text-center lg:text-left"
                         >
-                            Sua Nova Amiga Virtual para Figurinhas no WhatsApp
+                            {t("title")}
                         </motion.h1>
 
                         <div className="flex flex-col gap-10 md:gap-5 w-full md:w-[80%] mb-3 ">
@@ -59,19 +60,16 @@ const Hero = (): React.JSX.Element => {
                                         aria-label="Ícone do WhatsApp"
                                         className="w-6 h-6 flex-shrink-0"
                                     />
-                                    Começar no WhatsApp
+                                    {t("cta")}
                                 </button>
                             </Link>
+                            <div className="text-content-inverse font-bold flex text-sm sm:text-xs md:text-sm gap-1 flex-wrap mx-auto lg:mx-0 text-center">
+                                {t.rich("disclaimer", {
+                                    terms: (chunks) => <Link href="/termo-de-uso" className="text-[#25D366] hover:underline">{chunks}</Link>,
+                                    privacy: (chunks) => <Link href="/privacidade" className="text-[#25D366] hover:underline">{chunks}</Link>
+                                })}
 
-                            <p className="text-content-inverse font-bold flex text-sm sm:text-xs md:text-sm gap-1 sm:gap-0 flex-wrap   mx-auto lg:mx-0 text-center b">
-                                Ao clicar no botão, você concorda com os&nbsp;
-                                <Link href="/termo-de-uso" prefetch target="_blank" className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
-                                    Termos de Uso
-                                </Link> &nbsp;e&nbsp;
-                                <Link href="/privacidade" target="_blank" prefetch className="text-[#25D366] font-semibold hover:underline whitespace-nowrap">
-                                    Política de Privacidade.
-                                </Link>
-                            </p>
+                            </div>
                         </div>
                     </div>
 
@@ -92,7 +90,7 @@ const Hero = (): React.JSX.Element => {
                                     className="z-0"
                                 >
                                     <source src="/videos/senpaiTalk.mp4" type="video/mp4" />
-                                    Seu navegador não suporta vídeo.
+                                    {t('videoSupport')}
                                 </video>
                             </div>
 
@@ -124,7 +122,7 @@ const Hero = (): React.JSX.Element => {
                                         animate={{ y: isCardInView ? 0 : "100%" }}
                                         transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration - 0.5 }}
                                         className="flex items-center justify-center gap-x-2 p-2">
-                                        <Counter number={achievement.title as number} type={achievement.type} />
+                                        <Counter number={achievement.title as number} type={t(`type.${achievement.type}`)} />
                                     </motion.h1>
                                 </CardTitle>
                             </CardHeader>
@@ -136,7 +134,7 @@ const Hero = (): React.JSX.Element => {
                                     animate={{ y: isCardInView ? 0 : "100%" }}
                                     transition={{ type: "twee", stiffness: 100, damping: 25, duration: achievement.duration + 0.5 }}
                                     className="text-xl md:text-base lg:text-lg font-medium opacity-70">
-                                    {achievement.description}
+                                    {t(`achievements.${achievement.descriptionKey}`)}
                                 </motion.p>
                             </CardContent>
                         </motion.div>
