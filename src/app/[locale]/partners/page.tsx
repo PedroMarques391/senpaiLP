@@ -7,6 +7,7 @@ import { Label } from '@/src/components/ui/label';
 import { reasonsCard } from '@/src/data';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
@@ -45,6 +46,7 @@ const PartnersPage = () => {
         resolver: zodResolver(partnersSchema),
     });
     const { handleSubmit, reset, register, formState: { errors } } = methods;
+    const t = useTranslations('partners')
 
     async function onSubmit(data: PartnersData) {
         setLoading(true)
@@ -79,25 +81,25 @@ const PartnersPage = () => {
             <main>
                 <section className="bg-secondary-theme text-white text-center py-20 px-4 mt-20">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">
-                        Junte-se a Nós. Cresça Conosco.
+                        {t("title")}
                     </h1>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 animate-fade-in-up">
-                        Expanda seus negócios e alcance novos clientes tornando-se um parceiro oficial do <span className='text-surface'>BotDoSenpai</span>.
+                        {t("subtitle")} <span className='text-surface'>BotDoSenpai</span>.
                     </p>
                     <Link
                         href="#partner-form"
                         className="bg-content-inverse text-secondary-theme font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-all duration-300"
                     >
-                        Quero ser um Parceiro
+                        {t("beAPartner")}
                         <ArrowRight className="inline-block ml-2" size={20} />
                     </Link>
                 </section>
 
                 <section id="benefits" className="py-20 bg-surface-card px-4">
                     <div className="max-w-6xl mx-auto text-center">
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Por que ser nosso Parceiro?</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t("question")}</h1>
                         <h2 className="text-gray-600 mb-12 max-w-2xl mx-auto">
-                            Oferecemos um ecossistema completo para você prosperar e agregar mais valor aos seus clientes.
+                            {t("response")}
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {reasonsCard.map((card, index) => (
@@ -116,7 +118,7 @@ const PartnersPage = () => {
 
                 <section id="partner-form" className="py-20 bg-surface-card px-4">
                     <div className="max-w-2xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Pronto para Começar?</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">{t("start")}</h2>
                         <FormProvider {...methods}>
                             <form onSubmit={handleSubmit(onSubmit)} className="bg-content-inverse p-8 rounded-lg space-y-6">
                                 <FormField label='Nome completo/nome da empresa' name='name' direction='col' />
@@ -124,7 +126,7 @@ const PartnersPage = () => {
                                 <FormField label='Telefone' name='phone' direction='col' maxLength={15} />
                                 <FormField label='Segmento' name='segment' direction='col' />
                                 <div className='space-y-2'>
-                                    <Label>Proposta</Label>
+                                    <Label>{t("proposal")}</Label>
                                     <select
                                         {...register("proposal")}
                                         className="border rounded-lg p-2 w-full"
@@ -132,12 +134,12 @@ const PartnersPage = () => {
                                         defaultValue={''}
                                     >
                                         <option value="" disabled>
-                                            Selecione uma opção
+                                            {t("option")}
                                         </option>
-                                        <option value="Divulgação de marca">Divulgação de marca</option>
-                                        <option value="Troca de Serviços">Troca de Serviços</option>
-                                        <option value="Patrocínio">Patrocínio</option>
-                                        <option value="Outro">Outro</option>
+                                        <option value="Divulgação de marca">{t("disclosure")}</option>
+                                        <option value="Troca de Serviços">{t("services")}</option>
+                                        <option value="Patrocínio">{t("partnership")}</option>
+                                        <option value="Outro">{t("other")}</option>
                                     </select>
                                     {errors.proposal && (
                                         <p className="text-red-500 text-sm">{errors.proposal.message}</p>
@@ -158,10 +160,10 @@ const PartnersPage = () => {
                                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
                                             </svg>
-                                            Enviando...
+                                            {t("sending")}
                                         </span>
                                     ) : (
-                                        "Enviar Cadastro"
+                                        t("send")
                                     )}
                                 </button>
                             </form>

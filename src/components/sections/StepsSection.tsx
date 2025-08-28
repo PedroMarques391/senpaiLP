@@ -1,10 +1,13 @@
+'use client'
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { steps } from "@/src/data";
+import { useTranslations } from "next-intl";
 
 export function StepsSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
+    const t = useTranslations('partners.steps')
 
     return (
         <section ref={ref} className="py-20 px-4">
@@ -15,7 +18,7 @@ export function StepsSection() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                    O Processo é Simples
+                    {t("process")}
                 </motion.h1>
 
                 <div className="relative">
@@ -44,8 +47,12 @@ export function StepsSection() {
                                 >
                                     {step.id}
                                 </motion.div>
-                                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                                <p className="text-gray-600">{step.description}</p>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t(`${step.title}`)}
+                                </h3>
+                                <p className="text-gray-600">
+                                    {t(`${step.description}`)}
+                                </p>
                             </motion.div>
                         ))}
                     </div>
