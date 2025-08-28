@@ -123,12 +123,12 @@ const PartnersPage = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">{t("start")}</h2>
                         <FormProvider {...methods}>
                             <form onSubmit={handleSubmit(onSubmit)} className="bg-content-inverse p-8 rounded-lg space-y-6">
-                                <FormField label='Nome completo/nome da empresa' name='name' direction='col' />
-                                <FormField label='Email' name='email' type='email' direction='col' />
-                                <FormField label='Telefone' name='phone' direction='col' maxLength={15} />
-                                <FormField label='Segmento' name='segment' direction='col' />
+                                <FormField label={t("formLabels.name")} name='name' direction='col' />
+                                <FormField label={t("formLabels.email")} name='email' type='email' direction='col' />
+                                <FormField label={t("formLabels.phone")} name='phone' direction='col' maxLength={15} />
+                                <FormField label={t("formLabels.segment")} name='segment' direction='col' />
                                 <div className='space-y-2'>
-                                    <Label>{t("proposal")}</Label>
+                                    <Label>{t("formLabels.proposal")}</Label>
                                     <select
                                         {...register("proposal")}
                                         className="border rounded-lg p-2 w-full"
@@ -136,20 +136,20 @@ const PartnersPage = () => {
                                         defaultValue={''}
                                     >
                                         <option value="" disabled>
-                                            {t("option")}
+                                            {t("formLabels.option")}
                                         </option>
-                                        <option value="Divulgação de marca">{t("disclosure")}</option>
-                                        <option value="Troca de Serviços">{t("services")}</option>
-                                        <option value="Patrocínio">{t("partnership")}</option>
-                                        <option value="Outro">{t("other")}</option>
+                                        <option value="Divulgação de marca">{t("formLabels.disclosure")}</option>
+                                        <option value="Troca de Serviços">{t("formLabels.services")}</option>
+                                        <option value="Patrocínio">{t("formLabels.partnership")}</option>
+                                        <option value="Outro">{t("formLabels.other")}</option>
                                     </select>
                                     {errors.proposal && (
                                         <p className="text-red-500 text-sm">{errors.proposal.message}</p>
                                     )}
                                 </div>
-                                <FormField label='Qual público você deseja atingir?' name='publicInfo' direction='col' />
-                                <FormField label='Qual tipo de orçamento ou contrapartida você pensa em oferecer?' name='budgeting' direction='col' />
-                                <FormField label='Conte mais sobre sua ideia' name='more' type='textarea' direction='col' />
+                                <FormField label={t("formLabels.publicInfo")} name='publicInfo' direction='col' />
+                                <FormField label={t("formLabels.budgeting")} name='budgeting' direction='col' />
+                                <FormField label={t("formLabels.more")} name='more' type='textarea' direction='col' />
 
                                 <button
                                     type="submit"
@@ -162,10 +162,10 @@ const PartnersPage = () => {
                                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
                                             </svg>
-                                            {t("sending")}
+                                            {t("formLabels.sending")}
                                         </span>
                                     ) : (
-                                        t("send")
+                                        t("formLabels.send")
                                     )}
                                 </button>
                             </form>
