@@ -81,6 +81,17 @@
                 "title": "Parceria",
                 "description": "Após a aprovação, você recebe o acesso e inicia a parceria!"
             }
+        },
+        "formErrors": {
+            "name": "O nome é obrigatório e deve ter pelo menos 4 caracteres.",
+            "email": "Digite um e-mail válido.",
+            "phoneMin": "O telefone é obrigatório e deve ter pelo menos 10 dígitos.",
+            "phoneInvalid": "Número de telefone inválido. Use o formato (99) 99999-9999.",
+            "segment": "Precisamos saber o segmento da sua empresa.",
+            "proposal": "Selecione o tipo de proposta da sua empresa.",
+            "publicInfo": "Precisamos saber o seu público-alvo.",
+            "budgeting": "O orçamento ou contrapartida é obrigatório.",
+            "more": "Não seja tímido, conte mais sobre você (mínimo 10 caracteres)."
         }
     }
 }

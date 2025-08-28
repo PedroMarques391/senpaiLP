@@ -81,6 +81,17 @@
                 "title": "Partnership",
                 "description": "Once approved, you’ll receive access and start the partnership!"
             }
+        },
+        "formErrors": {
+            "name": "Name is required and must be at least 4 characters long.",
+            "email": "Enter a valid email address.",
+            "phoneMin": "Phone number is required and must have at least 10 digits.",
+            "phoneInvalid": "Invalid phone number. Use the format (99) 99999-9999.",
+            "segment": "We need to know your company's segment.",
+            "proposal": "Please select the type of proposal for your company.",
+            "publicInfo": "We need to know your target audience.",
+            "budgeting": "Budget or counterpart is required.",
+            "more": "Don’t be shy, tell us more about you (minimum 10 characters)."
         }
     }
 }

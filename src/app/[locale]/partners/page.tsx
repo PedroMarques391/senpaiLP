@@ -14,39 +14,41 @@ import { useForm, FormProvider } from 'react-hook-form';
 import { z } from 'zod';
 
 
-const partnersSchema = z.object({
-    name: z.string()
-        .min(4, "O nome é obrigatório e deve ter pelo menos 4 caracteres."),
-    email: z.string()
-        .email("Digite um e-mail válido."),
-    phone: z.string()
-        .min(10, "O telefone é obrigatório e deve ter pelo menos 10 dígitos.")
-        .refine((value) => /^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$/.test(value), {
-            message: "Número de telefone inválido. Use o formato (99) 99999-9999.",
-        }),
-    segment: z.string()
-        .min(2, 'Precisamos saber o segmento da sua empresa.'),
-    proposal: z.enum(
-        ["Divulgação de marca", "Troca de Serviços", "Patrocínio", "Outro",],
-        { errorMap: () => ({ message: "Selecione o tipo de proposta da sua empresa." }) }
-    ),
-    publicInfo: z.string()
-        .min(2, 'Precisamos saber o seu público-alvo.'),
-    budgeting: z.string()
-        .min(2, 'O orçamento ou contrapartida é obrigatório.'),
-    more: z.string()
-        .min(10, 'Não seja tímido, conte mais sobre você (mínimo 10 caracteres).'),
-});
 
-type PartnersData = z.infer<typeof partnersSchema>
+
 
 const PartnersPage = () => {
+    const t = useTranslations('partners')
+    const partnersSchema = z.object({
+        name: z.string()
+            .min(4, t("formErrors.name")),
+        email: z.string()
+            .email(t("formErrors.email")),
+        phone: z.string()
+            .min(10, t("formErrors.phoneMin"))
+            .refine((value) => /^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$/.test(value), {
+                message: t("formErrors.phoneInvalid"),
+            }),
+        segment: z.string()
+            .min(2, t("formErrors.segment")),
+        proposal: z.enum(["Divulgação de marca", "Troca de Serviços", "Patrocínio", "Outro"], {
+            errorMap: () => ({ message: t("formErrors.proposal") })
+        }),
+        publicInfo: z.string()
+            .min(2, t("formErrors.publicInfo")),
+        budgeting: z.string()
+            .min(2, t("formErrors.budgeting")),
+        more: z.string()
+            .min(10, t("formErrors.more")),
+    });
+
+
+    type PartnersData = z.infer<typeof partnersSchema>
     const [loading, setLoading] = useState<boolean>(false)
     const methods = useForm<PartnersData>({
         resolver: zodResolver(partnersSchema),
     });
     const { handleSubmit, reset, register, formState: { errors } } = methods;
-    const t = useTranslations('partners')
 
     async function onSubmit(data: PartnersData) {
         setLoading(true)
