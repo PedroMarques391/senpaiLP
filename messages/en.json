@@ -37,5 +37,50 @@
         "backToHome": "Back to Home",
         "almostThere": "Almost there!",
         "formInstructions": "Fill out the form below with your information to activate your access and enjoy all the benefits."
+    },
+    "partners": {
+        "title": "Join Us. Grow With Us.",
+        "subtitle": "Expand your business and reach new customers by becoming an official partner of",
+        "beAPartner": "I Want to Be a Partner",
+        "question": "Why Become Our Partner?",
+        "response": "We offer a complete ecosystem for you to thrive and add more value to your clients.",
+        "start": "Ready to Get Started?",
+        "proposal": "Proposal",
+        "option": "Select an option",
+        "disclosure": "Brand Disclosure",
+        "services": "Service Exchange",
+        "partnership": "Sponsorship",
+        "other": "Other",
+        "send": "Submit Registration",
+        "sending": "Sending...",
+        "reasons": {
+            "increaseRevenue": {
+                "title": "Boost your revenue",
+                "text": "Earn attractive commissions for each customer referred or sale made through our partnership."
+            },
+            "increaseAudience": {
+                "title": "Grow your brand audience",
+                "text": "Use our bot to attract more people, engage new customers, and expand your brand’s digital presence."
+            },
+            "exclusiveDiscounts": {
+                "title": "Offer exclusive discounts",
+                "text": "Provide your customers with special perks using coupons and exclusive deals, driving loyalty and more sales."
+            }
+        },
+        "steps": {
+            "process": "The process is simple",
+            "registration": {
+                "title": "Registration",
+                "description": "Fill out the interest form below. It's quick and easy."
+            },
+            "review": {
+                "title": "Review",
+                "description": "Our team will get in touch to understand your needs."
+            },
+            "partnership": {
+                "title": "Partnership",
+                "description": "Once approved, you’ll receive access and start the partnership!"
+            }
+        }
     }
 }

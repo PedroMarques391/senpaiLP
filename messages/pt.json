@@ -37,5 +37,50 @@
         "backToHome": "Voltar ao Início",
         "almostThere": "Quase lá!",
         "formInstructions": "Complete o formulário abaixo com seus dados para ativar seu acesso e aproveitar todos os benefícios."
+    },
+    "partners": {
+        "title": "Junte-se a Nós. Cresça Conosco.",
+        "subtitle": "Expanda seus negócios e alcance novos clientes tornando-se um parceiro oficial do",
+        "beAPartner": "Quero ser um Parceiro",
+        "question": "Por que ser nosso Parceiro?",
+        "response": "Oferecemos um ecossistema completo para você prosperar e agregar mais valor aos seus clientes.",
+        "start": "Pronto para Começar?",
+        "proposal": "Proposta",
+        "option": "Selecione uma opção",
+        "disclosure": "Divulgação de marca",
+        "services": "Troca de Serviços",
+        "partnership": "Patrocínio",
+        "other": "Outro",
+        "send": "Enviar Cadastro",
+        "sending": "Enviando...",
+        "reasons": {
+            "increaseRevenue": {
+                "title": "Aumente sua receita",
+                "text": "Ganhe comissões atrativas por cada cliente indicado ou venda realizada através da nossa parceria."
+            },
+            "increaseAudience": {
+                "title": "Aumente o público da sua marca",
+                "text": "Utilize nosso bot para atrair mais pessoas, engajar novos clientes e ampliar a presença da sua marca no digital."
+            },
+            "exclusiveDiscounts": {
+                "title": "Ofereça descontos exclusivos",
+                "text": "Proporcione vantagens especiais para seus clientes com cupons e condições exclusivas, gerando fidelização e mais vendas."
+            }
+        },
+        "steps": {
+            "process": "O processo é simples",
+            "registration": {
+                "title": "Cadastro",
+                "description": "Preencha o formulário de interesse abaixo. É rápido e fácil.."
+            },
+            "review": {
+                "title": "Análise",
+                "description": "Nossa equipe entrará em contato para entender suas necessidades."
+            },
+            "partnership": {
+                "title": "Parceria",
+                "description": "Após a aprovação, você recebe o acesso e inicia a parceria!"
+            }
+        }
     }
 }
