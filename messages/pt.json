@@ -45,14 +45,6 @@
         "question": "Por que ser nosso Parceiro?",
         "response": "Oferecemos um ecossistema completo para você prosperar e agregar mais valor aos seus clientes.",
         "start": "Pronto para Começar?",
-        "proposal": "Proposta",
-        "option": "Selecione uma opção",
-        "disclosure": "Divulgação de marca",
-        "services": "Troca de Serviços",
-        "partnership": "Patrocínio",
-        "other": "Outro",
-        "send": "Enviar Cadastro",
-        "sending": "Enviando...",
         "reasons": {
             "increaseRevenue": {
                 "title": "Aumente sua receita",
@@ -92,6 +84,23 @@
             "publicInfo": "Precisamos saber o seu público-alvo.",
             "budgeting": "O orçamento ou contrapartida é obrigatório.",
             "more": "Não seja tímido, conte mais sobre você (mínimo 10 caracteres)."
+        },
+        "formLabels": {
+            "name": "Nome completo / nome da empresa",
+            "email": "Email",
+            "phone": "Telefone",
+            "segment": "Segmento",
+            "proposal": "Tipo de proposta",
+            "option": "Selecione uma opção",
+            "disclosure": "Divulgação de marca",
+            "services": "Troca de Serviços",
+            "partnership": "Patrocínio",
+            "other": "Outro",
+            "publicInfo": "Qual público você deseja atingir?",
+            "budgeting": "Qual tipo de orçamento ou contrapartida você pensa em oferecer?",
+            "more": "Conte mais sobre sua ideia",
+            "sending": "Enviando...",
+            "send": "Enviar"
         }
     }
 }

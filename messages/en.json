@@ -45,14 +45,6 @@
         "question": "Why Become Our Partner?",
         "response": "We offer a complete ecosystem for you to thrive and add more value to your clients.",
         "start": "Ready to Get Started?",
-        "proposal": "Proposal",
-        "option": "Select an option",
-        "disclosure": "Brand Disclosure",
-        "services": "Service Exchange",
-        "partnership": "Sponsorship",
-        "other": "Other",
-        "send": "Submit Registration",
-        "sending": "Sending...",
         "reasons": {
             "increaseRevenue": {
                 "title": "Boost your revenue",
@@ -92,6 +84,23 @@
             "publicInfo": "We need to know your target audience.",
             "budgeting": "Budget or counterpart is required.",
             "more": "Don’t be shy, tell us more about you (minimum 10 characters)."
+        },
+        "formLabels": {
+            "name": "Full name / company name",
+            "email": "Email",
+            "phone": "Phone number",
+            "segment": "Business segment",
+            "proposal": "Proposal type",
+            "option": "Select an option",
+            "disclosure": "Brand Disclosure",
+            "services": "Service Exchange",
+            "partnership": "Sponsorship",
+            "other": "Other",
+            "publicInfo": "What audience do you want to reach?",
+            "budgeting": "What type of budget or counterpart do you plan to offer?",
+            "more": "Tell us more about your idea",
+            "sending": "Sending...",
+            "send": "Send"
         }
     }
 }
