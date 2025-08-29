@@ -1,3 +1,5 @@
+'use client'
+import { usePathname } from '@/src/i18n/navigation'
 import { scrollSmooth } from '@/src/utils/scrollSmooth'
 import Link, { LinkProps } from 'next/link'
 import { AnchorHTMLAttributes } from 'react'
@@ -8,10 +10,15 @@ interface INavItemsProps extends LinkProps, AnchorHTMLAttributes<HTMLAnchorEleme
 }
 
 export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX.Element => {
+    const path = usePathname()
+
+    const isCurrentPath = (): boolean => {
+        const fullPath = path + window.location.hash
+        return fullPath.endsWith(href)
+    }
 
     const goToHash = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        const isHash = href.startsWith('#')
-        if (isHash) {
+        if (href.startsWith('#')) {
             scrollSmooth(href)
             e.preventDefault()
             history.pushState(null, '', href)
@@ -24,10 +31,11 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
                 {...props}
                 onClick={goToHash}
                 href={href}
-                className="w-full h-full block py-4 bg-transparesnt hover:bg-transparent text-center whitespace-nowrap"
-            >
+                className="w-full h-full block py-4 bg-transparent hover:bg-transparent text-center whitespace-nowrap">
                 {children}
-                <p className="absolute bottom-0 left-0 group-hover:w-full group-hover:bg-white h-1 bg-white transition-all duration-300 isCurrentPath hover:w-full w-0" />
+                <p className={`absolute bottom-0 left-0 h-1 bg-white transition-all duration-300 ${isCurrentPath() ? 'w-full' : 'w-0'
+                    } group-hover:w-full`}
+                />
             </Link>
         </li>
     )
