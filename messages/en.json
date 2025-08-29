@@ -102,5 +102,21 @@
             "sending": "Sending...",
             "send": "Send"
         }
+    },
+    "metadata": {
+        "home": {
+            "title": "BotDoSenpai - Create Stickers",
+            "description": "Senpai is Brazil’s most beloved WhatsApp sticker bot! Turn images, GIFs, and videos into animated stickers in seconds. 100% free, no downloads required, with exclusive features to make your chats more fun, creative, and personalized.",
+            "keywords": [
+                "sticker bot",
+                "WhatsApp",
+                "fun stickers",
+                "BotSenpai",
+                "animated chats",
+                "stickers",
+                "senpai",
+                "dosenpai"
+            ]
+        }
     }
 }

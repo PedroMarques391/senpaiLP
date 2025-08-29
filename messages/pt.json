@@ -102,5 +102,21 @@
             "sending": "Enviando...",
             "send": "Enviar"
         }
+    },
+    "metadata": {
+        "home": {
+            "title": "BotDoSenpai - Crie Figurinhas",
+            "description": "A Senpai é o bot de figurinhas para WhatsApp mais querida do Brasil! Transforme imagens, GIFs e vídeos em figurinhas animadas em segundos. Tudo 100% gratuito, sem precisar baixar nada, e com recursos exclusivos para deixar suas conversas mais divertidas, criativas e personalizadas.",
+            "keywords": [
+                "bot de figurinha",
+                "WhatsApp",
+                "figurinhas divertidas",
+                "BotSenpai",
+                "conversas animadas",
+                "figurinhas",
+                "senpai",
+                "dosenpai"
+            ]
+        }
     }
 }
