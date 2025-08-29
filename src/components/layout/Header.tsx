@@ -4,20 +4,24 @@ import MenuDesktop from "@/src/components/menu/MenuDesktop"
 import { useEffect, useState } from "react";
 import Mobile from "@/src/components/menu/Mobile";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
 
 type IHeaderProps = { background?: string }
 
 export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
     const path = usePathname()
+    const locale = useLocale()
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean | null>(null);
 
     function handleHref(href: string): string {
-        const isHomePage: boolean = path === "/"
+        const isHomePage: boolean = path === `/${locale}`
 
-        return isHomePage ? `#${href}` : `/#${href}`
+        console.log(isHomePage)
+
+        return isHomePage ? `#${href}` : `/${locale}#${href}`
 
     }
 
