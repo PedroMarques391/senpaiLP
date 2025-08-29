@@ -16,7 +16,7 @@ export const Footer = () => {
                     </div>
                     <nav className="flex flex-col items-center sm:items-start md:col-span-2">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Acessos Rápidos</h1>
-                        <ul className="grid grid-cols-2 w-full ">
+                        <ul className="grid grid-cols-2 w-full gap-2">
                             <NavItem href={handleHref("home")}> Home</NavItem>
                             <NavItem href={handleHref("func")}>Services</NavItem>
                             <NavItem href={handleHref("plans")}>Planos</NavItem>
