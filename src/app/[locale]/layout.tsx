@@ -7,6 +7,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
+import { generateMetadataProps } from "@/src/types";
 
 const montserrat = Poppins({
   variable: "--font-montserrat",
@@ -20,7 +21,9 @@ const cabin_Condensed = Roboto({
   weight: "400",
 });
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: generateMetadataProps) {
+  const { locale } = await params
+
   const t = await getTranslations({ locale, namespace: 'metadata.home' });
 
   return {
