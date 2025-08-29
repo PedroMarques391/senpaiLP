@@ -1,5 +1,5 @@
 export interface generateMetadataProps {
-    params: {
+    params: Promise<{
         locale: string;
-    };
+    }>;
 }
