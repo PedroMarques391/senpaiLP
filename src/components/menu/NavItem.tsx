@@ -21,11 +21,9 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
 
     }
 
-
     return (
         <li
             {...props}
-
             className={`text-center w-32 md:w-auto relative group `}>
             <Link
                 onClick={goToHash}

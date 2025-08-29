@@ -1,10 +1,10 @@
 import LI from "@/src/components/ui/li"
 import Logo from "@/src/components/shared/Logo";
-import { usePathname } from "next/navigation";
+import { NavItem } from "../menu/NavItem";
+import { useAnchor } from "@/src/hooks/useAnchor";
 
 export const Footer = () => {
-    const path = usePathname()
-    const isHomePage = path === "/"
+    const { handleHref } = useAnchor();
 
 
     return (
@@ -17,30 +17,30 @@ export const Footer = () => {
                     <div className="flex flex-col items-center sm:items-start md:col-span-2">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Acessos Rápidos</h1>
                         <ul className="grid grid-cols-2 w-full ">
-                            <LI
-                                prefetch={isHomePage ? false : true}
-                                href={isHomePage ? "#home" : "/#home"} alt="scrool para o inicio do site.">
+                            <NavItem
+                                href={handleHref("home")} >
                                 Home
-                            </LI>
-                            <LI
-                                prefetch={isHomePage ? false : true}
-                                href={isHomePage ? "#func" : "/#func"} alt="Scroll direto para os cards de serviços.">
+                            </NavItem>
+                            <NavItem
+                                href={handleHref("func")}
+                            >
                                 Services
-                            </LI>
-                            <LI
-                                prefetch={isHomePage ? false : true}
-                                href={isHomePage ? "#plans" : "/#plans"} alt="Scroll que leva para os planos disponveis.">
+                            </NavItem>
+                            <NavItem
+                                href={handleHref("plans")}
+
+                            >
                                 Planos
-                            </LI>
-                            <LI href="/about" target="_self" alt="link para os termos de uso do bot">
+                            </NavItem>
+                            <NavItem href="/about">
                                 Sobre Nós
-                            </LI>
-                            <LI href="/termo-de-uso" target="_blank" alt="link para os termos de uso do bot">
+                            </NavItem>
+                            <NavItem href="/termo-de-uso">
                                 Termos de Uso
-                            </LI>
-                            <LI href="/privacidade" target="_blank" alt="Link para a política de privacidade do bot.">
+                            </NavItem>
+                            <NavItem href="/privacidade" >
                                 Política de Privacidade
-                            </LI>
+                            </NavItem>
                         </ul>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-y-2 md:col-span-1 w-full">

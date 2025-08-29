@@ -3,27 +3,16 @@ import Logo from "@/src/components/shared/Logo"
 import MenuDesktop from "@/src/components/menu/MenuDesktop"
 import { useEffect, useState } from "react";
 import Mobile from "@/src/components/menu/Mobile";
-import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useAnchor } from "@/src/hooks/useAnchor";
 
 
 type IHeaderProps = { background?: string }
 
 export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
-    const path = usePathname()
-    const locale = useLocale()
-
+    const { handleHref } = useAnchor();
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean | null>(null);
 
-    function handleHref(href: string): string {
-        const isHomePage: boolean = path === `/${locale}`
-
-        console.log(isHomePage)
-
-        return isHomePage ? `#${href}` : `/${locale}#${href}`
-
-    }
 
     function handleMenu() {
         setIsOpen((prev) => !prev);
