@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Logo = (): React.JSX.Element => {
     return (
-        <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} href="/" className="flex md:flex-col lg:flex-row justify-center items-center gap-2 md:gap-0 lg:gap-2 ml-2">
+        <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} href="/" className="flex  justify-center items-center gap-2  ml-2">
             <Image
                 src={senpai}
                 alt="Foto da Senpai - Logo"

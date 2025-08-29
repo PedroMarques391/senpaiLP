@@ -9,9 +9,6 @@ import FormDialog from '@/src/components/ui/form-diolog'
 import { FormField } from '../ui/form-field'
 import { FormProvider } from 'react-hook-form'
 import { fullSchema, useEmailForm } from '@/src/hooks/useEmailForm'
-import { routing } from '@/src/i18n/routing'
-import { useRouter, usePathname } from '@/src/i18n/navigation'
-import { useLocale } from 'next-intl'
 
 interface ILayoutProps {
     children: React.ReactNode
@@ -32,9 +29,7 @@ const Layout = ({
 
     const [showButton, setShowButton] = useState<boolean>(false);
     const methods = useEmailForm(fullSchema)
-    const router = useRouter()
-    const locale = useLocale()
-    const pathname = usePathname()
+
 
     useEffect(() => {
         const handleScroll = (): void => {
@@ -46,13 +41,7 @@ const Layout = ({
         return () => window.removeEventListener("scroll", handleScroll);
     }, [])
 
-    function handleSelectLocale(currentLocale: (typeof routing.locales)[number]) {
-        const query = Object.fromEntries(
-            new URLSearchParams(window.location.search)
-        )
 
-        router.replace({ pathname, query }, { locale: currentLocale })
-    }
 
     return (
 
@@ -63,21 +52,7 @@ const Layout = ({
                 {children}
             </section>
             <Footer />
-            <div className="fixed top-5 right-4 z-50">
-                <select
-                    defaultValue={locale}
-                    onChange={(e) => handleSelectLocale(e.target.value as (typeof routing.locales)[number])}
-                    className="bg-white border border-gray-300 rounded-lg px-4 py-2 shadow-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
-                    name="locale"
-                    id="locale-select"
-                >
-                    {routing.locales.map((locale, index) => (
-                        <option key={index} value={locale}>
-                            {locale.toUpperCase()}
-                        </option>
-                    ))}
-                </select>
-            </div>
+
             <Dialog onOpenChange={(isOpen) => setShowButton(!isOpen)} >
                 <DialogTrigger asChild>
                     <button
