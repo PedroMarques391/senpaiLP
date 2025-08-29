@@ -9,40 +9,22 @@ export const Footer = () => {
 
     return (
         <footer className="bg-secondary-theme text-content-inverse py-16">
-            <div className="container mx-auto px-4">
+            <section className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mx-auto place-items-center">
                     <div className="flex flex-col justify-center items-center sm:items-start md:col-span-1">
                         <Logo />
                     </div>
-                    <div className="flex flex-col items-center sm:items-start md:col-span-2">
+                    <nav className="flex flex-col items-center sm:items-start md:col-span-2">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">Acessos Rápidos</h1>
                         <ul className="grid grid-cols-2 w-full ">
-                            <NavItem
-                                href={handleHref("home")} >
-                                Home
-                            </NavItem>
-                            <NavItem
-                                href={handleHref("func")}
-                            >
-                                Services
-                            </NavItem>
-                            <NavItem
-                                href={handleHref("plans")}
-
-                            >
-                                Planos
-                            </NavItem>
-                            <NavItem href="/about">
-                                Sobre Nós
-                            </NavItem>
-                            <NavItem href="/termo-de-uso">
-                                Termos de Uso
-                            </NavItem>
-                            <NavItem href="/privacidade" >
-                                Política de Privacidade
-                            </NavItem>
+                            <NavItem href={handleHref("home")}> Home</NavItem>
+                            <NavItem href={handleHref("func")}>Services</NavItem>
+                            <NavItem href={handleHref("plans")}>Planos</NavItem>
+                            <NavItem href="/about">Sobre Nós</NavItem>
+                            <NavItem href="/termo-de-uso" target='_blank'>Termos de Uso</NavItem>
+                            <NavItem href="/privacidade" target='_blank'>Política de Privacidade</NavItem>
                         </ul>
-                    </div>
+                    </nav>
                     <div className="flex flex-col items-center justify-center gap-y-2 md:col-span-1 w-full">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 w-full text-center">Siga-nos</h1>
                         <ul className="w-full mx-auto space-y-1">
@@ -70,7 +52,7 @@ export const Footer = () => {
                 <div className="mt-8 text-center">
                     <p className="text-sm text-content-inverse">© 2025 Todos os direitos reservados</p>
                 </div>
-            </div>
+            </section>
         </footer >
 
     );
