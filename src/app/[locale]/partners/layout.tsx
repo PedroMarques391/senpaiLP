@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
 import "./../globals.css";
 import Script from "next/script";
 import { jsonLdPartners } from "@/src/utils";
+import { getTranslations } from "next-intl/server";
 
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+    const t = await getTranslations({ locale, namespace: 'metadata.partners' });
 
-
-export const metadata: Metadata = {
-    title: "Seja um Parceiro!",
-    description: "Junte-se ao BotDoSenpai como parceiro e ajude a levar figurinhas personalizadas para mais pessoas no WhatsApp. Descubra benefícios exclusivos para parceiros e faça parte dessa comunidade!",
-    keywords: ["parceria", "parceiros", "figurinhas", "bot de figurinhas", "whatsapp",
-        "senpai bot", "botdosenpai", "benefícios parceiros", "comunidade"
-    ],
-};
+    return {
+        title: t('title'),
+        description: t('description'),
+        keywords: t.raw("keywords"),
+    }
+}
 
 export default function PartnersLayout({
     children,

@@ -131,6 +131,21 @@
                 "thank you",
                 "gratitude"
             ]
+        },
+        "partners": {
+            "title": "Become a Partner!",
+            "description": "Join BotDoSenpai as a partner and help bring personalized stickers to more people on WhatsApp. Discover exclusive partner benefits and be part of this community!",
+            "keywords": [
+                "partnership",
+                "partners",
+                "stickers",
+                "sticker bot",
+                "whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "partner benefits",
+                "community"
+            ]
         }
     }
 }
