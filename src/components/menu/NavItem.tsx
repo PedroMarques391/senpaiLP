@@ -1,12 +1,11 @@
-"use client"
 import { scrollSmooth } from '@/src/utils/scrollSmooth'
-import Link from 'next/link'
-import React, { DetailedHTMLProps, LiHTMLAttributes } from 'react'
+import Link, { LinkProps } from 'next/link'
+import { AnchorHTMLAttributes } from 'react'
 
-interface INavItemsProps extends DetailedHTMLProps<LiHTMLAttributes<HTMLLIElement>, HTMLLIElement> {
+interface INavItemsProps extends LinkProps, AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string
+    children: React.ReactNode
 }
-
 
 export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX.Element => {
 
@@ -15,17 +14,14 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
         if (isHash) {
             scrollSmooth(href)
             e.preventDefault()
-
             history.pushState(null, '', href)
         }
-
     }
 
     return (
-        <li
-            {...props}
-            className={`text-center w-32 md:w-auto relative group `}>
+        <li className="text-center w-32 md:w-auto relative group">
             <Link
+                {...props}
                 onClick={goToHash}
                 href={href}
                 className="w-full h-full block py-4 bg-transparesnt hover:bg-transparent text-center whitespace-nowrap"
@@ -35,7 +31,4 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
             </Link>
         </li>
     )
-
-
-
 }
