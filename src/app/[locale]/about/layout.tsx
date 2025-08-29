@@ -1,13 +1,18 @@
-import type { Metadata } from "next";
 import "./../globals.css";
 import Script from "next/script";
 import { jsonLdAbout } from "@/src/utils";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-    title: "BotDoSenpai - Sobre Nós",
-    description: "Conheça o time por trás do Bot do Senpai e a missão de espalhar fofura no WhatsApp com figurinhas personalizadas",
-    keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai", "Quem somos", "sobre nós", "about us", "about"],
-};
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+    const t = await getTranslations({ locale, namespace: 'metadata.about' });
+
+    return {
+        title: t('title'),
+        description: t('description'),
+        keywords: t.raw("keywords"),
+    }
+}
 
 export default function AboutLayout({
     children,

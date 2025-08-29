@@ -146,6 +146,20 @@
                 "partner benefits",
                 "community"
             ]
+        },
+        "about": {
+            "title": "BotDoSenpai - About Us",
+            "description": "Meet the team behind Bot do Senpai and our mission to spread cuteness on WhatsApp with personalized stickers",
+            "keywords": [
+                "stickers",
+                "sticker bot",
+                "whatsapp bot",
+                "senpai bot",
+                "botdosenpai",
+                "who we are",
+                "about us",
+                "about"
+            ]
         }
     }
 }
