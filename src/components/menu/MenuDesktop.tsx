@@ -13,7 +13,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
     const t = useTranslations("header");
 
     return (
-        <ul className="hidden lg:flex justify-center items-center  gap-5">
+        <ul className="hidden lg:flex justify-center items-center gap-4 xl:gap-6">
             <NavItem href={handleHref('home')} >{t('home')}</NavItem>
             <NavItem href={handleHref('func')} >{t('features')}</NavItem>
             <NavItem href={handleHref('plans')}>{t('subscriptions')}</NavItem>
@@ -24,7 +24,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link que leva para o número do bot."
-                className="p-2 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 text-whitw hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center text-sm inline-flex w-fit"
+                className="p-2 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 white hover:brightness-110 hover:scale-105 text-center inline-flex w-fit"
             >
                 <p className='text-xs lg:text-base'>{t('chatWithSenpai')}</p>
             </Link>

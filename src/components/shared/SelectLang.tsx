@@ -1,7 +1,6 @@
 import {
     Select,
     SelectContent,
-    SelectGroup,
     SelectItem,
     SelectTrigger,
     SelectValue,
@@ -31,21 +30,19 @@ export const SelectLang = () => {
                     handleSelectLocale(value as (typeof routing.locales)[number])
                 }
             >
-                <SelectTrigger className="w-auto backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                    <SelectValue />
+                <SelectTrigger className="w-auto backdrop-blur-md rounded-xl ">
+                    <SelectValue placeholder={locale} />
                 </SelectTrigger>
                 <SelectContent className="backdrop-blur-md bg-content-inverse/90 rounded-xl">
-                    <SelectGroup>
-                        {routing.locales.map((loc) => (
-                            <SelectItem
-                                key={loc}
-                                value={loc}
-                                className="cursor-pointer hover:bg-content-inverse transition-colors "
-                            >
-                                {loc.toUpperCase()}
-                            </SelectItem>
-                        ))}
-                    </SelectGroup>
+                    {routing.locales.map((loc) => (
+                        <SelectItem
+                            key={loc}
+                            value={loc}
+                            className="cursor-pointer hover:bg-content-inverse transition-colors "
+                        >
+                            {loc.toUpperCase()}
+                        </SelectItem>
+                    ))}
                 </SelectContent>
             </Select>
         </div>
