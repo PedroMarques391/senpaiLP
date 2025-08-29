@@ -7,7 +7,6 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
-import React from "react";
 
 const montserrat = Poppins({
   variable: "--font-montserrat",
@@ -34,33 +33,34 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     authors: [{ name: "Pedro Marques" }],
     applicationName: "BotDoSenpai",
     keywords: t.raw("keywords"),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      siteName: "BotDoSenpai",
+      url: "https://botdosenpai.com.br/",
+      type: "website",
+      locale: "pt_BR",
+      images: [
+        {
+          url: "https://botdosenpai.com.br/wallpaper.png",
+          width: 800,
+          height: 600,
+          alt: "BotDoSenpai",
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Bot de Figurinha",
+      creator: "@BotDoSenpai",
+      description: t('description'),
+      site: "@BotDoSenpai",
+      images: ["/wallpaper.png"]
+    },
   };
 }
 
-// openGraph: {
-//     title: "BotDoSenpai - Seu bot ideal",
-//     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
-//     siteName: "BotDoSenpai",
-//     url: "https://botdosenpai.com.br/",
-//     type: "website",
-//     locale: "pt_BR",
-//     images: [
-//       {
-//         url: "https://botdosenpai.com.br/wallpaper.png",
-//         width: 800,
-//         height: 600,
-//         alt: "BotDoSenpai - O bot de figurinha mais fofo da internet!",
-//       }
-//     ]
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Bot de Figurinha",
-//     creator: "@BotDoSenpai",
-//     description: "Transforme suas conversas no WhatsApp com um bot de figurinhas divertido!",
-//     site: "@BotDoSenpai",
-//     images: ["/wallpaper.png"]
-//   },
+
 
 
 
