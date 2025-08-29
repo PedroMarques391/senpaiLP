@@ -3,6 +3,7 @@ import React from 'react'
 import { NavItem } from './NavItem'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { SelectLang } from '../shared/SelectLang'
 
 export interface IMenuProps {
     handleHref: (href: string) => string
@@ -12,7 +13,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
     const t = useTranslations("header");
 
     return (
-        <ul className="hidden md:flex justify-center items-center gap-5">
+        <ul className="hidden lg:flex justify-center items-center  gap-5">
             <NavItem href={handleHref('home')} >{t('home')}</NavItem>
             <NavItem href={handleHref('func')} >{t('features')}</NavItem>
             <NavItem href={handleHref('plans')}>{t('subscriptions')}</NavItem>
@@ -27,6 +28,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
             >
                 <p className='text-xs lg:text-base'>{t('chatWithSenpai')}</p>
             </Link>
+            <SelectLang />
         </ul>
     )
 }

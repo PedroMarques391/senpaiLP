@@ -3,6 +3,7 @@ import { NavItem } from "./NavItem";
 import Link from "next/link";
 import { IMenuProps } from "./MenuDesktop";
 import { useTranslations } from "next-intl";
+import { SelectLang } from "../shared/SelectLang";
 
 interface IMobileProps extends IMenuProps {
     isOpen: boolean;
@@ -37,7 +38,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                 <motion.ul
                     className={`
                         border-l-2 border-gray-dark rounded-ss-3xl
-                        md:hidden w-4/5 sm:w-2/3 md:w-1/5 bg-secondary-theme h-screen z-10
+                        lg:hidden w-4/5 sm:w-2/3 md:w-2/5 bg-secondary-theme h-screen z-10
                         fixed top-0 right-0
                         flex flex-col justify-center items-center
                         ease-in-out transform
@@ -64,18 +65,17 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                     <motion.div variants={variants}>
                         <NavItem onClick={() => setIsOpen(false)} href='/partners' >{t('beAPartner')}</NavItem>
                     </motion.div>
-                    <div>
-                        <Link
-                            onClick={() => setIsOpen(false)}
-                            href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Link que leva para o número do bot."
-                            className="p-4 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
-                        >
-                            {t('chatWithSenpai')}
-                        </Link>
-                    </div>
+                    <Link
+                        onClick={() => setIsOpen(false)}
+                        href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link que leva para o número do bot."
+                        className="p-4 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
+                    >
+                        {t('chatWithSenpai')}
+                    </Link>
+                    <SelectLang />
                 </motion.ul>
             )}
         </AnimatePresence>
