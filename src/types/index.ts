@@ -9,6 +9,7 @@ import { IReasonsCard } from "./reasonsCard"
 import { IModalMessage } from "./modalMessage"
 import { IStepsInterface } from "./steps"
 import { IProposalRequestData, IContactResquestData } from "./requestData"
+import { generateMetadataProps } from "./generateMetadata"
 
 
 
@@ -27,6 +28,7 @@ export type {
     IReasonsCard,
     IStepsInterface,
     IContactResquestData,
-    IProposalRequestData
+    IProposalRequestData,
+    generateMetadataProps
 
 }
