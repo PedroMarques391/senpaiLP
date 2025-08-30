@@ -168,5 +168,33 @@
         "followUs": "Siga-nos",
         "rights": "© 2025 Todos os direitos reservados",
         "community": "Comunidade"
+    },
+    "about": {
+        "title1": "Reconhecimento",
+        "paragraph1": "Desde 2020, o Bot do Senpai vem conquistando seu espaço nas redes sociais e na mente dos usuários. Nosso número foi compartilhado organicamente milhares de vezes, com destaque em postagens virais no Twitter que ultrapassaram milhões de visualizações, inclusive por usuários de diferentes países.",
+        "title2": "Como fazemos?",
+        "paragraph2": "Transformamos mensagens em momentos únicos. Combinamos inteligência artificial e linguagem natural para garantir que cada pessoa se sinta ouvida, compreendida e acolhida — tudo isso direto no WhatsApp.",
+        "title3": "O que nos torna diferentes?",
+        "paragraph3": "Cada detalhe da Senpai foi criado a partir de interações reais — observamos o que aproxima, o que confunde, o que realmente faz a diferença. Desenvolvemos uma IA que escuta, compreende e responde com empatia e clareza, porque acreditamos que conversar bem é transformar experiências. No fim das contas, nosso propósito é simples: tornar os diálogos mais humanos, exatamente onde eles acontecem de forma natural — no seu WhatsApp.",
+        "meetOurTeam": "Conheça nosso time",
+        "aDedicatedTeam": "Um time dedicado a transformar interações em experiências incríveis.",
+        "team": {
+            "ceo": {
+                "title": "CEO",
+                "bio": "Ao longo da minha jornada, sempre busquei liderar com paixão, visão e comprometimento com a Senpai."
+            },
+            "cto": {
+                "title": "CTO",
+                "bio": "Desenvolvedor fullstack, ex advogado e pai de meninas."
+            },
+            "developer1": {
+                "title": "Desenvolvedor",
+                "bio": "Responsável por transformar ideias em soluções práticas e escaláveis, sempre com foco em eficiência e qualidade."
+            },
+            "developer2": {
+                "title": "Desenvolvedor",
+                "bio": "Programador JavaScript com foco em machine learning, automação com IA e conhecimentos em cyber security."
+            }
+        }
     }
 }

@@ -167,5 +167,33 @@
         "followUs": "Follow us",
         "rights": "© 2025 All rights reserved",
         "community": "Community"
+    },
+    "about": {
+        "title1": "Recognition",
+        "paragraph1": "Since 2020, Bot do Senpai has been making its mark on social media and in the minds of users. Our number has been shared organically thousands of times, featured in viral Twitter posts that reached millions of views, including by users from different countries.",
+        "title2": "How We Do It?",
+        "paragraph2": "We turn messages into unique moments. We combine artificial intelligence and natural language to ensure that every person feels heard, understood, and welcomed — all directly on WhatsApp.",
+        "title3": "What Makes Us Different?",
+        "paragraph3": "Every detail of Senpai was created from real interactions — we observed what brings people closer, what confuses, and what truly makes a difference. We developed an AI that listens, understands, and responds with empathy and clarity, because we believe that good conversations transform experiences. In the end, our purpose is simple: to make conversations more human, exactly where they happen naturally — on your WhatsApp.",
+        "meetOurTeam": "Meet Our Team",
+        "aDedicatedTeam": "A dedicated team committed to turning interactions into incredible experiences.",
+        "team": {
+            "ceo": {
+                "title": "CEO",
+                "bio": "Throughout my journey, I have always sought to lead with passion, vision, and commitment to Senpai."
+            },
+            "cto": {
+                "title": "CTO",
+                "bio": "Fullstack developer, former lawyer, and father of girls."
+            },
+            "developer1": {
+                "title": "Developer",
+                "bio": "Responsible for turning ideas into practical and scalable solutions, always focusing on efficiency and quality."
+            },
+            "developer2": {
+                "title": "Developer",
+                "bio": "JavaScript programmer focused on machine learning, AI automation, and cybersecurity knowledge."
+            }
+        }
     }
 }
