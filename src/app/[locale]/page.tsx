@@ -59,7 +59,6 @@ export default function Home() {
             <Services
               key={index}
               service={service.service}
-              url={service.url}
               value={service.value}
               description={service.description}
               characteristics={service.characteristics}
