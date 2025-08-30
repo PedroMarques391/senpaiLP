@@ -19,12 +19,12 @@ export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX
     }
 
     return (
-        <li className="text-center w-32 md:w-auto relative group">
+        <li className="text-center w-32 md:w-auto relative group ">
             <Link
                 {...props}
                 onClick={goToHash}
                 href={href}
-                className="w-full h-full block py-4 bg-transparent hover:bg-transparent text-center whitespace-nowrap">
+                className="w-full h-full block py-4 px-2 bg-transparent hover:bg-transparent text-center whitespace-nowrap">
                 {children}
                 <p className={`absolute bottom-0 left-0 h-1 bg-white transition-all duration-300 w-0 group-hover:w-full`}
                 />
