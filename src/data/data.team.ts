@@ -12,8 +12,8 @@ const team: ITeamMember[] = [
     {
         image: CEOimage,
         name: "Marcelo Pinho",
-        jobTitle: "CEO",
-        bio: "Ao longo da minha jornada, sempre busquei liderar com paixão, visão e comprometimento com a Senpai.",
+        jobTitle: "team.ceo.title",
+        bio: "team.ceo.bio",
         links: [
             { url: "https://instagram.com/senpai.gif", color: "text-pink-600", icon: "instagram" },
         ],
@@ -21,8 +21,8 @@ const team: ITeamMember[] = [
     {
         image: CTOImage,
         name: "Rodrigo Sakae",
-        jobTitle: "CTO",
-        bio: "Desenvolvedor fullstack, ex advogado e pai de meninas.",
+        jobTitle: "team.cto.title",
+        bio: "team.cto.bio",
         links: [
             { url: "https://linkedin.com/in/rodrigosakae", color: "text-blue-400", icon: "linkedin" },
             { url: "https://instagram.com/devsakae", color: "text-pink-600", icon: "instagram" },
@@ -31,8 +31,8 @@ const team: ITeamMember[] = [
     {
         image: Dev1Image,
         name: "Pedro Marques",
-        jobTitle: "Desenvolvedor",
-        bio: "Responsável por transformar ideias em soluções práticas e escaláveis, sempre com foco em eficiência e qualidade.",
+        jobTitle: "team.developer1.title",
+        bio: "team.developer1.bio",
         links: [
             { url: "https://linkedin.com/in/pedromarques391", color: "text-blue-400", icon: "linkedin" },
             { url: "https://instagram.com/pedromarques.py", color: "text-pink-600", icon: "instagram" },
@@ -41,8 +41,8 @@ const team: ITeamMember[] = [
     {
         image: Dev2Image,
         name: "Kaiky Brito",
-        jobTitle: "Desenvolvedor",
-        bio: "Programador JavaScript com foco em machine learning, automação com IA e conhecimentos em cyber security.",
+        jobTitle: "team.developer2.title",
+        bio: "team.developer2.bio",
         links: [
             { url: "https://linkedin.com/in/kaiky-gomes", color: "text-blue-400", icon: "linkedin" },
             { url: "https://instagram.com/kaikygr", color: "text-pink-600", icon: "instagram" },

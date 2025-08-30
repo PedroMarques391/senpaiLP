@@ -11,8 +11,11 @@ import Team from '@/src/components/sections/Team'
 import Image from 'next/image'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import { team } from '@/src/data'
+import { useTranslations } from 'next-intl'
 
 const AboutPage = () => {
+
+    const t = useTranslations('about')
     return (
         <Layout
             backgroundColor='bg-gray-100'
@@ -40,32 +43,33 @@ const AboutPage = () => {
                     <AlternatingSection
                         imageGridAlign='left'
                         image={senpaiAbout}
-                        title='Reconhecimento'
+                        title={t('title1')}
+
                     >
-                        Desde 2020, o Bot do Senpai vem conquistando seu espaço nas redes sociais e na mente dos usuários. Nosso número foi compartilhado organicamente milhares de vezes, com destaque em postagens virais no Twitter que ultrapassaram milhões de visualizações, inclusive por usuários de diferentes países.
+                        {t('paragraph1')}
                     </AlternatingSection>
                     <AlternatingSection
                         imageGridAlign='right'
                         image={senpaiAbout2}
-                        title='Como fazemos?'
+                        title={t('title2')}
+
                     >
-                        Transformamos mensagens em momentos únicos. Combinamos inteligência artificial e linguagem natural para garantir que cada pessoa se sinta ouvida, compreendida e acolhida — tudo isso direto no WhatsApp.
+                        {t('paragraph2')}
                     </AlternatingSection>
                     <AlternatingSection
                         imageGridAlign='left'
                         image={senpaiAbout3}
-                        title='O que nos torna diferentes?'
+                        title={t('title3')}
+
                     >
-                        Cada detalhe da Senpai foi criado a partir de interações reais — observamos o que aproxima, o que confunde, o que realmente faz a diferença.
-                        Desenvolvemos uma IA que escuta, compreende e responde com empatia e clareza, porque acreditamos que conversar bem é transformar experiências.
-                        No fim das contas, nosso propósito é simples: tornar os diálogos mais humanos, exatamente onde eles acontecem de forma natural — no seu WhatsApp.
+                        {t('paragraph3')}
                     </AlternatingSection>
                 </section>
                 <section>
                     <div className=" text-center py-10 bg-gray-200">
-                        <h1 className="text-3xl font-bold mb-6">Conheça nosso time</h1>
+                        <h1 className="text-3xl font-bold mb-6">{t('meetOurTeam')}</h1>
                         <p className="text-lg text-gray-600 mb-6">
-                            Um time dedicado a transformar interações em experiências incríveis.
+                            {t('aDedicatedTeam')}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto md:px-5 overflow-hidden">
                             {team.map((teamMember, index) => (
@@ -73,8 +77,8 @@ const AboutPage = () => {
                                     key={index}
                                     image={teamMember.image}
                                     name={teamMember.name}
-                                    jobTitle={teamMember.jobTitle}
-                                    bio={teamMember.bio}
+                                    jobTitle={t(`${teamMember.jobTitle}`)}
+                                    bio={t(`${teamMember.bio}`)}
                                     links={teamMember.links}
                                 />
                             ))}
