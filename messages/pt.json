@@ -229,6 +229,45 @@
             "subtitle": "A Senpai está sempre pronta para deixar suas conversas mais divertidas! Envie suas imagens e transforme-as em figurinhas de forma rápida, fácil e gratuita.",
             "ctaLabel": "Fale com a Senpai",
             "speechBubbleText": "Ei! Quer saber mais sobre mim? 💙"
+        },
+        "services": {
+            "free": {
+                "service": "Grátis",
+                "description": "Experimente sem compromisso! Teste a BotDoSenpai e descubra como ela pode facilitar sua vida.",
+                "characteristics": [
+                    "Crie 4 figurinha diariamente"
+                ],
+                "textButton": "Teste grátis"
+            },
+            "pro": {
+                "service": "Pro",
+                "description": "Transforme suas ideias em figurinhas sem limites! Criação rápida, fácil e divertida.",
+                "characteristics": [
+                    "Criação ilimitada de figurinhas",
+                    "Converse comigo, sou uma IA pronta para responder",
+                    "Atualizações para sempre ter a melhor experiência",
+                    "Suporte dedicado para tirar todas as suas dúvidas"
+                ],
+                "textButton": "Assine Agora"
+            },
+            "master": {
+                "service": "Mestre",
+                "description": "Ideal para donos de grupos grandes que querem mais controle, segurança e diversão no grupo.",
+                "characteristics": [
+                    "Moderação avançada",
+                    "Antilink automático",
+                    "Horário programado",
+                    "Mensagens de boas-vindas",
+                    "Mini jogos e comandos dinâmicos",
+                    "Baixe vídeos do Instagram e Twitter",
+                    "Editor de figurinhas",
+                    "Figurinhas com fundo transparente",
+                    "Transforme frases em figurinhas",
+                    "Converta figurinhas em imagens",
+                    "Atualizações semanais"
+                ],
+                "textButton": "Assine Agora"
+            }
         }
     }
 }

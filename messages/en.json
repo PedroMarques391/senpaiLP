@@ -228,6 +228,45 @@
             "subtitle": "Senpai is always ready to make your chats more fun! Send your images and turn them into stickers quickly, easily, and for free.",
             "ctaLabel": "Talk to Senpai",
             "speechBubbleText": "Hey! Want to know more about me? 💙"
+        },
+        "services": {
+            "free": {
+                "service": "Free",
+                "description": "Try it with no commitment! Test BotDoSenpai and discover how it can make your life easier.",
+                "characteristics": [
+                    "Create 4 stickers daily"
+                ],
+                "textButton": "Try Free"
+            },
+            "pro": {
+                "service": "Pro",
+                "description": "Turn your ideas into unlimited stickers! Fast, easy, and fun creation.",
+                "characteristics": [
+                    "Unlimited sticker creation",
+                    "Chat with me — I’m an AI ready to respond",
+                    "Constant updates for the best experience",
+                    "Dedicated support to answer all your questions"
+                ],
+                "textButton": "Subscribe Now"
+            },
+            "master": {
+                "service": "Master",
+                "description": "Perfect for group owners who want more control, safety, and fun in their chats.",
+                "characteristics": [
+                    "Advanced moderation",
+                    "Automatic anti-link",
+                    "Scheduled messages",
+                    "Welcome messages",
+                    "Mini-games and dynamic commands",
+                    "Download videos from Instagram and Twitter",
+                    "Sticker editor",
+                    "Stickers with transparent background",
+                    "Turn phrases into stickers",
+                    "Convert stickers into images",
+                    "Weekly updates"
+                ],
+                "textButton": "Subscribe Now"
+            }
         }
     }
 }
