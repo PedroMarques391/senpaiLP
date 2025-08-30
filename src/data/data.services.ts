@@ -8,7 +8,7 @@ const services: IServices[] = [
         value: "0",
         description: "Experimente sem compromisso! Teste a BotDoSenpai e descubra como ela pode facilitar sua vida.",
         characteristics: [
-            "Crie 4 figurinha diariamente",
+            "Crie 2 figurinha diariamente",
         ],
         textButton: "Teste grátis",
         bestOption: false,
