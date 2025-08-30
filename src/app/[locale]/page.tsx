@@ -58,11 +58,11 @@ export default function Home() {
           {services.map((service, index) => (
             <Services
               key={index}
-              service={service.service}
+              service={t(`${service.service}`)}
               value={service.value}
-              description={service.description}
-              characteristics={service.characteristics}
-              textButton={service.textButton}
+              description={t(`${service.description}`)}
+              characteristics={t.raw(`${service.characteristics}`)}
+              textButton={t(`${service.textButton}`)}
               bestOption={service?.bestOption}
               paymentLink={service.paymentLink}
             />

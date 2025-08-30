@@ -234,7 +234,7 @@
                 "service": "Free",
                 "description": "Try it with no commitment! Test BotDoSenpai and discover how it can make your life easier.",
                 "characteristics": [
-                    "Create 4 stickers daily"
+                    "Create 2 stickers daily"
                 ],
                 "textButton": "Try Free"
             },
@@ -266,7 +266,9 @@
                     "Weekly updates"
                 ],
                 "textButton": "Subscribe Now"
-            }
+            },
+            "bestOption": "Choice",
+            "month": "Month"
         }
     }
 }

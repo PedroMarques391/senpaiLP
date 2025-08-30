@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import { motion, useInView } from "motion/react";
 import Link from "next/link";
 import { IServices } from "@/src/types";
+import { useTranslations } from "next-intl";
 
 const Services = ({
     service,
@@ -20,13 +21,14 @@ const Services = ({
 
     const listRef = useRef(null);
     const isInListView = useInView(listRef);
+const t = useTranslations("components.services");
 
     return (
         <div className={`${bestOption ? "scale-105 bg-gradient-to-t from-primary-theme/80  to-content-primary p-1" : "p-6"}  max-w-[400px] bg-surface-card rounded-2xl h-auto md:h-full group`}>
             <div className={`${bestOption && "bg-[#ffffff] rounded-2xl p-6"} relative flex flex-col h-auto md:h-full`}>
                 {bestOption && (
                     <span className="absolute top-3 right-4 bg-content-primary text-white text-xs p-2 rounded-full font-semibold tracking-wide z-10 ">
-                        Melhor escolha
+                        {t("bestOption")}
                     </span>
                 )}
 
@@ -48,7 +50,7 @@ const Services = ({
                         className="text-4xl font-extrabold text-content-primary mt-2"
                     >
                         R$ {value}
-                        <span className="text-lg font-medium text-content-secondary">/ mês</span>
+                        <span className="text-lg font-medium text-content-secondary">/{t("month")}</span>
                     </motion.h2>
 
                     <motion.p

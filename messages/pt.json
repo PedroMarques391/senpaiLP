@@ -235,7 +235,7 @@
                 "service": "Grátis",
                 "description": "Experimente sem compromisso! Teste a BotDoSenpai e descubra como ela pode facilitar sua vida.",
                 "characteristics": [
-                    "Crie 4 figurinha diariamente"
+                    "Crie 2 figurinha diariamente"
                 ],
                 "textButton": "Teste grátis"
             },
@@ -267,7 +267,9 @@
                     "Atualizações semanais"
                 ],
                 "textButton": "Assine Agora"
-            }
+            },
+            "bestOption": "Melhor escolha",
+            "month": "Mês"
         }
     }
 }
