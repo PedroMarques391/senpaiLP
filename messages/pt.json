@@ -162,5 +162,11 @@
                 "about"
             ]
         }
+    },
+    "footer": {
+        "quickAccess": "Acessos Rápidos",
+        "followUs": "Siga-nos",
+        "rights": "© 2025 Todos os direitos reservados",
+        "community": "Comunidade"
     }
 }
