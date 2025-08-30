@@ -13,7 +13,7 @@ import { scrollSmooth } from "@/src/utils";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const t = useTranslations("home");
+  const t = useTranslations();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -35,7 +35,7 @@ export default function Home() {
     <Layout hero>
       <div className="w-full  overflow-hidden " id="func">
         <Title >
-          {t("question")}
+          {t("home.question")}
         </Title>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] sm:w-[60%] md:w-full mx-auto">
@@ -43,15 +43,15 @@ export default function Home() {
           <FunctionsCard
             key={item}
             imagePath={functionsCardItem.imagePath}
-            title={functionsCardItem.title}
-            subtitle={functionsCardItem.subtitle}
+            title={t(`${functionsCardItem.title}`)}
+            subtitle={t(`${functionsCardItem.subtitle}`)}
           />
         ))}
       </section>
       <Info />
       <section id="plans">
         <Title >
-          {t("plans")}
+          {t("home.plans")}
         </Title>
         <div
           className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-7 mx-auto">
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
       <Title>
-        {t("benefits")}
+        {t("home.benefits")}
       </Title>
       <CarouselBenefit />
       <section className="container">
