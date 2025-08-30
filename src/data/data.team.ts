@@ -1,12 +1,9 @@
-import CEOimage from "@/public/images/about/marcelo.webp"
-import CTOImage from "@/public/images/about/rodrigo.webp"
-import Dev1Image from "@/public/images/about/pedro.webp"
-import Dev2Image from "@/public/images/about/kaiky.webp"
+import CEOimage from "@/public/images/about/marcelo.webp";
+import CTOImage from "@/public/images/about/rodrigo.webp";
+import Dev1Image from "@/public/images/about/pedro.webp";
+import Dev2Image from "@/public/images/about/kaiky.webp";
 
-
-import { ITeamMember } from "../types"
-
-
+import { ITeamMember } from "../types";
 
 const team: ITeamMember[] = [
     {
@@ -52,4 +49,4 @@ const team: ITeamMember[] = [
 
 export {
     team
-}
+};

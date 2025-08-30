@@ -1,6 +1,6 @@
 
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 interface ILIProps {
     children: React.ReactNode
@@ -24,7 +24,7 @@ const LI = ({ children, alt, href, target = "_self", prefetch = true }: ILIProps
                 {children}
             </Link>
         </li>
-    )
-}
+    );
+};
 
-export default LI
+export default LI;

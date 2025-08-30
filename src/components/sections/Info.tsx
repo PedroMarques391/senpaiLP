@@ -1,18 +1,16 @@
-"use client"
+"use client";
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 import { BsWhatsapp } from "react-icons/bs";
-import senpai from "@/public/images/senpai/senpai.webp"
+import senpai from "@/public/images/senpai/senpai.webp";
 import Image from "next/image";
 import SpeechBubble from "@/src/components/ui/speech-bubble";
-import { motion, useInView } from "motion/react"
-import React, { useRef } from 'react'
-
+import { motion, useInView } from "motion/react";
+import React, { useRef } from "react";
 
 const Info = (): React.JSX.Element => {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
-
+    const ref = useRef(null);
+    const isInView = useInView(ref);
 
     return (
         <section className="grid grid-cols-1 lg:grid-cols-2 pt-12 pb-24 place-items-center overflow-hidden">
@@ -55,7 +53,6 @@ const Info = (): React.JSX.Element => {
 
             </div>
 
-
             <div className=" w-full flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto">
                 <div className="relative mt-20 lg:mt-0 w-64 h-64 md:w-72 md:h-72 lg:h-[450px] lg:w-[450px] rounded-full bg-red-50 flex justify-center items-center max-w-[90vw]">
                     <Image
@@ -71,11 +68,10 @@ const Info = (): React.JSX.Element => {
                         Ei! Quer saber mais sobre mim? 💙
                     </SpeechBubble>
 
-
                 </div>
             </div>
         </section >
-    )
-}
+    );
+};
 
-export default Info
+export default Info;

@@ -1,6 +1,6 @@
-import Image from "next/image"
-import senpai from "@/public/images/senpai/IconSenpai.png"
-import Link from "next/link"
+import Image from "next/image";
+import senpai from "@/public/images/senpai/IconSenpai.png";
+import Link from "next/link";
 
 const Logo = (): React.JSX.Element => {
     return (
@@ -15,7 +15,7 @@ const Logo = (): React.JSX.Element => {
             />
             <p className="lg:text-xl font-semibold text-content-inverse md:-mt-1 lg:mt-0">Senpai</p>
         </Link>
-    )
-}
+    );
+};
 
-export default Logo
+export default Logo;

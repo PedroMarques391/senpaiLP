@@ -1,24 +1,20 @@
-'use client'
-import Layout from '@/src/components/layout/Layout';
-import { ReasonsCard } from '@/src/components/sections/ReasonsCard';
-import { StepsSection } from '@/src/components/sections/StepsSection';
-import { FormField } from '@/src/components/ui/form-field';
-import { Label } from '@/src/components/ui/label';
-import { reasonsCard } from '@/src/data';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { ArrowRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import { useState } from 'react';
-import { useForm, FormProvider } from 'react-hook-form';
-import { z } from 'zod';
-
-
-
-
+"use client";
+import Layout from "@/src/components/layout/Layout";
+import { ReasonsCard } from "@/src/components/sections/ReasonsCard";
+import { StepsSection } from "@/src/components/sections/StepsSection";
+import { FormField } from "@/src/components/ui/form-field";
+import { Label } from "@/src/components/ui/label";
+import { reasonsCard } from "@/src/data";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useState } from "react";
+import { useForm, FormProvider } from "react-hook-form";
+import { z } from "zod";
 
 const PartnersPage = () => {
-    const t = useTranslations('partners')
+    const t = useTranslations("partners");
     const partnersSchema = z.object({
         name: z.string()
             .min(4, t("formErrors.name")),
@@ -42,40 +38,38 @@ const PartnersPage = () => {
             .min(10, t("formErrors.more")),
     });
 
-
     type PartnersData = z.infer<typeof partnersSchema>
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = useState<boolean>(false);
     const methods = useForm<PartnersData>({
         resolver: zodResolver(partnersSchema),
     });
     const { handleSubmit, reset, register, formState: { errors } } = methods;
 
     async function onSubmit(data: PartnersData) {
-        setLoading(true)
+        setLoading(true);
         await fetch("/api/emails/partnership", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ ...data, type: 'partnership' },)
+            body: JSON.stringify({ ...data, type: "partnership" },)
 
         })
             .then((res) => {
                 if (!res.ok) {
-                    throw new Error("Erro na requisição")
+                    throw new Error("Erro na requisição");
                 }
                 //TODO
                 //add success modal
-                console.log('deu certo');
+                console.log("deu certo");
             })
             .catch(() => {
                 //TODO
                 //add error modal
-                console.log('deu errado');
-
+                console.log("deu errado");
             })
-            .finally(() => setLoading((prev) => !prev))
-        reset()
+            .finally(() => setLoading((prev) => !prev));
+        reset();
     }
 
     return (
@@ -133,7 +127,7 @@ const PartnersPage = () => {
                                         {...register("proposal")}
                                         className="border rounded-lg p-2 w-full"
                                         name='proposal'
-                                        defaultValue={''}
+                                        defaultValue={""}
                                     >
                                         <option value="" disabled>
                                             {t("formLabels.option")}

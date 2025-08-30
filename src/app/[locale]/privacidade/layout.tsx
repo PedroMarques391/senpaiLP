@@ -3,12 +3,10 @@ import "./../globals.css";
 import Script from "next/script";
 import { jsonLdPrivacy } from "@/src/utils";
 
-
 export const metadata: Metadata = {
   title: "BotDoSenpai - Política de Privacidade",
   description: "Saiba como o Bot do Senpai coleta, armazena e protege seus dados com carinho e responsabilidade.",
   keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai"],
-
 
 };
 

@@ -1,6 +1,6 @@
 import { IFunctionsCard } from "../types";
-
 const functionsCardItens: IFunctionsCard[] = [
+
     {
         title: "🖼️ Crie Figurinhas com a Senpai",
         subtitle: "Transforme imagens, GIFs e vídeos em figurinhas únicas no WhatsApp! Rápido e fácil.",
@@ -41,4 +41,4 @@ const functionsCardItens: IFunctionsCard[] = [
 
 export {
     functionsCardItens
-}
+};

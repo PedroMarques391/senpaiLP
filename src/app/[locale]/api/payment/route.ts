@@ -10,9 +10,8 @@ export async function POST(req: NextRequest) {
         const res = await payment(body);
 
         return NextResponse.json({ status: 200, data: res });
-
     } catch (error) {
-        console.error('Erro ao processar pagamento:', error);
+        console.error("Erro ao processar pagamento:", error);
         return NextResponse.json(
             { status: 500 }
         );

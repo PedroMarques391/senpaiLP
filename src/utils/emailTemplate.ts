@@ -33,9 +33,9 @@ function supportTemplate(data: IContactResquestData) {
           <h3 style="color: #ff69b4; margin: 0 0 8px 0;">📝 Mensagem:</h3>
           <p style="color: #4b0082;">${data.message}</p>
         </div>
-      ` : ''}
+      ` : ""}
       <footer style="margin-top: 28px; font-size: 13px; color: #888; text-align: center;">
-        🌸 Esta mensagem foi enviada do formulário de <strong>${data.message ? 'suporte' : 'finalização'}</strong>.
+        🌸 Esta mensagem foi enviada do formulário de <strong>${data.message ? "suporte" : "finalização"}</strong>.
       </footer>
     </div>
   `;
@@ -78,7 +78,7 @@ function partnershipTemplate(data: IProposalRequestData) {
           <h3 style="color: #00acc1; margin: 0 0 8px 0;">📝 Mais informações:</h3>
           <p style="color: #006064;">${data.more}</p>
         </div>
-      ` : ''}
+      ` : ""}
       <footer style="margin-top: 28px; font-size: 13px; color: #555; text-align: center;">
         🌟 Esta mensagem foi enviada do formulário de <strong>Parceria</strong>.
       </footer>
@@ -89,4 +89,4 @@ function partnershipTemplate(data: IProposalRequestData) {
 export {
   partnershipTemplate,
   supportTemplate
-}
+};

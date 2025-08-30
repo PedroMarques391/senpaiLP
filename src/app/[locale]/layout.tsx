@@ -1,12 +1,12 @@
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { jsonLd } from "../../utils";
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { routing } from '@/src/i18n/routing';
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/src/i18n/routing";
 import { generateMetadataProps } from "@/src/types";
 
 const montserrat = Poppins({
@@ -22,23 +22,23 @@ const cabin_Condensed = Roboto({
 });
 
 export async function generateMetadata({ params }: generateMetadataProps) {
-  const { locale } = await params
+  const { locale } = await params;
 
-  const t = await getTranslations({ locale, namespace: 'metadata.home' });
+  const t = await getTranslations({ locale, namespace: "metadata.home" });
 
   return {
-    title: t('title'),
-    description: t('description'),
-    metadataBase: new URL('https://botdosenpai.com.br'),
+    title: t("title"),
+    description: t("description"),
+    metadataBase: new URL("https://botdosenpai.com.br"),
     alternates: {
-      canonical: '/',
+      canonical: "/",
     },
     authors: [{ name: "Pedro Marques" }],
     applicationName: "BotDoSenpai",
     keywords: t.raw("keywords"),
     openGraph: {
-      title: t('title'),
-      description: t('description'),
+      title: t("title"),
+      description: t("description"),
       siteName: "BotDoSenpai",
       url: "https://botdosenpai.com.br/",
       type: "website",
@@ -56,16 +56,12 @@ export async function generateMetadata({ params }: generateMetadataProps) {
       card: "summary_large_image",
       title: "Bot de Figurinha",
       creator: "@BotDoSenpai",
-      description: t('description'),
+      description: t("description"),
       site: "@BotDoSenpai",
       images: ["/wallpaper.png"]
     },
   };
 }
-
-
-
-
 
 export default async function RootLayout({
   children,

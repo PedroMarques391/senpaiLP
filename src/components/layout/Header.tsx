@@ -1,10 +1,9 @@
-"use client"
-import Logo from "@/src/components/shared/Logo"
-import MenuDesktop from "@/src/components/menu/MenuDesktop"
+"use client";
+import Logo from "@/src/components/shared/Logo";
+import MenuDesktop from "@/src/components/menu/MenuDesktop";
 import { useEffect, useState } from "react";
 import Mobile from "@/src/components/menu/Mobile";
 import { useAnchor } from "@/src/hooks/useAnchor";
-
 
 type IHeaderProps = { background?: string }
 
@@ -13,7 +12,6 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean | null>(null);
 
-
     function handleMenu() {
         setIsOpen((prev) => !prev);
     }
@@ -21,13 +19,11 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
-        }
+        };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [])
-
-
+    }, []);
 
     return (
         <header className={`text-content-inverse py-3 flex justify-center font-sans items-center fixed top-0 left-0 transition-colors duration-500 w-full z-30 ${scrolled ? "bg-secondary-theme/90" : background
@@ -47,12 +43,11 @@ export const Header = ({ background }: IHeaderProps): React.JSX.Element => {
                     setIsOpen={setIsOpen}
                     handleHref={handleHref}
 
-
                 />
                 <MenuDesktop
                     handleHref={handleHref}
                 />
             </nav>
         </header>
-    )
-}
+    );
+};

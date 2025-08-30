@@ -1,5 +1,5 @@
 interface IModalMessage {
-    statusIcon: 'check' | 'x'
+    statusIcon: "check" | "x"
     text: string
     textButton: string
     setEmailSend: React.Dispatch<React.SetStateAction<boolean>>
@@ -7,4 +7,4 @@ interface IModalMessage {
 
 export type {
     IModalMessage
-}
+};

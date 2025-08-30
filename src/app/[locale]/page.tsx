@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import FunctionsCard from "@/src/components/sections/FunctionsCard";
 import Info from "@/src/components/sections/Info";
 import Layout from "@/src/components/layout/Layout";
 import Services from "@/src/components/sections/Services";
-import { faq, functionsCardItens, services } from "@/src/data"
+import { faq, functionsCardItens, services } from "@/src/data";
 import CarouselBenefit from "@/src/components/sections/Carousel";
 import { Faq } from "@/src/components/sections/Faq";
 import Title from "@/src/components/ui/title";
@@ -12,16 +12,13 @@ import { useEffect } from "react";
 import { scrollSmooth } from "@/src/utils";
 import { useTranslations } from "next-intl";
 
-
-
 export default function Home() {
-
-  const t = useTranslations('home')
+  const t = useTranslations("home");
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if ('scrollRestoration' in window.history) {
-        window.history.scrollRestoration = 'manual';
+    if (typeof window !== "undefined") {
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
       }
       window.scrollTo({ top: 0, behavior: "instant" });
 
@@ -34,12 +31,11 @@ export default function Home() {
     }
   }, []);
 
-
   return (
     <Layout hero>
       <div className="w-full  overflow-hidden " id="func">
         <Title >
-          {t('question')}
+          {t("question")}
         </Title>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl w-[80%] sm:w-[60%] md:w-full mx-auto">
@@ -55,7 +51,7 @@ export default function Home() {
       <Info />
       <section id="plans">
         <Title >
-          {t('plans')}
+          {t("plans")}
         </Title>
         <div
           className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-7 mx-auto">
@@ -75,7 +71,7 @@ export default function Home() {
         </div>
       </section>
       <Title>
-        {t('benefits')}
+        {t("benefits")}
       </Title>
       <CarouselBenefit />
       <section className="container">

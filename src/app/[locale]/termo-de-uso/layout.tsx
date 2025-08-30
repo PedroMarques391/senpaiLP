@@ -3,15 +3,10 @@ import "./../globals.css";
 import Script from "next/script";
 import { jsonLdTerms } from "@/src/utils";
 
-
-
-
-
 export const metadata: Metadata = {
   title: "BotDoSenpai - Termos de Uso",
   description: "Leia os termos e condições para uso do Bot do Senpai e descubra como usamos magia e tecnologia para servir você com segurança.",
   keywords: ["figurinhas", "bot de figurinhas", "bot de whatsapp", "senpai bot", "botdosenpai"],
-
 
 };
 

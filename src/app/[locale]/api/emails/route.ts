@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { sendEmail } from '../controller/mail.controller';
+import { NextRequest, NextResponse } from "next/server";
+import { sendEmail } from "../controller/mail.controller";
 
 export async function POST(req: NextRequest) {
     try {
@@ -8,12 +8,10 @@ export async function POST(req: NextRequest) {
         await sendEmail(body);
 
         return NextResponse.json({ status: 200 });
-
     } catch (error) {
-        console.error('Erro ao enviar email:', error);
+        console.error("Erro ao enviar email:", error);
         return NextResponse.json(
             { status: 500 }
         );
     }
 }
-

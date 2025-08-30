@@ -1,20 +1,18 @@
-"use client"
-import { BsWhatsapp } from "react-icons/bs"
-import { achievements } from "@/src/data"
+"use client";
+import { BsWhatsapp } from "react-icons/bs";
+import { achievements } from "@/src/data";
 import { motion, useInView } from "motion/react";
-import { useRef } from "react"
-import Counter from "../sections/Counter"
-import Link from "next/link"
-import { Header } from "./Header"
-import { CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
+import { useRef } from "react";
+import Counter from "../sections/Counter";
+import Link from "next/link";
+import { Header } from "./Header";
+import { CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-
-
 const Hero = (): React.JSX.Element => {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
+    const ref = useRef(null);
+    const isInView = useInView(ref);
     const refCard = useRef(null);
     const isCardInView = useInView(refCard);
 
@@ -90,14 +88,13 @@ const Hero = (): React.JSX.Element => {
                                     className="z-0"
                                 >
                                     <source src="/videos/senpaiTalk.mp4" type="video/mp4" />
-                                    {t('videoSupport')}
+                                    {t("videoSupport")}
                                 </video>
                             </div>
 
                             <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl"></div>
                         </div>
                     </div>
-
 
                 </section>
             </div >
@@ -146,7 +143,7 @@ const Hero = (): React.JSX.Element => {
             </div>
         </section >
 
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

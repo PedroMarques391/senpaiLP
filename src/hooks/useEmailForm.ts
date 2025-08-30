@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import { useForm, DefaultValues } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
-import { ChangeEvent } from 'react'
-import { insertMaskInPhone } from '../utils'
+import { useForm, DefaultValues } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { ChangeEvent } from "react";
+import { insertMaskInPhone } from "../utils";
 
 const emailSchema = z.object({
     name: z.string().min(4, "O nome é obrigatório."),
@@ -13,7 +13,7 @@ const emailSchema = z.object({
         message: "Número de telefone inválido"
     }),
 
-})
+});
 
 const fullSchema = emailSchema.extend({
     subject: z.string().min(5, "O assunto precisa ter mais de 5 caracteres."),
@@ -29,25 +29,24 @@ type FormValues = PartialFormData | FullFormData;
 export function useEmailForm(schema: FormSchema, defaultValues?: DefaultValues<FormValues>) {
     const methods = useForm<FormValues>({
         resolver: zodResolver(schema),
-        mode: 'onChange',
+        mode: "onChange",
         defaultValues: defaultValues as DefaultValues<FormValues>
-    })
+    });
 
     function handleMask(e: ChangeEvent<HTMLInputElement>): void {
-        const formattedPhone = insertMaskInPhone(e.target.value)
+        const formattedPhone = insertMaskInPhone(e.target.value);
 
-        methods.setValue('phone', formattedPhone)
-        methods.clearErrors('phone')
+        methods.setValue("phone", formattedPhone);
+        methods.clearErrors("phone");
     }
 
     return {
         ...methods,
         handleMask,
-    }
+    };
 }
-
 
 export {
     emailSchema,
     fullSchema
-}
+};

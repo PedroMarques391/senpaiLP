@@ -1,6 +1,5 @@
 import { IServices } from "../types";
 
-
 const services: IServices[] = [
     {
         service: "Grátis",
@@ -12,7 +11,7 @@ const services: IServices[] = [
         ],
         textButton: "Teste grátis",
         bestOption: false,
-        paymentLink: 'https://wa.me/555497153068?text=Ol%C3%A1%20senpai'
+        paymentLink: "https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
 
     },
     {
@@ -28,7 +27,7 @@ const services: IServices[] = [
         ],
         textButton: "Assine Agora",
         bestOption: false,
-        paymentLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380849564460a0195691fcd1802b6',
+        paymentLink: "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380849564460a0195691fcd1802b6",
 
     },
     {
@@ -51,18 +50,10 @@ const services: IServices[] = [
         ],
         textButton: "Assine Agora",
         bestOption: true,
-        paymentLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084943cdeb601943d5af5f8005c'
+        paymentLink: "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084943cdeb601943d5af5f8005c"
     }
 ];
 
-
 export {
     services
-}
-
-
-
-
-
-
-
+};

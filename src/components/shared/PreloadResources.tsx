@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export function PreloadResources() {
     return (
@@ -10,5 +10,5 @@ export function PreloadResources() {
                 type="image/webp"
             />
         </Head>
-    )
+    );
 }

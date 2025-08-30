@@ -4,16 +4,15 @@ import { jsonLdAbout } from "@/src/utils";
 import { getTranslations } from "next-intl/server";
 import { generateMetadataProps } from "@/src/types";
 
-
 export async function generateMetadata({ params }: generateMetadataProps) {
-    const { locale } = await params
-    const t = await getTranslations({ locale, namespace: 'metadata.about' });
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "metadata.about" });
 
     return {
-        title: t('title'),
-        description: t('description'),
+        title: t("title"),
+        description: t("description"),
         keywords: t.raw("keywords"),
-    }
+    };
 }
 
 export default function AboutLayout({

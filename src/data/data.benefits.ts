@@ -30,4 +30,4 @@ const benefits: IBenefit[] = [
 
 export {
     benefits
-}
+};

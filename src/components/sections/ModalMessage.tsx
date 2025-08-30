@@ -1,10 +1,8 @@
-import React from 'react'
-import { AnimatedCheckCircle, AnimatedXCircle } from '../motion/AnimatedCircle'
-import { Button } from '../ui/button'
-import { DialogClose } from '@radix-ui/react-dialog'
-import { IModalMessage } from '@/src/types'
-
-
+import React from "react";
+import { AnimatedCheckCircle, AnimatedXCircle } from "../motion/AnimatedCircle";
+import { Button } from "../ui/button";
+import { DialogClose } from "@radix-ui/react-dialog";
+import { IModalMessage } from "@/src/types";
 
 const ModalMessage = ({ statusIcon, text, textButton, setEmailSend }: IModalMessage): React.JSX.Element => {
     return (
@@ -22,7 +20,7 @@ const ModalMessage = ({ statusIcon, text, textButton, setEmailSend }: IModalMess
                 </DialogClose>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ModalMessage
+export default ModalMessage;

@@ -1,14 +1,14 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import Hero from './Hero'
-import { Footer } from './Footer'
-import { Headset } from 'lucide-react'
-import { Header } from './Header'
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
-import FormDialog from '@/src/components/ui/form-diolog'
-import { FormField } from '../ui/form-field'
-import { FormProvider } from 'react-hook-form'
-import { fullSchema, useEmailForm } from '@/src/hooks/useEmailForm'
+"use client";
+import React, { useEffect, useState } from "react";
+import Hero from "./Hero";
+import { Footer } from "./Footer";
+import { Headset } from "lucide-react";
+import { Header } from "./Header";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
+import FormDialog from "@/src/components/ui/form-diolog";
+import { FormField } from "../ui/form-field";
+import { FormProvider } from "react-hook-form";
+import { fullSchema, useEmailForm } from "@/src/hooks/useEmailForm";
 
 interface ILayoutProps {
     children: React.ReactNode
@@ -26,10 +26,8 @@ const Layout = ({
     backgroundHeader = "bg-transparent",
     container = true,
 }: ILayoutProps): React.JSX.Element => {
-
     const [showButton, setShowButton] = useState<boolean>(false);
-    const methods = useEmailForm(fullSchema)
-
+    const methods = useEmailForm(fullSchema);
 
     useEffect(() => {
         const handleScroll = (): void => {
@@ -39,12 +37,9 @@ const Layout = ({
         window.addEventListener("scroll", handleScroll);
 
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [])
-
-
+    }, []);
 
     return (
-
 
         <main className={`w-full min-h-screen ${backgroundColor} relative `}>
             {hero ? <Hero /> : <Header background={backgroundHeader} />}
@@ -106,11 +101,7 @@ const Layout = ({
                 </DialogContent>
             </Dialog>
         </main>
-    )
-}
+    );
+};
 
-export default Layout
-
-
-
-
+export default Layout;

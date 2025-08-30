@@ -48,22 +48,21 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                     animate="visible"
                     exit="hidden"
 
-
                 >
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('home')}>{t('home')}</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref("home")}>{t("home")}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('func')}>{t('features')}</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref("func")}>{t("features")}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href={handleHref('plans')}>{t('subscriptions')}</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href={handleHref("plans")}>{t("subscriptions")}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href="/about">{t('aboutUs')}</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href="/about">{t("aboutUs")}</NavItem>
                     </motion.div>
                     <motion.div variants={variants}>
-                        <NavItem onClick={() => setIsOpen(false)} href='/partners' >{t('beAPartner')}</NavItem>
+                        <NavItem onClick={() => setIsOpen(false)} href='/partners' >{t("beAPartner")}</NavItem>
                     </motion.div>
                     <Link
                         onClick={() => setIsOpen(false)}
@@ -73,7 +72,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                         aria-label="Link que leva para o número do bot."
                         className="p-4 bg-gradient-to-r text-content-secondary from-[#fa8aa4] via-[#f097ac] to-[#f2b2c1] rounded-lg font-semibold transition-all duration-300 hover:brightness-110 hover:scale-105 shadow-lg md:text-base text-center fixed top-5 left-5"
                     >
-                        {t('chatWithSenpai')}
+                        {t("chatWithSenpai")}
                     </Link>
                     <SelectLang />
                 </motion.ul>

@@ -1,21 +1,20 @@
-"use client"
+"use client";
 
-import Layout from '@/src/components/layout/Layout'
-import senpaiAbout from "@/public/images/about/senpaiInRoom.webp"
-import senpaiAbout2 from "@/public/images/about/senpaiWithFriend.webp"
-import senpaiAbout3 from "@/public/images/about/senpai.webp"
-import AlternatingSection from '@/src/components/sections/AlternatingSection'
-import wallpaper from '@/public/images/about/wallpaper.webp'
+import Layout from "@/src/components/layout/Layout";
+import senpaiAbout from "@/public/images/about/senpaiInRoom.webp";
+import senpaiAbout2 from "@/public/images/about/senpaiWithFriend.webp";
+import senpaiAbout3 from "@/public/images/about/senpai.webp";
+import AlternatingSection from "@/src/components/sections/AlternatingSection";
+import wallpaper from "@/public/images/about/wallpaper.webp";
 
-import Team from '@/src/components/sections/Team'
-import Image from 'next/image'
-import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
-import { team } from '@/src/data'
-import { useTranslations } from 'next-intl'
+import Team from "@/src/components/sections/Team";
+import Image from "next/image";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { team } from "@/src/data";
+import { useTranslations } from "next-intl";
 
 const AboutPage = () => {
-
-    const t = useTranslations('about')
+    const t = useTranslations("about");
     return (
         <Layout
             backgroundColor='bg-gray-100'
@@ -43,33 +42,33 @@ const AboutPage = () => {
                     <AlternatingSection
                         imageGridAlign='left'
                         image={senpaiAbout}
-                        title={t('title1')}
+                        title={t("title1")}
 
                     >
-                        {t('paragraph1')}
+                        {t("paragraph1")}
                     </AlternatingSection>
                     <AlternatingSection
                         imageGridAlign='right'
                         image={senpaiAbout2}
-                        title={t('title2')}
+                        title={t("title2")}
 
                     >
-                        {t('paragraph2')}
+                        {t("paragraph2")}
                     </AlternatingSection>
                     <AlternatingSection
                         imageGridAlign='left'
                         image={senpaiAbout3}
-                        title={t('title3')}
+                        title={t("title3")}
 
                     >
-                        {t('paragraph3')}
+                        {t("paragraph3")}
                     </AlternatingSection>
                 </section>
                 <section>
                     <div className=" text-center py-10 bg-gray-200">
-                        <h1 className="text-3xl font-bold mb-6">{t('meetOurTeam')}</h1>
+                        <h1 className="text-3xl font-bold mb-6">{t("meetOurTeam")}</h1>
                         <p className="text-lg text-gray-600 mb-6">
-                            {t('aDedicatedTeam')}
+                            {t("aDedicatedTeam")}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto md:px-5 overflow-hidden">
                             {team.map((teamMember, index) => (
@@ -87,7 +86,7 @@ const AboutPage = () => {
                 </section>
             </main >
         </Layout >
-    )
-}
+    );
+};
 
-export default AboutPage
+export default AboutPage;

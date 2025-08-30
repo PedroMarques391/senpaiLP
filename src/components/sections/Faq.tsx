@@ -4,9 +4,9 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/src/components/ui/accordion"
-import { IFaq } from "@/src/types"
-import React from 'react'
+} from "@/src/components/ui/accordion";
+import { IFaq } from "@/src/types";
+import React from "react";
 
 interface IFaqProps {
     faq: IFaq[]
@@ -25,5 +25,5 @@ export const Faq = ({ faq }: IFaqProps): React.JSX.Element => {
                 </AccordionItem>
             ))}
         </Accordion>
-    )
-}
+    );
+};

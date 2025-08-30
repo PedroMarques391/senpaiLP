@@ -1,8 +1,6 @@
 import { IReasonsCard } from "@/src/types";
 import { useTranslations } from "next-intl";
 
-
-
 export function ReasonsCard({ icon: Icon, title, text }: IReasonsCard) {
     const t = useTranslations("partners");
     return (

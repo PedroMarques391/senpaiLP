@@ -1,4 +1,4 @@
-import { ITermsAndPrivacy } from "../types"
+import { ITermsAndPrivacy } from "../types";
 
 const termsOfUse: ITermsAndPrivacy[] = [
     { title: "1. Aceitação dos Termos", text: "Ao utilizar o 'Bot do Senpai', você concorda integralmente com os presentes Termos de Uso. Caso não concorde, não deverá utilizar o Bot." },
@@ -11,8 +11,7 @@ const termsOfUse: ITermsAndPrivacy[] = [
     { title: "8. Alterações nos Termos de Uso", text: "O Bot do Senpai se reserva o direito de alterar os Termos de Uso a qualquer momento, entrando em vigor imediatamente após a publicação." },
     { title: "9. Limitação de Responsabilidade", text: "O Bot do Senpai não se responsabiliza por danos ou prejuízos decorrentes do uso do Bot, incluindo falhas de funcionamento, interrupções ou perda de dados." },
     { title: "10. Disposições Gerais", text: "A tolerância ao descumprimento de qualquer cláusula não implica renúncia ao direito de exigir o cumprimento da obrigação. O foro eleito será o da comarca de Florianópolis, SC." }
-]
-
+];
 
 const privacyPolicy: ITermsAndPrivacy[] = [
     { title: "Política de Privacidade", text: "A sua privacidade é extremamente importante para nós. Comprometemo-nos a respeitar sua privacidade e proteger qualquer informação pessoal que você possa fornecer através do nosso site, Botdosenpai, localizado em https://botdosenpai.com.br/." },
@@ -26,8 +25,6 @@ const privacyPolicy: ITermsAndPrivacy[] = [
     { title: "Mais Informações", text: "Esta política entra em vigor a partir de 28 de janeiro de 2025." }
 ];
 
-
-
 export {
     termsOfUse, privacyPolicy
-}
+};

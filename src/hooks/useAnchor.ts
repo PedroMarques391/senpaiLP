@@ -4,9 +4,9 @@ import { useLocale } from "next-intl";
 
 export function useAnchor() {
     const pathname = usePathname() as string;
-    const locale = useLocale()
+    const locale = useLocale();
 
-    const isHomePage = pathname === '/';
+    const isHomePage = pathname === "/";
 
     const handleHref = (anchorId: string): string => {
         if (isHomePage) {

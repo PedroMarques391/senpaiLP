@@ -2,7 +2,6 @@ import { sendEmail } from "../../controller/mail.controller";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-
     const data = await req.json();
 
     try {
@@ -10,7 +9,7 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json({ status: 200 });
     } catch (error) {
-        console.error('Erro ao enviar email:', error);
+        console.error("Erro ao enviar email:", error);
         return NextResponse.json(
             { status: 500 }
         );

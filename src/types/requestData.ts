@@ -1,5 +1,5 @@
 export interface IContactResquestData {
-    type: 'support' | 'partnership';
+    type: "support" | "partnership";
     name: string;
     email: string;
     phone: string;

@@ -5,15 +5,15 @@ import { getTranslations } from "next-intl/server";
 import { generateMetadataProps } from "@/src/types";
 
 export async function generateMetadata({ params }: generateMetadataProps) {
-    const { locale } = await params
+    const { locale } = await params;
 
-    const t = await getTranslations({ locale, namespace: 'metadata.partners' });
+    const t = await getTranslations({ locale, namespace: "metadata.partners" });
 
     return {
-        title: t('title'),
-        description: t('description'),
+        title: t("title"),
+        description: t("description"),
         keywords: t.raw("keywords"),
-    }
+    };
 }
 
 export default function PartnersLayout({

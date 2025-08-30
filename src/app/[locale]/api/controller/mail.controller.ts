@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
   host: process.env.MAIL_HOST,
-  port: parseInt(process.env.MAIL_PORT || '465'),
+  port: parseInt(process.env.MAIL_PORT || "465"),
   secure: true,
   auth: {
     user: process.env.USER_EMAIL,
@@ -12,23 +12,21 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-
 export async function sendEmail(data: IProposalRequestData) {
+  let htmlTemplate = "";
 
-  let htmlTemplate = '';
-
-  if (data.type === 'partnership') {
+  if (data.type === "partnership") {
     htmlTemplate = partnershipTemplate(data);
   }
 
-  if (data.type === 'support') {
+  if (data.type === "support") {
     htmlTemplate = supportTemplate(data);
   }
 
   return await transporter.sendMail({
-    from: data.type === 'partnership' ? `${data.name} <${data.email}>` : `"Senpai" <${process.env.USER_EMAIL}>`,
+    from: data.type === "partnership" ? `${data.name} <${data.email}>` : `"Senpai" <${process.env.USER_EMAIL}>`,
     to: process.env.ADDRESSEE,
-    subject: data.type === 'partnership' ? 'Nova solicitação de parceria' : data.subject,
+    subject: data.type === "partnership" ? "Nova solicitação de parceria" : data.subject,
     html: htmlTemplate,
   });
 }

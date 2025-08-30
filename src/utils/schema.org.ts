@@ -18,8 +18,7 @@ const jsonLd: WithContext<SoftwareApplication> = {
     image: "/wallpaper.png",
     dateCreated: "2025-03-12",
     datePublished: "2025-03-25",
-}
-
+};
 
 const jsonLdAbout: WithContext<AboutPage> = {
     "@context": "https://schema.org",
@@ -34,7 +33,6 @@ const jsonLdAbout: WithContext<AboutPage> = {
     },
 };
 
-
 const jsonLdPrivacy: WithContext<WebPage> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -43,7 +41,6 @@ const jsonLdPrivacy: WithContext<WebPage> = {
     url: "https://botdosenpai.com.br/privacidade",
 };
 
-
 const jsonLdTerms: WithContext<WebPage> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -51,7 +48,6 @@ const jsonLdTerms: WithContext<WebPage> = {
     url: "https://botdosenpai.com.br/termo-de-uso",
     description: "Leia os termos e condições para uso do Bot do Senpai e descubra como usamos magia e tecnologia para servir você com segurança.",
 };
-
 
 const jsonLdThanks: WithContext<WebPage> = {
     "@context": "https://schema.org",
@@ -67,8 +63,7 @@ const jsonLdPartners: WithContext<WebPage> = {
     name: "BotDoSenpai - Seja um Parceiro",
     url: "https://botdosenpai.com.br/partners",
     description: "Seja um Parceiro!.",
-}
-
+};
 
 export {
     jsonLd,
@@ -77,4 +72,4 @@ export {
     jsonLdTerms,
     jsonLdThanks,
     jsonLdPartners
-}
+};

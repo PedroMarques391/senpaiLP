@@ -1,8 +1,7 @@
-"use client"
-import Image, { StaticImageData } from "next/image"
-import { useInView, motion } from "motion/react"
-import { useRef } from "react"
-
+"use client";
+import Image, { StaticImageData } from "next/image";
+import { useInView, motion } from "motion/react";
+import { useRef } from "react";
 
 interface IAlternatingSectionProps {
     image: StaticImageData
@@ -12,8 +11,8 @@ interface IAlternatingSectionProps {
 }
 
 const AlternatingSection = ({ image, title, children, imageGridAlign }: IAlternatingSectionProps): React.JSX.Element => {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
+    const ref = useRef(null);
+    const isInView = useInView(ref);
     return (
         <section className="grid grid-cols-1 md:grid-cols-2  place-content-center place-items-center overflow-hidden">
             <motion.div
@@ -52,7 +51,7 @@ const AlternatingSection = ({ image, title, children, imageGridAlign }: IAlterna
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default AlternatingSection
+export default AlternatingSection;

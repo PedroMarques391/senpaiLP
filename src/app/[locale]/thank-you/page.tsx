@@ -1,24 +1,24 @@
-'use client'
+"use client";
 
-import Layout from '@/src/components/layout/Layout';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Layout from "@/src/components/layout/Layout";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from '@/src/components/ui/dialog';
-import { FormField } from '@/src/components/ui/form-field';
-import { FormProvider } from 'react-hook-form';
-import { emailSchema, useEmailForm } from '@/src/hooks/useEmailForm';
-import FormDialog from '@/src/components/ui/form-diolog';
-import { Button } from '@/src/components/ui/button';
-import senpai from '../../../../public/images/thanks/thanks.png';
-import { useState } from 'react';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+} from "@/src/components/ui/dialog";
+import { FormField } from "@/src/components/ui/form-field";
+import { FormProvider } from "react-hook-form";
+import { emailSchema, useEmailForm } from "@/src/hooks/useEmailForm";
+import FormDialog from "@/src/components/ui/form-diolog";
+import { Button } from "@/src/components/ui/button";
+import senpai from "../../../../public/images/thanks/thanks.png";
+import { useState } from "react";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -33,19 +33,19 @@ const containerVariants = {
 
 const itemVariants = {
     hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { type: 'spring', stiffness: 100 } },
+    visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } },
 };
 
 const buttonVariants = {
     hidden: { scale: 0.8, opacity: 0 },
-    visible: { scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 200 } },
-    hover: { scale: 1.05, boxShadow: '0 8px 16px rgba(0,0,0,0.2)' },
+    visible: { scale: 1, opacity: 1, transition: { type: "spring", stiffness: 200 } },
+    hover: { scale: 1.05, boxShadow: "0 8px 16px rgba(0,0,0,0.2)" },
 };
 
 const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const methods = useEmailForm(emailSchema);
-    const t = useTranslations('thanks')
+    const t = useTranslations("thanks");
 
     return (
         <Layout backgroundHeader="bg-secondary-theme">
@@ -79,14 +79,14 @@ const ThanksPage = () => {
                                 className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight"
                                 variants={itemVariants}
                             >
-                                {t('welcomeMessage')}
+                                {t("welcomeMessage")}
                             </motion.h1>
 
                             <motion.p
                                 className="text-base md:text-xl text-content-secondary mb-6 leading-relaxed"
                                 variants={itemVariants}
                             >
-                                {t('welcomeSubtitle')}
+                                {t("welcomeSubtitle")}
                             </motion.p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -95,7 +95,7 @@ const ThanksPage = () => {
                                         onClick={() => setIsOpen(true)}
                                         className="bg-content-secondary text-content-inverse font-semibold p-4 rounded-xl shadow-md transition-all w-full sm:w-auto"
                                     >
-                                        {t('finish')}
+                                        {t("finish")}
                                     </Button>
                                 </motion.div>
                                 <motion.div variants={buttonVariants}>
@@ -104,7 +104,7 @@ const ThanksPage = () => {
                                         variant="outline"
                                         className="bg-transparent border border-content-secondary text-content-primary font-semibold p-4 rounded-xl  transition-all w-full sm:w-auto hover:bg-content-primary hover:text-content-inverse"
                                     >
-                                        <Link href="/">{t('backToHome')}</Link>
+                                        <Link href="/">{t("backToHome")}</Link>
                                     </Button>
                                 </motion.div>
                             </div>
@@ -115,9 +115,9 @@ const ThanksPage = () => {
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                            <DialogTitle>{t('almostThere')}</DialogTitle>
+                            <DialogTitle>{t("almostThere")}</DialogTitle>
                             <DialogDescription>
-                                {t('formInstructions')}
+                                {t("formInstructions")}
                             </DialogDescription>
                         </DialogHeader>
                         <FormProvider {...methods}>

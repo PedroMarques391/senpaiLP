@@ -1,4 +1,4 @@
-import LI from "@/src/components/ui/li"
+import LI from "@/src/components/ui/li";
 import Logo from "@/src/components/shared/Logo";
 import { NavItem } from "../menu/NavItem";
 import { useAnchor } from "@/src/hooks/useAnchor";
@@ -7,8 +7,6 @@ import { useTranslations } from "next-intl";
 export const Footer = () => {
     const { handleHref } = useAnchor();
     const t = useTranslations("");
-
-
 
     return (
         <footer className="bg-secondary-theme text-content-inverse py-16">
@@ -20,12 +18,12 @@ export const Footer = () => {
                     <nav className="flex flex-col items-center sm:items-start md:col-span-2">
                         <h1 className="text-xl sm:text-2xl font-semibold mb-4 text-center w-full">{t("footer.quickAccess")}</h1>
                         <ul className="grid grid-cols-2 w-full gap-2">
-                            <NavItem href={handleHref("home")}> {t('header.home')}</NavItem>
-                            <NavItem href={handleHref("func")}>{t('header.features')}</NavItem>
-                            <NavItem href={handleHref("plans")}>{t('header.subscriptions')}</NavItem>
-                            <NavItem href="/about">{t('header.aboutUs')}</NavItem>
-                            <NavItem href="/termo-de-uso" target='_blank'>{t('hero.terms')}</NavItem>
-                            <NavItem href="/privacidade" target='_blank'>{t('hero.privacy')}</NavItem>
+                            <NavItem href={handleHref("home")}> {t("header.home")}</NavItem>
+                            <NavItem href={handleHref("func")}>{t("header.features")}</NavItem>
+                            <NavItem href={handleHref("plans")}>{t("header.subscriptions")}</NavItem>
+                            <NavItem href="/about">{t("header.aboutUs")}</NavItem>
+                            <NavItem href="/termo-de-uso" target='_blank'>{t("hero.terms")}</NavItem>
+                            <NavItem href="/privacidade" target='_blank'>{t("hero.privacy")}</NavItem>
                         </ul>
                     </nav>
                     <div className="flex flex-col items-center justify-center gap-y-2 md:col-span-1 w-full">

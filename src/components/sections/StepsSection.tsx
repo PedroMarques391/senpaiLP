@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { steps } from "@/src/data";
@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export function StepsSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-    const t = useTranslations('partners.steps')
+    const t = useTranslations("partners.steps");
 
     return (
         <section ref={ref} className="py-20 px-4">

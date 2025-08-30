@@ -4,22 +4,22 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/src/components/ui/select"
-import { useRouter, usePathname as usePath } from "@/src/i18n/navigation"
-import { routing } from "@/src/i18n/routing"
-import { useLocale } from "next-intl"
+} from "@/src/components/ui/select";
+import { useRouter, usePathname as usePath } from "@/src/i18n/navigation";
+import { routing } from "@/src/i18n/routing";
+import { useLocale } from "next-intl";
 
 export const SelectLang = () => {
-    const router = useRouter()
-    const locale = useLocale()
-    const pathname = usePath()
+    const router = useRouter();
+    const locale = useLocale();
+    const pathname = usePath();
 
     function handleSelectLocale(currentLocale: (typeof routing.locales)[number]) {
         const query = Object.fromEntries(
             new URLSearchParams(window.location.search)
-        )
+        );
 
-        router.replace({ pathname, query }, { locale: currentLocale })
+        router.replace({ pathname, query }, { locale: currentLocale });
     }
 
     return (
@@ -46,5 +46,5 @@ export const SelectLang = () => {
                 </SelectContent>
             </Select>
         </div>
-    )
-}
+    );
+};

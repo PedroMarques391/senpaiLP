@@ -14,6 +14,6 @@ export function renderIcon(icon: IconKey): React.JSX.Element {
         github: <BsGithub className="text-gray-800 h-6 w-6" />,
         instagram: <BsInstagram className="text-pink-500 h-6 w-6" />,
         linkedin: <BsLinkedin className="text-blue-700 h-6 w-6" />
-    }
-    return iconMap[icon]
+    };
+    return iconMap[icon];
 }

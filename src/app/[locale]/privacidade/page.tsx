@@ -3,8 +3,6 @@ import { privacyPolicy } from "@/src/data";
 
 import Link from "next/link";
 
-
-
 const Privacy = (): React.JSX.Element => {
     return (
         <Layout

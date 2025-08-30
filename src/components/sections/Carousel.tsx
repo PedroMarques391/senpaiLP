@@ -1,28 +1,27 @@
-"use client"
+"use client";
 
-import { CardContent, CardTitle } from "@/src/components/ui/card"
+import { CardContent, CardTitle } from "@/src/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/src/components/ui/carousel"
-import { benefits } from "@/src/data"
-import { useEffect, useState } from "react"
-import { renderIcon } from "../shared/IconRenderer"
+} from "@/src/components/ui/carousel";
+import { benefits } from "@/src/data";
+import { useEffect, useState } from "react";
+import { renderIcon } from "../shared/IconRenderer";
 
 const CarouselBenefit = () => {
-  const [currentIndex, setCurrentIndex] = useState<number>(0)
-  const totalSliders: number = benefits.length
-
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const totalSliders: number = benefits.length;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % totalSliders)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [totalSliders])
+      setCurrentIndex((prev) => (prev + 1) % totalSliders);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [totalSliders]);
 
   return (
     <section className="w-full max-w-6xl mx-auto my-10">
@@ -62,7 +61,7 @@ const CarouselBenefit = () => {
         <CarouselNext className="bg-secondary-theme text-content-inverse hover:bg-surface-card border-none  transition-all " />
       </Carousel>
     </section>
-  )
-}
+  );
+};
 
-export default CarouselBenefit
+export default CarouselBenefit;

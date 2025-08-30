@@ -1,6 +1,6 @@
-"use  client"
-import { useTransform, useMotionValue, motion, animate, useInView } from "motion/react"
-import { useEffect, useRef } from "react"
+"use  client";
+import { useTransform, useMotionValue, motion, animate, useInView } from "motion/react";
+import { useEffect, useRef } from "react";
 
 interface ICounterProps {
     number: number
@@ -8,18 +8,18 @@ interface ICounterProps {
 }
 
 const Counter = ({ number, type }: ICounterProps): React.JSX.Element => {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
-    const count = useMotionValue(0)
-    const rounded = useTransform(() => Math.round(count.get()))
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+    const count = useMotionValue(0);
+    const rounded = useTransform(() => Math.round(count.get()));
 
     useEffect(() => {
         if (isInView) {
-            const controls = animate(count, number, { duration: 5 })
-            return () => controls.stop()
+            const controls = animate(count, number, { duration: 5 });
+            return () => controls.stop();
         }
-        return () => count.set(0)
-    }, [isInView, count, number])
+        return () => count.set(0);
+    }, [isInView, count, number]);
 
     return (
         <div
@@ -30,7 +30,7 @@ const Counter = ({ number, type }: ICounterProps): React.JSX.Element => {
             </motion.p>
             <p>{type}</p>
         </div>
-    )
-}
+    );
+};
 
-export default Counter
+export default Counter;
