@@ -1,6 +1,5 @@
 export interface IServices {
     service: string
-    url: string
     value: string
     description: string
     characteristics: string[]

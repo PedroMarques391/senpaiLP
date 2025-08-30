@@ -3,7 +3,6 @@ import { IServices } from "../types";
 const services: IServices[] = [
     {
         service: "Grátis",
-        url: "gratis",
         value: "0",
         description: "Experimente sem compromisso! Teste a BotDoSenpai e descubra como ela pode facilitar sua vida.",
         characteristics: [
@@ -16,7 +15,6 @@ const services: IServices[] = [
     },
     {
         service: "Pro",
-        url: "pro",
         value: "4.90",
         description: "Transforme suas ideias em figurinhas sem limites! Criação rápida, fácil e divertida.",
         characteristics: [
@@ -32,7 +30,6 @@ const services: IServices[] = [
     },
     {
         service: "Mestre",
-        url: "mestre",
         value: "9.90",
         description: "Ideal para donos de grupos grandes que querem mais controle, segurança e diversão no grupo.",
         characteristics: [
