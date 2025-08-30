@@ -223,6 +223,12 @@
                 "title": "🔍 Pesquisa Rápida com a Senpai",
                 "subtitle": "Quer saber algo? Deixe a Senpai fazer uma pesquisa no Google para você! Sempre trazendo os melhores resultados."
             }
+        },
+        "info": {
+            "title": "Mais diversão e praticidade no seu WhatsApp",
+            "subtitle": "A Senpai está sempre pronta para deixar suas conversas mais divertidas! Envie suas imagens e transforme-as em figurinhas de forma rápida, fácil e gratuita.",
+            "ctaLabel": "Fale com a Senpai",
+            "speechBubbleText": "Ei! Quer saber mais sobre mim? 💙"
         }
     }
 }

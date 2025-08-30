@@ -222,6 +222,12 @@
                 "title": "🔍 Quick Search with Senpai",
                 "subtitle": "Want to know something? Let Senpai do a Google search for you! Always bringing the best results."
             }
+        },
+        "info": {
+            "title": "More fun and convenience on your WhatsApp",
+            "subtitle": "Senpai is always ready to make your chats more fun! Send your images and turn them into stickers quickly, easily, and for free.",
+            "ctaLabel": "Talk to Senpai",
+            "speechBubbleText": "Hey! Want to know more about me? 💙"
         }
     }
 }
