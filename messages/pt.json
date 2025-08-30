@@ -196,5 +196,33 @@
                 "bio": "Programador JavaScript com foco em machine learning, automação com IA e conhecimentos em cyber security."
             }
         }
+    },
+    "components": {
+        "functionCard": {
+            "card1": {
+                "title": "🖼️ Crie Figurinhas com a Senpai",
+                "subtitle": "Transforme imagens, GIFs e vídeos em figurinhas únicas no WhatsApp! Rápido e fácil."
+            },
+            "card2": {
+                "title": "💬 Vamos Conversar?",
+                "subtitle": "Oi, oi! Sou a Senpai, sua amiga virtual! Vamos bater um papo? Adoro fazer novas amizades e estou sempre aqui para te ajudar ou só para conversar."
+            },
+            "card3": {
+                "title": "✨ Figurinhas Sem Identificação",
+                "subtitle": "Todas as figurinhas que você criar aqui serão completamente anônimas: sem nome de autor, sem nome de pacote, apenas a figurinha."
+            },
+            "card4": {
+                "title": "📚 Biblíoteca de Figurinhas",
+                "subtitle": "Explore uma coleção incrivél de figurinhas prontas para usar."
+            },
+            "card5": {
+                "title": "🪄 Crie Figurinhas Mágicas com AI",
+                "subtitle": "Deixe sua criatividade brilhar! Com nossa inteligência artificial, você pode criar figurinhas incríveis de forma rápida e divertida."
+            },
+            "card6": {
+                "title": "🔍 Pesquisa Rápida com a Senpai",
+                "subtitle": "Quer saber algo? Deixe a Senpai fazer uma pesquisa no Google para você! Sempre trazendo os melhores resultados."
+            }
+        }
     }
 }

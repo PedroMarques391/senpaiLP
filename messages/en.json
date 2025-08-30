@@ -195,5 +195,33 @@
                 "bio": "JavaScript programmer focused on machine learning, AI automation, and cybersecurity knowledge."
             }
         }
+    },
+    "components": {
+        "functionCard": {
+            "card1": {
+                "title": "🖼️ Create Stickers with Senpai",
+                "subtitle": "Turn images, GIFs, and videos into unique WhatsApp stickers! Fast and easy."
+            },
+            "card2": {
+                "title": "💬 Let's Chat?",
+                "subtitle": "Hey there! I'm Senpai, your virtual friend! Want to have a chat? I love making new friends and I'm always here to help or just talk."
+            },
+            "card3": {
+                "title": "✨ Stickers Without Identification",
+                "subtitle": "All the stickers you create here will be completely anonymous: no author name, no package name, just the sticker."
+            },
+            "card4": {
+                "title": "📚 Sticker Library",
+                "subtitle": "Explore an amazing collection of ready-to-use stickers."
+            },
+            "card5": {
+                "title": "🪄 Create Magical Stickers with AI",
+                "subtitle": "Let your creativity shine! With our artificial intelligence, you can create amazing stickers quickly and with fun."
+            },
+            "card6": {
+                "title": "🔍 Quick Search with Senpai",
+                "subtitle": "Want to know something? Let Senpai do a Google search for you! Always bringing the best results."
+            }
+        }
     }
 }
