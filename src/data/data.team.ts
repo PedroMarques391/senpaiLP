@@ -35,7 +35,7 @@ const team: ITeamMember[] = [
         bio: "team.developer1.bio",
         links: [
             { url: "https://linkedin.com/in/pedromarques391", color: "text-blue-400", icon: "linkedin" },
-            { url: "https://instagram.com/pedromarques.py", color: "text-pink-600", icon: "instagram" },
+            { url: "https://instagram.com/pedromarques.dev", color: "text-pink-600", icon: "instagram" },
         ],
     },
     {
