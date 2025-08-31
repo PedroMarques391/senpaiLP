@@ -12,13 +12,13 @@ import {
 } from "@/src/components/ui/dialog";
 import { FormField } from "@/src/components/ui/form-field";
 import { FormProvider } from "react-hook-form";
-import { emailSchema, useEmailForm } from "@/src/hooks/useEmailForm";
 import FormDialog from "@/src/components/ui/form-diolog";
 import { Button } from "@/src/components/ui/button";
 import senpai from "../../../../public/images/thanks/thanks.png";
 import { useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useEmailForm } from "@/src/hooks/useEmailForm";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -44,7 +44,7 @@ const buttonVariants = {
 
 const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const methods = useEmailForm(emailSchema);
+    const methods = useEmailForm("partial");
     const t = useTranslations("thanks");
 
     return (
