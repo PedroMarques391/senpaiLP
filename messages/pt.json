@@ -322,6 +322,21 @@
                 "question": "O bot tem custo?",
                 "answer": "Atualmente o bot pode ter versões gratuitas e versões VIP, dependendo da sua necessidade. Consulte nossas assinaturas para saber mais."
             }
+        },
+        "dialog": {
+            "support": "Suporte",
+            "supportForm": {
+                "title": "Suporte ao Cliente",
+                "subtitle": "Online todos os dias, 24h por dia, sempre que precisar",
+                "label": {
+                    "name": "Nome",
+                    "email": "Email",
+                    "phone": "Telefone",
+                    "subject": "Assunto",
+                    "message": "Mensagem"
+                },
+                "button": "Enviar"
+            }
         }
     }
 }
