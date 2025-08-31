@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import FormDialog from "@/src/components/ui/form-diolog";
 import { FormField } from "../ui/form-field";
 import { FormProvider } from "react-hook-form";
-import { fullSchema, useEmailForm } from "@/src/hooks/useEmailForm";
+import { useEmailForm } from "@/src/hooks/useEmailForm";
 import { useTranslations } from "next-intl";
 
 interface ILayoutProps {
@@ -28,7 +28,7 @@ const Layout = ({
     container = true,
 }: ILayoutProps): React.JSX.Element => {
     const [showButton, setShowButton] = useState<boolean>(false);
-    const methods = useEmailForm(fullSchema);
+    const methods = useEmailForm("full");
     const t = useTranslations("components.dialog");
 
     useEffect(() => {
