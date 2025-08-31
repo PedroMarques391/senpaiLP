@@ -334,9 +334,18 @@
                     "phone": "Telefone",
                     "subject": "Assunto",
                     "message": "Mensagem"
-                },
-                "button": "Enviar"
-            }
+                }
+            },
+            "formErrors": {
+                "name": "O nome é obrigatório.",
+                "email": "Digite um email válido.",
+                "phone": "O telefone é obrigatório.",
+                "invalidPhone": "Número de telefone inválido.",
+                "subject": "O assunto precisa ter mais de 5 caracteres.",
+                "message": "A mensagem é obrigatória.",
+                "maxCharacters": "A mensagem deve ter no máximo 250 caracteres."
+            },
+            "dialogButton": "Enviar"
         }
     }
 }

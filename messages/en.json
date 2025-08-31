@@ -333,9 +333,18 @@
                     "phone": "Phone",
                     "subject": "Subject",
                     "message": "Message"
-                },
-                "button": "Send"
-            }
+                }
+            },
+            "formErrors": {
+                "name": "Name is required.",
+                "email": "Enter a valid email.",
+                "phone": "Enter a valid phone number.",
+                "invalidNumber": "Invalid phone number.",
+                "subject": "The subject must have more than 5 characters.",
+                "message": "Message is required.",
+                "maxCharacters": "The message must have a maximum of 250 characters."
+            },
+            "dialogButton": "Send"
         }
     }
 }
