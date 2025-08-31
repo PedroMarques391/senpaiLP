@@ -1,10 +1,8 @@
-import { sendEmail } from "../../controller/mail.controller";
 import { NextRequest, NextResponse } from "next/server";
+import { sendEmail } from "../../controller/mail.controller";
 
 export async function POST(req: NextRequest) {
     const data = await req.json();
-
-    console.log(data);
 
     try {
         await sendEmail(data);
