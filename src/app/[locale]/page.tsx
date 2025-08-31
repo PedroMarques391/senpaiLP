@@ -4,7 +4,7 @@ import FunctionsCard from "@/src/components/sections/FunctionsCard";
 import Info from "@/src/components/sections/Info";
 import Layout from "@/src/components/layout/Layout";
 import Services from "@/src/components/sections/Services";
-import { faq, functionsCardItens, services } from "@/src/data";
+import {functionsCardItens, services } from "@/src/data";
 import CarouselBenefit from "@/src/components/sections/Carousel";
 import { Faq } from "@/src/components/sections/Faq";
 import Title from "@/src/components/ui/title";
@@ -75,7 +75,7 @@ export default function Home() {
       <CarouselBenefit />
       <section className="container">
         <Title center>F.A.Q</Title>
-        <Faq faq={faq} />
+        <Faq />
       </section>
 
     </Layout>

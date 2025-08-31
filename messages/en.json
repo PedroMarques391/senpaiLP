@@ -291,6 +291,36 @@
                 "title": "Active Community",
                 "subtitle": "Connect with other users and get quick support anytime you need."
             }
+        },
+        "faq": {
+            "q1": {
+                "question": "Is the bot safe and legal?",
+                "answer": "Yes! Our bot is official on WhatsApp, built with the Meta WhatsApp Business API, 100% safe and reliable, following all platform rules."
+            },
+            "q2": {
+                "question": "Does the bot support animated stickers?",
+                "answer": "Yes! You can send short videos or GIFs, and the bot will automatically convert them into animated stickers compatible with WhatsApp."
+            },
+            "q3": {
+                "question": "How can I create my stickers?",
+                "answer": "Simply send an image, photo, video, or GIF to the bot, and it will convert it into a sticker within seconds. No extra apps needed!"
+            },
+            "q4": {
+                "question": "Do I need to install an app?",
+                "answer": "No! Everything is done directly on WhatsApp. Just add Senpai and start creating stickers."
+            },
+            "q5": {
+                "question": "Who is behind the Sticker Bot?",
+                "answer": "The Sticker Bot is developed by the Senpai team, specialized in digital solutions and WhatsApp automation."
+            },
+            "q6": {
+                "question": "What’s next for the Sticker Bot?",
+                "answer": "New features are on the way, such as special effects stickers, integration with custom packs, and much more!"
+            },
+            "q7": {
+                "question": "Does the bot have a cost?",
+                "answer": "Currently, the bot offers both free and VIP versions, depending on your needs. Check our subscriptions to learn more."
+            }
         }
     }
 }
