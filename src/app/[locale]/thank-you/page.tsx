@@ -45,7 +45,7 @@ const buttonVariants = {
 const ThanksPage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const methods = useEmailForm("partial");
-    const t = useTranslations("thanks");
+    const t = useTranslations();
 
     return (
         <Layout backgroundHeader="bg-secondary-theme">
@@ -79,14 +79,14 @@ const ThanksPage = () => {
                                 className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight"
                                 variants={itemVariants}
                             >
-                                {t("welcomeMessage")}
+                                {t("thanks.welcomeMessage")}
                             </motion.h1>
 
                             <motion.p
                                 className="text-base md:text-xl text-content-secondary mb-6 leading-relaxed"
                                 variants={itemVariants}
                             >
-                                {t("welcomeSubtitle")}
+                                {t("thanks.welcomeSubtitle")}
                             </motion.p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -95,7 +95,7 @@ const ThanksPage = () => {
                                         onClick={() => setIsOpen(true)}
                                         className="bg-content-secondary text-content-inverse font-semibold p-4 rounded-xl shadow-md transition-all w-full sm:w-auto"
                                     >
-                                        {t("finish")}
+                                        {t("thanks.finish")}
                                     </Button>
                                 </motion.div>
                                 <motion.div variants={buttonVariants}>
@@ -104,7 +104,7 @@ const ThanksPage = () => {
                                         variant="outline"
                                         className="bg-transparent border border-content-secondary text-content-primary font-semibold p-4 rounded-xl  transition-all w-full sm:w-auto hover:bg-content-primary hover:text-content-inverse"
                                     >
-                                        <Link href="/">{t("backToHome")}</Link>
+                                        <Link href="/">{t("thanks.backToHome")}</Link>
                                     </Button>
                                 </motion.div>
                             </div>
@@ -115,15 +115,15 @@ const ThanksPage = () => {
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                            <DialogTitle>{t("almostThere")}</DialogTitle>
+                            <DialogTitle>{t("thanks.almostThere")}</DialogTitle>
                             <DialogDescription>
-                                {t("formInstructions")}
+                                {t("thanks.formInstructions")}
                             </DialogDescription>
                         </DialogHeader>
                         <FormProvider {...methods}>
                             <FormDialog>
                                 <FormField
-                                    label="Nome"
+                                    label={t("components.dialog.supportForm.label.name")}
                                     name="name"
                                 />
 
@@ -134,7 +134,7 @@ const ThanksPage = () => {
                                 />
 
                                 <FormField
-                                    label="Telefone"
+                                    label={t("components.dialog.supportForm.label.phone")}
                                     name="phone"
                                     maxLength={15}
                                 />

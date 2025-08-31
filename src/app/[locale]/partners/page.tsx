@@ -9,6 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import { z } from "zod";
@@ -43,11 +44,13 @@ const PartnersPage = () => {
     const methods = useForm<PartnersData>({
         resolver: zodResolver(partnersSchema),
     });
+    const { locale } = useParams();
+
     const { handleSubmit, reset, register, formState: { errors } } = methods;
 
     async function onSubmit(data: PartnersData) {
         setLoading(true);
-        await fetch("/api/emails/partnership", {
+        await fetch(`${locale}/api/emails/partnership`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

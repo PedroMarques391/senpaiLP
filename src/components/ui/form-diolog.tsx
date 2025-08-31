@@ -6,6 +6,7 @@ import { IModalMessage } from "@/src/types";
 import { DialogFooter } from "./dialog";
 import { useParams } from "next/navigation";
 import { FullFormData } from "@/src/hooks/useEmailForm";
+import { useTranslations } from "next-intl";
 
 const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element => {
     const [loading, setLoaging] = useState<boolean>(false);
@@ -13,10 +14,11 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
     const [modalMessageItens, setModalMessageItens] = useState({} as IModalMessage);
     const { locale } = useParams();
     const { handleSubmit, reset } = useFormContext<FullFormData>();
+    const t = useTranslations("components.dialog");
 
     async function userSubmit(data: FullFormData) {
         setLoaging(true);
-        await fetch(`/${locale}/api/emails/support`, {
+        await fetch(`/${locale}/api/emails/port`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -31,8 +33,8 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
                 setEmailSend((prev) => !prev);
                 setModalMessageItens({
                     statusIcon: "check",
-                    text: "Obrigado por entrar em contato. Sua mensagem chegou direitinho e logo logo responderemos com todo carinho! 💌",
-                    textButton: "Nova Mensagem",
+                    text: t("modal.success.title"),
+                    textButton: t("modal.success.textButton"),
                     setEmailSend: setEmailSend
                 });
             })
@@ -40,8 +42,8 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
                 setEmailSend((prev) => !prev);
                 setModalMessageItens({
                     statusIcon: "x",
-                    text: "Ops! Algo deu errado ao enviar sua mensagem. Por favor, tente novamente",
-                    textButton: "Tentar Novamente",
+                    text: t("modal.error.title"),
+                    textButton: t("modal.error.textButton"),
                     setEmailSend: setEmailSend
                 });
             })
@@ -73,10 +75,10 @@ const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element =>
                                 <>
                                     <span
                                         className="inline-block h-4 w-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-                                    <span>Enviando...</span>
+                                    <span>{t("sending")}</span>
                                 </>
                             ) : (
-                                <span>Enviar</span>
+                                <span>{t("dialogButton")}</span>
                             )}
                         </Button>
                     </DialogFooter>

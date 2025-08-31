@@ -344,7 +344,18 @@
                 "message": "Message is required.",
                 "maxCharacters": "The message must have a maximum of 250 characters."
             },
-            "dialogButton": "Send"
+            "dialogButton": "Send",
+            "sending": "Sending...",
+            "modal": {
+                "success": {
+                    "title": "Thank you for getting in touch. Your message was received successfully, and we will reply shortly with all our care! 💌",
+                    "textButton": "New Message"
+                },
+                "error": {
+                    "title": "Oops! Something went wrong while sending your message. Please try again.",
+                    "textButton": "Try Again"
+                }
+            }
         }
     }
 }

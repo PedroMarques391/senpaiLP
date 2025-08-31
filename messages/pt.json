@@ -340,12 +340,23 @@
                 "name": "O nome é obrigatório.",
                 "email": "Digite um email válido.",
                 "phone": "O telefone é obrigatório.",
-                "invalidPhone": "Número de telefone inválido.",
+                "invalidNumber": "Número de telefone inválido.",
                 "subject": "O assunto precisa ter mais de 5 caracteres.",
                 "message": "A mensagem é obrigatória.",
                 "maxCharacters": "A mensagem deve ter no máximo 250 caracteres."
             },
-            "dialogButton": "Enviar"
+            "dialogButton": "Enviar",
+            "sending": "Enviando...",
+            "modal": {
+                "success": {
+                    "title": "Obrigado por entrar em contato. Sua mensagem chegou direitinho e logo logo responderemos com todo carinho! 💌",
+                    "textButton": "Nova Mensagem"
+                },
+                "error": {
+                    "title": "Ops! Algo deu errado ao enviar sua mensagem. Por favor, tente novamente",
+                    "textButton": "Tentar Novamente"
+                }
+            }
         }
     }
 }
