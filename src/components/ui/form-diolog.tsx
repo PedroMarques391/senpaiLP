@@ -4,17 +4,19 @@ import { Button } from "./button";
 import ModalMessage from "../sections/ModalMessage";
 import { IModalMessage } from "@/src/types";
 import { DialogFooter } from "./dialog";
+import { useParams } from "next/navigation";
+import { FullFormData } from "@/src/hooks/useEmailForm";
 
 const FormDialog = ({ children }: { children: ReactNode }): React.JSX.Element => {
     const [loading, setLoaging] = useState<boolean>(false);
     const [emailSend, setEmailSend] = useState<boolean>(false);
     const [modalMessageItens, setModalMessageItens] = useState({} as IModalMessage);
+    const { locale } = useParams();
+    const { handleSubmit, reset } = useFormContext<FullFormData>();
 
-    const { handleSubmit, reset } = useFormContext<FormData>();
-
-    async function userSubmit(data: FormData) {
+    async function userSubmit(data: FullFormData) {
         setLoaging(true);
-        await fetch("/api/emails/support", {
+        await fetch(`/${locale}/api/emails/support`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
