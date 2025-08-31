@@ -270,6 +270,24 @@
             },
             "bestOption": "Melhor escolha",
             "month": "Mês"
+        },
+        "carouselBenefit": {
+            "security": {
+                "title": "Segurança Garantida",
+                "subtitle": "Protegemos seus dados com criptografia de ponta a ponta."
+            },
+            "privacy": {
+                "title": "Privacidade Total",
+                "subtitle": "Seus dados são seus! Nunca compartilhamos suas informações."
+            },
+            "easy": {
+                "title": "Fácil de Usar",
+                "subtitle": "Uma interface intuitiva para você aproveitar sem complicação."
+            },
+            "updates": {
+                "title": "Atualizações Frequentes",
+                "subtitle": "Novas funcionalidades e melhorias constantes para você."
+            }
         }
     }
 }

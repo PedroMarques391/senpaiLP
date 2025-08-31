@@ -269,6 +269,24 @@
             },
             "bestOption": "Choice",
             "month": "Month"
+        },
+        "carouselBenefit": {
+            "security": {
+                "title": "Guaranteed Security",
+                "subtitle": "We protect your data with end-to-end encryption."
+            },
+            "privacy": {
+                "title": "Total Privacy",
+                "subtitle": "Your data is yours! We never share your information."
+            },
+            "easy": {
+                "title": "Easy to Use",
+                "subtitle": "An intuitive interface for you to enjoy without hassle."
+            },
+            "updates": {
+                "title": "Frequent Updates",
+                "subtitle": "New features and constant improvements for you."
+            }
         }
     }
 }
