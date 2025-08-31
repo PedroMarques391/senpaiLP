@@ -1,4 +1,3 @@
-// achievements.ts
 import { IAchievement } from "../types";
 
 const achievements: IAchievement[] = [
