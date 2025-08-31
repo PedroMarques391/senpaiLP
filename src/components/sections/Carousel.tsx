@@ -11,10 +11,12 @@ import {
 import { benefits } from "@/src/data";
 import { useEffect, useState } from "react";
 import { renderIcon } from "../shared/IconRenderer";
+import { useTranslations } from "next-intl";
 
 const CarouselBenefit = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const totalSliders: number = benefits.length;
+  const t = useTranslations("components.carouselBenefit");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -42,14 +44,14 @@ const CarouselBenefit = () => {
               <div className="p-1">
                 <div className="flex flex-col h-full rounded-2xl bg-surface-card overflow-hidden">
                   <CardTitle className="text-lg font-bold text-secondary-theme p-5 text-center">
-                    {benefit.title}
+                    {t(`${benefit.title}`)}
                   </CardTitle>
                   <div className="flex justify-center items-center p-4">
                     {renderIcon(benefit.icon)}
                   </div>
                   <CardContent className="flex flex-col flex-grow justify-center p-6 pt-2">
                     <p className="text-md text-gray-700 text-center leading-relaxed font-sans">
-                      {benefit.description}
+                      {t(`${benefit.description}`)}
                     </p>
                   </CardContent>
                 </div>

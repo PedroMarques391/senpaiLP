@@ -286,6 +286,10 @@
             "updates": {
                 "title": "Frequent Updates",
                 "subtitle": "New features and constant improvements for you."
+            },
+            "community": {
+                "title": "Active Community",
+                "subtitle": "Connect with other users and get quick support anytime you need."
             }
         }
     }

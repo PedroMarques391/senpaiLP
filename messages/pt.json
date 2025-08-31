@@ -287,6 +287,10 @@
             "updates": {
                 "title": "Atualizações Frequentes",
                 "subtitle": "Novas funcionalidades e melhorias constantes para você."
+            },
+            "community": {
+                "title": "Comunidade Ativa",
+                "subtitle": "Conecte-se com outros usuários e receba suporte rápido."
             }
         }
     }
