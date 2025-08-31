@@ -9,13 +9,13 @@ import { notFound } from "next/navigation";
 import { routing } from "@/src/i18n/routing";
 import { generateMetadataProps } from "@/src/types";
 
-const montserrat = Poppins({
+const poppins = Poppins({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: "400",
 });
 
-const cabin_Condensed = Roboto({
+const roboto = Roboto({
   variable: "--font-cabin_Condensed",
   subsets: ["latin"],
   weight: "400",
@@ -76,7 +76,7 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale} className="!scroll-smooth">
-      <body className={`${montserrat.variable} ${cabin_Condensed.variable} antialiased`}>
+      <body className={`${poppins.variable} ${roboto.variable} antialiased`}>
         <Script
           id="main-schema"
           type="application/ld+json"

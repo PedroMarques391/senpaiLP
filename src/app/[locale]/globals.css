@@ -24,13 +24,13 @@
 
 
 body {
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--font-cabin_Condensed), serif;
+  font-family: var(--font-roboto), serif;
 }
 
 .speechBubble {
