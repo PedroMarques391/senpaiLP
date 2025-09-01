@@ -1,42 +1,96 @@
+import { getPathname } from "@/src/i18n/navigation";
 import type { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+const host = "https://botdosenpai.com.br";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return [
         {
-            url: "https://botdosenpai.com.br/",
-            lastModified: "2025-04-08T05:50:59+01:00",
-            changeFrequency: "yearly",
+            url: host,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            alternates: {
+                languages: {
+                    pt: host + (await getPathname({ locale: "pt", href: "/" })),
+                    es: host + (await getPathname({ locale: "es", href: "/" })),
+                    ja: host + (await getPathname({ locale: "jp", href: "/" })),
+                    en: host + (await getPathname({ locale: "en", href: "/" })),
+                },
+            },
             priority: 1,
         },
         {
-            url: "https://botdosenpai.com.br/about",
-            lastModified: "2025-04-08T05:50:59+01:00",
+            url: `${host}/about`,
+            lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 1,
+            alternates: {
+                languages: {
+                    pt: host + (await getPathname({ locale: "pt", href: "/about" })),
+                    es: host + (await getPathname({ locale: "es", href: "/about" })),
+                    ja: host + (await getPathname({ locale: "jp", href: "/about" })),
+                    en: host + (await getPathname({ locale: "en", href: "/about" })),
+                },
+            },
+            priority: 0.9,
         },
         {
-            url: "https://botdosenpai.com.br/termo-de-uso",
-            lastModified: "2025-04-08T05:50:59+01:00",
+            url: `${host}/termo-de-uso`,
+            lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 1,
+            alternates: {
+                languages: {
+                    pt: host + (await getPathname({ locale: "pt", href: "/termo-de-uso" })),
+                    es: host + (await getPathname({ locale: "es", href: "/termo-de-uso" })),
+                    ja: host + (await getPathname({ locale: "jp", href: "/termo-de-uso" })),
+                    en: host + (await getPathname({ locale: "en", href: "/termo-de-uso" })),
+                },
+            },
+            priority: 0.6,
+
         },
         {
-            url: "https://botdosenpai.com.br/privacidade",
-            lastModified: "2025-04-08T05:50:59+01:00",
+            url: `${host}/privacidade`,
+            lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 1,
+            alternates: {
+                languages: {
+                    pt: host + (await getPathname({ locale: "pt", href: "/privacidade" })),
+                    es: host + (await getPathname({ locale: "es", href: "/privacidade" })),
+                    ja: host + (await getPathname({ locale: "jp", href: "/privacidade" })),
+                    en: host + (await getPathname({ locale: "en", href: "/privacidade" })),
+                },
+            },
+            priority: 0.6,
+
         },
         {
-            url: "https://botdosenpai.com.br/partners",
-            lastModified: "2025-08-21T05:50:59+01:00",
+            url: `${host}/partners`,
+            lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 1,
+            alternates: {
+                languages: {
+                    pt: host + (await getPathname({ locale: "pt", href: "/partners" })),
+                    es: host + (await getPathname({ locale: "es", href: "/partners" })),
+                    ja: host + (await getPathname({ locale: "jp", href: "/partners" })),
+                    en: host + (await getPathname({ locale: "en", href: "/partners" })),
+                },
+            },
+            priority: 0.9,
+
         },
         {
-            url: "https://botdosenpai.com.br/thanks",
-            lastModified: "2025-08-03T05:50:59+01:00",
+            url: `${host}/thanks`,
+            lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 1,
+            alternates: {
+                languages: {
+                    pt: host + (await getPathname({ locale: "pt", href: "/thank-you" })),
+                    es: host + (await getPathname({ locale: "es", href: "/thank-you" })),
+                    ja: host + (await getPathname({ locale: "jp", href: "/thank-you" })),
+                    en: host + (await getPathname({ locale: "en", href: "/thank-you" })),
+                },
+            },
+            priority: 0.5,
         },
     ];
 }
