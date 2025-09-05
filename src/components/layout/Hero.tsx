@@ -63,8 +63,8 @@ const Hero = (): React.JSX.Element => {
                             </Link>
                             <div className="text-content-inverse font-bold flex text-sm sm:text-xs md:text-sm gap-1 flex-wrap mx-auto lg:mx-0 text-center">
                                 {t.rich("disclaimer", {
-                                    terms: (chunks) => <Link href="/termo-de-uso" className="text-[#25D366] hover:underline">{chunks}</Link>,
-                                    privacy: (chunks) => <Link href="/privacidade" className="text-[#25D366] hover:underline">{chunks}</Link>
+                                    terms: (chunks) => <Link href="/termo-de-uso" target="_blank" className="text-[#25D366] hover:underline">{chunks}</Link>,
+                                    privacy: (chunks) => <Link href="/privacidade" target="_blank" className="text-[#25D366] hover:underline">{chunks}</Link>
                                 })}
 
                             </div>
