@@ -1,10 +1,7 @@
 
 import { usePathname } from "@/src/i18n/navigation";
-import { useLocale } from "next-intl";
-
 export function useAnchor() {
     const pathname = usePathname() as string;
-    const locale = useLocale();
 
     const isHomePage = pathname === "/";
 
@@ -13,7 +10,7 @@ export function useAnchor() {
             return `#${anchorId}`;
         }
 
-        return `/${locale}#${anchorId}`;
+        return `/#${anchorId}`;
     };
 
     return { handleHref };
