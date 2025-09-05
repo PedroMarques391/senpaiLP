@@ -30,16 +30,16 @@ export const routing = defineRouting({
             "es": "/gracias"
         },
         "/privacidade": {
-            "en": "/thank-you",
-            "pt": "/agradecimento",
-            "jp": "/arigatou",
-            "es": "/gracias"
+            "en": "/privacy",
+            "pt": "/privacidade",
+            "jp": "/puraiBasii",
+            "es": "/privacidad"
         },
         "/termo-de-uso": {
-            "en": "/thank-you",
-            "pt": "/agradecimento",
-            "jp": "/arigatou",
-            "es": "/gracias"
+            "en": "/terms-of-use",
+            "pt": "/termo-de-uso",
+            "jp": "/toumuobu",
+            "es": "/terminos-de-uso"
         }
     }
 });
