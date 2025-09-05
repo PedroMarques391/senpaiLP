@@ -1,0 +1,362 @@
+{
+    "hero": {
+        "title": "Tu Nueva Amiga Virtual para Stickers en WhatsApp",
+        "cta": "Empezar en WhatsApp",
+        "disclaimer": "Al hacer clic en el botón, aceptas los <terms>Términos de Uso</terms> y la <privacy>Política de Privacidad</privacy>",
+        "terms": "Términos de Uso",
+        "privacy": "Política de Privacidad",
+        "videoSupport": "Tu navegador no soporta video",
+        "achievements": {
+            "uptime": "¡Disponibilidad garantizada para ti, siempre en línea cuando lo necesites!",
+            "years": "Ayudando a las personas a expresarse de forma única.",
+            "stickers": "¡Stickers creados con cariño y compartidos por el mundo!"
+        },
+        "type": {
+            "percentage": "%",
+            "years": "años",
+            "amount": "Millones"
+        }
+    },
+    "header": {
+        "home": "Inicio",
+        "features": "Funcionalidades",
+        "subscriptions": "Suscripciones",
+        "aboutUs": "Sobre Nosotros",
+        "beAPartner": "Sé un Socio",
+        "chatWithSenpai": "Habla con Senpai"
+    },
+    "home": {
+        "question": "¿Qué puede hacer Senpai por ti hoy?",
+        "plans": "Conoce nuestros planes",
+        "benefits": "¿Cuáles son los Beneficios?"
+    },
+    "thanks": {
+        "welcomeMessage": "¡Ooh, qué felicidad! 🥹🖤",
+        "welcomeSubtitle": "¡Ahora eres parte de nuestra comunidad especial! Muchas gracias por confiar en nosotros. Disfruta de cada función de tu suscripción. Cualquier duda, siempre estamos aquí.",
+        "finish": "Finalizar",
+        "backToHome": "Volver al Inicio",
+        "almostThere": "¡Casi listo!",
+        "formInstructions": "Completa el formulario a continuación con tus datos para activar tu acceso y disfrutar de todos los beneficios."
+    },
+    "partners": {
+        "title": "Únete a Nosotros. Crece con Nosotros.",
+        "subtitle": "Expande tu negocio y alcanza nuevos clientes convirtiéndote en un socio oficial de",
+        "beAPartner": "Quiero ser un Socio",
+        "question": "¿Por qué ser nuestro Socio?",
+        "response": "Ofrecemos un ecosistema completo para que prosperes y agregues más valor a tus clientes.",
+        "start": "¿Listo para Empezar?",
+        "reasons": {
+            "increaseRevenue": {
+                "title": "Aumenta tus ingresos",
+                "text": "Gana comisiones atractivas por cada cliente referido o venta realizada a través de nuestra asociación."
+            },
+            "increaseAudience": {
+                "title": "Aumenta la audiencia de tu marca",
+                "text": "Utiliza nuestro bot para atraer a más personas, captar nuevos clientes y ampliar la presencia de tu marca en el mundo digital."
+            },
+            "exclusiveDiscounts": {
+                "title": "Ofrece descuentos exclusivos",
+                "text": "Proporciona ventajas especiales a tus clientes con cupones y condiciones exclusivas, generando fidelización y más ventas."
+            }
+        },
+        "steps": {
+            "process": "El proceso es simple",
+            "registration": {
+                "title": "Registro",
+                "description": "Completa el formulario de interés a continuación. Es rápido y fácil."
+            },
+            "review": {
+                "title": "Análisis",
+                "description": "Nuestro equipo se pondrá en contacto para entender tus necesidades."
+            },
+            "partnership": {
+                "title": "Asociación",
+                "description": "¡Después de la aprobación, recibes el acceso e inicias la asociación!"
+            }
+        },
+        "formErrors": {
+            "name": "El nombre es obligatorio y debe tener al menos 4 caracteres.",
+            "email": "Introduce un correo electrónico válido.",
+            "phoneMin": "El teléfono es obligatorio y debe tener al menos 10 dígitos.",
+            "phoneInvalid": "Número de teléfono inválido. Usa el formato (99) 99999-9999.",
+            "segment": "Necesitamos saber el segmento de tu empresa.",
+            "proposal": "Selecciona el tipo de propuesta de tu empresa.",
+            "publicInfo": "Necesitamos saber tu público objetivo.",
+            "budgeting": "El presupuesto o contrapartida es obligatorio.",
+            "more": "No seas tímido, cuéntanos más sobre ti (mínimo 10 caracteres)."
+        },
+        "formLabels": {
+            "name": "Nombre completo / nombre de la empresa",
+            "email": "Correo electrónico",
+            "phone": "Teléfono",
+            "segment": "Segmento",
+            "proposal": "Tipo de propuesta",
+            "option": "Selecciona una opción",
+            "disclosure": "Divulgación de marca",
+            "services": "Intercambio de Servicios",
+            "partnership": "Patrocinio",
+            "other": "Otro",
+            "publicInfo": "¿A qué público deseas llegar?",
+            "budgeting": "¿Qué tipo de presupuesto o contrapartida piensas ofrecer?",
+            "more": "Cuéntanos más sobre tu idea",
+            "sending": "Enviando...",
+            "send": "Enviar"
+        }
+    },
+    "metadata": {
+        "home": {
+            "title": "BotDoSenpai - Crea Stickers",
+            "description": "¡Senpai es el bot de stickers para WhatsApp más querido de Brasil! Transforma imágenes, GIFs y videos en stickers animados en segundos. Todo 100% gratuito, sin necesidad de descargar nada, y con funciones exclusivas para hacer tus conversaciones más divertidas, creativas y personalizadas.",
+            "keywords": [
+                "bot de sticker",
+                "WhatsApp",
+                "stickers divertidos",
+                "BotSenpai",
+                "conversaciones animadas",
+                "stickers",
+                "senpai",
+                "dosenpai"
+            ]
+        },
+        "thanks": {
+            "title": "Gracias 🫶🏻",
+            "description": "¡Agradecemos que formes parte de nuestra comunidad! Tu participación ayuda a difundir ternura y alegría con stickers personalizados en WhatsApp.",
+            "keywords": [
+                "stickers",
+                "bot de stickers",
+                "bot de whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "thanks",
+                "gracias",
+                "agradecimiento"
+            ]
+        },
+        "partners": {
+            "title": "¡Sé un Socio!",
+            "description": "Únete a BotDoSenpai como socio y ayuda a llevar stickers personalizados a más personas en WhatsApp. ¡Descubre beneficios exclusivos para socios y forma parte de esta comunidad!",
+            "keywords": [
+                "asociación",
+                "socios",
+                "stickers",
+                "bot de stickers",
+                "whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "beneficios socios",
+                "comunidad"
+            ]
+        },
+        "about": {
+            "title": "BotDoSenpai - Sobre Nosotros",
+            "description": "Conoce al equipo detrás de Bot do Senpai y la misión de difundir ternura en WhatsApp con stickers personalizados.",
+            "keywords": [
+                "stickers",
+                "bot de stickers",
+                "bot de whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "quiénes somos",
+                "sobre nosotros",
+                "about us",
+                "about"
+            ]
+        }
+    },
+    "footer": {
+        "quickAccess": "Accesos Rápidos",
+        "followUs": "Síguenos",
+        "rights": "© 2025 Todos los derechos reservados",
+        "community": "Comunidad"
+    },
+    "about": {
+        "title1": "Reconocimiento",
+        "paragraph1": "Desde 2020, Bot do Senpai ha ido ganando su espacio en las redes sociales y en la mente de los usuarios. Nuestro número fue compartido orgánicamente miles de veces, destacando en publicaciones virales en Twitter que superaron millones de visualizaciones, incluso por usuarios de diferentes países.",
+        "title2": "¿Cómo lo hacemos?",
+        "paragraph2": "Transformamos mensajes en momentos únicos. Combinamos inteligencia artificial y lenguaje natural para garantizar que cada persona se sienta escuchada, comprendida y acogida, todo directamente en WhatsApp.",
+        "title3": "¿Qué nos hace diferentes?",
+        "paragraph3": "Cada detalle de Senpai fue creado a partir de interacciones reales: observamos qué acerca, qué confunde, qué realmente marca la diferencia. Desarrollamos una IA que escucha, comprende y responde con empatía y claridad, porque creemos que conversar bien es transformar experiencias. Al final, nuestro propósito es simple: hacer los diálogos más humanos, exactamente donde ocurren de forma natural: en tu WhatsApp.",
+        "meetOurTeam": "Conoce a nuestro equipo",
+        "aDedicatedTeam": "Un equipo dedicado a transformar interacciones en experiencias increíbles.",
+        "team": {
+            "ceo": {
+                "title": "CEO",
+                "bio": "A lo largo de mi trayectoria, siempre he buscado liderar con pasión, visión y compromiso con Senpai."
+            },
+            "cto": {
+                "title": "CTO",
+                "bio": "Desarrollador fullstack, ex abogado y padre de niñas."
+            },
+            "developer1": {
+                "title": "Desarrollador",
+                "bio": "Responsable de transformar ideas en soluciones prácticas y escalables, siempre enfocado en la eficiencia y la calidad."
+            },
+            "developer2": {
+                "title": "Desarrollador",
+                "bio": "Programador JavaScript con enfoque en machine learning, automatización con IA y conocimientos en ciberseguridad."
+            }
+        }
+    },
+    "components": {
+        "functionCard": {
+            "card1": {
+                "title": "🖼️ Crea Stickers con Senpai",
+                "subtitle": "¡Transforma imágenes, GIFs y videos en stickers únicos en WhatsApp! Rápido y fácil."
+            },
+            "card2": {
+                "title": "💬 ¿Hablamos?",
+                "subtitle": "¡Hola, hola! Soy Senpai, ¡tu amiga virtual! ¿Charlamos un rato? Me encanta hacer nuevos amigos y siempre estoy aquí para ayudarte o simplemente para conversar."
+            },
+            "card3": {
+                "title": "✨ Stickers Sin Identificación",
+                "subtitle": "Todos los stickers que crees aquí serán completamente anónimos: sin nombre de autor, sin nombre de paquete, solo el sticker."
+            },
+            "card4": {
+                "title": "📚 Biblioteca de Stickers",
+                "subtitle": "Explora una increíble colección de stickers listos para usar."
+            },
+            "card5": {
+                "title": "🪄 Crea Stickers Mágicos con IA",
+                "subtitle": "¡Deja que tu creatividad brille! Con nuestra inteligencia artificial, puedes crear stickers increíbles de forma rápida y divertida."
+            },
+            "card6": {
+                "title": "🔍 Búsqueda Rápida con Senpai",
+                "subtitle": "¿Quieres saber algo? ¡Deja que Senpai haga una búsqueda en Google por ti! Siempre trayendo los mejores resultados."
+            }
+        },
+        "info": {
+            "title": "Más diversión y practicidad en tu WhatsApp",
+            "subtitle": "¡Senpai siempre está lista para hacer tus conversaciones más divertidas! Envía tus imágenes y transfórmalas en stickers de forma rápida, fácil y gratuita.",
+            "ctaLabel": "Habla con Senpai",
+            "speechBubbleText": "¡Oye! ¿Quieres saber más sobre mí? 💙"
+        },
+        "services": {
+            "free": {
+                "service": "Gratis",
+                "description": "¡Prueba sin compromiso! Prueba BotDoSenpai y descubre cómo puede facilitar tu vida.",
+                "characteristics": [
+                    "Crea 2 stickers diariamente"
+                ],
+                "textButton": "Prueba gratis"
+            },
+            "pro": {
+                "service": "Pro",
+                "description": "¡Transforma tus ideas en stickers sin límites! Creación rápida, fácil y divertida.",
+                "characteristics": [
+                    "Creación ilimitada de stickers",
+                    "Habla conmigo, soy una IA lista para responder",
+                    "Actualizaciones para tener siempre la mejor experiencia",
+                    "Soporte dedicado para resolver todas tus dudas"
+                ],
+                "textButton": "Suscríbete Ahora"
+            },
+            "master": {
+                "service": "Maestro",
+                "description": "Ideal para dueños de grupos grandes que quieren más control, seguridad y diversión en el grupo.",
+                "characteristics": [
+                    "Moderación avanzada",
+                    "Antienlace automático",
+                    "Horario programado",
+                    "Mensajes de bienvenida",
+                    "Minijuegos y comandos dinámicos",
+                    "Descarga videos de Instagram y Twitter",
+                    "Editor de stickers",
+                    "Stickers con fondo transparente",
+                    "Transforma frases en stickers",
+                    "Convierte stickers en imágenes",
+                    "Actualizaciones semanales"
+                ],
+                "textButton": "Suscríbete Ahora"
+            },
+            "bestOption": "Mejor opción",
+            "month": "Mes"
+        },
+        "carouselBenefit": {
+            "security": {
+                "title": "Seguridad Garantizada",
+                "subtitle": "Protegemos tus datos con cifrado de extremo a extremo."
+            },
+            "privacy": {
+                "title": "Privacidad Total",
+                "subtitle": "¡Tus datos son tuyos! Nunca compartimos tu información."
+            },
+            "easy": {
+                "title": "Fácil de Usar",
+                "subtitle": "Una interfaz intuitiva para que disfrutes sin complicaciones."
+            },
+            "updates": {
+                "title": "Actualizaciones Frecuentes",
+                "subtitle": "Nuevas funcionalidades y mejoras constantes para ti."
+            },
+            "community": {
+                "title": "Comunidad Activa",
+                "subtitle": "Conéctate con otros usuarios y recibe soporte rápido."
+            }
+        },
+        "faq": {
+            "q1": {
+                "question": "¿El bot es seguro y legal?",
+                "answer": "¡Sí! Nuestro bot es oficial de WhatsApp, hecho con la API de Meta WhatsApp Business, 100% seguro y confiable, siguiendo todas las reglas de la plataforma."
+            },
+            "q2": {
+                "question": "¿El bot soporta stickers animados?",
+                "answer": "¡Sí! Puedes enviar videos cortos o GIFs y el bot los transforma automáticamente en stickers animados compatibles con WhatsApp."
+            },
+            "q3": {
+                "question": "¿Cómo puedo crear mis stickers?",
+                "answer": "Simplemente envía una imagen, foto, video o GIF al bot, y ella hará la conversión a sticker en pocos segundos. ¡No necesitas aplicaciones adicionales!"
+            },
+            "q4": {
+                "question": "¿Necesito descargar alguna aplicación?",
+                "answer": "¡No! Todo se hace directamente en WhatsApp. Solo tienes que añadir a Senpai y empezar a crear stickers."
+            },
+            "q5": {
+                "question": "¿Quién está detrás del Bot de Stickers?",
+                "answer": "El Bot de Stickers es desarrollado por el equipo de Senpai, especializado en soluciones digitales y automatización para WhatsApp."
+            },
+            "q6": {
+                "question": "¿Qué le depara el futuro al Bot de Stickers?",
+                "answer": "Se están planeando nuevas funciones, como stickers con efectos especiales, integración con paquetes personalizados ¡y mucho más!"
+            },
+            "q7": {
+                "question": "¿El bot tiene algún costo?",
+                "answer": "Actualmente, el bot puede tener versiones gratuitas y versiones VIP, dependiendo de tu necesidad. Consulta nuestras suscripciones para saber más."
+            }
+        },
+        "dialog": {
+            "support": "Soporte",
+            "supportForm": {
+                "title": "Soporte al Cliente",
+                "subtitle": "En línea todos los días, 24h al día, siempre que lo necesites",
+                "label": {
+                    "name": "Nombre",
+                    "email": "Correo electrónico",
+                    "phone": "Teléfono",
+                    "subject": "Asunto",
+                    "message": "Mensaje"
+                }
+            },
+            "formErrors": {
+                "name": "El nombre es obligatorio.",
+                "email": "Introduce un correo electrónico válido.",
+                "phone": "El teléfono es obligatorio.",
+                "invalidNumber": "Número de teléfono inválido.",
+                "subject": "El asunto debe tener más de 5 caracteres.",
+                "message": "El mensaje es obligatorio.",
+                "maxCharacters": "El mensaje debe tener un máximo de 250 caracteres."
+            },
+            "dialogButton": "Enviar",
+            "sending": "Enviando...",
+            "modal": {
+                "success": {
+                    "title": "Gracias por contactarnos. ¡Tu mensaje ha llegado correctamente y pronto te responderemos con mucho cariño! 💌",
+                    "textButton": "Nuevo Mensaje"
+                },
+                "error": {
+                    "title": "¡Ups! Algo salió mal al enviar tu mensaje. Por favor, inténtalo de nuevo",
+                    "textButton": "Intentar de Nuevo"
+                }
+            }
+        }
+    }
+}

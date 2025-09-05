@@ -1,6 +1,6 @@
 export interface IAchievement {
     title: number;
-    description: string;
+    descriptionKey: string;
     duration: number;
     type: string;
 }

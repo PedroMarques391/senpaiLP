@@ -1,7 +1,7 @@
-"use client"
-import Image from "next/image"
-import { useRef } from "react"
-import { motion, useInView } from "motion/react"
+"use client";
+import Image from "next/image";
+import { useRef } from "react";
+import { motion, useInView } from "motion/react";
 
 interface IFunctionsCardProps {
     imagePath: string
@@ -10,8 +10,8 @@ interface IFunctionsCardProps {
 }
 
 const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): React.JSX.Element => {
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
     return (
         <div
@@ -57,7 +57,7 @@ const FunctionsCard = ({ imagePath, title, subtitle }: IFunctionsCardProps): Rea
             </div>
 
         </div>
-    )
-}
+    );
+};
 
-export default FunctionsCard
+export default FunctionsCard;

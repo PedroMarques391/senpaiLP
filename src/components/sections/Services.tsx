@@ -1,10 +1,11 @@
-"use client"
-import React, { useRef } from 'react'
-import { Button } from '@/src/components/ui/button'
-import { ArrowRight, CheckCircle } from 'lucide-react'
-import { motion, useInView } from "motion/react"
-import Link from 'next/link'
-import { IServices } from '@/src/types'
+"use client";
+import React, { useRef } from "react";
+import { Button } from "@/src/components/ui/button";
+import { ArrowRight, CheckCircle } from "lucide-react";
+import { motion, useInView } from "motion/react";
+import Link from "next/link";
+import { IServices } from "@/src/types";
+import { useTranslations } from "next-intl";
 
 const Services = ({
     service,
@@ -15,19 +16,19 @@ const Services = ({
     bestOption,
     paymentLink,
 }: IServices): React.JSX.Element => {
+    const ref = useRef(null);
+    const isInView = useInView(ref);
 
-    const ref = useRef(null)
-    const isInView = useInView(ref)
-
-    const listRef = useRef(null)
-    const isInListView = useInView(listRef)
+    const listRef = useRef(null);
+    const isInListView = useInView(listRef);
+const t = useTranslations("components.services");
 
     return (
-        <div className={`${bestOption ? 'scale-105 bg-gradient-to-t from-primary-theme/80  to-content-primary p-1' : 'p-6'}  max-w-[400px] bg-surface-card rounded-2xl h-auto md:h-full group`}>
-            <div className={`${bestOption && 'bg-[#ffffff] rounded-2xl p-6'} relative flex flex-col h-auto md:h-full`}>
+        <div className={`${bestOption ? "scale-105 bg-gradient-to-t from-primary-theme/80  to-content-primary p-1" : "p-6"}  max-w-[400px] bg-surface-card rounded-2xl h-auto md:h-full group`}>
+            <div className={`${bestOption && "bg-[#ffffff] rounded-2xl p-6"} relative flex flex-col h-auto md:h-full`}>
                 {bestOption && (
                     <span className="absolute top-3 right-4 bg-content-primary text-white text-xs p-2 rounded-full font-semibold tracking-wide z-10 ">
-                        Melhor escolha
+                        {t("bestOption")}
                     </span>
                 )}
 
@@ -41,22 +42,21 @@ const Services = ({
                         {service}
                     </motion.h1>
 
-
                     <motion.h2
                         ref={ref}
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
-                        transition={{ type: 'spring', stiffness: 120, delay: 0.2 }}
+                        transition={{ type: "spring", stiffness: 120, delay: 0.2 }}
                         className="text-4xl font-extrabold text-content-primary mt-2"
                     >
                         R$ {value}
-                        <span className="text-lg font-medium text-content-secondary">/ mês</span>
+                        <span className="text-lg font-medium text-content-secondary">/{t("month")}</span>
                     </motion.h2>
 
                     <motion.p
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
-                        transition={{ type: 'spring', stiffness: 100, delay: 0.4 }}
+                        transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
                         className="secondary md:text-base py-3 bg-gradient-to-r from-secondary-theme via-secondary-theme/80 to-secondary-theme/60  bg-clip-text text-transparent transition-colors duration-700   group-hover:from-purple-500 group-hover:via-pink-400 group-hover:to-purple-700"
                     >
                         {description}
@@ -95,9 +95,8 @@ const Services = ({
                 </Link>
             </div>
 
-
         </div>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;

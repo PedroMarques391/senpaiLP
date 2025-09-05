@@ -1,0 +1,362 @@
+{
+    "hero": {
+        "title": "Sua Nova Amiga Virtual para Figurinhas no WhatsApp",
+        "cta": "Começar no WhatsApp",
+        "disclaimer": "Ao clicar no botão, você concorda com os <terms>Termos de Uso</terms> e <privacy>Política de Privacidade</privacy>",
+        "terms": "Termos de Uso",
+        "privacy": "Política de Privacidade",
+        "videoSupport": "Seu navegador não suporta vídeo",
+        "achievements": {
+            "uptime": "Disponibilidade garantida para você, sempre online quando precisar!",
+            "years": "Ajudando pessoas a se expressarem de forma única.",
+            "stickers": "Figurinhas criadas com carinho e compartilhadas pelo mundo!"
+        },
+        "type": {
+            "percentage": "%",
+            "years": "anos",
+            "amount": "Milhões"
+        }
+    },
+    "header": {
+        "home": "Início",
+        "features": "Funcionalidades",
+        "subscriptions": "Assinaturas",
+        "aboutUs": "Sobre Nós",
+        "beAPartner": "Seja um Parceiro",
+        "chatWithSenpai": "Converse com a Senpai"
+    },
+    "home": {
+        "question": "O que a Senpai pode fazer por você hoje?",
+        "plans": "Conheça nossos planos",
+        "benefits": "Quais são os Benefícios?"
+    },
+    "thanks": {
+        "welcomeMessage": "Oooown, que felicidade! 🥹🖤",
+        "welcomeSubtitle": "Agora você faz parte da nossa comunidade especial! Muito obrigada por confiar na gente. Aproveite cada recurso da sua assinatura. Qualquer dúvida, estamos sempre por aqui.",
+        "finish": "Finalizar",
+        "backToHome": "Voltar ao Início",
+        "almostThere": "Quase lá!",
+        "formInstructions": "Complete o formulário abaixo com seus dados para ativar seu acesso e aproveitar todos os benefícios."
+    },
+    "partners": {
+        "title": "Junte-se a Nós. Cresça Conosco.",
+        "subtitle": "Expanda seus negócios e alcance novos clientes tornando-se um parceiro oficial do",
+        "beAPartner": "Quero ser um Parceiro",
+        "question": "Por que ser nosso Parceiro?",
+        "response": "Oferecemos um ecossistema completo para você prosperar e agregar mais valor aos seus clientes.",
+        "start": "Pronto para Começar?",
+        "reasons": {
+            "increaseRevenue": {
+                "title": "Aumente sua receita",
+                "text": "Ganhe comissões atrativas por cada cliente indicado ou venda realizada através da nossa parceria."
+            },
+            "increaseAudience": {
+                "title": "Aumente o público da sua marca",
+                "text": "Utilize nosso bot para atrair mais pessoas, engajar novos clientes e ampliar a presença da sua marca no digital."
+            },
+            "exclusiveDiscounts": {
+                "title": "Ofereça descontos exclusivos",
+                "text": "Proporcione vantagens especiais para seus clientes com cupons e condições exclusivas, gerando fidelização e mais vendas."
+            }
+        },
+        "steps": {
+            "process": "O processo é simples",
+            "registration": {
+                "title": "Cadastro",
+                "description": "Preencha o formulário de interesse abaixo. É rápido e fácil.."
+            },
+            "review": {
+                "title": "Análise",
+                "description": "Nossa equipe entrará em contato para entender suas necessidades."
+            },
+            "partnership": {
+                "title": "Parceria",
+                "description": "Após a aprovação, você recebe o acesso e inicia a parceria!"
+            }
+        },
+        "formErrors": {
+            "name": "O nome é obrigatório e deve ter pelo menos 4 caracteres.",
+            "email": "Digite um e-mail válido.",
+            "phoneMin": "O telefone é obrigatório e deve ter pelo menos 10 dígitos.",
+            "phoneInvalid": "Número de telefone inválido. Use o formato (99) 99999-9999.",
+            "segment": "Precisamos saber o segmento da sua empresa.",
+            "proposal": "Selecione o tipo de proposta da sua empresa.",
+            "publicInfo": "Precisamos saber o seu público-alvo.",
+            "budgeting": "O orçamento ou contrapartida é obrigatório.",
+            "more": "Não seja tímido, conte mais sobre você (mínimo 10 caracteres)."
+        },
+        "formLabels": {
+            "name": "Nome completo / nome da empresa",
+            "email": "Email",
+            "phone": "Telefone",
+            "segment": "Segmento",
+            "proposal": "Tipo de proposta",
+            "option": "Selecione uma opção",
+            "disclosure": "Divulgação de marca",
+            "services": "Troca de Serviços",
+            "partnership": "Patrocínio",
+            "other": "Outro",
+            "publicInfo": "Qual público você deseja atingir?",
+            "budgeting": "Qual tipo de orçamento ou contrapartida você pensa em oferecer?",
+            "more": "Conte mais sobre sua ideia",
+            "sending": "Enviando...",
+            "send": "Enviar"
+        }
+    },
+    "metadata": {
+        "home": {
+            "title": "BotDoSenpai - Crie Figurinhas",
+            "description": "A Senpai é o bot de figurinhas para WhatsApp mais querida do Brasil! Transforme imagens, GIFs e vídeos em figurinhas animadas em segundos. Tudo 100% gratuito, sem precisar baixar nada, e com recursos exclusivos para deixar suas conversas mais divertidas, criativas e personalizadas.",
+            "keywords": [
+                "bot de figurinha",
+                "WhatsApp",
+                "figurinhas divertidas",
+                "BotSenpai",
+                "conversas animadas",
+                "figurinhas",
+                "senpai",
+                "dosenpai"
+            ]
+        },
+        "thanks": {
+            "title": "Obrigadaaa 🫶🏻",
+            "description": "Agradecemos por fazer parte da nossa comunidade! Sua participação ajuda a espalhar fofura e alegria com figurinhas personalizadas no WhatsApp.",
+            "keywords": [
+                "figurinhas",
+                "bot de figurinhas",
+                "bot de whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "thanks",
+                "obrigada",
+                "agradecimento"
+            ]
+        },
+        "partners": {
+            "title": "Seja um Parceiro!",
+            "description": "Junte-se ao BotDoSenpai como parceiro e ajude a levar figurinhas personalizadas para mais pessoas no WhatsApp. Descubra benefícios exclusivos para parceiros e faça parte dessa comunidade!",
+            "keywords": [
+                "parceria",
+                "parceiros",
+                "figurinhas",
+                "bot de figurinhas",
+                "whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "benefícios parceiros",
+                "comunidade"
+            ]
+        },
+        "about": {
+            "title": "BotDoSenpai - Sobre Nós",
+            "description": "Conheça o time por trás do Bot do Senpai e a missão de espalhar fofura no WhatsApp com figurinhas personalizadas",
+            "keywords": [
+                "figurinhas",
+                "bot de figurinhas",
+                "bot de whatsapp",
+                "senpai bot",
+                "botdosenpai",
+                "quem somos",
+                "sobre nós",
+                "about us",
+                "about"
+            ]
+        }
+    },
+    "footer": {
+        "quickAccess": "Acessos Rápidos",
+        "followUs": "Siga-nos",
+        "rights": "© 2025 Todos os direitos reservados",
+        "community": "Comunidade"
+    },
+    "about": {
+        "title1": "Reconhecimento",
+        "paragraph1": "Desde 2020, o Bot do Senpai vem conquistando seu espaço nas redes sociais e na mente dos usuários. Nosso número foi compartilhado organicamente milhares de vezes, com destaque em postagens virais no Twitter que ultrapassaram milhões de visualizações, inclusive por usuários de diferentes países.",
+        "title2": "Como fazemos?",
+        "paragraph2": "Transformamos mensagens em momentos únicos. Combinamos inteligência artificial e linguagem natural para garantir que cada pessoa se sinta ouvida, compreendida e acolhida — tudo isso direto no WhatsApp.",
+        "title3": "O que nos torna diferentes?",
+        "paragraph3": "Cada detalhe da Senpai foi criado a partir de interações reais — observamos o que aproxima, o que confunde, o que realmente faz a diferença. Desenvolvemos uma IA que escuta, compreende e responde com empatia e clareza, porque acreditamos que conversar bem é transformar experiências. No fim das contas, nosso propósito é simples: tornar os diálogos mais humanos, exatamente onde eles acontecem de forma natural — no seu WhatsApp.",
+        "meetOurTeam": "Conheça nosso time",
+        "aDedicatedTeam": "Um time dedicado a transformar interações em experiências incríveis.",
+        "team": {
+            "ceo": {
+                "title": "CEO",
+                "bio": "Ao longo da minha jornada, sempre busquei liderar com paixão, visão e comprometimento com a Senpai."
+            },
+            "cto": {
+                "title": "CTO",
+                "bio": "Desenvolvedor fullstack, ex advogado e pai de meninas."
+            },
+            "developer1": {
+                "title": "Desenvolvedor",
+                "bio": "Responsável por transformar ideias em soluções práticas e escaláveis, sempre com foco em eficiência e qualidade."
+            },
+            "developer2": {
+                "title": "Desenvolvedor",
+                "bio": "Programador JavaScript com foco em machine learning, automação com IA e conhecimentos em cyber security."
+            }
+        }
+    },
+    "components": {
+        "functionCard": {
+            "card1": {
+                "title": "🖼️ Crie Figurinhas com a Senpai",
+                "subtitle": "Transforme imagens, GIFs e vídeos em figurinhas únicas no WhatsApp! Rápido e fácil."
+            },
+            "card2": {
+                "title": "💬 Vamos Conversar?",
+                "subtitle": "Oi, oi! Sou a Senpai, sua amiga virtual! Vamos bater um papo? Adoro fazer novas amizades e estou sempre aqui para te ajudar ou só para conversar."
+            },
+            "card3": {
+                "title": "✨ Figurinhas Sem Identificação",
+                "subtitle": "Todas as figurinhas que você criar aqui serão completamente anônimas: sem nome de autor, sem nome de pacote, apenas a figurinha."
+            },
+            "card4": {
+                "title": "📚 Biblíoteca de Figurinhas",
+                "subtitle": "Explore uma coleção incrivél de figurinhas prontas para usar."
+            },
+            "card5": {
+                "title": "🪄 Crie Figurinhas Mágicas com AI",
+                "subtitle": "Deixe sua criatividade brilhar! Com nossa inteligência artificial, você pode criar figurinhas incríveis de forma rápida e divertida."
+            },
+            "card6": {
+                "title": "🔍 Pesquisa Rápida com a Senpai",
+                "subtitle": "Quer saber algo? Deixe a Senpai fazer uma pesquisa no Google para você! Sempre trazendo os melhores resultados."
+            }
+        },
+        "info": {
+            "title": "Mais diversão e praticidade no seu WhatsApp",
+            "subtitle": "A Senpai está sempre pronta para deixar suas conversas mais divertidas! Envie suas imagens e transforme-as em figurinhas de forma rápida, fácil e gratuita.",
+            "ctaLabel": "Fale com a Senpai",
+            "speechBubbleText": "Ei! Quer saber mais sobre mim? 💙"
+        },
+        "services": {
+            "free": {
+                "service": "Grátis",
+                "description": "Experimente sem compromisso! Teste a BotDoSenpai e descubra como ela pode facilitar sua vida.",
+                "characteristics": [
+                    "Crie 2 figurinha diariamente"
+                ],
+                "textButton": "Teste grátis"
+            },
+            "pro": {
+                "service": "Pro",
+                "description": "Transforme suas ideias em figurinhas sem limites! Criação rápida, fácil e divertida.",
+                "characteristics": [
+                    "Criação ilimitada de figurinhas",
+                    "Converse comigo, sou uma IA pronta para responder",
+                    "Atualizações para sempre ter a melhor experiência",
+                    "Suporte dedicado para tirar todas as suas dúvidas"
+                ],
+                "textButton": "Assine Agora"
+            },
+            "master": {
+                "service": "Mestre",
+                "description": "Ideal para donos de grupos grandes que querem mais controle, segurança e diversão no grupo.",
+                "characteristics": [
+                    "Moderação avançada",
+                    "Antilink automático",
+                    "Horário programado",
+                    "Mensagens de boas-vindas",
+                    "Mini jogos e comandos dinâmicos",
+                    "Baixe vídeos do Instagram e Twitter",
+                    "Editor de figurinhas",
+                    "Figurinhas com fundo transparente",
+                    "Transforme frases em figurinhas",
+                    "Converta figurinhas em imagens",
+                    "Atualizações semanais"
+                ],
+                "textButton": "Assine Agora"
+            },
+            "bestOption": "Melhor escolha",
+            "month": "Mês"
+        },
+        "carouselBenefit": {
+            "security": {
+                "title": "Segurança Garantida",
+                "subtitle": "Protegemos seus dados com criptografia de ponta a ponta."
+            },
+            "privacy": {
+                "title": "Privacidade Total",
+                "subtitle": "Seus dados são seus! Nunca compartilhamos suas informações."
+            },
+            "easy": {
+                "title": "Fácil de Usar",
+                "subtitle": "Uma interface intuitiva para você aproveitar sem complicação."
+            },
+            "updates": {
+                "title": "Atualizações Frequentes",
+                "subtitle": "Novas funcionalidades e melhorias constantes para você."
+            },
+            "community": {
+                "title": "Comunidade Ativa",
+                "subtitle": "Conecte-se com outros usuários e receba suporte rápido."
+            }
+        },
+        "faq": {
+            "q1": {
+                "question": "O bot é seguro e legalizado?",
+                "answer": "Sim! Nosso bot é oficial do WhatsApp, feito com a Meta WhatsApp Business API, 100% seguro e confiável, seguindo todas as regras da plataforma."
+            },
+            "q2": {
+                "question": "O bot suporta figurinhas animadas?",
+                "answer": "Sim! Você pode enviar vídeos curtos ou GIFs e o bot transforma automaticamente em figurinhas animadas compatíveis com o WhatsApp."
+            },
+            "q3": {
+                "question": "Como posso criar minhas figurinhas?",
+                "answer": "Basta enviar uma imagem, foto, vídeo ou GIF para o bot, e ela fará a conversão para figurinha em poucos segundos. Não precisa de aplicativos extras!"
+            },
+            "q4": {
+                "question": "Preciso baixar algum aplicativo?",
+                "answer": "Não! Tudo é feito diretamente no WhatsApp. Basta adicionar a Senpai e começar a criar figurinhas."
+            },
+            "q5": {
+                "question": "Quem está por trás do Bot de Figurinhas?",
+                "answer": "O Bot de Figurinha é desenvolvido pela equipe da Senpai, especializada em soluções digitais e automação para WhatsApp."
+            },
+            "q6": {
+                "question": "O que o futuro reserva para o Bot de Figurinhas?",
+                "answer": "Novas funções estão sendo planejadas, como figurinhas com efeitos especiais, integração com pacotes personalizados e muito mais!"
+            },
+            "q7": {
+                "question": "O bot tem custo?",
+                "answer": "Atualmente o bot pode ter versões gratuitas e versões VIP, dependendo da sua necessidade. Consulte nossas assinaturas para saber mais."
+            }
+        },
+        "dialog": {
+            "support": "Suporte",
+            "supportForm": {
+                "title": "Suporte ao Cliente",
+                "subtitle": "Online todos os dias, 24h por dia, sempre que precisar",
+                "label": {
+                    "name": "Nome",
+                    "email": "Email",
+                    "phone": "Telefone",
+                    "subject": "Assunto",
+                    "message": "Mensagem"
+                }
+            },
+            "formErrors": {
+                "name": "O nome é obrigatório.",
+                "email": "Digite um email válido.",
+                "phone": "O telefone é obrigatório.",
+                "invalidNumber": "Número de telefone inválido.",
+                "subject": "O assunto precisa ter mais de 5 caracteres.",
+                "message": "A mensagem é obrigatória.",
+                "maxCharacters": "A mensagem deve ter no máximo 250 caracteres."
+            },
+            "dialogButton": "Enviar",
+            "sending": "Enviando...",
+            "modal": {
+                "success": {
+                    "title": "Obrigado por entrar em contato. Sua mensagem chegou direitinho e logo logo responderemos com todo carinho! 💌",
+                    "textButton": "Nova Mensagem"
+                },
+                "error": {
+                    "title": "Ops! Algo deu errado ao enviar sua mensagem. Por favor, tente novamente",
+                    "textButton": "Tentar Novamente"
+                }
+            }
+        }
+    }
+}

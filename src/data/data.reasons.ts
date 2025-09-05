@@ -4,17 +4,17 @@ import { TrendingUp, Megaphone, Gift } from "lucide-react";
 export const reasonsCard: IReasonsCard[] = [
     {
         icon: TrendingUp,
-        title: 'Aumente sua receita',
-        text: 'Ganhe comissões atrativas por cada cliente indicado ou venda realizada através da nossa parceria.'
+        title: "reasons.increaseRevenue.title",
+        text: "reasons.increaseRevenue.text",
     },
     {
         icon: Megaphone,
-        title: 'Aumente o público da sua marca',
-        text: 'Utilize nosso bot para atrair mais pessoas, engajar novos clientes e ampliar a presença da sua marca no digital.'
+        title: "reasons.increaseAudience.title",
+        text: "reasons.increaseAudience.text",
     },
     {
         icon: Gift,
-        title: 'Ofereça descontos exclusivos',
-        text: 'Proporcione vantagens especiais para seus clientes com cupons e condições exclusivas, gerando fidelização e mais vendas.'
-    }
+        title: "reasons.exclusiveDiscounts.title",
+        text: "reasons.exclusiveDiscounts.text",
+    },
 ];

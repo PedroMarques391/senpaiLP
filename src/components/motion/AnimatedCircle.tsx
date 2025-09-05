@@ -53,7 +53,6 @@ const AnimatedCheckCircle = (): React.JSX.Element => {
     );
 };
 
-
 const AnimatedXCircle = (): React.JSX.Element => {
     return (
         <motion.svg
@@ -102,12 +101,11 @@ const AnimatedXCircle = (): React.JSX.Element => {
                 }}
             />
         </motion.svg>
-    )
-
-}
+    );
+};
 
 export {
 
     AnimatedCheckCircle,
     AnimatedXCircle
-} 
+}; 

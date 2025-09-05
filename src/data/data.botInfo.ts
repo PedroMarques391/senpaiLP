@@ -1,27 +1,24 @@
 import { IAchievement } from "../types";
 
-
 const achievements: IAchievement[] = [
     {
         title: 99.9,
-        description: "Disponibilidade garantida para você, sempre online quando precisar!",
+        descriptionKey: "uptime",
         duration: 1.0,
-        type: "%"
+        type: "percentage"
     },
     {
         title: 5,
-        description: "Ajudando pessoas a se expressarem de forma única.",
+        descriptionKey: "years",
         duration: 1.5,
-        type: "anos"
+        type: "years"
     },
     {
         title: 68,
-        description: "Figurinhas criadas com carinho e compartilhadas pelo mundo!",
+        descriptionKey: "stickers",
         duration: 2.0,
-        type: "milhões"
+        type: "amount"
     }
 ];
 
-export {
-    achievements
-}
+export { achievements };

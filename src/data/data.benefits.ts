@@ -2,32 +2,32 @@ import { IBenefit } from "../types";
 
 const benefits: IBenefit[] = [
     {
-        title: "Segurança Garantida",
-        description: "Protegemos seus dados com criptografia de ponta a ponta.",
+        title: "security.title",
+        description: "security.subtitle",
         icon: "shield"
     },
     {
-        title: "Privacidade Total",
-        description: "Seus dados são seus! Nunca compartilhamos suas informações.",
+        title: "privacy.title",
+        description: "privacy.subtitle",
         icon: "lock"
     },
     {
-        title: "Fácil de Usar",
-        description: "Uma interface intuitiva para você aproveitar sem complicação.",
+        title: "easy.title",
+        description: "easy.subtitle",
         icon: "thumbs"
     },
     {
-        title: "Comunidade Ativa",
-        description: "Conecte-se com outros usuários e receba suporte rápido.",
+        title: "community.title",
+        description: "community.subtitle",
         icon: "users"
     },
     {
-        title: "Atualizações Frequentes",
-        description: "Novas funcionalidades e melhorias constantes para você.",
+        title: "updates.title",
+        description: "updates.subtitle",
         icon: "refresh"
     }
 ];
 
 export {
     benefits
-}
+};

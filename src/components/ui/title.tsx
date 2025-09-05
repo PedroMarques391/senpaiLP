@@ -1,6 +1,4 @@
-import { ReactNode } from "react"
-
-
+import { ReactNode } from "react";
 
 interface ITitleProps {
     children: ReactNode;
@@ -15,7 +13,7 @@ const Title = ({ children, center = false }: ITitleProps): React.JSX.Element => 
         >
             {children}
         </h1>
-    )
-}
+    );
+};
 
-export default Title
+export default Title;

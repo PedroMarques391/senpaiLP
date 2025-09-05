@@ -1,12 +1,13 @@
-import React from 'react'
-import { AnimatedCheckCircle, AnimatedXCircle } from '../motion/AnimatedCircle'
-import { Button } from '../ui/button'
-import { DialogClose } from '@radix-ui/react-dialog'
-import { IModalMessage } from '@/src/types'
-
-
+import React from "react";
+import { AnimatedCheckCircle, AnimatedXCircle } from "../motion/AnimatedCircle";
+import { Button } from "../ui/button";
+import { DialogClose } from "@radix-ui/react-dialog";
+import { IModalMessage } from "@/src/types";
+import { useLocale } from "next-intl";
 
 const ModalMessage = ({ statusIcon, text, textButton, setEmailSend }: IModalMessage): React.JSX.Element => {
+    const locale = useLocale();
+    const exit = locale === "en" ? "Exit" : "Sair";
     return (
         <div className="flex flex-col items-center justify-center h-full text-center">
             {statusIcon === "x" ? <AnimatedXCircle /> : <AnimatedCheckCircle />}
@@ -18,11 +19,11 @@ const ModalMessage = ({ statusIcon, text, textButton, setEmailSend }: IModalMess
                     {textButton}
                 </Button>
                 <DialogClose asChild>
-                    <Button variant="destructive">Sair</Button>
+                    <Button variant="destructive">{exit}</Button>
                 </DialogClose>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ModalMessage
+export default ModalMessage;

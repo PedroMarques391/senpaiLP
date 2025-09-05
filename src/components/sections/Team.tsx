@@ -1,16 +1,14 @@
-"use client"
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRef } from 'react'
-import { motion, useInView } from "motion/react"
-import { renderIcon } from '../shared/IconRenderer'
-import { ITeamMember } from '@/src/types'
-
-
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useRef } from "react";
+import { motion, useInView } from "motion/react";
+import { renderIcon } from "../shared/IconRenderer";
+import { ITeamMember } from "@/src/types";
 
 const Team = ({ image, name, jobTitle, bio, links }: ITeamMember): React.JSX.Element => {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
+    const ref = useRef(null);
+    const isInView = useInView(ref);
 
     return (
         <motion.section
@@ -53,8 +51,7 @@ const Team = ({ image, name, jobTitle, bio, links }: ITeamMember): React.JSX.Ele
                 </ul>
             </div>
         </motion.section>
-    )
-}
+    );
+};
 
-export default Team
-
+export default Team;

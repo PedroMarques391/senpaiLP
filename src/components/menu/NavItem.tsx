@@ -1,43 +1,37 @@
-"use client"
-import { scrollSmooth } from '@/src/utils/scrollSmooth'
-import Link from 'next/link'
-import React, { DetailedHTMLProps, LiHTMLAttributes } from 'react'
+"use client";
+import { scrollSmooth } from "@/src/utils/scrollSmooth";
+import { useLocale } from "next-intl";
+import Link, { LinkProps } from "next/link";
+import { AnchorHTMLAttributes } from "react";
 
-interface INavItemsProps extends DetailedHTMLProps<LiHTMLAttributes<HTMLLIElement>, HTMLLIElement> {
+interface INavItemsProps extends LinkProps, AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string
+    children: React.ReactNode
 }
-
 
 export const NavItem = ({ children, href, ...props }: INavItemsProps): React.JSX.Element => {
+    const locale = useLocale();
 
     const goToHash = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        const isHash = href.startsWith('#')
-        if (isHash) {
-            scrollSmooth(href)
-            e.preventDefault()
-
-            history.pushState(null, '', href)
+        if (href.startsWith("#")) {
+            scrollSmooth(href);
+            e.preventDefault();
+            history.pushState(null, "", href);
         }
-
-    }
-
+    };
 
     return (
-        <li
-            {...props}
-
-            className={`text-center w-32 md:w-auto relative group `}>
+        <li className="text-center w-32 md:w-auto relative group ">
             <Link
+                {...props}
                 onClick={goToHash}
-                href={href}
-                className="w-full h-full block py-4 bg-transparesnt hover:bg-transparent text-center whitespace-nowrap"
-            >
+                prefetch
+                href={`/${locale}${href}`}
+                className="w-full h-full block py-4 px-2 bg-transparent hover:bg-transparent text-center whitespace-nowrap">
                 {children}
-                <p className="absolute bottom-0 left-0 group-hover:w-full group-hover:bg-white h-1 bg-white transition-all duration-300 isCurrentPath hover:w-full w-0" />
+                <p className={"absolute bottom-0 left-0 h-1 bg-white transition-all duration-300 w-0 group-hover:w-full"}
+                />
             </Link>
         </li>
-    )
-
-
-
-}
+    );
+};

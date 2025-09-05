@@ -13,4 +13,3 @@ export interface ITeamMember {
     bio: string;
     links: ITeamMemberLink[];
 }
-
