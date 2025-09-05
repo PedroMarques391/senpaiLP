@@ -19,7 +19,8 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
             <NavItem href={handleHref("plans")}>{t("subscriptions")}</NavItem>
             <NavItem href='/about' >{t("aboutUs")}</NavItem>
             <NavItem href='/partners' >{t("beAPartner")}</NavItem>
-            <Link
+            <li>
+                <Link
                 href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -28,6 +29,7 @@ const MenuDesktop = ({ handleHref }: IMenuProps): React.JSX.Element => {
             >
                 <p className='text-xs lg:text-base'>{t("chatWithSenpai")}</p>
             </Link>
+            </li>
             <SelectLang />
         </ul>
     );

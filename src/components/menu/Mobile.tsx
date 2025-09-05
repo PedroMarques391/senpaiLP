@@ -64,7 +64,8 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                     <motion.div variants={variants}>
                         <NavItem onClick={() => setIsOpen(false)} href='/partners' >{t("beAPartner")}</NavItem>
                     </motion.div>
-                    <Link
+                   <li>
+                     <Link
                         onClick={() => setIsOpen(false)}
                         href="https://wa.me/555497153068?text=Ol%C3%A1%20senpai"
                         target="_blank"
@@ -74,6 +75,7 @@ const Mobile = ({ isOpen, setIsOpen, handleHref }: IMobileProps): React.JSX.Elem
                     >
                         {t("chatWithSenpai")}
                     </Link>
+                   </li>
                     <SelectLang />
                 </motion.ul>
             )}

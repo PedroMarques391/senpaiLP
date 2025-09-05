@@ -23,8 +23,9 @@ export const SelectLang = () => {
     }
 
     return (
-        <div className="fixed top-25 left-5 lg:static">
+        <li className="fixed top-25 left-5 lg:static">
             <Select
+                name={locale}
                 defaultValue={locale}
                 onValueChange={(value) =>
                     handleSelectLocale(value as (typeof routing.locales)[number])
@@ -45,6 +46,6 @@ export const SelectLang = () => {
                     ))}
                 </SelectContent>
             </Select>
-        </div>
+        </li>
     );
 };
