@@ -31,7 +31,13 @@ export async function generateMetadata({ params }: generateMetadataProps) {
     description: t("description"),
     metadataBase: new URL("https://botdosenpai.com.br"),
     alternates: {
-      canonical: "/",
+      canonical: "https://botdosenpai.com.br/pt",
+      languages: {
+        es: "https://botdosenpai.com.br/es",
+        ja: "https://botdosenpai.com.br/jp",
+        en: "https://botdosenpai.com.br/en",
+      }
+      
     },
     authors: [{ name: "Pedro Marques" }],
     applicationName: "BotDoSenpai",
