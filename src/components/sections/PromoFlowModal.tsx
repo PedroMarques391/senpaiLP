@@ -27,9 +27,10 @@ export default function PromoFlowModal() {
   useEffect(() => {
     const fetchData = async () => {
       new Promise((resolve) => setTimeout(resolve, 2000));
-      const pixKey = await fetch("/api/payment/pix", { method: "GET" });
+      const pixKey = await fetch("/api/payment/pix");
       return pixKey.json();
     };
+
     if (steps === MODAL.PAYMENT) {
       fetchData().then((res) => {
         setPix(res.key);
