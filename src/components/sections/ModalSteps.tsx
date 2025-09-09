@@ -115,7 +115,6 @@ const FORM = ({ handleNextStep }: Omit<ModalStepsProps, "onClose">): React.JSX.E
           />
         </FormDialog>
       </FormProvider>
-      <button onClick={handleNextStep}>Fechar</button>
     </>
   );
 };
