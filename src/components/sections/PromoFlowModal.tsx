@@ -7,7 +7,7 @@ enum MODAL {
   PROMO = 1,
   FORM = 2,
   PAYMENT = 3,
-  THANKYOU = 4,
+  thankYou = 4,
 }
 
 export default function PromoFlowModal() {
@@ -46,7 +46,7 @@ export default function PromoFlowModal() {
       }, 1000);
       return () => clearTimeout(interval);
     }
-    if (steps === MODAL.THANKYOU) {
+    if (steps === MODAL.thankYou) {
       const timer = setTimeout(() => {
         markAsClaimed();
       }, 3000);
@@ -79,12 +79,12 @@ export default function PromoFlowModal() {
         {steps === MODAL.FORM && <ModalSteps.FORM handleNextStep={() => setSteps(MODAL.PAYMENT)} />}
         {steps === MODAL.PAYMENT && (
           <ModalSteps.PAYMENT
-            handleNextStep={() => setSteps(MODAL.THANKYOU)}
+            handleNextStep={() => setSteps(MODAL.thankYou)}
             pix={pix}
             countdown={countdown}
           />
         )}
-        {steps === MODAL.THANKYOU && <ModalSteps.THANKYOU onClose={markAsClaimed} />}
+        {steps === MODAL.thankYou && <ModalSteps.THANKYOU onClose={markAsClaimed} />}
       </DialogContent>
     </Dialog>
   );
