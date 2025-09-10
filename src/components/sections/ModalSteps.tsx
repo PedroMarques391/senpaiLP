@@ -130,6 +130,7 @@ const PAYMENT = ({
   countdown,
 }: Omit<PaymentProps, "onClose">): React.JSX.Element => {
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("components.modalSteps.payment");
   const minutes = Math.floor(countdown / 60);
   const seconds = countdown % 60;
   async function handleCopy() {
@@ -147,11 +148,11 @@ const PAYMENT = ({
     <section className="flex flex-col items-center justify-center gap-y-5">
       <DialogHeader>
         <DialogTitle className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-700">
-          Último passo!
+          {t("title")}
         </DialogTitle>
 
         <DialogDescription className="mt-2 text-primary-theme font-medium">
-          Finalize o pagamento via PIX para ativar seu VIP PRO com desconto.
+          {t("subtitle")}
         </DialogDescription>
       </DialogHeader>
       <div className="bg-white p-4 rounded-lg border border-[#ff80ab]">
@@ -179,13 +180,13 @@ const PAYMENT = ({
       </div>
       <span className="p-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white">
         <span className="animate-pulse ">⏳</span>
-        Tempo restante: {minutes}:{seconds.toString().padStart(2, "0")}
+        {t("time")} {minutes}:{seconds.toString().padStart(2, "0")}
       </span>
       <div className="w-full relative">
         <Input
           readOnly
           value={pix ? pix : "Gerando..."}
-          className="pr-12 bg-white border-pink-200 border-2 text-gray-800"
+          className="pr-12 bg-white border-pink-200 border-2 text-gray-800 focus-visible:border-primary-theme focus-visible:ring-[0px]"
           placeholder="PIX Copia e Cola"
         />
         <Button
@@ -205,7 +206,7 @@ const PAYMENT = ({
         onClick={handleNextStep}
         className="w-full px-6 py-4 rounded-full text-lg font-extrabold bg-gradient-to-r from-pink-500 to-purple-600 text-white  transition-transform"
       >
-        Já Paguei
+        {t("pay")}
       </Button>
     </section>
   );

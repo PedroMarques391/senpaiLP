@@ -375,6 +375,12 @@
                     "name": "Nombre",
                     "phone": "Teléfono"
                 }
+            },
+            "payment": {
+                "title": "¡Último paso!",
+                "subtitle": "Finaliza el pago a través de PIX para activar tu VIP PRO con descuento.",
+                "time": "Tiempo restante: ",
+                "pay": "Ya pagué"
             }
         }
     }

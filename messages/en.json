@@ -374,6 +374,12 @@
                     "name": "Name",
                     "phone": "Phone"
                 }
+            },
+            "payment": {
+                "title": "Last step!",
+                "subtitle": "Complete the payment via PIX to activate your discounted VIP PRO.",
+                "time": "Time remaining: ",
+                "pay": "I've already paid"
             }
         }
     }
