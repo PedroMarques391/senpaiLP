@@ -356,6 +356,16 @@
                     "textButton": "再試行"
                 }
             }
+        },
+        "modalSteps": {
+            "promo": {
+                "title": "🎉 21%オフのVIP PRO！",
+                "subtitle": "<bold>無制限</bold> 無制限のスタンプ + ChatGPT風にチャットしよう、<deleted>R$ 4,90</deleted>がわずか<inserted>R$ 3,87</inserted>に！初回アクセス限定のユニークなオファーです。",
+                "exclusive": "限定・ユニーク",
+                "iWant": "欲しい",
+                "clickIn": "続けるには「欲しい」をクリックしてください",
+                "noThanks": "いいえ、結構です"
+            }
         }
     }
 }

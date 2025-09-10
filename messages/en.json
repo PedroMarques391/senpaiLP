@@ -356,6 +356,16 @@
                     "textButton": "Try Again"
                 }
             }
+        },
+        "modalSteps": {
+            "promo": {
+                "title": "🎉 VIP PRO with 21% OFF!",
+                "subtitle": "<bold>Unlimited</bold> stickers + Chat with me ChatGPT style, from <deleted>R$ 4.90</deleted> for just <inserted>R$ 3.87</inserted>! Unique offer on your first access.",
+                "exclusive": "EXCLUSIVE · UNIQUE",
+                "iWant": "I WANT IT",
+                "clickIn": "Click 'I WANT IT' to continue",
+                "noThanks": "No, thanks"
+            }
         }
     }
 }

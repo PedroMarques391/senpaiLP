@@ -357,6 +357,16 @@
                     "textButton": "Tentar Novamente"
                 }
             }
+        },
+        "modalSteps": {
+            "promo": {
+                "title": " 🎉 VIP PRO com 21% OFF!",
+                "subtitle": "Figurinhas <bold>ilimitadas</bold> + Conversar comigo estilo ChatGPT, de <deleted>R$ 4,90</deleted> por apenas <inserted>R$ 3,87</inserted>! Oferta única no seu primeiro acesso.",
+                "exclusive": "EXCLUSIVO · ÚNICO",
+                "iWant": "EU QUERO",
+                "clickIn": "Clique em 'EU QUERO' para continuar",
+                "noThanks": "Não, obrigado"
+            }
         }
     }
 }

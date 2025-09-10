@@ -357,6 +357,16 @@
                     "textButton": "Intentar de Nuevo"
                 }
             }
+        },
+        "modalSteps": {
+            "promo": {
+                "title": "🎉 ¡VIP PRO con 21% de descuento!",
+                "subtitle": "Stickers <bold>ilimitados</bold> + Chatea conmigo al estilo ChatGPT, de <deleted>R$ 4,90</deleted> por solo <inserted>R$ 3,87</inserted>. Oferta única en tu primer acceso.",
+                "exclusive": "EXCLUSIVO · ÚNICO",
+                "iWant": "LO QUIERO",
+                "clickIn": "Haz clic en 'LO QUIERO' para continuar",
+                "noThanks": "No, gracias"
+            }
         }
     }
 }

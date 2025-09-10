@@ -1,5 +1,6 @@
 import { useEmailForm } from "@/src/hooks/useEmailForm";
 import { CheckCircle, Copy } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { FormProvider } from "react-hook-form";
@@ -21,20 +22,24 @@ interface PaymentProps extends ModalStepsProps {
 }
 
 const PROMO = ({ handleNextStep, onClose }: ModalStepsProps): React.JSX.Element => {
+  const t = useTranslations("components.modalSteps.promo");
   return (
     <>
       <DialogHeader className="flex flex-col items-center text-center">
         <DialogTitle className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-700">
-          🎉 VIP PRO com 21% OFF!
+          {t("title")}
         </DialogTitle>
 
         <DialogDescription className="mt-2 text-primary-theme text-lg font-medium">
-          Figurinhas <b>ilimitadas</b> + Conversar comigo estilo ChatGPT, de <del>R$ 4,90</del> por
-          apenas <ins>R$ 3,87</ins>! Oferta única no seu primeiro acesso.
+          {t.rich("subtitle", {
+            bold: (chunks) => <b>{chunks}</b>,
+            deleted: (chunks) => <del>{chunks}</del>,
+            inserted: (chunks) => <ins>{chunks}</ins>,
+          })}
         </DialogDescription>
 
         <div className="mt-3 inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-semibold bg-white/30 backdrop-blur-sm shadow">
-          EXCLUSIVO · ÚNICO
+          {t("exclusive")}
         </div>
       </DialogHeader>
 
@@ -54,7 +59,7 @@ const PROMO = ({ handleNextStep, onClose }: ModalStepsProps): React.JSX.Element 
             onClick={handleNextStep}
             className="w-full px-6 py-4 rounded-full text-lg font-extrabold bg-gradient-to-r from-pink-500 to-purple-600 text-white  transition-transform"
           >
-            EU QUERO
+            {t("iWant")}
           </Button>
 
           <div className="grid grid-cols-8 gap-2 justify-center items-center">
@@ -62,13 +67,13 @@ const PROMO = ({ handleNextStep, onClose }: ModalStepsProps): React.JSX.Element 
               SENPAI10
             </div>
             <div className="text-sm text-muted-foreground  w-full col-span-3 rounded-md text-center">
-              Clique em &rdquo;EU QUERO&rdquo; para continuar
+              {t("clickIn")}
             </div>
             <button
               onClick={onClose}
               className="text-sm px-3 py-2 rounded-md underline underline-offset-2 pointer-events-auto hover:text-muted-foreground col-span-3"
             >
-              Não, obrigado
+              {t("noThanks")}
             </button>
           </div>
         </div>
