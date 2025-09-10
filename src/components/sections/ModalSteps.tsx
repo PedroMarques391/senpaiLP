@@ -98,7 +98,11 @@ const FORM = ({ handleNextStep }: Omit<ModalStepsProps, "onClose">): React.JSX.E
       </DialogHeader>
 
       <FormProvider {...methods}>
-        <FormDialog buttonText={t("generatePix")} onEmailSent={handleNextStep}>
+        <FormDialog
+          buttonText={t("generatePix")}
+          onEmailSent={handleNextStep}
+          subject="Estamos recebendo uma assinatura!"
+        >
           <FormField
             label={t("labels.name")}
             name="name"
