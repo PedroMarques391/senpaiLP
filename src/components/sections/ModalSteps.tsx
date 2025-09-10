@@ -102,21 +102,21 @@ const FORM = ({ handleNextStep }: Omit<ModalStepsProps, "onClose">): React.JSX.E
           <FormField
             label={t("labels.name")}
             name="name"
-            className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400"
+            className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400 focus-visible:border-primary-theme focus-visible:ring-primary-theme/50"
           />
 
           <FormField
             label="E-mail"
             name="email"
             type="email"
-            className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400"
+            className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400 focus-visible:border-primary-theme focus-visible:ring-primary-theme/50"
           />
 
           <FormField
             label={t("labels.phone")}
             name="phone"
             maxLength={15}
-            className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400"
+            className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400 focus-visible:border-primary-theme focus-visible:ring-primary-theme/50"
           />
         </FormDialog>
       </FormProvider>
