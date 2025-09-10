@@ -57,7 +57,7 @@ const PROMO = ({ handleNextStep, onClose }: ModalStepsProps): React.JSX.Element 
         <div className="mt-6 w-full flex flex-col gap-3">
           <Button
             onClick={handleNextStep}
-            className="w-full px-6 py-4 rounded-full text-lg font-extrabold bg-gradient-to-r from-pink-500 to-purple-600 text-white  transition-transform"
+            className="w-full px-6 py-4 rounded-full text-lg font-extrabold bg-gradient-to-r from-pink-500 to-purple-600 text-white  focus-visible:ring-0 cursor-pointer hover:from-purple-600 hover:to-pink-500 transition-colors duration-500"
           >
             {t("iWant")}
           </Button>
