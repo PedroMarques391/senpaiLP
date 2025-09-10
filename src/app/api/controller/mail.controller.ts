@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.USER_EMAIL,
     pass: process.env.USER_PASS,
-  }
+  },
 });
 
 export async function sendEmail(data: IProposalRequestData) {
@@ -24,7 +24,10 @@ export async function sendEmail(data: IProposalRequestData) {
   }
 
   return await transporter.sendMail({
-    from: data.type === "partnership" ? `${data.name} <${data.email}>` : `"Senpai" <${process.env.USER_EMAIL}>`,
+    from:
+      data.type === "partnership"
+        ? `${data.name} <${data.email}>`
+        : `"Senpai" <${process.env.USER_EMAIL}>`,
     to: process.env.ADDRESSEE,
     subject: data.type === "partnership" ? "Nova solicitação de parceria" : data.subject,
     html: htmlTemplate,
