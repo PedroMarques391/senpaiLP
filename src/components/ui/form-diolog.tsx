@@ -11,9 +11,15 @@ interface FormDialogProps {
   children: ReactNode;
   buttonText?: string;
   onEmailSent?: () => void;
+  subject?: string;
 }
 
-const FormDialog = ({ children, buttonText, onEmailSent }: FormDialogProps): React.JSX.Element => {
+const FormDialog = ({
+  children,
+  buttonText,
+  onEmailSent,
+  subject,
+}: FormDialogProps): React.JSX.Element => {
   const [loading, setLoaging] = useState<boolean>(false);
   const [emailSend, setEmailSend] = useState<boolean>(false);
   const [modalMessageItens, setModalMessageItens] = useState({} as IModalMessage);
@@ -27,7 +33,7 @@ const FormDialog = ({ children, buttonText, onEmailSent }: FormDialogProps): Rea
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...data, type: "support" }),
+      body: JSON.stringify({ ...data, type: "support", subject: data.subject ?? subject }),
     })
       .then((res) => {
         if (!res.ok) {
