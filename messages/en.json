@@ -365,6 +365,15 @@
                 "iWant": "I WANT IT",
                 "clickIn": "Click 'I WANT IT' to continue",
                 "noThanks": "No, thanks"
+            },
+            "form": {
+                "title": "Before generating your PIX, please fill in your details below:",
+                "subtitle": "This information is important so we can identify your payment and securely activate your discount. 💙",
+                "generatePix": "Generate PIX",
+                "labels": {
+                    "name": "Name",
+                    "phone": "Phone"
+                }
             }
         }
     }

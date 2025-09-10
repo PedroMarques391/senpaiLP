@@ -366,6 +366,15 @@
                 "iWant": "EU QUERO",
                 "clickIn": "Clique em 'EU QUERO' para continuar",
                 "noThanks": "Não, obrigado"
+            },
+            "form": {
+                "title": "Antes de gerar seu PIX, preencha seus dados abaixo: ",
+                "subtitle": "Essas informações são importantes para que possamos identificar seu pagamento e ativar seu esconto com segurança. 💙",
+                "generatePix": "Gerar PIX",
+                "labels": {
+                    "name": "Nome",
+                    "phone": "Telefone"
+                }
             }
         }
     }

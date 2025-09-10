@@ -83,24 +83,24 @@ const PROMO = ({ handleNextStep, onClose }: ModalStepsProps): React.JSX.Element 
 };
 
 const FORM = ({ handleNextStep }: Omit<ModalStepsProps, "onClose">): React.JSX.Element => {
+  const t = useTranslations("components.modalSteps.form");
   const methods = useEmailForm("partial");
   return (
     <>
       <DialogHeader className="flex flex-col items-center text-center">
         <DialogTitle className="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-700">
-          Antes de gerar seu PIX, preencha seus dados abaixo:
+          {t("title")}
         </DialogTitle>
 
         <DialogDescription className="mt-2  text-primary-theme  font-medium ">
-          Essas informações são importantes para que possamos identificar seu pagamento e ativar seu
-          desconto com segurança. 💙
+          {t("subtitle")}
         </DialogDescription>
       </DialogHeader>
 
       <FormProvider {...methods}>
-        <FormDialog buttonText="Gerar PIX" onEmailSent={handleNextStep}>
+        <FormDialog buttonText={t("generatePix")} onEmailSent={handleNextStep}>
           <FormField
-            label={"nome"}
+            label={t("labels.name")}
             name="name"
             className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400"
           />
@@ -113,7 +113,7 @@ const FORM = ({ handleNextStep }: Omit<ModalStepsProps, "onClose">): React.JSX.E
           />
 
           <FormField
-            label={"telefone"}
+            label={t("labels.phone")}
             name="phone"
             maxLength={15}
             className="bg-white border-pink-200 border-2 text-gray-800 placeholder-gray-400"

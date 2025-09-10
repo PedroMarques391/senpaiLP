@@ -366,6 +366,15 @@
                 "iWant": "LO QUIERO",
                 "clickIn": "Haz clic en 'LO QUIERO' para continuar",
                 "noThanks": "No, gracias"
+            },
+            "form": {
+                "title": "Antes de generar tu PIX, completa tus datos a continuación:",
+                "subtitle": "Esta información es importante para que podamos identificar tu pago y activar tu descuento de forma segura. 💙",
+                "generatePix": "Generar PIX",
+                "labels": {
+                    "name": "Nombre",
+                    "phone": "Teléfono"
+                }
             }
         }
     }
