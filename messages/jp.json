@@ -380,6 +380,15 @@
                 "subtitle": "割引価格でVIP PROを有効にするには、PIXで支払いを完了してください。",
                 "time": "残り時間：",
                 "pay": "支払い済み"
+            },
+            "thanksYou": {
+                "title": "お支払いの確認中",
+                "subtitle": "ご安心ください、お支払いはすでに記録されています。数分で<bold>VIP PRO</bold>が有効になります。",
+                "acess": "アクセスできる内容：",
+                "unlimitedStickers": "🎨 無制限のスタンプ",
+                "unlimitedChat": "🤖 ChatGPT風のチャット機能",
+                "thanks": "💖 Senpaiを信頼していただきありがとうございます！",
+                "finish": "完了"
             }
         }
     }

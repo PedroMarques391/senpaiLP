@@ -381,6 +381,15 @@
                 "subtitle": "Finaliza el pago a través de PIX para activar tu VIP PRO con descuento.",
                 "time": "Tiempo restante: ",
                 "pay": "Ya pagué"
+            },
+            "thanksYou": {
+                "title": "Pago en revisión",
+                "subtitle": "No te preocupes, ya hemos registrado tu pago. En unos minutos, tu <bold>VIP PRO</bold> será liberado.",
+                "acess": "Tendrás acceso a:",
+                "unlimitedStickers": "🎨 Stickers ilimitados",
+                "unlimitedChat": "🤖 Chatear conmigo al estilo ChatGPT",
+                "thanks": "💖 ¡Gracias por confiar en Senpai!",
+                "finish": "Finalizar"
             }
         }
     }

@@ -380,6 +380,15 @@
                 "subtitle": "Complete the payment via PIX to activate your discounted VIP PRO.",
                 "time": "Time remaining: ",
                 "pay": "I've already paid"
+            },
+            "thanksYou": {
+                "title": "Payment under review",
+                "subtitle": "Don't worry, we have already registered your payment. In a few minutes, your <bold>VIP PRO</bold> will be released.",
+                "acess": "You will have access to:",
+                "unlimitedStickers": "🎨 Unlimited stickers",
+                "unlimitedChat": "🤖 Chat with me ChatGPT style",
+                "thanks": "💖 Thank you for trusting Senpai!",
+                "finish": "Finish"
             }
         }
     }

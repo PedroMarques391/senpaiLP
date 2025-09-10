@@ -213,31 +213,33 @@ const PAYMENT = ({
 };
 
 const THANKYOU = ({ onClose }: Omit<ModalStepsProps, "handleNextStep">): React.JSX.Element => {
+  const t = useTranslations("components.modalSteps.thanksYou");
   return (
     <>
       <DialogHeader>
         <DialogTitle className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-700">
-          Pagamento em análise
+          {t("title")}
         </DialogTitle>
 
         <section className="mt-3 text-primary-theme font-medium space-y-3">
-          Não se preocupe, já registramos o seu pagamento. Em alguns minutos seu <b>VIP PRO</b> será
-          liberado.
+          {t.rich("subtitle", {
+            bold: (chunks) => <b>{chunks}</b>,
+          })}
           <div className="flex flex-col  gap-2">
-            <p className="font-semibold">Você terá acesso a:</p>
+            <b>{t("acess")}</b>
             <ul className="list-disc list-inside text-left">
-              <li>🎨 Figurinhas sem limites</li>
-              <li>🤖 Conversar comigo estilo ChatGPT</li>
+              <li>{t("unlimitedStickers")}</li>
+              <li>{t("unlimitedChat")}</li>
             </ul>
           </div>
-          <p className="text-pink-600 font-semibold mt-3">💖 Obrigado por confiar no Senpai!</p>
+          <p className="text-pink-600 font-semibold mt-3">{t("thanks")}</p>
         </section>
       </DialogHeader>
       <Button
         onClick={onClose}
         className="w-full px-6 py-4 rounded-full text-lg font-extrabold bg-gradient-to-r from-pink-500 to-purple-600 text-white  transition-transform"
       >
-        Finalizar
+        {t("finish")}
       </Button>
     </>
   );
