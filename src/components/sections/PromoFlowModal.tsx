@@ -71,7 +71,7 @@ export default function PromoFlowModal() {
       <DialogContent
         onInteractOutside={(e) => e.preventDefault()}
         onEscapeKeyDown={(e) => e.preventDefault()}
-        className="w-[min(92vw,640px)] max-w-lg rounded-3xl bg-gradient-to-br  from-pink-50 via-pink-100 to-purple-50 border-none"
+        className="w-[min(92vw,640px)] max-w-lg rounded-3xl bg-gradient-to-br  from-pink-50 via-pink-100 to-purple-50 outline-none focus:outline-none"
       >
         {steps === MODAL.PROMO && (
           <ModalSteps.PROMO handleNextStep={() => setSteps(MODAL.FORM)} onClose={markAsClaimed} />
