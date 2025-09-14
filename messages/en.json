@@ -180,19 +180,19 @@
         "team": {
             "ceo": {
                 "title": "CEO",
-                "bio": "Throughout my journey, I have always sought to lead with passion, vision, and commitment to Senpai."
+                "bio": "Responsible for Senpai's strategic leadership, driving the company's growth vision, decision-making, and the expansion of innovative solutions in the digital market."
             },
             "cto": {
                 "title": "CTO",
-                "bio": "Fullstack developer, former lawyer, and father of girls."
+                "bio": "Lead developer at Senpai, responsible for structuring, programming, and maintaining all of the company's code, ensuring the quality, security, and innovation of our digital solutions."
             },
             "developer1": {
                 "title": "Developer",
-                "bio": "Responsible for turning ideas into practical and scalable solutions, always focusing on efficiency and quality."
+                "bio": "Responsible for Senpai's visual development, managing the website and systems' interface to ensure an intuitive, modern, and functional user experience."
             },
             "developer2": {
                 "title": "Developer",
-                "bio": "JavaScript programmer focused on machine learning, AI automation, and cybersecurity knowledge."
+                "bio": "Specializing in JavaScript, artificial intelligence, and automation, he contributes to the creation of intelligent and secure systems by applying machine learning and cybersecurity to Senpai's projects."
             }
         }
     },
