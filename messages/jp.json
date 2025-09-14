@@ -199,26 +199,32 @@
     "components": {
         "functionCard": {
             "card1": {
+                "image": "/images/card/jp/card-1.png",
                 "title": "🖼️ 先輩とスタンプを作成",
                 "subtitle": "画像、GIF、ビデオをWhatsAppでユニークなスタンプに変換！迅速かつ簡単。"
             },
             "card2": {
+                "image": "/images/card/jp/card-2.png",
                 "title": "💬 おしゃべりしませんか？",
                 "subtitle": "こんにちは！私は先輩、あなたのバーチャルフレンドです！おしゃべりしませんか？新しい友達を作るのが大好きで、いつでもあなたを助けるため、またはただ話すためにここにいます。"
             },
             "card3": {
+                "image": "/images/card/jp/card-3.png",
                 "title": "✨ 匿名スタンプ",
                 "subtitle": "ここで作成するすべてのスタンプは完全に匿名です。作者名もパック名もなく、スタンプだけです。"
             },
             "card4": {
+                "image": "/images/card/jp/card-4.png",
                 "title": "📚 スタンプライブラリ",
                 "subtitle": "すぐに使える素晴らしいスタンプのコレクションを探索してください。"
             },
             "card5": {
+                "image": "/images/card/jp/card-5.png",
                 "title": "🪄 AIで魔法のスタンプを作成",
                 "subtitle": "あなたの創造性を輝かせましょう！私たちの人工知能を使えば、素晴らしいスタンプを迅速かつ楽しく作成できます。"
             },
             "card6": {
+                "image": "/images/card/jp/card-6.png",
                 "title": "🔍 先輩とクイック検索",
                 "subtitle": "何か知りたいですか？先輩にGoogleで検索させましょう！常に最高の結果をお届けします。"
             }

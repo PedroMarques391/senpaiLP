@@ -37,7 +37,7 @@ export default function Home() {
         {functionsCardItens.map((functionsCardItem, item) => (
           <FunctionsCard
             key={item}
-            imagePath={functionsCardItem.imagePath}
+            imagePath={t(`${functionsCardItem.imagePath}`)}
             title={t(`${functionsCardItem.title}`)}
             subtitle={t(`${functionsCardItem.subtitle}`)}
           />

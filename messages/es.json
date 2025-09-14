@@ -200,26 +200,32 @@
     "components": {
         "functionCard": {
             "card1": {
+                "image": "/images/card/es/card-1.png",
                 "title": "🖼️ Crea Stickers con Senpai",
                 "subtitle": "¡Transforma imágenes, GIFs y videos en stickers únicos en WhatsApp! Rápido y fácil."
             },
             "card2": {
+                "image": "/images/card/es/card-2.png",
                 "title": "💬 ¿Hablamos?",
                 "subtitle": "¡Hola, hola! Soy Senpai, ¡tu amiga virtual! ¿Charlamos un rato? Me encanta hacer nuevos amigos y siempre estoy aquí para ayudarte o simplemente para conversar."
             },
             "card3": {
+                "image": "/images/card/es/card-3.png",
                 "title": "✨ Stickers Sin Identificación",
                 "subtitle": "Todos los stickers que crees aquí serán completamente anónimos: sin nombre de autor, sin nombre de paquete, solo el sticker."
             },
             "card4": {
+                "image": "/images/card/es/card-4.png",
                 "title": "📚 Biblioteca de Stickers",
                 "subtitle": "Explora una increíble colección de stickers listos para usar."
             },
             "card5": {
+                "image": "/images/card/es/card-5.png",
                 "title": "🪄 Crea Stickers Mágicos con IA",
                 "subtitle": "¡Deja que tu creatividad brille! Con nuestra inteligencia artificial, puedes crear stickers increíbles de forma rápida y divertida."
             },
             "card6": {
+                "image": "/images/card/es/card-6.png",
                 "title": "🔍 Búsqueda Rápida con Senpai",
                 "subtitle": "¿Quieres saber algo? ¡Deja que Senpai haga una búsqueda en Google por ti! Siempre trayendo los mejores resultados."
             }
