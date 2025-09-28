@@ -28,6 +28,8 @@ const Hero = (): React.JSX.Element => {
           alt="Hero"
           fill
           priority
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABA0lEQVR4ARyOu0rDYACFv/xpmiZptaUWQRA7ObnZwc2hi2/gA/gC7aKL0amD+AyCiA6K4CJObo6FDl0EwQR6CbShqJHGpKT9jZ7x8J2LuGna8qp5LC8bJ/LRPpNPp+fy9rD17103bCmEoqDpRd7HnyxFIf5wzEXbQRcZhKogLMOgurHG0cE+tfou9doWpdin57qYqvYH6JStLG/dDgPHIZe32NusUlhZpWAaCEVNq+Zz1ne2iWRCv9dnFkwom7l0AsTPNERLf7jdVxTDIpNRqRSXqZTyhPEM8R1HYOhkJ1+M/BFtz+MjCNAkTKMUWCwkiZXjeeBx99Kh9XDPMElDglQKvwAAAP//m5qGmgAAAAZJREFUAwD+OF9d0lrSAAAAAABJRU5ErkJggg=="
           className="object-cover object-center"
         />
         <Header />
