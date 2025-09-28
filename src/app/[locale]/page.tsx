@@ -46,7 +46,7 @@ export default function Home() {
       <Info />
       <section id="plans">
         <Title>{t("home.plans")}</Title>
-        <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-7 mx-auto">
+        <div className="w-full max-w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 place-items-center gap-7 mx-auto">
           {services.map((service, index) => (
             <Services
               key={index}
