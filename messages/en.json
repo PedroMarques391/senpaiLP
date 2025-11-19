@@ -182,10 +182,6 @@
                 "title": "CEO",
                 "bio": "Responsible for Senpai's strategic leadership, driving the company's growth vision, decision-making, and the expansion of innovative solutions in the digital market."
             },
-            "cto": {
-                "title": "CTO",
-                "bio": "Lead developer at Senpai, responsible for structuring, programming, and maintaining all of the company's code, ensuring the quality, security, and innovation of our digital solutions."
-            },
             "developer1": {
                 "title": "Developer",
                 "bio": "Responsible for Senpai's visual development, managing the website and systems' interface to ensure an intuitive, modern, and functional user experience."

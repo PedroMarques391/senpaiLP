@@ -49,17 +49,24 @@ const AboutPage = () => {
           <div className=" text-center py-10 bg-gray-200">
             <h1 className="text-3xl font-bold mb-6">{t("meetOurTeam")}</h1>
             <p className="text-lg text-gray-600 mb-6">{t("aDedicatedTeam")}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto md:px-5 overflow-hidden">
-              {team.map((teamMember, index) => (
-                <Team
-                  key={index}
-                  image={teamMember.image}
-                  name={teamMember.name}
-                  jobTitle={t(`${teamMember.jobTitle}`)}
-                  bio={t(`${teamMember.bio}`)}
-                  links={teamMember.links}
-                />
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto md:px-5 overflow-hidden justify-stretch">
+              {team.map((teamMember, index) => {
+                const isLastItem = index === team.length - 1;
+
+                const spanClass = isLastItem ? "md:col-span-2" : "";
+
+                return (
+                  <Team
+                    key={index}
+                    style={spanClass}
+                    image={teamMember.image}
+                    name={teamMember.name}
+                    jobTitle={t(`${teamMember.jobTitle}`)}
+                    bio={t(`${teamMember.bio}`)}
+                    links={teamMember.links}
+                  />
+                );
+              })}
             </div>
           </div>
         </section>
