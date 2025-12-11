@@ -323,6 +323,10 @@
             "q7": {
                 "question": "¿El bot tiene algún costo?",
                 "answer": "Actualmente, el bot puede tener versiones gratuitas y versiones VIP, dependiendo de tu necesidad. Consulta nuestras suscripciones para saber más."
+            },
+            "q8": {
+                "question": "¿Cuál es el número del Sticker Bot?",
+                "answer": "+55 54 99715-3068 ¡Envía una imagen y comienza a crear tus propios stickers al instante!"
             }
         },
         "dialog": {

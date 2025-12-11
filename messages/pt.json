@@ -327,6 +327,10 @@
             "q7": {
                 "question": "O bot tem custo?",
                 "answer": "Atualmente o bot pode ter versões gratuitas e versões VIP, dependendo da sua necessidade. Consulte nossas assinaturas para saber mais."
+            },
+            "q8": {
+                "question": "Qual é o número do Bot de Figurinha?",
+                "answer": "+55 54 99715-3068 Envie uma imagem e comece a criar suas próprias figurinhas instantaneamente!"
             }
         },
         "dialog": {
