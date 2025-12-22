@@ -1,13 +1,14 @@
-import { Analytics } from "@vercel/analytics/react";
-import { Roboto, Poppins } from "next/font/google";
-import "./globals.css";
-import Script from "next/script";
-import { jsonLd } from "../../utils";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { SnowFall } from "@/src/components/snowfall";
 import { routing } from "@/src/i18n/routing";
 import { generateMetadataProps } from "@/src/types";
+import { Analytics } from "@vercel/analytics/react";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Poppins, Roboto } from "next/font/google";
+import { notFound } from "next/navigation";
+import Script from "next/script";
+import { jsonLd } from "../../utils";
+import "./globals.css";
 
 const poppins = Poppins({
   variable: "--font-montserrat",
@@ -36,8 +37,7 @@ export async function generateMetadata({ params }: generateMetadataProps) {
         es: "https://botdosenpai.com.br/es",
         ja: "https://botdosenpai.com.br/jp",
         en: "https://botdosenpai.com.br/en",
-      }
-      
+      },
     },
     authors: [{ name: "Pedro Marques" }],
     applicationName: "BotDoSenpai",
@@ -55,8 +55,8 @@ export async function generateMetadata({ params }: generateMetadataProps) {
           width: 800,
           height: 600,
           alt: "BotDoSenpai",
-        }
-      ]
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: generateMetadataProps) {
       creator: "@BotDoSenpai",
       description: t("description"),
       site: "@BotDoSenpai",
-      images: ["/wallpaper.png"]
+      images: ["/wallpaper.png"],
     },
   };
 }
@@ -75,10 +75,10 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<{
-  children: React.ReactNode,
-  params: Promise<{ locale: string }>
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -94,6 +94,7 @@ export default async function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
+        <SnowFall />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Analytics />
       </body>
