@@ -12,7 +12,7 @@ import {
 import FormDialog from "@/src/components/ui/form-diolog";
 import { FormField } from "@/src/components/ui/form-field";
 import { useEmailForm } from "@/src/hooks/useEmailForm";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ import { useState } from "react";
 import { FormProvider } from "react-hook-form";
 import senpai from "../../../../public/images/thanks/thanks.png";
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -31,12 +31,19 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+    },
+  },
 };
 
-const buttonVariants = {
+const buttonVariants: Variants = {
   hidden: { scale: 0.8, opacity: 0 },
   visible: { scale: 1, opacity: 1, transition: { type: "spring", stiffness: 200 } },
   hover: { scale: 1.05, boxShadow: "0 8px 16px rgba(0,0,0,0.2)" },

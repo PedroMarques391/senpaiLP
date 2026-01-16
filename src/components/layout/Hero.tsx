@@ -124,7 +124,7 @@ const Hero = (): React.JSX.Element => {
               initial={{ y: "-100%" }}
               animate={{ y: isCardInView ? 0 : "100%" }}
               transition={{
-                type: "twee",
+                type: "tween",
                 stiffness: 100,
                 damping: 25,
                 duration: achievement.duration,
@@ -138,7 +138,7 @@ const Hero = (): React.JSX.Element => {
                     initial={{ y: "-100%" }}
                     animate={{ y: isCardInView ? 0 : "100%" }}
                     transition={{
-                      type: "twee",
+                      type: "tween",
                       stiffness: 100,
                       damping: 25,
                       duration: achievement.duration - 0.5,
@@ -159,7 +159,7 @@ const Hero = (): React.JSX.Element => {
                   initial={{ y: "-100%" }}
                   animate={{ y: isCardInView ? 0 : "100%" }}
                   transition={{
-                    type: "twee",
+                    type: "tween",
                     stiffness: 100,
                     damping: 25,
                     duration: achievement.duration + 0.5,
