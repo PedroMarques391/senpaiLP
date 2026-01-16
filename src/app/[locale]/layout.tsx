@@ -1,4 +1,3 @@
-import { SnowFall } from "@/src/components/snowfall";
 import { routing } from "@/src/i18n/routing";
 import { generateMetadataProps } from "@/src/types";
 import { Analytics } from "@vercel/analytics/react";
@@ -94,7 +93,6 @@ export default async function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
-        <SnowFall />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Analytics />
       </body>
